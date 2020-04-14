@@ -114,3 +114,7 @@ Testing - Zoom
 '''
 print(pyt.get('3.80.20.128'))
 print(pyt.get('103.122.166.0'))
+
+print(pyt.get('52.148.151.26'))
+print(pyt.get('52.216.177.61'))
+print(pyt.get('52.216.138.109'))
