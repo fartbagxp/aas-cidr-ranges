@@ -1,9 +1,12 @@
 '''
 
+The range of Microsoft Azure IPs are provided in a couple different locations.
 Azure Public Cloud: https://www.microsoft.com/en-us/download/confirmation.aspx?id=56519
 Azure China Cloud: https://www.microsoft.com/en-us/download/details.aspx?id=57062
 Azure US Government Cloud: https://www.microsoft.com/en-us/download/details.aspx?id=57063
 Azure Germany Cloud: https://www.microsoft.com/en-us/download/details.aspx?id=57064
+
+This is a parser for the set of IPs / IP ranges in CIDR notation.
 '''
 
 

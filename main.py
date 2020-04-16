@@ -4,6 +4,7 @@ from src.parser_aws import AWSCIDRParser
 from src.parser_azure import AzureCIDRParser
 from src.parser_gcp import GoogleCIDRParser
 from src.parser_zoom import ZoomCIDRParser
+from src.parser_cloudflare import CloudflareCIDRParser
 
 
 def add_aws_cidr(pytrie, result):
@@ -56,6 +57,16 @@ def add_zoom_cidr(pytrie, result):
         Best effort scraping the data for IP CIDR ranges
         '''
         pass
+
+
+def add_cloudflare_cidr(pytrie, result):
+  results = result.split('\n')
+  for r in results:
+    if r.strip():
+      pyt[r] = {
+          'source': 'Cloudflare',
+          'website': 'https://www.cloudflare.com/ips/'
+      }
 
 
 aws_parser = AWSCIDRParser()
@@ -115,6 +126,16 @@ Testing - Zoom
 print(pyt.get('3.80.20.128'))
 print(pyt.get('103.122.166.0'))
 
-print(pyt.get('52.148.151.26'))
-print(pyt.get('52.216.177.61'))
-print(pyt.get('52.216.138.109'))
+cloudflare_parser = CloudflareCIDRParser()
+result = cloudflare_parser.get_range_v4()
+add_cloudflare_cidr(pyt, result)
+
+result = cloudflare_parser.get_range_v6()
+add_cloudflare_cidr(pyt, result)
+
+# '''
+# Testing - Cloudflare
+
+# '''
+print(pyt.get('108.162.192.0'))
+print(pyt.get('2c0f:f248::'))
