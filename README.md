@@ -4,14 +4,15 @@ The goal of this project is to quickly determine specifically where an IP addres
 
 ## Requirements
 
-- Python 3.6+
-- Pipenv
+- [Python 3.8+](https://www.python.org/downloads/)
+- [pyenv](https://github.com/pyenv/pyenv)
+- [pipenv](https://github.com/pypa/pipenv)
 
 ## How to run
 
 1. Download the code:  
    `git clone git@github.com:fartbagxp/aas-cidr-ranges.git`
-1. (Optional) Setup dependencies:  
+1. Setup dependencies:  
    `pipenv shell`
 1. Install dependencies:  
    `pipenv install`
