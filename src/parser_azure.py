@@ -23,14 +23,11 @@ class AzureCIDRParser():
     format = '%Y%m%d'
     timestamps = [
         datetime.datetime.now().strftime(format),
-        (datetime.datetime.now() - datetime.timedelta(days=1)).strftime(format),
-        (datetime.datetime.now() - datetime.timedelta(days=2)).strftime(format),
-        (datetime.datetime.now() - datetime.timedelta(days=3)).strftime(format),
-        (datetime.datetime.now() - datetime.timedelta(days=4)).strftime(format),
-        (datetime.datetime.now() - datetime.timedelta(days=5)).strftime(format),
-        (datetime.datetime.now() - datetime.timedelta(days=6)).strftime(format),
-        (datetime.datetime.now() - datetime.timedelta(days=7)).strftime(format)
     ]
+    MAX_DAYS_SEARCH=30
+    for n in range(1,MAX_DAYS_SEARCH,1):
+      timestamp = (datetime.datetime.now() - datetime.timedelta(days=n)).strftime(format)
+      timestamps.append(timestamp)
     return timestamps
 
   def get_public_range(self):

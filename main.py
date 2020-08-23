@@ -5,6 +5,7 @@ from src.parser_azure import AzureCIDRParser
 from src.parser_gcp import GoogleCIDRParser
 from src.parser_zoom import ZoomCIDRParser
 from src.parser_cloudflare import CloudflareCIDRParser
+from src.parser_fastly import FastlyCIDRParser
 
 
 def add_aws_cidr(pytrie, result):
@@ -69,18 +70,31 @@ def add_cloudflare_cidr(pytrie, result):
       }
 
 
+def add_fastly_cidr(pytrie, result):
+  for ipv4 in result['addresses']:
+    pyt[ipv4] = {
+        'source': 'Fastly',
+        'website': 'https://api.fastly.com/public-ip-list'
+    }
+  for ipv6 in result['ipv6_addresses']:
+    pyt[ipv6] = {
+        'source': 'Fastly',
+        'website': 'https://api.fastly.com/public-ip-list'
+    }
+
+
 aws_parser = AWSCIDRParser()
 result = aws_parser.get_range()
-pyt = pytricia.PyTricia()
+pyt = pytricia.PyTricia(128)  # needed for IPv6
 add_aws_cidr(pyt, result)
 
 '''
 Testing - AWS
 {'region': 'us-east-1', 'service': 'EC2'}
-{'region': 'me-south-1', 'service': 'AMAZON'}
+{'region': 'eu-west-2', 'service': 'S3'}
 '''
 print(pyt.get('52.95.245.0'))
-print(pyt.get('2a05:d07e:e000::'))
+print(pyt.get('2a05:d07a:c000::'))
 
 azure_parser = AzureCIDRParser()
 result = azure_parser.get_public_range()
@@ -133,9 +147,20 @@ add_cloudflare_cidr(pyt, result)
 result = cloudflare_parser.get_range_v6()
 add_cloudflare_cidr(pyt, result)
 
-# '''
-# Testing - Cloudflare
-
-# '''
+'''
+Testing - Cloudflare
+'''
 print(pyt.get('108.162.192.0'))
+print(pyt.get('2c0f:f248::'))
+
+fastly_parser = FastlyCIDRParser()
+result = fastly_parser.get_range()
+pyt = pytricia.PyTricia()
+add_fastly_cidr(pyt, result)
+
+'''
+Testing - Fastly
+'''
+print(pyt.get('23.235.32.0'))
+print(pyt.get('2a04:4e40::'))
 print(pyt.get('2c0f:f248::'))
