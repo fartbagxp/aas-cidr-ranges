@@ -4,8 +4,8 @@ The goal of this project is to quickly determine specifically where an IP addres
 
 ## Requirements
 
-- [Python 3.8+](https://www.python.org/downloads/)
 - [pyenv](https://github.com/pyenv/pyenv)
+- [Python 3.8+](https://www.python.org/downloads/)
 - [pipenv](https://github.com/pypa/pipenv)
 
 ## How to run
