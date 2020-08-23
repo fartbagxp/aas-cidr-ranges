@@ -147,10 +147,9 @@ add_cloudflare_cidr(pyt, result)
 result = cloudflare_parser.get_range_v6()
 add_cloudflare_cidr(pyt, result)
 
-# '''
-# Testing - Cloudflare
-
-# '''
+'''
+Testing - Cloudflare
+'''
 print(pyt.get('108.162.192.0'))
 print(pyt.get('2c0f:f248::'))
 
@@ -164,3 +163,4 @@ Testing - Fastly
 '''
 print(pyt.get('23.235.32.0'))
 print(pyt.get('2a04:4e40::'))
+print(pyt.get('2c0f:f248::'))
