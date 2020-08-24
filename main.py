@@ -41,23 +41,14 @@ def add_gcp_cidr(pytrie, result):
     }
 
 
-def add_zoom_cidr(pytrie, result):
-  for values in result['data']:
-    for value in values['Destination']:
-      try:
-        pyt[value] = {
-            'source': result['source'],
-            'last_updated': result['last_updated'],
-            'connectionType': values['ConnectionType'],
-            'protocol': values['Protocol'],
-            'ports': values['Ports'],
-            'sourceName': values['SourceName']
-        }
-      except:
-        '''
-        Best effort scraping the data for IP CIDR ranges
-        '''
-        pass
+def add_zoom_cidr(pytrie, result, source, website):
+  results = result.split('\n')
+  for r in results:
+    if r.strip():
+      pyt[r] = {
+          'source': source,
+          'website': website
+      }
 
 
 def add_cloudflare_cidr(pytrie, result):
@@ -83,9 +74,10 @@ def add_fastly_cidr(pytrie, result):
     }
 
 
+pyt = pytricia.PyTricia(128)  # needed for IPv6
+
 aws_parser = AWSCIDRParser()
 result = aws_parser.get_range()
-pyt = pytricia.PyTricia(128)  # needed for IPv6
 add_aws_cidr(pyt, result)
 
 '''
@@ -129,16 +121,6 @@ Testing - Google
 print(pyt.get('35.199.128.0'))
 print(pyt.get('35.200.0.0'))
 
-zoom_parser = ZoomCIDRParser()
-result = zoom_parser.get_range()
-add_zoom_cidr(pyt, result)
-
-'''
-Testing - Zoom
-
-'''
-print(pyt.get('3.80.20.128'))
-print(pyt.get('103.122.166.0'))
 
 cloudflare_parser = CloudflareCIDRParser()
 result = cloudflare_parser.get_range_v4()
@@ -164,3 +146,20 @@ Testing - Fastly
 print(pyt.get('23.235.32.0'))
 print(pyt.get('2a04:4e40::'))
 print(pyt.get('2c0f:f248::'))
+
+zoom_parser = ZoomCIDRParser()
+result, source, website = zoom_parser.get_zoom_range()
+add_zoom_cidr(pyt, result, source, website)
+result, source, website = zoom_parser.get_zoom_meeting_range()
+add_zoom_cidr(pyt, result, source, website)
+result, source, website = zoom_parser.get_zoom_crc_range()
+add_zoom_cidr(pyt, result, source, website)
+result, source, website = zoom_parser.get_zoom_phone_range()
+add_zoom_cidr(pyt, result, source, website)
+
+'''
+Testing - Zoom
+'''
+
+print(pyt.get('3.80.20.128'))
+print(pyt.get('103.122.166.0'))
