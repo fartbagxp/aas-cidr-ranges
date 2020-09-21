@@ -8,7 +8,7 @@ This is a parser for the set of IPs / IP ranges in CIDR notation.
 import requests
 
 
-class AWSCIDRParser():
+class AWSCidrDownloader():
   def get_range(self):
     try:
       URL = 'https://ip-ranges.amazonaws.com/ip-ranges.json'

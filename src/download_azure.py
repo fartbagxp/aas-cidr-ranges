@@ -14,7 +14,7 @@ import requests
 import datetime
 
 
-class AzureCIDRParser():
+class AzureCidrDownloader():
   def get_timestamps(self):
     '''
     Return a list of timestamps from the past 7 days, because Azure IP tables updates once every week.
@@ -24,9 +24,10 @@ class AzureCIDRParser():
     timestamps = [
         datetime.datetime.now().strftime(format),
     ]
-    MAX_DAYS_SEARCH=30
-    for n in range(1,MAX_DAYS_SEARCH,1):
-      timestamp = (datetime.datetime.now() - datetime.timedelta(days=n)).strftime(format)
+    MAX_DAYS_SEARCH = 30
+    for n in range(1, MAX_DAYS_SEARCH, 1):
+      timestamp = (datetime.datetime.now() -
+                   datetime.timedelta(days=n)).strftime(format)
       timestamps.append(timestamp)
     return timestamps
 

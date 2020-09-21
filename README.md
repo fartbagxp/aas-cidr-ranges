@@ -1,6 +1,10 @@
 # Overview
 
-The goal of this project is to quickly determine specifically where an IP address falls under in the realm of As-A-Service providers such as cloud providers (AWS, Azure, GCP, etc), and SaaS providers (Zoom, Twilio, Slack, etc).
+This is currently a **Work-In-Progress**.
+
+The goal of this project is to be able to quickly determine who owns a particular IP address.
+
+It was originally created to track "as-a-service" projects but will eventually incorporate other sources for consumption.
 
 ## Requirements
 

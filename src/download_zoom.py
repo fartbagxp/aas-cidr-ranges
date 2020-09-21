@@ -9,7 +9,7 @@ https://support.zoom.us/hc/en-us/articles/201362683-Network-firewall-or-proxy-se
 '''
 
 
-class ZoomCIDRParser():
+class ZoomCidrDownloader():
 
   def __init__(self):
     self.headers = {
@@ -17,12 +17,30 @@ class ZoomCIDRParser():
         'Content-Type': 'text/html',
     }
 
+    self.config = {
+        'url': {
+            'zoom': 'https://assets.zoom.us/docs/ipranges/Zoom.txt',
+            'meeting': 'https://assets.zoom.us/docs/ipranges/ZoomMeetings.txt',
+            'crc': 'https://assets.zoom.us/docs/ipranges/ZoomCRC.txt',
+            'phone': 'https://assets.zoom.us/docs/ipranges/ZoomPhone.txt'
+        },
+        'source': {
+            'zoom': 'Zoom',
+            'meeting': "Zoom Meetings",
+            'crc': "Zoom Cloud Room Connector",
+            'phone': 'Zoom Phone'
+        }
+    }
+
+  def get_config(self):
+    return self.config
+
   def get_zoom_range(self):
     try:
-      URL = 'https://assets.zoom.us/docs/ipranges/Zoom.txt'
+      URL = self.url.zoom
       r = requests.get(url=URL, headers=self.headers)
       data = r.text
-      source = "Zoom"
+      source = self.source.zoom
       return data, source, URL
     except requests.exceptions.RequestException as e:
       print(f'Failure to scrape Zoom IP range endpoint, error was {e}')
@@ -30,10 +48,10 @@ class ZoomCIDRParser():
 
   def get_zoom_meeting_range(self):
     try:
-      URL = 'https://assets.zoom.us/docs/ipranges/ZoomMeetings.txt'
+      URL = self.url.meeting
       r = requests.get(url=URL, headers=self.headers)
       data = r.text
-      source = "Zoom Meetings"
+      source = self.source.meeting
       return data, source, URL
     except requests.exceptions.RequestException as e:
       print(f'Failure to scrape Zoom Meeting IP range endpoint, error was {e}')
@@ -41,10 +59,10 @@ class ZoomCIDRParser():
 
   def get_zoom_crc_range(self):
     try:
-      URL = 'https://assets.zoom.us/docs/ipranges/ZoomCRC.txt'
+      URL = self.url.crc
       r = requests.get(url=URL, headers=self.headers)
       data = r.text
-      source = "Zoom Cloud Room Connector"
+      source = self.source.crc
       return data, source, URL
     except requests.exceptions.RequestException as e:
       print(
@@ -53,10 +71,10 @@ class ZoomCIDRParser():
 
   def get_zoom_phone_range(self):
     try:
-      URL = 'https://assets.zoom.us/docs/ipranges/ZoomPhone.txt'
+      URL = self.url.phone
       r = requests.get(url=URL, headers=self.headers)
       data = r.text
-      source = 'Zoom Phone'
+      source = self.source.phone
       return data, source, URL
     except requests.exceptions.RequestException as e:
       print(f'Failure to scrape Zoom Phone IP range endpoint, error was {e}')

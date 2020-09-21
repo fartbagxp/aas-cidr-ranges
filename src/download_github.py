@@ -6,7 +6,7 @@
 import requests
 
 
-class GithubCIDRParser():
+class GithubCidrDownloader():
 
   def get_range(self):
     try:

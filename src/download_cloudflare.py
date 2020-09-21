@@ -9,7 +9,7 @@ This is a parser for the set of IPs / IP ranges in CIDR notation.
 import requests
 
 
-class CloudflareCIDRParser():
+class CloudflareCidrDownloader():
   def get_range_v4(self):
     try:
       URL = 'https://www.cloudflare.com/ips-v4'

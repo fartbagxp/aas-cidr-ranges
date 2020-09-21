@@ -1,6 +1,10 @@
 # Private IP ranges
 
+These IP address ranges are traditionally private IP address space, defined by [various IETF specifications](https://tools.ietf.org), and are not routable on the public internet.
+
 ## IPv4
+
+The following table are to identify IPv4 ranges and their associated standard.
 
 | Address Block      | Present Use                   | Reference                                                                        |
 | ------------------ | ----------------------------- | -------------------------------------------------------------------------------- |
@@ -23,4 +27,29 @@
 
 ## IPv6
 
-RFC2526
+**Under Construction**
+
+[RFC2526](https://tools.ietf.org/html/rfc2526)
+[RFC4193](https://tools.ietf.org/html/rfc4193) - Unique Local Address
+[RFC4038](https://tools.ietf.org/html/rfc4038) - Mapping IPv4 in IPv6 for dual stack transition
+
+## IPv4 - IPv6 Equivalent
+
+| IPv4            | IPv6 Equivalent | Used for                           |
+| --------------- | --------------- | ---------------------------------- |
+| 0.0.0.0         | ::/128          | Unspecified                        |
+| 127.0.0.1       | ::1/128         | Loopback                           |
+| N/A             | ::ffff/96       | IPv4 mapped                        |
+| 10.0.0.0/8      | fc00::/7        | Unique Local Addresses             |
+| 172.16.0.0/12   | fc00::/7        | Unique Local Addresses             |
+| 192.168.0.0/16  | fc00::/7        | Unique Local Addresses             |
+| 169.254.0.0/16  | fe80::/10       | Link-Local Addresses               |
+| N/A             | 2001:0000::/32  | Teredo, IPv6 tunneling to IPv4 NAT |
+| 198.18.0.0/15   | 2001:0002::/48  | Benchmarking                       |
+| N/A             | 2001:0010::/28  | Orchid - Experiment only           |
+| 192.88.99.0/24  | 2002::/16       | 6to4 addressing                    |
+| 192.0.2.0/24    | 2001:db8::/32   | Documentation only                 |
+| 198.51.100.0/24 | 2001:db8::/32   | Documentation only                 |
+| 203.0.113.0/24  | 2001:db8::/32   | Documentation only                 |
+| N/A             | 2000::/3        | Global Unicast                     |
+| 224.0.0.0/4     | ff00::/8        | Multicast                          |

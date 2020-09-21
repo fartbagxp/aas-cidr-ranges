@@ -3,7 +3,8 @@
 
 import requests
 
-class FastlyCIDRParser():
+
+class FastlyCidrDownloader():
 
   def get_range(self):
     try:
