@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+
 [[ -v VERBOSE ]] && set -x
 set -eu
 
