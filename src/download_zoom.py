@@ -37,10 +37,10 @@ class ZoomCidrDownloader():
 
   def get_zoom_range(self):
     try:
-      URL = self.url.zoom
+      URL = self.config.get('url').get('zoom')
       r = requests.get(url=URL, headers=self.headers)
       data = r.text
-      source = self.source.zoom
+      source = self.config.get('source').get('zoom')
       return data, source, URL
     except requests.exceptions.RequestException as e:
       print(f'Failure to scrape Zoom IP range endpoint, error was {e}')
@@ -48,10 +48,10 @@ class ZoomCidrDownloader():
 
   def get_zoom_meeting_range(self):
     try:
-      URL = self.url.meeting
+      URL = self.config.get('url').get('meeting')
       r = requests.get(url=URL, headers=self.headers)
       data = r.text
-      source = self.source.meeting
+      source = self.config.get('source').get('meeting')
       return data, source, URL
     except requests.exceptions.RequestException as e:
       print(f'Failure to scrape Zoom Meeting IP range endpoint, error was {e}')
@@ -59,10 +59,10 @@ class ZoomCidrDownloader():
 
   def get_zoom_crc_range(self):
     try:
-      URL = self.url.crc
+      URL = self.config.get('url').get('crc')
       r = requests.get(url=URL, headers=self.headers)
       data = r.text
-      source = self.source.crc
+      source = self.config.get('source').get('crc')
       return data, source, URL
     except requests.exceptions.RequestException as e:
       print(
@@ -71,10 +71,10 @@ class ZoomCidrDownloader():
 
   def get_zoom_phone_range(self):
     try:
-      URL = self.url.phone
+      URL = self.config.get('url').get('phone')
       r = requests.get(url=URL, headers=self.headers)
       data = r.text
-      source = self.source.phone
+      source = self.config.get('source').get('phone')
       return data, source, URL
     except requests.exceptions.RequestException as e:
       print(f'Failure to scrape Zoom Phone IP range endpoint, error was {e}')
