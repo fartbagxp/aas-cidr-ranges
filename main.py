@@ -130,13 +130,4 @@ add_zoom_cidr(pyt, data,
 '''
 Test it out!
 '''
-print(pyt.get('108.162.192.0'))
-print(pyt.get('35.199.128.0'))
-print(pyt.get('35.200.0.0'))
-print(pyt.get('92.242.140.21'))
-print(pyt.get('65.196.93.54'))
-print(pyt.get('52.61.22.32'))
-print(pyt.get('52.61.22.32'))
-print(pyt.get('15.200.73.125'))
-print(pyt.get('52.61.128.0/22'))
-print(pyt.get('52.61.132.0/22'))
+print(pyt.get('8.8.8.8'))
