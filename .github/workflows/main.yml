@@ -19,9 +19,12 @@ jobs:
         uses: actions/setup-python@v2
         with:
           python-version: ${{ matrix.python-version }}
+
+      - name: Install 3rd party dependencies
         uses: dschep/install-pipenv-action@v1
-        run: pipenv shell
-        run: pipenv install
+        run: |
+          pipenv shell
+          pipenv install
 
       - name: Run python update
         run: python update_raw.py
