@@ -1,3 +1,5 @@
+![CIDR update cronjob](https://github.com/fartbagxp/aas-cidr-ranges/workflows/CIDR%20update%20cronjob/badge.svg?branch=master)
+
 # Overview
 
 This is currently a **Work-In-Progress**.
