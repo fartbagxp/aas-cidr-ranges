@@ -1,5 +1,5 @@
 {
-  "changeNumber": 109,
+  "changeNumber": 110,
   "cloud": "China",
   "values": [
     {
@@ -199,7 +199,7 @@
       "name": "GuestAndHybridManagement",
       "id": "GuestAndHybridManagement",
       "properties": {
-        "changeNumber": 7,
+        "changeNumber": 8,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -222,6 +222,7 @@
           "40.125.173.223/32",
           "52.130.112.96/28",
           "52.130.120.16/28",
+          "52.130.128.16/28",
           "139.217.1.203/32",
           "139.217.6.24/32",
           "139.217.52.176/29",
@@ -706,12 +707,13 @@
       "name": "AzureMonitor",
       "id": "AzureMonitor",
       "properties": {
-        "changeNumber": 10,
+        "changeNumber": 11,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
         "systemService": "AzureMonitor",
         "addressPrefixes": [
+          "40.72.77.32/28",
           "40.73.29.38/32",
           "40.73.73.139/32",
           "40.73.73.171/32",
@@ -726,15 +728,22 @@
           "52.130.4.24/29",
           "52.130.4.136/29",
           "52.130.4.144/30",
+          "52.130.5.160/28",
+          "52.130.12.240/28",
           "52.130.18.16/28",
           "52.130.18.106/31",
           "52.130.19.12/32",
           "52.130.19.16/29",
           "52.130.19.160/30",
           "52.130.19.168/29",
+          "52.130.21.96/28",
+          "52.130.40.0/28",
           "52.130.76.131/32",
           "52.130.76.175/32",
           "52.130.76.185/32",
+          "52.130.112.112/28",
+          "52.130.120.64/28",
+          "52.130.128.64/28",
           "139.217.51.19/32",
           "139.217.51.160/28",
           "139.217.52.80/29",
@@ -911,13 +920,14 @@
       "name": "AzureSignalR",
       "id": "AzureSignalR",
       "properties": {
-        "changeNumber": 1,
+        "changeNumber": 2,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
         "systemService": "AzureSignalR",
         "addressPrefixes": [
-          "40.73.172.192/27"
+          "40.73.172.192/27",
+          "52.130.40.32/27"
         ],
         "networkFeatures": [
           "API",
@@ -2897,12 +2907,14 @@
       "name": "AzureMonitor.ChinaEast",
       "id": "AzureMonitor.ChinaEast",
       "properties": {
-        "changeNumber": 5,
+        "changeNumber": 6,
         "region": "chinaeast",
         "regionId": 13,
         "platform": "Azure",
         "systemService": "AzureMonitor",
         "addressPrefixes": [
+          "52.130.12.240/28",
+          "52.130.112.112/28",
           "139.217.171.19/32",
           "139.217.171.160/28",
           "139.217.172.64/29",
@@ -2919,7 +2931,7 @@
       "name": "AzureMonitor.ChinaEast2",
       "id": "AzureMonitor.ChinaEast2",
       "properties": {
-        "changeNumber": 10,
+        "changeNumber": 11,
         "region": "chinaeast2",
         "regionId": 55,
         "platform": "Azure",
@@ -2936,9 +2948,11 @@
           "52.130.4.24/29",
           "52.130.4.136/29",
           "52.130.4.144/30",
+          "52.130.5.160/28",
           "52.130.76.131/32",
           "52.130.76.175/32",
           "52.130.76.185/32",
+          "52.130.120.64/28",
           "2404:7940:301:1::/121"
         ],
         "networkFeatures": [
@@ -2952,12 +2966,14 @@
       "name": "AzureMonitor.ChinaNorth",
       "id": "AzureMonitor.ChinaNorth",
       "properties": {
-        "changeNumber": 5,
+        "changeNumber": 6,
         "region": "chinanorth",
         "regionId": 14,
         "platform": "Azure",
         "systemService": "AzureMonitor",
         "addressPrefixes": [
+          "40.72.77.32/28",
+          "52.130.128.64/28",
           "139.217.51.19/32",
           "139.217.51.160/28",
           "139.217.52.80/29",
@@ -2974,7 +2990,7 @@
       "name": "AzureMonitor.ChinaNorth2",
       "id": "AzureMonitor.ChinaNorth2",
       "properties": {
-        "changeNumber": 8,
+        "changeNumber": 9,
         "region": "chinanorth2",
         "regionId": 54,
         "platform": "Azure",
@@ -2989,6 +3005,8 @@
           "52.130.19.16/29",
           "52.130.19.160/30",
           "52.130.19.168/29",
+          "52.130.21.96/28",
+          "52.130.40.0/28",
           "139.217.97.127/32",
           "139.217.97.186/32",
           "139.217.98.112/32",
@@ -3383,6 +3401,25 @@
         "systemService": "AzureSignalR",
         "addressPrefixes": [
           "40.73.172.192/27"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "FW"
+        ]
+      }
+    },
+    {
+      "name": "AzureSignalR.ChinaNorth2",
+      "id": "AzureSignalR.ChinaNorth2",
+      "properties": {
+        "changeNumber": 1,
+        "region": "chinanorth2",
+        "regionId": 54,
+        "platform": "Azure",
+        "systemService": "AzureSignalR",
+        "addressPrefixes": [
+          "52.130.40.32/27"
         ],
         "networkFeatures": [
           "API",
@@ -4324,6 +4361,33 @@
       }
     },
     {
+      "name": "AzureMonitor.Core",
+      "id": "AzureMonitor.Core",
+      "properties": {
+        "changeNumber": 1,
+        "region": "",
+        "regionId": 0,
+        "platform": "Azure",
+        "systemService": "AzureMonitor",
+        "addressPrefixes": [
+          "40.72.77.32/28",
+          "52.130.5.160/28",
+          "52.130.12.240/28",
+          "52.130.21.96/28",
+          "52.130.40.0/28",
+          "52.130.112.112/28",
+          "52.130.120.64/28",
+          "52.130.128.64/28"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
+      }
+    },
+    {
       "name": "DataFactoryManagement",
       "id": "DataFactoryManagement",
       "properties": {
@@ -4497,7 +4561,7 @@
       "name": "AzureCloud.chinanorth2",
       "id": "AzureCloud.chinanorth2",
       "properties": {
-        "changeNumber": 12,
+        "changeNumber": 13,
         "region": "chinanorth2",
         "regionId": 54,
         "platform": "Azure",
@@ -4524,6 +4588,7 @@
           "40.73.243.0/24",
           "52.130.16.0/20",
           "52.130.32.0/22",
+          "52.130.40.0/21",
           "52.130.96.0/24",
           "52.130.98.0/23",
           "52.130.102.0/24",
@@ -4604,7 +4669,7 @@
       "name": "AzureCloud",
       "id": "AzureCloud",
       "properties": {
-        "changeNumber": 25,
+        "changeNumber": 26,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -4715,6 +4780,7 @@
           "52.130.8.0/21",
           "52.130.16.0/20",
           "52.130.32.0/22",
+          "52.130.40.0/21",
           "52.130.64.0/19",
           "52.130.96.0/24",
           "52.130.97.0/24",
