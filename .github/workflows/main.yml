@@ -22,7 +22,8 @@ jobs:
 
       - name: Install 3rd party dependencies
         uses: dschep/install-pipenv-action@v1
-        run: |
+
+      - run: |
           pipenv shell
           pipenv install
 
