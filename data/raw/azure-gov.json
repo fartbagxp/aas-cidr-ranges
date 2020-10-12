@@ -1,5 +1,5 @@
 {
-  "changeNumber": 110,
+  "changeNumber": 111,
   "cloud": "AzureGovernment",
   "values": [
     {
@@ -632,7 +632,7 @@
       "name": "AzureCosmosDB",
       "id": "AzureCosmosDB",
       "properties": {
-        "changeNumber": 7,
+        "changeNumber": 8,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -657,6 +657,7 @@
           "52.180.252.170/32",
           "52.181.176.132/32",
           "52.181.180.183/32",
+          "52.181.182.96/32",
           "52.182.54.215/32",
           "52.227.165.220/32",
           "52.238.116.57/32",
@@ -1018,7 +1019,7 @@
       "name": "AzureMonitor",
       "id": "AzureMonitor",
       "properties": {
-        "changeNumber": 14,
+        "changeNumber": 15,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -1034,11 +1035,18 @@
           "20.140.51.120/29",
           "20.140.52.0/29",
           "20.140.52.8/31",
+          "20.140.53.96/28",
+          "20.140.68.160/28",
+          "20.140.76.176/28",
           "20.140.90.152/29",
           "20.140.93.230/32",
           "20.140.93.240/28",
+          "20.140.94.176/28",
           "20.140.130.152/29",
           "20.140.131.144/28",
+          "20.140.137.160/28",
+          "20.140.144.112/28",
+          "20.140.224.48/28",
           "23.97.3.12/32",
           "23.97.4.113/32",
           "52.126.203.64/29",
@@ -1063,6 +1071,7 @@
           "52.127.52.112/29",
           "52.127.52.120/32",
           "52.127.52.122/31",
+          "52.127.55.192/28",
           "52.127.58.208/28",
           "52.127.59.208/29",
           "52.227.158.176/32",
@@ -1072,6 +1081,8 @@
           "52.244.71.27/32",
           "52.244.252.10/32",
           "52.244.252.98/32",
+          "52.245.128.48/28",
+          "52.245.136.48/28",
           "2001:489a:3103::280/122",
           "2001:489a:3103:1::60/123",
           "2001:489a:3103:1::1c0/122",
@@ -3300,7 +3311,7 @@
       "name": "AzureCosmosDB.USDoDEast",
       "id": "AzureCosmosDB.USDoDEast",
       "properties": {
-        "changeNumber": 4,
+        "changeNumber": 5,
         "region": "usdodeast",
         "regionId": 45,
         "platform": "Azure",
@@ -3310,6 +3321,7 @@
           "52.126.202.0/27",
           "52.181.176.132/32",
           "52.181.180.183/32",
+          "52.181.182.96/32",
           "2001:489a:3303:1::320/123",
           "2001:489a:3303:402::c0/122",
           "2001:489a:3303:802::c0/122",
@@ -4108,14 +4120,16 @@
       "name": "AzureMonitor.USDoDCentral",
       "id": "AzureMonitor.USDoDCentral",
       "properties": {
-        "changeNumber": 4,
+        "changeNumber": 5,
         "region": "usdodcentral",
         "regionId": 44,
         "platform": "Azure",
         "systemService": "AzureMonitor",
         "addressPrefixes": [
+          "20.140.76.176/28",
           "52.127.58.208/28",
           "52.127.59.208/29",
+          "52.245.128.48/28",
           "2001:489a:3203::780/121"
         ],
         "networkFeatures": [
@@ -4130,14 +4144,16 @@
       "name": "AzureMonitor.USDoDEast",
       "id": "AzureMonitor.USDoDEast",
       "properties": {
-        "changeNumber": 4,
+        "changeNumber": 5,
         "region": "usdodeast",
         "regionId": 45,
         "platform": "Azure",
         "systemService": "AzureMonitor",
         "addressPrefixes": [
+          "20.140.68.160/28",
           "52.126.203.64/29",
           "52.126.203.192/29",
+          "52.245.136.48/28",
           "2001:489a:3303::280/122",
           "2001:489a:3303:1::60/123",
           "2001:489a:3303:1::1c0/122",
@@ -4155,7 +4171,7 @@
       "name": "AzureMonitor.USGovArizona",
       "id": "AzureMonitor.USGovArizona",
       "properties": {
-        "changeNumber": 8,
+        "changeNumber": 9,
         "region": "usgovarizona",
         "regionId": 39,
         "platform": "Azure",
@@ -4168,6 +4184,8 @@
           "20.140.51.120/29",
           "20.140.52.0/29",
           "20.140.52.8/31",
+          "20.140.53.96/28",
+          "20.140.224.48/28",
           "52.127.2.232/29",
           "52.127.3.184/29",
           "52.127.10.80/30",
@@ -4215,12 +4233,14 @@
       "name": "AzureMonitor.USGovTexas",
       "id": "AzureMonitor.USGovTexas",
       "properties": {
-        "changeNumber": 4,
+        "changeNumber": 5,
         "region": "usgovtexas",
         "regionId": 41,
         "platform": "Azure",
         "systemService": "AzureMonitor",
         "addressPrefixes": [
+          "20.140.137.160/28",
+          "20.140.144.112/28",
           "52.127.34.208/28",
           "52.127.35.208/29",
           "2001:489a:3403::780/121"
@@ -4237,7 +4257,7 @@
       "name": "AzureMonitor.USGovVirginia",
       "id": "AzureMonitor.USGovVirginia",
       "properties": {
-        "changeNumber": 12,
+        "changeNumber": 13,
         "region": "usgovvirginia",
         "regionId": 42,
         "platform": "Azure",
@@ -4249,6 +4269,7 @@
           "20.140.90.152/29",
           "20.140.93.230/32",
           "20.140.93.240/28",
+          "20.140.94.176/28",
           "20.140.130.152/29",
           "20.140.131.144/28",
           "23.97.3.12/32",
@@ -4262,6 +4283,7 @@
           "52.127.52.112/29",
           "52.127.52.120/32",
           "52.127.52.122/31",
+          "52.127.55.192/28",
           "52.227.158.176/32",
           "52.227.163.139/32",
           "52.227.170.66/32",
@@ -6300,6 +6322,35 @@
           "52.126.195.96/29"
         ],
         "networkFeatures": null
+      }
+    },
+    {
+      "name": "AzureMonitor.Core",
+      "id": "AzureMonitor.Core",
+      "properties": {
+        "changeNumber": 1,
+        "region": "",
+        "regionId": 0,
+        "platform": "Azure",
+        "systemService": "AzureMonitor",
+        "addressPrefixes": [
+          "20.140.53.96/28",
+          "20.140.68.160/28",
+          "20.140.76.176/28",
+          "20.140.94.176/28",
+          "20.140.137.160/28",
+          "20.140.144.112/28",
+          "20.140.224.48/28",
+          "52.127.55.192/28",
+          "52.245.128.48/28",
+          "52.245.136.48/28"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
       }
     },
     {
