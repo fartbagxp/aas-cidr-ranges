@@ -22,15 +22,13 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
 
-      - name: Install 3rd party dependencies
+      - name: Setup pipenv environment
         uses: dschep/install-pipenv-action@v1
 
-      - run: |
-          pipenv shell
-          pipenv install
-
-      - name: Run python update
-        run: python update_raw.py
+      - name: Run an update in a pip environment
+        run: |
+          pipenv install --dev
+          pipenv run python update_raw.py
 
       # - name: Github commit update
       #   uses: stefanzweifel/git-auto-commit-action@v4
