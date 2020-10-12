@@ -2,7 +2,7 @@ name: github pages
 
 on:
   schedule:
-    - cron: '*/40 15 * * *'
+    - cron: '*/0 20 * * *'
 
 jobs:
   deploy:
