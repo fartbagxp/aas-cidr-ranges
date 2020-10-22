@@ -27,13 +27,12 @@ jobs:
           pipenv install --dev
           pipenv run python update_raw.py
 
-      - name: Github commit update
-        uses: stefanzweifel/git-auto-commit-action@v4
-        if: steps.auto-commit-action.outputs.changes_detected == 'true'
+      - name: Commit CIDR changes
+        uses: EndBug/add-and-commit@v5
         with:
-          commit_message: Apply automatic changes
-          repository: .
-          commit_user_name: Github-Bot-Action
-          commit_author: Github-Bot-Action
-          push_options: '--force'
-          skip_dirty_check: true
+          author_name: Github Action Bot
+          author_email: noreply@github.com
+          message: 'Nightly update of raw CIDR ranges'
+          add: 'data/*'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
