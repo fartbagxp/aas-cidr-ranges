@@ -1,5 +1,5 @@
 {
-  "changeNumber": 111,
+  "changeNumber": 115,
   "cloud": "AzureGovernment",
   "values": [
     {
@@ -1110,12 +1110,13 @@
       "name": "AzurePortal",
       "id": "AzurePortal",
       "properties": {
-        "changeNumber": 2,
+        "changeNumber": 3,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
         "systemService": "AzurePortal",
         "addressPrefixes": [
+          "13.72.12.98/32",
           "20.140.48.232/29",
           "20.140.49.160/28",
           "20.140.49.180/30",
@@ -1136,6 +1137,7 @@
           "20.140.144.56/31",
           "20.140.152.104/30",
           "20.140.153.152/29",
+          "23.97.12.183/32",
           "52.127.20.16/28",
           "52.127.49.168/29",
           "52.127.49.184/30",
@@ -1143,7 +1145,11 @@
           "52.127.50.168/30",
           "52.127.50.176/28",
           "52.127.55.8/29",
+          "52.227.15.80/32",
+          "52.227.80.140/32",
           "52.244.48.71/32",
+          "52.244.64.173/32",
+          "52.244.67.177/32",
           "2001:489a:3103::680/121",
           "2001:489a:3103:1::100/121",
           "2001:489a:3203::700/121",
@@ -2164,15 +2170,23 @@
       "name": "WindowsVirtualDesktop",
       "id": "WindowsVirtualDesktop",
       "properties": {
-        "changeNumber": 1,
+        "changeNumber": 2,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
         "systemService": "WindowsVirtualDesktop",
         "addressPrefixes": [
+          "13.72.49.7/32",
+          "52.227.22.220/32",
           "52.227.171.125/32",
+          "52.227.173.251/32",
+          "52.244.164.16/32",
+          "52.244.165.17/32",
+          "52.244.202.131/32",
           "52.244.202.228/32",
+          "52.244.204.215/32",
           "52.244.204.243/32",
+          "52.247.128.136/32",
           "52.247.175.34/32"
         ],
         "networkFeatures": [
@@ -4341,7 +4355,7 @@
       "name": "AzurePortal.USGovArizona",
       "id": "AzurePortal.USGovArizona",
       "properties": {
-        "changeNumber": 2,
+        "changeNumber": 3,
         "region": "usgovarizona",
         "regionId": 39,
         "platform": "Azure",
@@ -4354,6 +4368,8 @@
           "20.140.52.104/29",
           "52.127.20.16/28",
           "52.244.48.71/32",
+          "52.244.64.173/32",
+          "52.244.67.177/32",
           "2001:489a:3604::680/121",
           "2001:489a:3604:1::100/121"
         ],
@@ -4410,19 +4426,23 @@
       "name": "AzurePortal.USGovVirginia",
       "id": "AzurePortal.USGovVirginia",
       "properties": {
-        "changeNumber": 2,
+        "changeNumber": 3,
         "region": "usgovvirginia",
         "regionId": 42,
         "platform": "Azure",
         "systemService": "AzurePortal",
         "addressPrefixes": [
+          "13.72.12.98/32",
           "20.140.94.160/28",
+          "23.97.12.183/32",
           "52.127.49.168/29",
           "52.127.49.184/30",
           "52.127.50.164/30",
           "52.127.50.168/30",
           "52.127.50.176/28",
           "52.127.55.8/29",
+          "52.227.15.80/32",
+          "52.227.80.140/32",
           "2001:489a:3103::680/121",
           "2001:489a:3103:1::100/121"
         ],
@@ -6226,13 +6246,17 @@
       "name": "WindowsVirtualDesktop.USGovArizona",
       "id": "WindowsVirtualDesktop.USGovArizona",
       "properties": {
-        "changeNumber": 1,
+        "changeNumber": 2,
         "region": "usgovarizona",
         "regionId": 39,
         "platform": "Azure",
         "systemService": "WindowsVirtualDesktop",
         "addressPrefixes": [
+          "52.244.164.16/32",
+          "52.244.165.17/32",
+          "52.244.202.131/32",
           "52.244.202.228/32",
+          "52.244.204.215/32",
           "52.244.204.243/32"
         ],
         "networkFeatures": [
@@ -6245,13 +6269,17 @@
       "name": "WindowsVirtualDesktop.USGovVirginia",
       "id": "WindowsVirtualDesktop.USGovVirginia",
       "properties": {
-        "changeNumber": 1,
+        "changeNumber": 2,
         "region": "usgovvirginia",
         "regionId": 42,
         "platform": "Azure",
         "systemService": "WindowsVirtualDesktop",
         "addressPrefixes": [
+          "13.72.49.7/32",
+          "52.227.22.220/32",
           "52.227.171.125/32",
+          "52.227.173.251/32",
+          "52.247.128.136/32",
           "52.247.175.34/32"
         ],
         "networkFeatures": [
