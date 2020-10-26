@@ -1,5 +1,5 @@
 {
-  "changeNumber": 115,
+  "changeNumber": 116,
   "cloud": "AzureGovernment",
   "values": [
     {
@@ -58,7 +58,7 @@
       "name": "AzureActiveDirectory",
       "id": "AzureActiveDirectory",
       "properties": {
-        "changeNumber": 5,
+        "changeNumber": 6,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -68,6 +68,7 @@
           "13.73.64.64/26",
           "13.73.208.128/25",
           "20.140.53.32/27",
+          "20.140.144.128/29",
           "20.140.232.0/23",
           "52.126.194.0/23",
           "52.126.203.96/27",
@@ -77,10 +78,13 @@
           "52.127.35.96/27",
           "52.127.43.64/27",
           "52.127.55.96/27",
+          "52.127.55.208/29",
           "52.127.59.96/27",
           "52.227.174.114/32",
+          "52.227.221.153/32",
           "52.238.165.247/32",
           "52.238.166.25/32",
+          "52.243.154.47/32",
           "52.244.67.230/32",
           "52.244.71.138/32",
           "52.244.120.128/25"
@@ -942,7 +946,7 @@
       "name": "AzureKeyVault",
       "id": "AzureKeyVault",
       "properties": {
-        "changeNumber": 3,
+        "changeNumber": 4,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -950,6 +954,7 @@
         "addressPrefixes": [
           "20.140.93.224/30",
           "20.140.131.128/30",
+          "20.140.200.200/30",
           "23.97.13.41/32",
           "23.97.13.179/32",
           "23.97.30.16/32",
@@ -4023,7 +4028,7 @@
       "name": "AzureKeyVault.USGovVirginia",
       "id": "AzureKeyVault.USGovVirginia",
       "properties": {
-        "changeNumber": 3,
+        "changeNumber": 4,
         "region": "usgovvirginia",
         "regionId": 42,
         "platform": "Azure",
@@ -4031,6 +4036,7 @@
         "addressPrefixes": [
           "20.140.93.224/30",
           "20.140.131.128/30",
+          "20.140.200.200/30",
           "23.97.13.41/32",
           "23.97.13.179/32",
           "2001:489a:3103:402::80/125",
