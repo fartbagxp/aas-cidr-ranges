@@ -1,5 +1,5 @@
 {
-  "changeNumber": 115,
+  "changeNumber": 120,
   "cloud": "China",
   "values": [
     {
@@ -563,7 +563,7 @@
       "name": "AzureActiveDirectory",
       "id": "AzureActiveDirectory",
       "properties": {
-        "changeNumber": 4,
+        "changeNumber": 5,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -571,8 +571,10 @@
         "addressPrefixes": [
           "40.72.73.64/26",
           "40.72.74.192/27",
+          "40.73.42.16/32",
           "40.73.72.170/32",
           "40.73.86.137/32",
+          "40.73.106.30/32",
           "40.73.139.128/27",
           "40.73.171.128/27",
           "42.159.87.106/32",
@@ -580,10 +582,12 @@
           "52.130.2.32/27",
           "52.130.2.192/27",
           "52.130.3.64/27",
+          "52.130.5.200/29",
           "52.130.9.64/26",
           "52.130.10.160/27",
           "52.130.17.192/26",
           "52.130.18.32/27",
+          "52.130.21.136/29",
           "139.217.51.192/27",
           "139.217.115.121/32",
           "139.217.118.25/32",
@@ -769,7 +773,7 @@
       "name": "AzurePortal",
       "id": "AzurePortal",
       "properties": {
-        "changeNumber": 3,
+        "changeNumber": 1,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -1340,7 +1344,7 @@
       "name": "PowerBI",
       "id": "PowerBI",
       "properties": {
-        "changeNumber": 3,
+        "changeNumber": 1,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -3027,7 +3031,7 @@
       "name": "AzurePortal.ChinaEast",
       "id": "AzurePortal.ChinaEast",
       "properties": {
-        "changeNumber": 2,
+        "changeNumber": 1,
         "region": "chinaeast",
         "regionId": 13,
         "platform": "Azure",
@@ -3048,7 +3052,7 @@
       "name": "AzurePortal.ChinaEast2",
       "id": "AzurePortal.ChinaEast2",
       "properties": {
-        "changeNumber": 3,
+        "changeNumber": 1,
         "region": "chinaeast2",
         "regionId": 55,
         "platform": "Azure",
@@ -3074,7 +3078,7 @@
       "name": "AzurePortal.ChinaNorth",
       "id": "AzurePortal.ChinaNorth",
       "properties": {
-        "changeNumber": 2,
+        "changeNumber": 1,
         "region": "chinanorth",
         "regionId": 14,
         "platform": "Azure",
@@ -3097,7 +3101,7 @@
       "name": "AzurePortal.ChinaNorth2",
       "id": "AzurePortal.ChinaNorth2",
       "properties": {
-        "changeNumber": 2,
+        "changeNumber": 1,
         "region": "chinanorth2",
         "regionId": 54,
         "platform": "Azure",
