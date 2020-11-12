@@ -61,6 +61,3 @@ def update():
 
   result, source, website = zoom_parser.get_zoom_phone_range()
   writer.write('data/raw/zoom-phone.txt', result)
-
-
-update()
