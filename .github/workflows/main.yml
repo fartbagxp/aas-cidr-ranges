@@ -28,7 +28,7 @@ jobs:
           pipenv run python update_raw.py
 
       - name: update cidr listing with bash
-        run: /
+        run: |
           bash src/download_google.sh > data/raw/gcp.txt
 
       - name: Commit CIDR changes
