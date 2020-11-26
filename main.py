@@ -1,7 +1,6 @@
 import pytricia
 import json
 
-from update_raw import update
 from src.reader import FileReader
 from src.download_zoom import ZoomCidrDownloader
 
@@ -108,7 +107,6 @@ data = reader.read('data/raw/fastly.json')
 add_fastly_cidr(pyt, json.loads(data))
 
 zoom = ZoomCidrDownloader()
-print(zoom.get_config().get('source'))
 data = reader.read('data/raw/zoom-crc.txt')
 add_zoom_cidr(pyt, data,
               zoom.get_config().get('source').get('zoom'),
