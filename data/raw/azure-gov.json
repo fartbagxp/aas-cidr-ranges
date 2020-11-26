@@ -1419,7 +1419,7 @@
       "name": "AzureSignalR",
       "id": "AzureSignalR",
       "properties": {
-        "changeNumber": 1,
+        "changeNumber": 2,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -1430,7 +1430,8 @@
           "52.127.5.160/27",
           "52.127.10.224/27",
           "52.127.18.224/27",
-          "52.127.45.192/27"
+          "52.127.45.192/27",
+          "52.235.250.160/27"
         ],
         "networkFeatures": [
           "API",
@@ -5112,7 +5113,7 @@
       "name": "AzureSignalR.USGovVirginia",
       "id": "AzureSignalR.USGovVirginia",
       "properties": {
-        "changeNumber": 1,
+        "changeNumber": 2,
         "region": "usgovvirginia",
         "regionId": 42,
         "platform": "Azure",
@@ -5120,7 +5121,8 @@
         "addressPrefixes": [
           "20.140.94.96/27",
           "20.140.133.160/27",
-          "52.127.45.192/27"
+          "52.127.45.192/27",
+          "52.235.250.160/27"
         ],
         "networkFeatures": null
       }
@@ -6835,12 +6837,13 @@
       "name": "AzureCloud.usdodcentral",
       "id": "AzureCloud.usdodcentral",
       "properties": {
-        "changeNumber": 14,
+        "changeNumber": 15,
         "region": "usdodcentral",
         "regionId": 44,
         "platform": "Azure",
         "systemService": "",
         "addressPrefixes": [
+          "20.34.46.0/23",
           "20.140.8.0/21",
           "20.140.72.0/21",
           "20.140.163.0/24",
@@ -6884,12 +6887,14 @@
       "name": "AzureCloud.usdodeast",
       "id": "AzureCloud.usdodeast",
       "properties": {
-        "changeNumber": 14,
+        "changeNumber": 15,
         "region": "usdodeast",
         "regionId": 45,
         "platform": "Azure",
         "systemService": "",
         "addressPrefixes": [
+          "20.34.48.0/22",
+          "20.34.52.0/23",
           "20.140.0.0/21",
           "20.140.64.0/21",
           "20.140.96.0/19",
@@ -6931,12 +6936,14 @@
       "name": "AzureCloud.usgovarizona",
       "id": "AzureCloud.usgovarizona",
       "properties": {
-        "changeNumber": 18,
+        "changeNumber": 19,
         "region": "usgovarizona",
         "regionId": 39,
         "platform": "Azure",
         "systemService": "",
         "addressPrefixes": [
+          "20.34.40.0/22",
+          "20.34.44.0/23",
           "20.140.16.0/22",
           "20.140.48.0/21",
           "20.140.81.0/24",
@@ -7038,13 +7045,14 @@
       "name": "AzureCloud.usgovtexas",
       "id": "AzureCloud.usgovtexas",
       "properties": {
-        "changeNumber": 13,
+        "changeNumber": 14,
         "region": "usgovtexas",
         "regionId": 41,
         "platform": "Azure",
         "systemService": "",
         "addressPrefixes": [
           "13.105.18.128/27",
+          "20.34.38.0/23",
           "20.35.248.0/26",
           "20.140.20.0/22",
           "20.140.56.0/21",
@@ -7103,6 +7111,8 @@
           "13.72.0.0/18",
           "13.73.208.0/20",
           "13.77.224.0/19",
+          "20.34.32.0/22",
+          "20.34.36.0/23",
           "20.35.248.64/27",
           "20.35.248.96/28",
           "20.35.248.128/27",
@@ -7183,6 +7193,14 @@
           "13.73.208.0/20",
           "13.77.224.0/19",
           "13.105.18.128/27",
+          "20.34.32.0/22",
+          "20.34.36.0/23",
+          "20.34.38.0/23",
+          "20.34.40.0/22",
+          "20.34.44.0/23",
+          "20.34.46.0/23",
+          "20.34.48.0/22",
+          "20.34.52.0/23",
           "20.35.248.0/26",
           "20.35.248.64/27",
           "20.35.248.96/28",
