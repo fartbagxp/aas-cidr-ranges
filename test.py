@@ -1,168 +1,115 @@
+import json
 import pytricia
 
-from src.download_aws import AWSCidrDownloader
-from src.download_azure import AzureCidrDownloader
-from src.download_zoom import ZoomCidrDownloader
-from src.download_cloudflare import CloudflareCidrDownloader
-from src.download_fastly import FastlyCidrDownloader
-from src.download import CidrWriter
+from src.reader import FileReader
+from src.dl.download_zoom import ZoomCidrDownloader
+
+from src.pytrie_support import PytrieSupport
 
 
-def add_aws_cidr(pytrie, result):
-  for prefix in result['prefixes']:
-    pyt[prefix['ip_prefix']] = {
-        'region': prefix['region'],
-        'service': prefix['service']
-    }
+def run_test():
+  # 128 bits needed for holding IPv6
+  pyt = pytricia.PyTricia(128)
 
-  for prefix in result['ipv6_prefixes']:
-    pyt[prefix['ipv6_prefix']] = {
-        'region': prefix['region'],
-        'service': prefix['service']
-    }
+  support = PytrieSupport()
 
+  # read all the files locally
+  reader = FileReader()
+  data = reader.read('data/raw/aws.json')
+  support.add_aws_cidr(pyt, json.loads(data))
 
-def add_azure_cidr(pytrie, result):
-  for value in result['values']:
-    for prefix in value['properties']['addressPrefixes']:
-      pyt[prefix] = {
-          'region': value['properties']['region'],
-          'platform': value['properties']['platform'],
-          'systemService': value['properties']['systemService'],
-          'cloud': result['cloud']
-      }
+  data = reader.read('data/raw/azure-public.json')
+  support.add_azure_cidr(pyt, json.loads(data))
 
+  data = reader.read('data/raw/azure-china.json')
+  support.add_azure_cidr(pyt, json.loads(data))
 
-def add_gcp_cidr(pytrie, result):
-  for value in result['data']:
-    pyt[value] = {
-        'source': result['source'],
-        'last_updated': result['last_updated']
-    }
+  data = reader.read('data/raw/azure-germany.json')
+  support.add_azure_cidr(pyt, json.loads(data))
 
+  data = reader.read('data/raw/azure-gov.json')
+  support.add_azure_cidr(pyt, json.loads(data))
 
-def add_zoom_cidr(pytrie, result, source, website):
-  results = result.split('\n')
-  for r in results:
-    if r.strip():
-      pyt[r] = {
-          'source': source,
-          'website': website
-      }
+  data = reader.read('data/raw/gcp.txt')
+  support.add_gcp_cidr(pyt, data)
 
+  data = reader.read('data/raw/cloudflare-ipv4.txt')
+  support.add_cloudflare_cidr(pyt, data)
 
-def add_cloudflare_cidr(pytrie, result):
-  results = result.split('\n')
-  for r in results:
-    if r.strip():
-      pyt[r] = {
-          'source': 'Cloudflare',
-          'website': 'https://www.cloudflare.com/ips/'
-      }
+  data = reader.read('data/raw/cloudflare-ipv6.txt')
+  support.add_cloudflare_cidr(pyt, data)
 
+  data = reader.read('data/raw/fastly.json')
+  support.add_fastly_cidr(pyt, json.loads(data))
 
-def add_fastly_cidr(pytrie, result):
-  for ipv4 in result['addresses']:
-    pyt[ipv4] = {
-        'source': 'Fastly',
-        'website': 'https://api.fastly.com/public-ip-list'
-    }
-  for ipv6 in result['ipv6_addresses']:
-    pyt[ipv6] = {
-        'source': 'Fastly',
-        'website': 'https://api.fastly.com/public-ip-list'
-    }
+  zoom = ZoomCidrDownloader()
+  data = reader.read('data/raw/zoom-crc.txt')
+  support.add_zoom_cidr(pyt, data,
+                        zoom.get_config().get('source').get('zoom'),
+                        zoom.get_config().get('url').get('zoom'))
+  data = reader.read('data/raw/zoom-meeting.txt')
+  support.add_zoom_cidr(pyt, data,
+                        zoom.get_config().get('source').get('meeting'),
+                        zoom.get_config().get('url').get('meeting'))
+  data = reader.read('data/raw/zoom-phone.txt')
+  support.add_zoom_cidr(pyt, data,
+                        zoom.get_config().get('source').get('phone'),
+                        zoom.get_config().get('url').get('phone'))
+  data = reader.read('data/raw/zoom-range.txt')
+  support.add_zoom_cidr(pyt, data,
+                        zoom.get_config().get('source').get('range'),
+                        zoom.get_config().get('url').get('range'))
 
+  '''
+    Testing - AWS
+    {'region': 'us-east-1', 'service': 'EC2'}
+    {'region': 'eu-west-2', 'service': 'S3'}
+  '''
+  print(pyt.get('52.95.245.0'))
+  print(pyt.get('2a05:d07a:c000::'))
+  print(pyt.get('18.253.194.205'))
 
-# 128 bits needed for holding IPv6
-pyt = pytricia.PyTricia(128)
+  '''
+    Testing - Azure
+    {'region': '', 'platform': 'Azure', 'systemService': '', 'cloud': 'Public'}
+    {'region': '', 'platform': 'Azure',
+        'systemService': 'AzureAppConfiguration', 'cloud': 'AzureGovernment'}
+  '''
+  print(pyt.get('213.199.183.0'))
+  print(pyt.get('52.127.61.112'))
 
-aws_parser = AWSCidrDownloader()
-result = aws_parser.get_range()
-add_aws_cidr(pyt, result)
+  '''
+  Testing - Google
+  '''
+  # print(pyt.get('35.199.128.0'))
+  # print(pyt.get('35.200.0.0'))
 
-'''
-Testing - AWS
-{'region': 'us-east-1', 'service': 'EC2'}
-{'region': 'eu-west-2', 'service': 'S3'}
-'''
-print(pyt.get('52.95.245.0'))
-print(pyt.get('2a05:d07a:c000::'))
+  '''
+  Testing - Cloudflare
+  '''
+  print(pyt.get('108.162.192.0'))
+  print(pyt.get('2c0f:f248::'))
 
-print(pyt.get('18.253.194.205'))
+  '''
+  Testing - Fastly
+  '''
+  print(pyt.get('23.235.32.0'))
+  print(pyt.get('2a04:4e40::'))
+  print(pyt.get('2c0f:f248::'))
 
-azure_parser = AzureCidrDownloader()
-result = azure_parser.get_public_range()
-add_azure_cidr(pyt, result)
-
-result = azure_parser.get_china_range()
-add_azure_cidr(pyt, result)
-
-result = azure_parser.get_germany_range()
-add_azure_cidr(pyt, result)
-
-result = azure_parser.get_gov_range()
-add_azure_cidr(pyt, result)
-
-'''
-Testing - Azure
-{'region': '', 'platform': 'Azure', 'systemService': '', 'cloud': 'Public'}
-{'region': '', 'platform': 'Azure',
-    'systemService': 'AzureAppConfiguration', 'cloud': 'AzureGovernment'}
-'''
-print(pyt.get('213.199.183.0'))
-print(pyt.get('52.127.61.112'))
-
-# gcp_parser = GoogleCidrDownloader()
-# result = gcp_parser.get_range()
-# add_gcp_cidr(pyt, result)
-
-# '''
-# Testing - Google
-
-# '''
-# print(pyt.get('35.199.128.0'))
-# print(pyt.get('35.200.0.0'))
+  '''
+  Testing - Zoom
+  '''
+  print(pyt.get('3.80.20.128'))
+  print(pyt.get('103.122.166.0'))
 
 
-cloudflare_parser = CloudflareCidrDownloader()
-result = cloudflare_parser.get_range_v4()
-add_cloudflare_cidr(pyt, result)
+def main():
+  '''
+  Test it out!
+  '''
+  run_test()
 
-result = cloudflare_parser.get_range_v6()
-add_cloudflare_cidr(pyt, result)
 
-'''
-Testing - Cloudflare
-'''
-print(pyt.get('108.162.192.0'))
-print(pyt.get('2c0f:f248::'))
-
-fastly_parser = FastlyCidrDownloader()
-result = fastly_parser.get_range()
-pyt = pytricia.PyTricia()
-add_fastly_cidr(pyt, result)
-
-'''
-Testing - Fastly
-'''
-print(pyt.get('23.235.32.0'))
-print(pyt.get('2a04:4e40::'))
-print(pyt.get('2c0f:f248::'))
-
-zoom_parser = ZoomCidrDownloader()
-result, source, website = zoom_parser.get_zoom_range()
-add_zoom_cidr(pyt, result, source, website)
-result, source, website = zoom_parser.get_zoom_meeting_range()
-add_zoom_cidr(pyt, result, source, website)
-result, source, website = zoom_parser.get_zoom_crc_range()
-add_zoom_cidr(pyt, result, source, website)
-result, source, website = zoom_parser.get_zoom_phone_range()
-add_zoom_cidr(pyt, result, source, website)
-
-'''
-Testing - Zoom
-'''
-
-print(pyt.get('3.80.20.128'))
-print(pyt.get('103.122.166.0'))
+if __name__ == "__main__":
+  main()

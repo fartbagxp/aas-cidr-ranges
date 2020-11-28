@@ -4,9 +4,7 @@
 
 This is currently a **Work-In-Progress**.
 
-The goal of this project is to be able to quickly determine who owns a particular IP address.
-
-It was originally created to track "as-a-service" projects but will eventually incorporate other sources for consumption.
+The goal of this project is to be able to quickly determine what Software-as-a-Service (SaaS) owns a particular IP address or range of IP addresses.
 
 ## Requirements
 
@@ -14,7 +12,7 @@ It was originally created to track "as-a-service" projects but will eventually i
 - [pyenv](https://github.com/pyenv/pyenv)
 - [pipenv](https://github.com/pypa/pipenv)
 
-## How to run
+## How to run locally
 
 1. Download the code:  
    `git clone git@github.com:fartbagxp/aas-cidr-ranges.git`
@@ -23,4 +21,6 @@ It was originally created to track "as-a-service" projects but will eventually i
 1. Install dependencies:  
    `pipenv install`
 1. Run the code:  
-   `python main.py`
+   `python test.py`
+
+## Deploy
