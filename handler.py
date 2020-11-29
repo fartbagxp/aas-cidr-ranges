@@ -12,31 +12,41 @@ IP address or range.
 '''
 
 
-def handler(event):
+def belong(event, context):
 
-  if 'ip' not in event:
+  body = {
+      'error': '',
+      'data': {}
+  }
+
+  if 'ip' not in event['queryStringParameters']:
+    body['error'] = "Request must have field 'ip' with value of an IP address or valid CIDR notation"
     return {
-        'statusCode': 400,
-        'error': "Request must have field 'ip' with value of an IP address or valid CIDR notation"
+        'statusCode': 200,
+        'body': json.dumps(body)
     }
+
+  ip = event['queryStringParameters']['ip']
+  print(ip)
 
   isValidParameter = False
   try:
-    ipaddress.ip_address(event['ip'])
+    ipaddress.ip_address(ip)
     isValidParameter = True
   except ValueError:
     pass
 
   try:
-    ipaddress.ip_network(event['ip'])
+    ipaddress.ip_network(ip)
     isValidParameter = True
   except ValueError:
     pass
 
   if isValidParameter == False:
+    body['error'] = "Request must have field 'ip' with value of an IP address or valid CIDR notation"
     return {
-        'statusCode': 400,
-        'error': "Request must have field 'ip' with value of an IP address or valid CIDR notation"
+        'statusCode': 200,
+        'body': json.dump(body)
     }
 
   # 128 bits needed for holding IPv6
@@ -90,27 +100,29 @@ def handler(event):
                         zoom.get_config().get('source').get('range'),
                         zoom.get_config().get('url').get('range'))
 
-  result = pyt.get(event['ip'])
+  result = pyt.get(ip)
   if result == None:
+    body['error'] = 'No available information'
     return {
         'statusCode': 200,
-        'data': {},
-        'error': 'No available information'
+        'body': json.dumps(body)
     }
 
+  body['error'] = ''
+  body['data'] = result
   return {
       'statusCode': 200,
-      'data': result
-      'error': ''
+      'body': json.dumps(body)
   }
 
 
 def main():
-  result = handler({'ip': '127.0.0.1'})
+  result = belong({'queryStringParameters': {
+      'ip': '127.0.0.1'}}, None)
   print(result)
-  result = handler({'ip': '213.199.183.0'})
+  result = belong({'queryStringParameters': {'ip': '213.199.183.0'}}, None)
   print(result)
-  result = handler({'ip': '35.180.0.0/24'})
+  result = belong({'queryStringParameters': {'ip': '35.180.0.0/24'}}, None)
   print(result)
 
 
