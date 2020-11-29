@@ -1,0 +1,24 @@
+{
+  "name": "aas-cidr-ranges",
+  "version": "1.0.0",
+  "description": "for handling serverless setups",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "package": "serverless package",
+    "deploy": "serverless deploy",
+    "remove": "serverless remove"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com-fartbagxp:fartbagxp/aas-cidr-ranges.git"
+  },
+  "author": "Boris Ning",
+  "license": "MIT",
+  "devDependencies": {
+    "serverless": "^2.13.0",
+    "serverless-python-requirements": "^5.1.0"
+  }
+}

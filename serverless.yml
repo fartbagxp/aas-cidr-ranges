@@ -1,0 +1,19 @@
+service: aas-cidr-ranges
+frameworkVersion: '>=2.0.0 <3.0.0'
+
+provider:
+  name: aws
+  runtime: python3.8
+
+plugins:
+  - serverless-python-requirements
+
+functions:
+  belong:
+    handler: handler.belong
+    events:
+      - http:
+          path: /belong
+          method: get
+    timeout: 10
+    memorySize: 256

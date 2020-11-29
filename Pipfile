@@ -5,11 +5,11 @@ verify_ssl = true
 
 [dev-packages]
 autopep8 = "*"
+pytest = "*"
 
 [packages]
 requests = "==2.23.0"
 pytricia = "==1.0.1"
-beautifulsoup4 = "==4.9.3"
 ipwhois = "==1.2.0"
 
 [requires]

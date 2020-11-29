@@ -1,10 +1,10 @@
 import json
-from src.download_aws import AWSCidrDownloader
-from src.download_azure import AzureCidrDownloader
-from src.download_zoom import ZoomCidrDownloader
-from src.download_cloudflare import CloudflareCidrDownloader
-from src.download_fastly import FastlyCidrDownloader
-from src.download import CidrWriter
+from src.dl.download_aws import AWSCidrDownloader
+from src.dl.download_azure import AzureCidrDownloader
+from src.dl.download_zoom import ZoomCidrDownloader
+from src.dl.download_cloudflare import CloudflareCidrDownloader
+from src.dl.download_fastly import FastlyCidrDownloader
+from src.dl.download import CidrWriter
 
 
 def update():

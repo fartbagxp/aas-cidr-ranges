@@ -1,16 +1,56 @@
 import json
+import ipaddress
 import pytricia
 
 from src.reader import FileReader
 from src.dl.download_zoom import ZoomCidrDownloader
-
 from src.pytrie_support import PytrieSupport
 
+'''
+Provides an entry point to a job for providing results about a particular
+IP address or range.
+'''
 
-def run_test():
+
+def belong(event, context):
+
+  body = {
+      'error': '',
+      'data': {}
+  }
+
+  if 'ip' not in event['queryStringParameters']:
+    body['error'] = "Request must have field 'ip' with value of an IP address or valid CIDR notation"
+    return {
+        'statusCode': 200,
+        'body': json.dumps(body)
+    }
+
+  ip = event['queryStringParameters']['ip']
+  print(ip)
+
+  isValidParameter = False
+  try:
+    ipaddress.ip_address(ip)
+    isValidParameter = True
+  except ValueError:
+    pass
+
+  try:
+    ipaddress.ip_network(ip)
+    isValidParameter = True
+  except ValueError:
+    pass
+
+  if isValidParameter == False:
+    body['error'] = "Request must have field 'ip' with value of an IP address or valid CIDR notation"
+    return {
+        'statusCode': 200,
+        'body': json.dump(body)
+    }
+
   # 128 bits needed for holding IPv6
   pyt = pytricia.PyTricia(128)
-
   support = PytrieSupport()
 
   # read all the files locally
@@ -60,55 +100,30 @@ def run_test():
                         zoom.get_config().get('source').get('range'),
                         zoom.get_config().get('url').get('range'))
 
-  '''
-    Testing - AWS
-    {'region': 'us-east-1', 'service': 'EC2'}
-    {'region': 'eu-west-2', 'service': 'S3'}
-  '''
-  print(pyt.get('52.95.245.0'))
-  print(pyt.get('2a05:d07a:c000::'))
-  print(pyt.get('18.253.194.205'))
+  result = pyt.get(ip)
+  if result == None:
+    body['error'] = 'No available information'
+    return {
+        'statusCode': 200,
+        'body': json.dumps(body)
+    }
 
-  '''
-    Testing - Azure
-    {'region': '', 'platform': 'Azure', 'systemService': '', 'cloud': 'Public'}
-    {'region': '', 'platform': 'Azure',
-        'systemService': 'AzureAppConfiguration', 'cloud': 'AzureGovernment'}
-  '''
-  print(pyt.get('213.199.183.0'))
-  print(pyt.get('52.127.61.112'))
-
-  '''
-  Testing - Google
-  '''
-  # print(pyt.get('35.199.128.0'))
-  # print(pyt.get('35.200.0.0'))
-
-  '''
-  Testing - Cloudflare
-  '''
-  print(pyt.get('108.162.192.0'))
-  print(pyt.get('2c0f:f248::'))
-
-  '''
-  Testing - Fastly
-  '''
-  print(pyt.get('23.235.32.0'))
-  print(pyt.get('2a04:4e40::'))
-  print(pyt.get('2c0f:f248::'))
-
-  '''
-  Testing - Zoom
-  '''
-  print(pyt.get('3.80.20.128'))
-  print(pyt.get('103.122.166.0'))
+  body['error'] = ''
+  body['data'] = result
+  return {
+      'statusCode': 200,
+      'body': json.dumps(body)
+  }
 
 
 def main():
-  '''
-  Test it out!
-  '''
-  run_test()
+  result = belong({'queryStringParameters': {
+      'ip': '127.0.0.1'}}, None)
+  print(result)
+  result = belong({'queryStringParameters': {'ip': '213.199.183.0'}}, None)
+  print(result)
+  result = belong({'queryStringParameters': {'ip': '35.180.0.0/24'}}, None)
+  print(result)
 
 
 if __name__ == "__main__":
