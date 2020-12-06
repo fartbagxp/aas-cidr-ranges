@@ -47,3 +47,7 @@ For deployment:
 
    Results:  
    `{"error": "", "data": {"region": "", "platform": "Azure", "systemService": "", "cloud": "Public"}}`
+
+## Helpful links for reading
+
+- [Examples of Serverless deployment](https://github.com/serverless/examples)
