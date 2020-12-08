@@ -19,7 +19,14 @@ def belong(event, context):
       'data': {}
   }
 
-  if 'ip' not in event['queryStringParameters']:
+  if 'queryStringParameters' not in event:
+    body['error'] = "Request must have field 'ip' with value of an IP address or valid CIDR notation"
+    return {
+        'statusCode': 200,
+        'body': json.dumps(body)
+    }
+
+  if event['queryStringParameters'] is None or 'ip' not in event['queryStringParameters']:
     body['error'] = "Request must have field 'ip' with value of an IP address or valid CIDR notation"
     return {
         'statusCode': 200,
