@@ -1,5 +1,5 @@
 {
-  "changeNumber": 121,
+  "changeNumber": 122,
   "cloud": "China",
   "values": [
     {
@@ -245,16 +245,20 @@
       "name": "AzureBackup",
       "id": "AzureBackup",
       "properties": {
-        "changeNumber": 2,
+        "changeNumber": 3,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
         "systemService": "AzureBackup",
         "addressPrefixes": [
+          "40.72.79.64/26",
           "40.73.139.32/27",
           "40.73.139.64/26",
           "40.73.171.32/27",
           "40.73.171.64/26",
+          "52.130.7.192/26",
+          "52.130.15.0/26",
+          "52.130.23.128/26",
           "139.217.51.32/27",
           "139.217.51.64/26",
           "139.217.171.32/27",
@@ -1895,12 +1899,13 @@
       "name": "AzureBackup.ChinaEast",
       "id": "AzureBackup.ChinaEast",
       "properties": {
-        "changeNumber": 2,
+        "changeNumber": 3,
         "region": "chinaeast",
         "regionId": 13,
         "platform": "Azure",
         "systemService": "AzureBackup",
         "addressPrefixes": [
+          "52.130.15.0/26",
           "139.217.171.32/27",
           "139.217.171.64/26",
           "2404:7940:201:402::200/121"
@@ -1916,7 +1921,7 @@
       "name": "AzureBackup.ChinaEast2",
       "id": "AzureBackup.ChinaEast2",
       "properties": {
-        "changeNumber": 2,
+        "changeNumber": 3,
         "region": "chinaeast2",
         "regionId": 55,
         "platform": "Azure",
@@ -1924,6 +1929,7 @@
         "addressPrefixes": [
           "40.73.171.32/27",
           "40.73.171.64/26",
+          "52.130.7.192/26",
           "2404:7940:301:402::200/121"
         ],
         "networkFeatures": [
@@ -1937,12 +1943,13 @@
       "name": "AzureBackup.ChinaNorth",
       "id": "AzureBackup.ChinaNorth",
       "properties": {
-        "changeNumber": 2,
+        "changeNumber": 3,
         "region": "chinanorth",
         "regionId": 14,
         "platform": "Azure",
         "systemService": "AzureBackup",
         "addressPrefixes": [
+          "40.72.79.64/26",
           "139.217.51.32/27",
           "139.217.51.64/26",
           "2404:7940:1:402::200/121"
@@ -1958,7 +1965,7 @@
       "name": "AzureBackup.ChinaNorth2",
       "id": "AzureBackup.ChinaNorth2",
       "properties": {
-        "changeNumber": 2,
+        "changeNumber": 3,
         "region": "chinanorth2",
         "regionId": 54,
         "platform": "Azure",
@@ -1966,6 +1973,7 @@
         "addressPrefixes": [
           "40.73.139.32/27",
           "40.73.139.64/26",
+          "52.130.23.128/26",
           "2404:7940:101:402::a00/121"
         ],
         "networkFeatures": [

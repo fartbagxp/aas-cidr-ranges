@@ -1,5 +1,5 @@
 {
-  "changeNumber": 122,
+  "changeNumber": 123,
   "cloud": "AzureGovernment",
   "values": [
     {
@@ -442,12 +442,15 @@
       "name": "AzureBackup",
       "id": "AzureBackup",
       "properties": {
-        "changeNumber": 4,
+        "changeNumber": 5,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
         "systemService": "AzureBackup",
         "addressPrefixes": [
+          "20.140.53.240/28",
+          "20.140.69.128/26",
+          "20.140.77.128/26",
           "20.140.91.80/28",
           "20.140.91.128/26",
           "20.140.93.64/26",
@@ -455,6 +458,7 @@
           "20.140.130.240/28",
           "20.140.133.0/26",
           "20.140.133.64/27",
+          "20.140.145.64/26",
           "52.126.202.192/26",
           "52.126.203.0/27",
           "52.127.3.0/26",
@@ -467,6 +471,7 @@
           "52.127.43.0/27",
           "52.127.58.224/27",
           "52.127.59.0/26",
+          "52.235.250.192/26",
           "2001:489a:3103:402::200/121",
           "2001:489a:3103:802::180/121",
           "2001:489a:3103:c04::100/121",
@@ -2876,12 +2881,13 @@
       "name": "AzureBackup.USDoDCentral",
       "id": "AzureBackup.USDoDCentral",
       "properties": {
-        "changeNumber": 1,
+        "changeNumber": 2,
         "region": "usdodcentral",
         "regionId": 44,
         "platform": "Azure",
         "systemService": "AzureBackup",
         "addressPrefixes": [
+          "20.140.77.128/26",
           "52.127.58.224/27",
           "52.127.59.0/26",
           "2001:489a:3203:402::200/121"
@@ -2893,12 +2899,13 @@
       "name": "AzureBackup.USDoDEast",
       "id": "AzureBackup.USDoDEast",
       "properties": {
-        "changeNumber": 2,
+        "changeNumber": 3,
         "region": "usdodeast",
         "regionId": 45,
         "platform": "Azure",
         "systemService": "AzureBackup",
         "addressPrefixes": [
+          "20.140.69.128/26",
           "52.126.202.192/26",
           "52.126.203.0/27",
           "2001:489a:3303:402::200/121",
@@ -2915,12 +2922,13 @@
       "name": "AzureBackup.USGovArizona",
       "id": "AzureBackup.USGovArizona",
       "properties": {
-        "changeNumber": 1,
+        "changeNumber": 2,
         "region": "usgovarizona",
         "regionId": 39,
         "platform": "Azure",
         "systemService": "AzureBackup",
         "addressPrefixes": [
+          "20.140.53.240/28",
           "52.127.3.0/26",
           "52.127.3.64/27",
           "2001:489a:3604:402::200/121",
@@ -2950,12 +2958,13 @@
       "name": "AzureBackup.USGovTexas",
       "id": "AzureBackup.USGovTexas",
       "properties": {
-        "changeNumber": 1,
+        "changeNumber": 2,
         "region": "usgovtexas",
         "regionId": 41,
         "platform": "Azure",
         "systemService": "AzureBackup",
         "addressPrefixes": [
+          "20.140.145.64/26",
           "52.127.34.224/27",
           "52.127.35.0/26",
           "2001:489a:3403:402::200/121"
@@ -2967,7 +2976,7 @@
       "name": "AzureBackup.USGovVirginia",
       "id": "AzureBackup.USGovVirginia",
       "properties": {
-        "changeNumber": 1,
+        "changeNumber": 2,
         "region": "usgovvirginia",
         "regionId": 42,
         "platform": "Azure",
@@ -2982,6 +2991,7 @@
           "20.140.133.64/27",
           "52.127.42.192/26",
           "52.127.43.0/27",
+          "52.235.250.192/26",
           "2001:489a:3103:402::200/121",
           "2001:489a:3103:802::180/121",
           "2001:489a:3103:c04::100/121"
@@ -6954,6 +6964,7 @@
           "20.140.244.0/23",
           "20.141.2.0/24",
           "20.141.7.0/24",
+          "20.141.8.0/21",
           "40.66.0.192/26",
           "40.66.2.64/27",
           "40.66.3.64/27",
@@ -7250,6 +7261,7 @@
           "20.141.5.0/24",
           "20.141.6.0/24",
           "20.141.7.0/24",
+          "20.141.8.0/21",
           "23.97.0.0/20",
           "23.97.16.0/20",
           "23.97.32.0/21",
