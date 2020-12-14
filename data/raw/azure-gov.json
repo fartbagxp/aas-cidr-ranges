@@ -1,5 +1,5 @@
 {
-  "changeNumber": 123,
+  "changeNumber": 125,
   "cloud": "AzureGovernment",
   "values": [
     {
@@ -1424,7 +1424,7 @@
       "name": "AzureSignalR",
       "id": "AzureSignalR",
       "properties": {
-        "changeNumber": 2,
+        "changeNumber": 3,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -1432,6 +1432,7 @@
         "addressPrefixes": [
           "20.140.94.96/27",
           "20.140.133.160/27",
+          "20.141.8.0/27",
           "52.127.5.160/27",
           "52.127.10.224/27",
           "52.127.18.224/27",
@@ -5106,12 +5107,13 @@
       "name": "AzureSignalR.USGovArizona",
       "id": "AzureSignalR.USGovArizona",
       "properties": {
-        "changeNumber": 1,
+        "changeNumber": 2,
         "region": "usgovarizona",
         "regionId": 39,
         "platform": "Azure",
         "systemService": "AzureSignalR",
         "addressPrefixes": [
+          "20.141.8.0/27",
           "52.127.5.160/27",
           "52.127.10.224/27",
           "52.127.18.224/27"
