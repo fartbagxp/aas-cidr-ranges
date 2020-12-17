@@ -6,6 +6,8 @@ from src.reader import FileReader
 from src.dl.download_zoom import ZoomCidrDownloader
 from src.pytrie_support import PytrieSupport
 
+from whois import whois
+
 '''
 Provides an entry point to a job for providing results about a particular
 IP address or range.
@@ -37,15 +39,19 @@ def belong(event, context):
   print(ip)
 
   isValidParameter = False
+  isValidIP = False
+  isValidCIDR = False
   try:
     ipaddress.ip_address(ip)
     isValidParameter = True
+    isValidIP = True
   except ValueError:
     pass
 
   try:
     ipaddress.ip_network(ip)
     isValidParameter = True
+    isValidCIDR = True
   except ValueError:
     pass
 
@@ -108,15 +114,23 @@ def belong(event, context):
                         zoom.get_config().get('url').get('range'))
 
   result = pyt.get(ip)
-  if result == None:
-    body['error'] = 'No available information'
+  if result != None:
+    body['error'] = ''
+    body['data'] = result
     return {
         'statusCode': 200,
         'body': json.dumps(body)
     }
 
-  body['error'] = ''
-  body['data'] = result
+  if result == None and isValidIP is True:
+    body['error'] = ''
+    body['data'] = whois(ip)
+    return {
+        'statusCode': 200,
+        'body': json.dumps(body)
+    }
+
+  body['error'] = 'No available information'
   return {
       'statusCode': 200,
       'body': json.dumps(body)
@@ -125,7 +139,7 @@ def belong(event, context):
 
 def main():
   result = belong({'queryStringParameters': {
-      'ip': '127.0.0.1'}}, None)
+      'ip': '100.100.100.100'}}, None)
   print(result)
   result = belong({'queryStringParameters': {'ip': '213.199.183.0'}}, None)
   print(result)
