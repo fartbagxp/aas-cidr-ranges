@@ -138,16 +138,14 @@ def belong(event, context):
 
 
 def main():
-  # result = belong({'queryStringParameters': {
-  #     'ip': '100.100.100.100'}}, None)
-  # print(result)
+  result = belong({'queryStringParameters': {
+      'ip': '100.100.100.100'}}, None)
+  print(result)
   result = belong({'queryStringParameters': {'ip': '20.140.48.160'}}, None)
   print(result)
   result = belong({'queryStringParameters': {'ip': '213.199.183.0'}}, None)
   print(result)
   result = belong({'queryStringParameters': {'ip': '35.180.0.0/24'}}, None)
-  print(result)
-  result = belong({'queryStringParameters': {'ip': '52.245.208.84'}}, None)
   print(result)
 
 
