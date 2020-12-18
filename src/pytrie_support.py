@@ -6,27 +6,68 @@ different schema of files provided.
 
 class PytrieSupport():
 
+  # def add_aws_cidr(self, pytrie, result):
+  #   for prefix in result['prefixes']:
+  #     pytrie[prefix['ip_prefix']] = {
+  #         'region': prefix['region'],
+  #         'service': prefix['service']
+  #     }
+
+  #   for prefix in result['ipv6_prefixes']:
+  #     pytrie[prefix['ipv6_prefix']] = {
+  #         'region': prefix['region'],
+  #         'service': prefix['service']
+  #     }
+
   def add_aws_cidr(self, pytrie, result):
     for prefix in result['prefixes']:
-      pytrie[prefix['ip_prefix']] = {
-          'region': prefix['region'],
-          'service': prefix['service']
+      ip = prefix['ip_prefix']
+      region = prefix['region']
+      service = prefix['service']
+      if pytrie.has_key(ip):
+        tri_result = pytrie.get(ip)
+        region = f"{region},{tri_result['region']}"
+        service = f"{service},{tri_result['service']}"
+      pytrie[ip] = {
+          'region': region,
+          'service': service
       }
 
     for prefix in result['ipv6_prefixes']:
-      pytrie[prefix['ipv6_prefix']] = {
-          'region': prefix['region'],
-          'service': prefix['service']
+      ip = prefix['ipv6_prefix']
+      region = prefix['region']
+      service = prefix['service']
+      if pytrie.has_key(ip):
+        tri_result = pytrie.get(ip)
+        region = f"{region},{tri_result['region']}"
+        service = f"{service},{tri_result['service']}"
+      pytrie[ip] = {
+          'region': region,
+          'service': service
       }
 
   def add_azure_cidr(self, pytrie, result):
     for value in result['values']:
       for prefix in value['properties']['addressPrefixes']:
+        region = value['properties']['region']
+        platform = value['properties']['platform']
+        systemService = value['properties']['systemService']
+        cloud = result['cloud']
+
+        if pytrie.has_key(prefix):
+          tri_result = pytrie.get(prefix)
+          if tri_result['region'] != "":
+            region = tri_result['region']
+          if tri_result['platform'] != "":
+            platform = tri_result['platform']
+          if tri_result['systemService'] != "":
+            systemService = tri_result['systemService']
+
         pytrie[prefix] = {
-            'region': value['properties']['region'],
-            'platform': value['properties']['platform'],
-            'systemService': value['properties']['systemService'],
-            'cloud': result['cloud']
+            'region': region,
+            'platform': platform,
+            'systemService': systemService,
+            'cloud': cloud
         }
 
   def add_gcp_cidr(self, pytrie, result):
