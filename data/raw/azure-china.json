@@ -1,5 +1,5 @@
 {
-  "changeNumber": 128,
+  "changeNumber": 131,
   "cloud": "China",
   "values": [
     {
@@ -987,16 +987,18 @@
       "name": "AzureSignalR",
       "id": "AzureSignalR",
       "properties": {
-        "changeNumber": 3,
+        "changeNumber": 4,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
         "systemService": "AzureSignalR",
         "addressPrefixes": [
+          "40.72.79.160/27",
           "40.73.172.192/27",
           "52.130.7.160/27",
           "52.130.23.64/27",
-          "52.130.40.32/27"
+          "52.130.40.32/27",
+          "52.130.128.160/27"
         ],
         "networkFeatures": [
           "API",
@@ -3601,6 +3603,27 @@
       }
     },
     {
+      "name": "AzureSignalR.ChinaNorth",
+      "id": "AzureSignalR.ChinaNorth",
+      "properties": {
+        "changeNumber": 1,
+        "region": "chinanorth",
+        "regionId": 14,
+        "platform": "Azure",
+        "systemService": "AzureSignalR",
+        "addressPrefixes": [
+          "40.72.79.160/27",
+          "52.130.128.160/27"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
+      }
+    },
+    {
       "name": "AzureSignalR.ChinaNorth2",
       "id": "AzureSignalR.ChinaNorth2",
       "properties": {
@@ -4582,13 +4605,7 @@
           "139.217.231.208/32",
           "139.217.231.219/32"
         ],
-        "networkFeatures": [
-          "API",
-          "NSG",
-          "UDR",
-          "VSE",
-          "FW"
-        ]
+        "networkFeatures": null
       }
     },
     {
@@ -4674,7 +4691,7 @@
       "name": "AzureCloud.chinaeast2",
       "id": "AzureCloud.chinaeast2",
       "properties": {
-        "changeNumber": 17,
+        "changeNumber": 18,
         "region": "chinaeast2",
         "regionId": 55,
         "platform": "Azure",
@@ -4707,6 +4724,7 @@
           "52.130.120.0/21",
           "52.130.192.0/19",
           "52.131.130.0/23",
+          "52.131.192.0/21",
           "139.217.176.0/20",
           "139.217.216.0/21",
           "139.217.224.0/19",
@@ -4916,7 +4934,7 @@
       "name": "AzureCloud",
       "id": "AzureCloud",
       "properties": {
-        "changeNumber": 28,
+        "changeNumber": 29,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -5043,6 +5061,7 @@
           "52.131.2.0/23",
           "52.131.128.0/23",
           "52.131.130.0/23",
+          "52.131.192.0/21",
           "103.9.10.0/24",
           "139.217.0.0/19",
           "139.217.32.0/24",

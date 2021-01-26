@@ -1,5 +1,5 @@
 {
-  "changeNumber": 129,
+  "changeNumber": 132,
   "cloud": "AzureGovernment",
   "values": [
     {
@@ -374,6 +374,7 @@
           "52.127.61.102/32"
         ],
         "networkFeatures": [
+          "API",
           "NSG",
           "UDR",
           "FW"
@@ -2069,6 +2070,7 @@
           "2001:489a:3604:1::40/123"
         ],
         "networkFeatures": [
+          "API",
           "NSG",
           "UDR",
           "FW"
