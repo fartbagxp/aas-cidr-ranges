@@ -1,23 +1,12 @@
 '''
-A simple support class for reusing adding to a pytrie object based on 
+A simple support class for reusing adding to a pytrie object based on
 different schema of files provided.
 '''
 
+import collections
+
 
 class PytrieSupport():
-
-  # def add_aws_cidr(self, pytrie, result):
-  #   for prefix in result['prefixes']:
-  #     pytrie[prefix['ip_prefix']] = {
-  #         'region': prefix['region'],
-  #         'service': prefix['service']
-  #     }
-
-  #   for prefix in result['ipv6_prefixes']:
-  #     pytrie[prefix['ipv6_prefix']] = {
-  #         'region': prefix['region'],
-  #         'service': prefix['service']
-  #     }
 
   def add_aws_cidr(self, pytrie, result):
     for prefix in result['prefixes']:
@@ -108,3 +97,51 @@ class PytrieSupport():
           'source': 'Fastly',
           'website': 'https://api.fastly.com/public-ip-list'
       }
+
+  def add_datadog_cidr(self, pytrie, result):
+    version = result['version']
+    modified = result['modified']
+    source = 'Datadog'
+    website = 'https://ip-ranges.datadoghq.com/'
+    for integration, iptables in result.items():
+      if isinstance(iptables, collections.Mapping):
+        if 'prefixes_ipv4_by_location' in iptables:
+          for location, ipv4s in iptables.get('prefixes_ipv4_by_location', []).items():
+            for ipv4 in ipv4s:
+              pytrie[ipv4] = {
+                  'source': source,
+                  'website': website,
+                  'version': version,
+                  'modified': modified,
+                  'location': location,
+                  'integration': integration
+              }
+        if 'prefixes_ipv4_by_location' not in iptables:
+          for ipv4 in iptables.get('prefixes_ipv4', []):
+            pytrie[ipv4] = {
+                'source': source,
+                'website': website,
+                'version': version,
+                'modified': modified,
+                'integration': integration
+            }
+        if 'prefixes_ipv6_by_location' in iptables:
+          for location, ipv6s in iptables.get('prefixes_ipv4_by_location', []).items():
+            for ipv6 in ipv6s:
+              pytrie[ipv6] = {
+                  'source': source,
+                  'website': website,
+                  'version': version,
+                  'modified': modified,
+                  'location': location,
+                  'integration': integration
+              }
+        if 'prefixes_ipv6_by_location' not in iptables:
+          for ipv6 in iptables.get('prefixes_ipv6', []):
+            pytrie[ipv6] = {
+                'source': source,
+                'website': website,
+                'version': version,
+                'modified': modified,
+                'integration': integration
+            }
