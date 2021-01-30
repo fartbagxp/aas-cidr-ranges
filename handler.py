@@ -15,7 +15,6 @@ IP address or range.
 
 
 def belong(event, context):
-
   body = {
       'error': '',
       'data': {}

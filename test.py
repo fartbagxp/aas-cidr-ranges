@@ -60,6 +60,9 @@ def run_test():
                         zoom.get_config().get('source').get('range'),
                         zoom.get_config().get('url').get('range'))
 
+  data = reader.read('data/raw/datadog.json')
+  support.add_datadog_cidr(pyt, json.loads(data))
+
   '''
     Testing - AWS
     {'region': 'us-east-1', 'service': 'EC2'}
@@ -102,6 +105,17 @@ def run_test():
   '''
   print(pyt.get('3.80.20.128'))
   print(pyt.get('103.122.166.0'))
+
+  '''
+  Testing - Datadog
+  '''
+
+  print(pyt.get('13.115.46.213/32'))
+  print(pyt.get('63.35.33.198/32'))
+  print(pyt.get('3.233.144.0/20'))
+  print(pyt.get('3.228.27.0/25'))
+  print(pyt.get('2600:1f18:63f7:b900::/56'))
+  print(pyt.get('99.79.87.237/32'))
 
 
 def main():
