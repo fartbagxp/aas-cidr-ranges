@@ -15,6 +15,7 @@ import datetime
 
 
 class AzureCidrDownloader():
+
   def get_timestamps(self):
     '''
     Return a list of timestamps from the past 7 days, because Azure IP tables updates once every week.
@@ -39,6 +40,7 @@ class AzureCidrDownloader():
         if r.status_code == 200:
           data = r.json()
           print(f'Azure Timestamp was {timestamp}')
+          data['createDate'] = timestamp
           return data
       except requests.exceptions.RequestException as e:
         print(
@@ -53,6 +55,7 @@ class AzureCidrDownloader():
         if r.status_code == 200:
           data = r.json()
           print(f'Azure Timestamp was {timestamp}')
+          data['createDate'] = timestamp
           return data
       except requests.exceptions.RequestException as e:
         print(
@@ -67,6 +70,7 @@ class AzureCidrDownloader():
         if r.status_code == 200:
           data = r.json()
           print(f'Azure Timestamp was {timestamp}')
+          data['createDate'] = timestamp
           return data
       except requests.exceptions.RequestException as e:
         print(
@@ -74,7 +78,6 @@ class AzureCidrDownloader():
     return None
 
   def get_gov_range(self):
-
     for timestamp in self.get_timestamps():
       try:
         URL = f'https://download.microsoft.com/download/6/4/D/64DB03BF-895B-4173-A8B1-BA4AD5D4DF22/ServiceTags_AzureGovernment_{timestamp}.json'
@@ -82,6 +85,7 @@ class AzureCidrDownloader():
         if r.status_code == 200:
           data = r.json()
           print(f'Azure Timestamp was {timestamp}')
+          data['createDate'] = timestamp
           return data
       except requests.exceptions.RequestException as e:
         print(

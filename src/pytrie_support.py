@@ -19,7 +19,8 @@ class PytrieSupport():
         service = f"{service},{tri_result['service']}"
       pytrie[ip] = {
           'region': region,
-          'service': service
+          'service': service,
+          'createDate': result['createDate']
       }
 
     for prefix in result['ipv6_prefixes']:
@@ -32,7 +33,8 @@ class PytrieSupport():
         service = f"{service},{tri_result['service']}"
       pytrie[ip] = {
           'region': region,
-          'service': service
+          'service': service,
+          'createDate': result['createDate']
       }
 
   def add_azure_cidr(self, pytrie, result):
@@ -56,7 +58,9 @@ class PytrieSupport():
             'region': region,
             'platform': platform,
             'systemService': systemService,
-            'cloud': cloud
+            'cloud': cloud,
+            'changeNumber': result['changeNumber'],
+            'createDate': result['createDate']
         }
 
   def add_gcp_cidr(self, pytrie, result):
