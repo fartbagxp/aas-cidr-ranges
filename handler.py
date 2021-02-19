@@ -58,7 +58,7 @@ def belong(event, context):
     body['error'] = "Request must have field 'ip' with value of an IP address or valid CIDR notation"
     return {
         'statusCode': 200,
-        'body': json.dump(body)
+        'body': json.dumps(body)
     }
 
   # 128 bits needed for holding IPv6
@@ -145,6 +145,8 @@ def main():
   result = belong({'queryStringParameters': {'ip': '213.199.183.0'}}, None)
   print(result)
   result = belong({'queryStringParameters': {'ip': '35.180.0.0/24'}}, None)
+  print(result)
+  result = belong({'queryStringParameters': {'ip': '35.180.0.265'}}, None)
   print(result)
 
 
