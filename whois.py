@@ -20,6 +20,7 @@ def whois(ip):
       "net_type": results.get("network").get("type"),
       "net_organization": results.get("network").get("name"),
       "net_ref": results.get("network").get("links"),
+      "raw_command": f"whois -h whois.radb.net {ip}"
   }
 
   if results.get("network") != None:
