@@ -8,17 +8,12 @@ on:
 jobs:
   deploy:
     name: deploy
-    runs-on: ubuntu-latest
+    runs-on: python:3.8-slim
     strategy:
       matrix:
         node-version: [14.x]
-        python-version: [3.8]
     steps:
       - uses: actions/checkout@v2
-      - name: Set up Python
-        uses: actions/setup-python@v2
-        with:
-          python-version: ${{ matrix.python-version }}
       - name: Display Python version
         run: python -c "import sys; print(sys.version)"
       - name: Use Node.js ${{ matrix.node-version }}
@@ -26,7 +21,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - run: npm ci
-      - name: serverless deploy
+      - name: Serverless Deploy
         uses: serverless/github-action@master
         with:
           args: deploy
