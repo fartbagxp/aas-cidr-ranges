@@ -30,7 +30,7 @@ jobs:
 
       - run: npm ci
       - name: Serverless Deploy
-        uses: fartbagxp/github-action@serverless-action
+        uses: fartbagxp/serverless-action@master
         with:
           args: deploy
         env:
