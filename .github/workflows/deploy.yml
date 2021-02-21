@@ -8,23 +8,29 @@ on:
 jobs:
   deploy:
     name: deploy
-    runs-on: python:3.8-slim
+    runs-on: ubuntu-latest
     strategy:
       matrix:
         node-version: [14.x]
+        python-version: [3.9]
     steps:
       - uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
       - name: Display Python version
         run: python -c "import sys; print(sys.version)"
-      - name: Use Node.js ${{ matrix.node-version }}
+
+      - name: Setup Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
+
       - run: npm ci
       - name: Serverless Deploy
-        uses: serverless/github-action@master
-        with:
-          args: deploy
+        uses: dhollerbach/github-action-serverless-with-python-requirements@master
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.ACCESSKEY }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.SECRETACCESSKEY }}
