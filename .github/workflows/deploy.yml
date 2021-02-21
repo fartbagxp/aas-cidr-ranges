@@ -33,7 +33,7 @@ jobs:
       - run: pip install pipenv
 
       - name: Serverless Deploy
-        run: npm run deploy
+      - run: npm run deploy
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.ACCESSKEY }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.SECRETACCESSKEY }}
