@@ -1,5 +1,5 @@
 {
-  "changeNumber": 134,
+  "changeNumber": 135,
   "cloud": "China",
   "values": [
     {
@@ -3684,7 +3684,7 @@
       "name": "Storage.ChinaEast",
       "id": "Storage.ChinaEast",
       "properties": {
-        "changeNumber": 3,
+        "changeNumber": 4,
         "region": "chinaeast",
         "regionId": 13,
         "platform": "Azure",
@@ -3696,6 +3696,7 @@
           "40.126.88.160/28",
           "42.159.140.0/26",
           "42.159.208.64/26",
+          "52.130.102.0/24",
           "139.217.160.32/28"
         ],
         "networkFeatures": [
@@ -3761,7 +3762,7 @@
       "name": "Storage.ChinaNorth2",
       "id": "Storage.ChinaNorth2",
       "properties": {
-        "changeNumber": 4,
+        "changeNumber": 5,
         "region": "chinanorth2",
         "regionId": 54,
         "platform": "Azure",
@@ -3769,8 +3770,7 @@
         "addressPrefixes": [
           "40.73.48.0/24",
           "52.130.96.0/24",
-          "52.130.98.0/23",
-          "52.130.102.0/24"
+          "52.130.98.0/23"
         ],
         "networkFeatures": [
           "API",
@@ -4733,7 +4733,7 @@
       "name": "AzureCloud.chinaeast2",
       "id": "AzureCloud.chinaeast2",
       "properties": {
-        "changeNumber": 18,
+        "changeNumber": 19,
         "region": "chinaeast2",
         "regionId": 55,
         "platform": "Azure",
@@ -4767,6 +4767,7 @@
           "52.130.192.0/19",
           "52.131.130.0/23",
           "52.131.192.0/21",
+          "52.131.224.0/19",
           "139.217.176.0/20",
           "139.217.216.0/21",
           "139.217.224.0/19",
@@ -4787,7 +4788,7 @@
       "name": "AzureCloud.chinaeast",
       "id": "AzureCloud.chinaeast",
       "properties": {
-        "changeNumber": 14,
+        "changeNumber": 15,
         "region": "chinaeast",
         "regionId": 13,
         "platform": "Azure",
@@ -4827,6 +4828,7 @@
           "42.159.216.0/21",
           "42.159.224.0/19",
           "52.130.8.0/21",
+          "52.130.102.0/24",
           "52.130.112.0/21",
           "52.131.128.0/23",
           "139.217.128.0/19",
@@ -4861,7 +4863,7 @@
       "name": "AzureCloud.chinanorth2",
       "id": "AzureCloud.chinanorth2",
       "properties": {
-        "changeNumber": 15,
+        "changeNumber": 16,
         "region": "chinanorth2",
         "regionId": 54,
         "platform": "Azure",
@@ -4891,8 +4893,9 @@
           "52.130.40.0/21",
           "52.130.96.0/24",
           "52.130.98.0/23",
-          "52.130.102.0/24",
+          "52.130.144.0/20",
           "52.131.2.0/23",
+          "52.131.64.0/19",
           "139.217.56.0/21",
           "139.217.64.0/18",
           "2404:7940:100::/47",
@@ -4977,7 +4980,7 @@
       "name": "AzureCloud",
       "id": "AzureCloud",
       "properties": {
-        "changeNumber": 30,
+        "changeNumber": 31,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -5100,12 +5103,15 @@
           "52.130.112.0/21",
           "52.130.120.0/21",
           "52.130.128.0/21",
+          "52.130.144.0/20",
           "52.130.192.0/19",
           "52.131.0.0/23",
           "52.131.2.0/23",
+          "52.131.64.0/19",
           "52.131.128.0/23",
           "52.131.130.0/23",
           "52.131.192.0/21",
+          "52.131.224.0/19",
           "103.9.10.0/24",
           "139.217.0.0/19",
           "139.217.32.0/24",
@@ -5167,5 +5173,5 @@
       }
     }
   ],
-  "createDate": "20210215"
+  "createDate": "20210222"
 }
