@@ -1,9 +1,8 @@
 name: Deploy to AWS
 
 on:
-  push:
-    branches:
-      - master
+  schedule:
+    - cron: '50 21 * * *'
 
 jobs:
   deploy:
@@ -31,11 +30,6 @@ jobs:
 
       - name: Setup pipenv
         run: pip install pipenv
-
-      - name: Test encrypted variable
-        run: echo $TEST_KEY
-        env:
-          TEST_KEY: ${{ secrets.TEST_KEY }}
 
       - name: Serverless Deploy
         run: npm run deploy
