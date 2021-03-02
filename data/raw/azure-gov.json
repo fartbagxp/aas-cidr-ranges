@@ -1,5 +1,5 @@
 {
-  "changeNumber": 136,
+  "changeNumber": 137,
   "cloud": "AzureGovernment",
   "values": [
     {
@@ -7056,7 +7056,7 @@
       "name": "AzureCloud.usdodcentral",
       "id": "AzureCloud.usdodcentral",
       "properties": {
-        "changeNumber": 16,
+        "changeNumber": 17,
         "region": "usdodcentral",
         "regionId": 44,
         "platform": "Azure",
@@ -7091,6 +7091,7 @@
           "52.182.0.0/17",
           "52.245.2.0/24",
           "52.245.128.0/21",
+          "52.245.152.0/21",
           "52.246.145.0/24",
           "104.210.20.0/22",
           "2001:489a:2206:8010::/63",
@@ -7407,7 +7408,7 @@
       "name": "AzureCloud",
       "id": "AzureCloud",
       "properties": {
-        "changeNumber": 42,
+        "changeNumber": 43,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -7635,6 +7636,7 @@
           "52.245.128.0/21",
           "52.245.136.0/21",
           "52.245.144.0/27",
+          "52.245.152.0/21",
           "52.245.192.0/18",
           "52.246.144.0/24",
           "52.246.145.0/24",
@@ -7670,5 +7672,5 @@
       }
     }
   ],
-  "createDate": "20210222"
+  "createDate": "20210301"
 }
