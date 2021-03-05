@@ -117,6 +117,13 @@ def run_test():
   print(pyt.get('2600:1f18:63f7:b900::/56'))
   print(pyt.get('99.79.87.237/32'))
 
+  print(pyt.get(pyt.parent('13.115.46.213/32')))
+  print(pyt.get(pyt.parent('63.35.33.198/32')))
+  print(pyt.get(pyt.parent('3.233.144.0/20')))
+  print(pyt.get(pyt.parent('3.228.27.0/25')))
+  print(pyt.get(pyt.parent('2600:1f18:63f7:b900::/56')))
+  print(pyt.get(pyt.parent('99.79.87.237/32')))
+
 
 def main():
   '''

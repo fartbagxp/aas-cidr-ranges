@@ -8,6 +8,29 @@ from src.pytrie_support import PytrieSupport
 
 from whois import whois
 
+
+def get_ip_info(pyt, ip):
+  direct_environment = None
+  try:
+    direct_environment = pyt.get(ip)
+  except KeyError:
+    return {
+        'request_ip': ip
+    }
+
+  results = {
+      'request_ip': ip,
+      'direct_environment': direct_environment,
+  }
+  try:
+    parent_ip = pyt.parent(ip)
+    results['hosting_environement'] = pyt.get(parent_ip)
+  except:
+    pass
+
+  return results
+
+
 '''
 Provides an entry point to a job for providing results about a particular
 IP address or range.
@@ -111,8 +134,10 @@ def belong(event, context):
   support.add_zoom_cidr(pyt, data,
                         zoom.get_config().get('source').get('range'),
                         zoom.get_config().get('url').get('range'))
+  data = reader.read('data/raw/datadog.json')
+  support.add_datadog_cidr(pyt, json.loads(data))
 
-  result = pyt.get(ip)
+  result = get_ip_info(pyt, ip)
   if result != None:
     body['error'] = ''
     body['data'] = result
@@ -147,6 +172,8 @@ def main():
   result = belong({'queryStringParameters': {'ip': '35.180.0.0/24'}}, None)
   print(result)
   result = belong({'queryStringParameters': {'ip': '35.180.0.265'}}, None)
+  print(result)
+  result = belong({'queryStringParameters': {'ip': '13.115.46.213/32'}}, None)
   print(result)
 
 
