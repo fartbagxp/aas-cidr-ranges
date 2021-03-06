@@ -153,33 +153,31 @@ class PytrieSupport():
                 'integration': integration
             }
 
-  # def add_github_cidr(self, pytrie, result):
+  def add_github_cidr(self, pytrie, result):
+    for key in result:
+      if isinstance(result[key], list):
+        for ip in result[key]:
+          pytrie[ip] = {
+              'source': 'Github',
+              'product': key,
+              'website': 'https://help.github.com/en/github/authenticating-to-github/about-githubs-ip-addresses'
+          }
 
-  #   for ipv4 in result['ipv4_addresses']:
-  #     pytrie[ipv4] = {
-  #         'source': 'Github',
-  #         'website': 'https://ip-ranges.atlassian.com/'
-  #     }
+  def add_pingdom_cidr(self, pytrie, result):
+    results = result.split('\n')
+    for r in results:
+      if r.strip():
+        pytrie[r] = {
+            'source': 'Pingdom',
+            'website': 'https://documentation.solarwinds.com/en/Success_Center/pingdom/content/topics/pingdom-probe-servers-ip-addresses.htm'
+        }
 
-  #   for ipv6 in result['ipv6_addresses']:
-  #     pytrie[ipv6] = {
-  #         'source': 'Github',
-  #         'website': 'https://ip-ranges.atlassian.com/'
-  #     }
-
-  # def add_pingdom_cidr(self, pytrie, result):
-  #   results = result.split('\n')
-  #   for r in results:
-  #     if r.strip():
-  #       pytrie[r] = {
-  #           'source': 'Pingdom',
-  #           'website': 'https://documentation.solarwinds.com/en/Success_Center/pingdom/content/topics/pingdom-probe-servers-ip-addresses.htm'
-  #       }
-
-  # def add_atlassian_cidr(self, pytrie, result):
-
-  #   for ipv4 in result['ipv4_addresses']:
-  #     pytrie[ipv4] = {
-  #         'source': 'Atlassian',
-  #         'website': 'https://ip-ranges.atlassian.com/'
-  #     }
+  def add_atlassian_cidr(self, pytrie, result):
+    for items in result['items']:
+      for item in items:
+        ip = items['cidr']
+        if ip is not None:
+          pytrie[ip] = {
+              'source': 'Atlassian',
+              'website': 'https://ip-ranges.atlassian.com/'
+          }

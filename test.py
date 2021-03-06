@@ -63,6 +63,18 @@ def run_test():
   data = reader.read('data/raw/datadog.json')
   support.add_datadog_cidr(pyt, json.loads(data))
 
+  # data = reader.read('data/raw/github.json')
+  # support.add_github_cidr(pyt, json.loads(data))
+
+  data = reader.read('data/raw/atlassian.json')
+  support.add_atlassian_cidr(pyt, json.loads(data))
+
+  data = reader.read('data/raw/pingdom-ipv4.txt')
+  support.add_pingdom_cidr(pyt, data)
+
+  data = reader.read('data/raw/pingdom-ipv6.txt')
+  support.add_pingdom_cidr(pyt, data)
+
   '''
     Testing - AWS
     {'region': 'us-east-1', 'service': 'EC2'}
@@ -123,6 +135,24 @@ def run_test():
   print(pyt.get(pyt.parent('3.228.27.0/25')))
   print(pyt.get(pyt.parent('2600:1f18:63f7:b900::/56')))
   print(pyt.get(pyt.parent('99.79.87.237/32')))
+
+  '''
+  Testing - Github
+  '''
+  # print(pyt.get('13.229.188.59/32'))
+  # print(pyt.get('13.67.153.67'))
+
+  '''
+  Testing - Atlassian
+  '''
+  print(pyt.get('18.184.99.128/25'))
+  print(pyt.get(pyt.parent('18.184.99.128/25')))
+
+  '''
+  Testing - Pingdom
+  '''
+  print(pyt.get('43.229.84.12'))
+  print(pyt.get('2a02:6ea0:c305::4041'))
 
 
 def main():
