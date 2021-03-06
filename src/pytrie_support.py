@@ -1,6 +1,9 @@
 '''
 A simple support class for reusing adding to a pytrie object based on
 different schema of files provided.
+
+Essentially, this is a collection of parsers on parsing the various files and
+inputting it into the IP trie.
 '''
 
 import collections
@@ -69,7 +72,7 @@ class PytrieSupport():
       if r.strip():
         pytrie[r] = {
             'source': 'Google',
-            'website': '_cloud-netblocks.googleusercontent.com'
+            'website': 'https://cloud.google.com/compute/docs/faq'
         }
 
   def add_zoom_cidr(self, pytrie, result, source, website):
@@ -149,3 +152,34 @@ class PytrieSupport():
                 'modified': modified,
                 'integration': integration
             }
+
+  # def add_github_cidr(self, pytrie, result):
+
+  #   for ipv4 in result['ipv4_addresses']:
+  #     pytrie[ipv4] = {
+  #         'source': 'Github',
+  #         'website': 'https://ip-ranges.atlassian.com/'
+  #     }
+
+  #   for ipv6 in result['ipv6_addresses']:
+  #     pytrie[ipv6] = {
+  #         'source': 'Github',
+  #         'website': 'https://ip-ranges.atlassian.com/'
+  #     }
+
+  # def add_pingdom_cidr(self, pytrie, result):
+  #   results = result.split('\n')
+  #   for r in results:
+  #     if r.strip():
+  #       pytrie[r] = {
+  #           'source': 'Pingdom',
+  #           'website': 'https://documentation.solarwinds.com/en/Success_Center/pingdom/content/topics/pingdom-probe-servers-ip-addresses.htm'
+  #       }
+
+  # def add_atlassian_cidr(self, pytrie, result):
+
+  #   for ipv4 in result['ipv4_addresses']:
+  #     pytrie[ipv4] = {
+  #         'source': 'Atlassian',
+  #         'website': 'https://ip-ranges.atlassian.com/'
+  #     }

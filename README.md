@@ -51,3 +51,5 @@ For deployment:
 ## Helpful links for reading
 
 - [Examples of Serverless deployment](https://github.com/serverless/examples)
+
+- [Rate Limits / API Keys to Serverless](https://www.serverless.com/framework/docs/providers/aws/events/apigateway/)
