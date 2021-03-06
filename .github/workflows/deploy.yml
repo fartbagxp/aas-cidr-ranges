@@ -3,6 +3,9 @@ name: Deploy to AWS
 on:
   schedule:
     - cron: '50 21 * * *'
+  push:
+    branches:
+      - master
 
 jobs:
   deploy:
