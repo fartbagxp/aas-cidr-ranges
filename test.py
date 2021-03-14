@@ -5,12 +5,12 @@ from src.reader import FileReader
 from src.dl.download_zoom import ZoomCidrDownloader
 
 from src.pytrie_support import PytrieSupport
+from src.whois import whois
 
 
 def run_test():
   # 128 bits needed for holding IPv6
   pyt = pytricia.PyTricia(128)
-
   support = PytrieSupport()
 
   # read all the files locally
@@ -153,6 +153,11 @@ def run_test():
   '''
   print(pyt.get('43.229.84.12'))
   print(pyt.get('2a02:6ea0:c305::4041'))
+
+  '''
+  Testing - Whois
+  '''
+  print(whois('1.1.1.1'))
 
 
 def main():
