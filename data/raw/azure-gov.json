@@ -1,5 +1,5 @@
 {
-  "changeNumber": 139,
+  "changeNumber": 140,
   "cloud": "AzureGovernment",
   "values": [
     {
@@ -58,7 +58,7 @@
       "name": "AzureActiveDirectory",
       "id": "AzureActiveDirectory",
       "properties": {
-        "changeNumber": 6,
+        "changeNumber": 7,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -87,7 +87,8 @@
           "52.243.154.47/32",
           "52.244.67.230/32",
           "52.244.71.138/32",
-          "52.244.120.128/25"
+          "52.244.120.128/25",
+          "2001:489a:3500::/50"
         ],
         "networkFeatures": [
           "API",
@@ -7718,5 +7719,5 @@
       }
     }
   ],
-  "createDate": "20210315"
+  "createDate": "20210322"
 }
