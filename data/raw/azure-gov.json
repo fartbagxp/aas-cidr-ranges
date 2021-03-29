@@ -1,5 +1,5 @@
 {
-  "changeNumber": 140,
+  "changeNumber": 141,
   "cloud": "AzureGovernment",
   "values": [
     {
@@ -6756,7 +6756,7 @@
       "name": "AzureActiveDirectory.ServiceEndpoint",
       "id": "AzureActiveDirectory.ServiceEndpoint",
       "properties": {
-        "changeNumber": 1,
+        "changeNumber": 2,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -6778,7 +6778,10 @@
           "52.126.195.0/27",
           "52.126.195.32/29",
           "52.126.195.64/27",
-          "52.126.195.96/29"
+          "52.126.195.96/29",
+          "2001:489a:3500::/121",
+          "2001:489a:3500:20::/121",
+          "2001:489a:3500:40::/121"
         ],
         "networkFeatures": null
       }
@@ -7071,18 +7074,29 @@
       "name": "LogicAppsManagement",
       "id": "LogicAppsManagement",
       "properties": {
-        "changeNumber": 1,
+        "changeNumber": 2,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
         "systemService": "LogicApps",
         "addressPrefixes": [
           "20.140.94.80/28",
+          "23.97.4.36/32",
           "52.126.205.160/28",
           "52.127.18.208/28",
           "52.127.29.16/28",
           "52.127.38.96/28",
           "52.127.61.160/28",
+          "52.182.49.204/32",
+          "52.182.52.106/32",
+          "52.227.152.90/32",
+          "52.227.159.157/32",
+          "52.238.112.96/32",
+          "52.238.119.104/32",
+          "52.238.119.145/32",
+          "52.244.66.82/32",
+          "52.244.67.64/32",
+          "52.244.67.164/32",
           "2001:489a:3103:402::3c0/124",
           "2001:489a:3203:402::3c0/124",
           "2001:489a:3303:402::3c0/124",
@@ -7204,7 +7218,7 @@
       "name": "AzureCloud.usgovarizona",
       "id": "AzureCloud.usgovarizona",
       "properties": {
-        "changeNumber": 20,
+        "changeNumber": 21,
         "region": "usgovarizona",
         "regionId": 39,
         "platform": "Azure",
@@ -7253,6 +7267,7 @@
           "52.245.6.0/24",
           "52.245.144.0/27",
           "2001:489a:2206:10::/63",
+          "2001:489a:3500:20::/59",
           "2001:489a:3601::/48",
           "2001:489a:3602::/48",
           "2001:489a:3604::/48",
@@ -7268,7 +7283,7 @@
       "name": "AzureCloud.usgoviowa",
       "id": "AzureCloud.usgoviowa",
       "properties": {
-        "changeNumber": 14,
+        "changeNumber": 15,
         "region": "usgoviowa",
         "regionId": 40,
         "platform": "Azure",
@@ -7292,7 +7307,6 @@
           "52.126.209.0/24",
           "52.126.216.0/22",
           "52.126.224.128/26",
-          "52.126.233.0/24",
           "52.126.234.0/24",
           "52.127.24.0/21",
           "52.127.82.0/24",
@@ -7315,7 +7329,7 @@
       "name": "AzureCloud.usgovtexas",
       "id": "AzureCloud.usgovtexas",
       "properties": {
-        "changeNumber": 15,
+        "changeNumber": 16,
         "region": "usgovtexas",
         "regionId": 41,
         "platform": "Azure",
@@ -7361,7 +7375,8 @@
           "52.249.96.0/19",
           "2001:489a:2206::/63",
           "2001:489a:3400::/46",
-          "2001:489a:3404::/48"
+          "2001:489a:3404::/48",
+          "2001:489a:3500::/59"
         ],
         "networkFeatures": [
           "API",
@@ -7373,7 +7388,7 @@
       "name": "AzureCloud.usgovvirginia",
       "id": "AzureCloud.usgovvirginia",
       "properties": {
-        "changeNumber": 23,
+        "changeNumber": 24,
         "region": "usgovvirginia",
         "regionId": 42,
         "platform": "Azure",
@@ -7442,7 +7457,8 @@
           "52.247.128.0/18",
           "2001:489a:2206:20::/63",
           "2001:489a:3100::/46",
-          "2001:489a:3108::/48"
+          "2001:489a:3108::/48",
+          "2001:489a:3500:40::/59"
         ],
         "networkFeatures": [
           "API",
@@ -7454,7 +7470,7 @@
       "name": "AzureCloud",
       "id": "AzureCloud",
       "properties": {
-        "changeNumber": 44,
+        "changeNumber": 45,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -7604,7 +7620,6 @@
           "52.126.224.128/26",
           "52.126.224.192/26",
           "52.126.232.0/24",
-          "52.126.233.0/24",
           "52.126.234.0/24",
           "52.126.235.0/24",
           "52.126.236.0/24",
@@ -7707,6 +7722,9 @@
           "2001:489a:3304::/48",
           "2001:489a:3400::/46",
           "2001:489a:3404::/48",
+          "2001:489a:3500::/59",
+          "2001:489a:3500:20::/59",
+          "2001:489a:3500:40::/59",
           "2001:489a:3601::/48",
           "2001:489a:3602::/48",
           "2001:489a:3604::/48",
@@ -7719,5 +7737,5 @@
       }
     }
   ],
-  "createDate": "20210322"
+  "createDate": "20210329"
 }

@@ -1,5 +1,5 @@
 {
-  "changeNumber": 139,
+  "changeNumber": 140,
   "cloud": "China",
   "values": [
     {
@@ -1172,7 +1172,7 @@
       "name": "CognitiveServicesManagement",
       "id": "CognitiveServicesManagement",
       "properties": {
-        "changeNumber": 9,
+        "changeNumber": 10,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -1185,8 +1185,10 @@
           "40.72.79.128/28",
           "40.73.3.152/32",
           "40.73.37.173/32",
+          "40.73.38.19/32",
           "40.73.96.154/32",
           "40.73.102.2/32",
+          "40.73.119.68/32",
           "40.73.141.144/29",
           "40.73.172.0/28",
           "42.159.157.119/32",
@@ -4685,7 +4687,7 @@
       "name": "AzureActiveDirectory.ServiceEndpoint",
       "id": "AzureActiveDirectory.ServiceEndpoint",
       "properties": {
-        "changeNumber": 1,
+        "changeNumber": 2,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -4702,7 +4704,9 @@
           "139.217.228.95/32",
           "139.217.231.198/32",
           "139.217.231.208/32",
-          "139.217.231.219/32"
+          "139.217.231.219/32",
+          "2406:e500:5500::/121",
+          "2406:e500:5500:20::/121"
         ],
         "networkFeatures": null
       }
@@ -4773,12 +4777,22 @@
       "name": "LogicAppsManagement",
       "id": "LogicAppsManagement",
       "properties": {
-        "changeNumber": 1,
+        "changeNumber": 2,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
         "systemService": "LogicApps",
         "addressPrefixes": [
+          "40.73.32.124/32",
+          "40.73.33.122/32",
+          "40.73.33.166/32",
+          "40.73.37.11/32",
+          "40.73.245.4/32",
+          "40.125.171.245/32",
+          "139.217.224.69/32",
+          "139.217.224.152/32",
+          "139.219.109.245/32",
+          "139.219.111.85/32",
           "2404:7940:1:402::4f0/124",
           "2404:7940:101:402::cf0/124",
           "2404:7940:201:402::4f0/124",
@@ -4796,7 +4810,7 @@
       "name": "AzureCloud.chinaeast2",
       "id": "AzureCloud.chinaeast2",
       "properties": {
-        "changeNumber": 20,
+        "changeNumber": 21,
         "region": "chinaeast2",
         "regionId": 55,
         "platform": "Azure",
@@ -4839,7 +4853,8 @@
           "2406:e500:2101::/48",
           "2406:e500:2102::/47",
           "2406:e500:2104::/48",
-          "2406:e500:4805::/63"
+          "2406:e500:4805::/63",
+          "2406:e500:5500::/59"
         ],
         "networkFeatures": [
           "API",
@@ -4926,7 +4941,7 @@
       "name": "AzureCloud.chinanorth2",
       "id": "AzureCloud.chinanorth2",
       "properties": {
-        "changeNumber": 16,
+        "changeNumber": 17,
         "region": "chinanorth2",
         "regionId": 54,
         "platform": "Azure",
@@ -4966,7 +4981,8 @@
           "2406:e500:2001::/48",
           "2406:e500:2002::/47",
           "2406:e500:2004::/48",
-          "2406:e500:4801::/63"
+          "2406:e500:4801::/63",
+          "2406:e500:5500:20::/59"
         ],
         "networkFeatures": [
           "API",
@@ -5043,7 +5059,7 @@
       "name": "AzureCloud",
       "id": "AzureCloud",
       "properties": {
-        "changeNumber": 32,
+        "changeNumber": 33,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -5227,7 +5243,9 @@
           "2406:e500:4800::/63",
           "2406:e500:4801::/63",
           "2406:e500:4804::/63",
-          "2406:e500:4805::/63"
+          "2406:e500:4805::/63",
+          "2406:e500:5500::/59",
+          "2406:e500:5500:20::/59"
         ],
         "networkFeatures": [
           "API",
@@ -5236,5 +5254,5 @@
       }
     }
   ],
-  "createDate": "20210322"
+  "createDate": "20210329"
 }
