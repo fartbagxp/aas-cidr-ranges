@@ -1,5 +1,5 @@
 {
-  "changeNumber": 141,
+  "changeNumber": 142,
   "cloud": "China",
   "values": [
     {
@@ -1477,7 +1477,7 @@
       "name": "PowerBI",
       "id": "PowerBI",
       "properties": {
-        "changeNumber": 1,
+        "changeNumber": 2,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -1496,10 +1496,12 @@
           "52.130.8.120/29",
           "52.130.8.128/31",
           "52.130.12.224/29",
+          "52.130.15.224/30",
           "52.130.16.68/30",
           "52.130.16.120/29",
           "52.130.16.128/31",
           "52.130.20.248/29",
+          "52.131.192.148/30",
           "2404:7940:1::6a0/123",
           "2404:7940:1::6c0/122",
           "2404:7940:101::6a0/123",
@@ -2614,6 +2616,26 @@
       }
     },
     {
+      "name": "AzureDataExplorerManagement.ChinaEast3",
+      "id": "AzureDataExplorerManagement.ChinaEast3",
+      "properties": {
+        "changeNumber": 1,
+        "region": "chinaeast3",
+        "regionId": 90,
+        "platform": "Azure",
+        "systemService": "AzureDataExplorerManagement",
+        "addressPrefixes": [
+          "2406:e500:2402::100/121"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
+      }
+    },
+    {
       "name": "AzureDataExplorerManagement.ChinaNorth",
       "id": "AzureDataExplorerManagement.ChinaNorth",
       "properties": {
@@ -2650,6 +2672,26 @@
           "139.217.60.6/32",
           "2404:7940:101:1::500/121",
           "2404:7940:101:402::950/124"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
+      }
+    },
+    {
+      "name": "AzureDataExplorerManagement.ChinaNorth3",
+      "id": "AzureDataExplorerManagement.ChinaNorth3",
+      "properties": {
+        "changeNumber": 1,
+        "region": "chinanorth3",
+        "regionId": 89,
+        "platform": "Azure",
+        "systemService": "AzureDataExplorerManagement",
+        "addressPrefixes": [
+          "2406:e500:2602::100/121"
         ],
         "networkFeatures": [
           "API",
@@ -3178,6 +3220,21 @@
       }
     },
     {
+      "name": "AzureMonitor.ChinaEast3",
+      "id": "AzureMonitor.ChinaEast3",
+      "properties": {
+        "changeNumber": 1,
+        "region": "chinaeast3",
+        "regionId": 90,
+        "platform": "Azure",
+        "systemService": "AzureMonitor",
+        "addressPrefixes": [
+          "2406:e500:2402::/121"
+        ],
+        "networkFeatures": null
+      }
+    },
+    {
       "name": "AzureMonitor.ChinaNorth",
       "id": "AzureMonitor.ChinaNorth",
       "properties": {
@@ -3236,6 +3293,21 @@
           "UDR",
           "FW"
         ]
+      }
+    },
+    {
+      "name": "AzureMonitor.ChinaNorth3",
+      "id": "AzureMonitor.ChinaNorth3",
+      "properties": {
+        "changeNumber": 1,
+        "region": "chinanorth3",
+        "regionId": 89,
+        "platform": "Azure",
+        "systemService": "AzureMonitor",
+        "addressPrefixes": [
+          "2406:e500:2602::/121"
+        ],
+        "networkFeatures": null
       }
     },
     {
@@ -4810,7 +4882,7 @@
       "name": "AzureCloud.chinaeast2",
       "id": "AzureCloud.chinaeast2",
       "properties": {
-        "changeNumber": 21,
+        "changeNumber": 22,
         "region": "chinaeast2",
         "regionId": 55,
         "platform": "Azure",
@@ -4841,6 +4913,7 @@
           "52.130.100.0/23",
           "52.130.103.0/24",
           "52.130.120.0/21",
+          "52.130.160.0/19",
           "52.130.192.0/18",
           "52.131.130.0/23",
           "52.131.192.0/21",
@@ -5059,7 +5132,7 @@
       "name": "AzureCloud",
       "id": "AzureCloud",
       "properties": {
-        "changeNumber": 33,
+        "changeNumber": 34,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -5183,6 +5256,7 @@
           "52.130.120.0/21",
           "52.130.128.0/21",
           "52.130.144.0/20",
+          "52.130.160.0/19",
           "52.130.192.0/18",
           "52.131.0.0/23",
           "52.131.2.0/23",
@@ -5254,5 +5328,5 @@
       }
     }
   ],
-  "createDate": "20210405"
+  "createDate": "20210412"
 }
