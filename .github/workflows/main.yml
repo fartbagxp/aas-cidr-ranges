@@ -31,10 +31,6 @@ jobs:
           pipenv install --dev
           pipenv run python update_raw.py
 
-      - name: run an azure port test for sql
-        run: |
-          bash src/ports/azure-sql-test.sh > data/raw/azure-sql-test.txt 2>&1
-
       - name: update cidr listing with bash
         run: |
           bash src/dl/download_google.sh > data/raw/gcp.txt
