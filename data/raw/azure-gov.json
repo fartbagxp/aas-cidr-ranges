@@ -1,5 +1,5 @@
 {
-  "changeNumber": 143,
+  "changeNumber": 145,
   "cloud": "AzureGovernment",
   "values": [
     {
@@ -859,7 +859,7 @@
       "name": "EventHub",
       "id": "EventHub",
       "properties": {
-        "changeNumber": 4,
+        "changeNumber": 5,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -869,6 +869,9 @@
           "20.140.94.0/27",
           "20.140.130.64/26",
           "20.140.131.160/27",
+          "20.140.146.64/26",
+          "20.141.9.64/26",
+          "20.141.16.192/26",
           "23.97.0.197/32",
           "23.97.2.26/32",
           "23.97.16.186/32",
@@ -884,12 +887,14 @@
           "52.182.90.133/32",
           "52.182.90.144/32",
           "52.227.171.130/32",
+          "52.235.252.0/26",
           "52.238.114.175/32",
           "52.238.116.59/32",
           "52.238.116.60/32",
           "52.244.48.75/32",
           "52.244.48.85/32",
           "52.244.202.159/32",
+          "52.245.152.64/26",
           "2001:489a:3103::240/122",
           "2001:489a:3103:402::1c0/123",
           "2001:489a:3103:802::160/123",
@@ -1444,7 +1449,7 @@
       "name": "ServiceBus",
       "id": "ServiceBus",
       "properties": {
-        "changeNumber": 3,
+        "changeNumber": 4,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -1452,6 +1457,9 @@
         "addressPrefixes": [
           "20.140.90.128/29",
           "20.140.130.128/29",
+          "20.140.146.128/26",
+          "20.141.9.128/26",
+          "20.141.17.0/26",
           "52.126.202.48/29",
           "52.127.2.64/28",
           "52.127.26.32/28",
@@ -1459,6 +1467,8 @@
           "52.127.42.64/28",
           "52.127.58.64/28",
           "52.227.161.208/32",
+          "52.235.252.64/26",
+          "52.245.153.0/26",
           "2001:489a:3103::220/123",
           "2001:489a:3103:402::170/125",
           "2001:489a:3103:802::150/125",
@@ -1858,6 +1868,29 @@
       }
     },
     {
+      "name": "EOPExternalPublishedIPs",
+      "id": "EOPExternalPublishedIPs",
+      "properties": {
+        "changeNumber": 1,
+        "region": "",
+        "regionId": 0,
+        "platform": "Azure",
+        "systemService": "EOPExtPublished",
+        "addressPrefixes": [
+          "23.103.191.0/24",
+          "23.103.199.0/24",
+          "23.103.204.0/22",
+          "23.103.208.0/22",
+          "2001:489a:2202::/60",
+          "2001:489a:2202:2000::/63"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG"
+        ]
+      }
+    },
+    {
       "name": "GatewayManager",
       "id": "GatewayManager",
       "properties": {
@@ -2184,6 +2217,54 @@
       }
     },
     {
+      "name": "SCCservice",
+      "id": "SCCservice",
+      "properties": {
+        "changeNumber": 1,
+        "region": "",
+        "regionId": 0,
+        "platform": "Azure",
+        "systemService": "SCCservice",
+        "addressPrefixes": [
+          "13.72.34.110/32",
+          "13.72.39.75/32",
+          "20.140.200.192/29",
+          "52.126.205.120/29",
+          "52.127.12.8/29",
+          "52.127.38.176/29",
+          "52.180.251.16/32",
+          "52.180.255.219/32",
+          "52.181.160.158/32",
+          "52.181.161.151/32",
+          "52.181.162.82/32",
+          "52.181.162.174/32",
+          "52.181.162.233/32",
+          "52.181.162.245/32",
+          "52.181.165.25/32",
+          "52.181.166.108/32",
+          "52.182.90.224/32",
+          "52.182.92.250/32",
+          "52.227.163.252/32",
+          "52.227.165.96/32",
+          "52.227.169.234/32",
+          "52.227.173.141/32",
+          "52.227.182.149/32",
+          "52.227.183.146/32",
+          "52.244.65.13/32",
+          "52.244.67.138/32",
+          "52.244.69.237/32",
+          "52.244.205.111/32",
+          "52.245.128.40/29"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
+      }
+    },
+    {
       "name": "ServiceFabric",
       "id": "ServiceFabric",
       "properties": {
@@ -2387,11 +2468,7 @@
         "addressPrefixes": [
           "2001:489a:3203:402::178/125"
         ],
-        "networkFeatures": [
-          "API",
-          "NSG",
-          "FW"
-        ]
+        "networkFeatures": null
       }
     },
     {
@@ -2406,11 +2483,7 @@
         "addressPrefixes": [
           "2001:489a:3303:402::178/125"
         ],
-        "networkFeatures": [
-          "API",
-          "NSG",
-          "FW"
-        ]
+        "networkFeatures": null
       }
     },
     {
@@ -2443,11 +2516,7 @@
         "addressPrefixes": [
           "2001:489a:3403:402::178/125"
         ],
-        "networkFeatures": [
-          "API",
-          "NSG",
-          "FW"
-        ]
+        "networkFeatures": null
       }
     },
     {
@@ -2870,10 +2939,7 @@
           "2001:489a:3103:c04::80/122"
         ],
         "networkFeatures": [
-          "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -3016,10 +3082,7 @@
           "2001:489a:3303:802::180/121",
           "2001:489a:3303:c02::100/121"
         ],
-        "networkFeatures": [
-          "API",
-          "NSG"
-        ]
+        "networkFeatures": null
       }
     },
     {
@@ -3134,10 +3197,7 @@
           "52.126.202.172/30",
           "2001:489a:3303::20/123"
         ],
-        "networkFeatures": [
-          "API",
-          "NSG"
-        ]
+        "networkFeatures": null
       }
     },
     {
@@ -3492,7 +3552,10 @@
           "2001:489a:3303:802::2c0/122",
           "2001:489a:3303:c02::10/125"
         ],
-        "networkFeatures": null
+        "networkFeatures": [
+          "API",
+          "NSG"
+        ]
       }
     },
     {
@@ -3945,10 +4008,7 @@
           "52.243.156.192/28",
           "2001:489a:3403::380/121"
         ],
-        "networkFeatures": [
-          "API",
-          "NSG"
-        ]
+        "networkFeatures": null
       }
     },
     {
@@ -3972,7 +4032,7 @@
       "name": "EventHub.USDoDCentral",
       "id": "EventHub.USDoDCentral",
       "properties": {
-        "changeNumber": 2,
+        "changeNumber": 3,
         "region": "usdodcentral",
         "regionId": 44,
         "platform": "Azure",
@@ -3981,6 +4041,7 @@
           "52.127.58.32/27",
           "52.182.90.133/32",
           "52.182.90.144/32",
+          "52.245.152.64/26",
           "2001:489a:3203::240/122",
           "2001:489a:3203:402::1c0/123"
         ],
@@ -3996,12 +4057,13 @@
       "name": "EventHub.USDoDEast",
       "id": "EventHub.USDoDEast",
       "properties": {
-        "changeNumber": 2,
+        "changeNumber": 3,
         "region": "usdodeast",
         "regionId": 45,
         "platform": "Azure",
         "systemService": "AzureEventHub",
         "addressPrefixes": [
+          "20.141.16.192/26",
           "52.126.202.32/28",
           "52.181.162.129/32",
           "52.181.162.144/32",
@@ -4022,12 +4084,13 @@
       "name": "EventHub.USGovArizona",
       "id": "EventHub.USGovArizona",
       "properties": {
-        "changeNumber": 2,
+        "changeNumber": 3,
         "region": "usgovarizona",
         "regionId": 39,
         "platform": "Azure",
         "systemService": "AzureEventHub",
         "addressPrefixes": [
+          "20.141.9.64/26",
           "52.127.2.32/27",
           "52.244.48.75/32",
           "52.244.48.85/32",
@@ -4071,12 +4134,13 @@
       "name": "EventHub.USGovTexas",
       "id": "EventHub.USGovTexas",
       "properties": {
-        "changeNumber": 2,
+        "changeNumber": 3,
         "region": "usgovtexas",
         "regionId": 41,
         "platform": "Azure",
         "systemService": "AzureEventHub",
         "addressPrefixes": [
+          "20.140.146.64/26",
           "52.127.34.32/27",
           "52.238.114.175/32",
           "52.238.116.59/32",
@@ -4096,7 +4160,7 @@
       "name": "EventHub.USGovVirginia",
       "id": "EventHub.USGovVirginia",
       "properties": {
-        "changeNumber": 4,
+        "changeNumber": 5,
         "region": "usgovvirginia",
         "regionId": 42,
         "platform": "Azure",
@@ -4110,6 +4174,7 @@
           "23.97.2.26/32",
           "52.127.42.32/27",
           "52.227.171.130/32",
+          "52.235.252.0/26",
           "2001:489a:3103::240/122",
           "2001:489a:3103:402::1c0/123",
           "2001:489a:3103:802::160/123",
@@ -4500,10 +4565,7 @@
           "2001:489a:3203:402::600/121"
         ],
         "networkFeatures": [
-          "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -4530,10 +4592,7 @@
           "2001:489a:3303:402::680/121"
         ],
         "networkFeatures": [
-          "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -4576,7 +4635,6 @@
           "2001:489a:3604:402::580/121"
         ],
         "networkFeatures": [
-          "API",
           "NSG"
         ]
       }
@@ -4597,10 +4655,7 @@
           "2001:489a:3003:402::80/121"
         ],
         "networkFeatures": [
-          "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -4624,10 +4679,7 @@
           "2001:489a:3403:402::600/121"
         ],
         "networkFeatures": [
-          "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -4674,10 +4726,7 @@
           "2001:489a:3103:402::500/121"
         ],
         "networkFeatures": [
-          "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -5155,21 +5204,20 @@
       "name": "ServiceBus.USDoDCentral",
       "id": "ServiceBus.USDoDCentral",
       "properties": {
-        "changeNumber": 2,
+        "changeNumber": 3,
         "region": "usdodcentral",
         "regionId": 44,
         "platform": "Azure",
         "systemService": "AzureServiceBus",
         "addressPrefixes": [
           "52.127.58.64/28",
+          "52.245.153.0/26",
           "2001:489a:3203::220/123",
           "2001:489a:3203:402::170/125"
         ],
         "networkFeatures": [
           "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -5177,12 +5225,13 @@
       "name": "ServiceBus.USDoDEast",
       "id": "ServiceBus.USDoDEast",
       "properties": {
-        "changeNumber": 2,
+        "changeNumber": 3,
         "region": "usdodeast",
         "regionId": 45,
         "platform": "Azure",
         "systemService": "AzureServiceBus",
         "addressPrefixes": [
+          "20.141.17.0/26",
           "52.126.202.48/29",
           "2001:489a:3303::220/123",
           "2001:489a:3303:402::170/125",
@@ -5191,9 +5240,7 @@
         ],
         "networkFeatures": [
           "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -5201,12 +5248,13 @@
       "name": "ServiceBus.USGovArizona",
       "id": "ServiceBus.USGovArizona",
       "properties": {
-        "changeNumber": 2,
+        "changeNumber": 3,
         "region": "usgovarizona",
         "regionId": 39,
         "platform": "Azure",
         "systemService": "AzureServiceBus",
         "addressPrefixes": [
+          "20.141.9.128/26",
           "52.127.2.64/28",
           "2001:489a:3604::220/123",
           "2001:489a:3604:402::170/125",
@@ -5215,9 +5263,7 @@
         ],
         "networkFeatures": [
           "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -5235,9 +5281,7 @@
         ],
         "networkFeatures": [
           "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -5245,21 +5289,20 @@
       "name": "ServiceBus.USGovTexas",
       "id": "ServiceBus.USGovTexas",
       "properties": {
-        "changeNumber": 2,
+        "changeNumber": 3,
         "region": "usgovtexas",
         "regionId": 41,
         "platform": "Azure",
         "systemService": "AzureServiceBus",
         "addressPrefixes": [
+          "20.140.146.128/26",
           "52.127.34.64/28",
           "2001:489a:3403::220/123",
           "2001:489a:3403:402::170/125"
         ],
         "networkFeatures": [
           "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -5267,7 +5310,7 @@
       "name": "ServiceBus.USGovVirginia",
       "id": "ServiceBus.USGovVirginia",
       "properties": {
-        "changeNumber": 3,
+        "changeNumber": 4,
         "region": "usgovvirginia",
         "regionId": 42,
         "platform": "Azure",
@@ -5277,6 +5320,7 @@
           "20.140.130.128/29",
           "52.127.42.64/28",
           "52.227.161.208/32",
+          "52.235.252.64/26",
           "2001:489a:3103::220/123",
           "2001:489a:3103:402::170/125",
           "2001:489a:3103:802::150/125",
@@ -5284,9 +5328,7 @@
         ],
         "networkFeatures": [
           "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -5512,10 +5554,7 @@
           "2001:489a:3203::400/122"
         ],
         "networkFeatures": [
-          "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -5537,10 +5576,7 @@
           "2001:489a:3303::340/122"
         ],
         "networkFeatures": [
-          "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -5563,10 +5599,7 @@
           "2001:489a:3604::340/122"
         ],
         "networkFeatures": [
-          "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -5584,10 +5617,7 @@
           "52.127.26.192/27"
         ],
         "networkFeatures": [
-          "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -5608,10 +5638,7 @@
           "2001:489a:3403::400/122"
         ],
         "networkFeatures": [
-          "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -5633,10 +5660,7 @@
           "2001:489a:3103::340/122"
         ],
         "networkFeatures": [
-          "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -5684,10 +5708,7 @@
           "2001:489a:3303:c02::190/124"
         ],
         "networkFeatures": [
-          "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -5717,10 +5738,7 @@
           "2001:489a:3604:c02::190/124"
         ],
         "networkFeatures": [
-          "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -5770,10 +5788,7 @@
           "2001:489a:3103:c04::190/124"
         ],
         "networkFeatures": [
-          "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -5793,7 +5808,9 @@
           "52.182.53.156/32",
           "2001:489a:3203::40/122"
         ],
-        "networkFeatures": null
+        "networkFeatures": [
+          "NSG"
+        ]
       }
     },
     {
@@ -5813,10 +5830,7 @@
           "2001:489a:3303::40/122"
         ],
         "networkFeatures": [
-          "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -5837,10 +5851,7 @@
           "2001:489a:3604::40/122"
         ],
         "networkFeatures": [
-          "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -5862,10 +5873,7 @@
           "52.127.26.64/29"
         ],
         "networkFeatures": [
-          "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -5886,10 +5894,7 @@
           "2001:489a:3403::40/122"
         ],
         "networkFeatures": [
-          "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -5912,10 +5917,7 @@
           "2001:489a:3103::40/122"
         ],
         "networkFeatures": [
-          "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -5938,9 +5940,7 @@
         ],
         "networkFeatures": [
           "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -6011,9 +6011,7 @@
         ],
         "networkFeatures": [
           "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -6457,6 +6455,130 @@
           "2001:489a:3103::200/123"
         ],
         "networkFeatures": null
+      }
+    },
+    {
+      "name": "SCCservice.USDoDCentral",
+      "id": "SCCservice.USDoDCentral",
+      "properties": {
+        "changeNumber": 1,
+        "region": "usdodcentral",
+        "regionId": 44,
+        "platform": "Azure",
+        "systemService": "SCCservice",
+        "addressPrefixes": [
+          "52.180.251.16/32",
+          "52.180.255.219/32",
+          "52.182.90.224/32",
+          "52.182.92.250/32",
+          "52.245.128.40/29"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
+      }
+    },
+    {
+      "name": "SCCservice.USDoDEast",
+      "id": "SCCservice.USDoDEast",
+      "properties": {
+        "changeNumber": 1,
+        "region": "usdodeast",
+        "regionId": 45,
+        "platform": "Azure",
+        "systemService": "SCCservice",
+        "addressPrefixes": [
+          "52.126.205.120/29",
+          "52.181.160.158/32",
+          "52.181.161.151/32",
+          "52.181.162.82/32",
+          "52.181.162.174/32",
+          "52.181.162.233/32",
+          "52.181.162.245/32",
+          "52.181.165.25/32",
+          "52.181.166.108/32"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
+      }
+    },
+    {
+      "name": "SCCservice.USGovArizona",
+      "id": "SCCservice.USGovArizona",
+      "properties": {
+        "changeNumber": 1,
+        "region": "usgovarizona",
+        "regionId": 39,
+        "platform": "Azure",
+        "systemService": "SCCservice",
+        "addressPrefixes": [
+          "52.127.12.8/29",
+          "52.244.65.13/32",
+          "52.244.67.138/32",
+          "52.244.69.237/32",
+          "52.244.205.111/32"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
+      }
+    },
+    {
+      "name": "SCCservice.USGovTexas",
+      "id": "SCCservice.USGovTexas",
+      "properties": {
+        "changeNumber": 1,
+        "region": "usgovtexas",
+        "regionId": 41,
+        "platform": "Azure",
+        "systemService": "SCCservice",
+        "addressPrefixes": [
+          "52.127.38.176/29"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
+      }
+    },
+    {
+      "name": "SCCservice.USGovVirginia",
+      "id": "SCCservice.USGovVirginia",
+      "properties": {
+        "changeNumber": 1,
+        "region": "usgovvirginia",
+        "regionId": 42,
+        "platform": "Azure",
+        "systemService": "SCCservice",
+        "addressPrefixes": [
+          "13.72.34.110/32",
+          "13.72.39.75/32",
+          "20.140.200.192/29",
+          "52.227.163.252/32",
+          "52.227.165.96/32",
+          "52.227.169.234/32",
+          "52.227.173.141/32",
+          "52.227.182.149/32",
+          "52.227.183.146/32"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
       }
     },
     {
@@ -7744,5 +7866,5 @@
       }
     }
   ],
-  "createDate": "20210412"
+  "createDate": "20210426"
 }

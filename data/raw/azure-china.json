@@ -1,5 +1,5 @@
 {
-  "changeNumber": 142,
+  "changeNumber": 144,
   "cloud": "China",
   "values": [
     {
@@ -557,7 +557,7 @@
       "name": "EventHub",
       "id": "EventHub",
       "properties": {
-        "changeNumber": 2,
+        "changeNumber": 3,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -570,6 +570,9 @@
           "42.159.132.40/32",
           "42.159.146.225/32",
           "42.159.197.206/32",
+          "52.130.48.128/26",
+          "52.131.65.0/26",
+          "52.131.192.192/26",
           "139.217.18.134/32",
           "139.217.48.32/27",
           "139.217.168.32/27",
@@ -980,7 +983,7 @@
       "name": "ServiceBus",
       "id": "ServiceBus",
       "properties": {
-        "changeNumber": 2,
+        "changeNumber": 3,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -988,6 +991,9 @@
         "addressPrefixes": [
           "40.73.136.64/27",
           "40.73.168.64/27",
+          "52.130.48.192/26",
+          "52.131.65.64/26",
+          "52.131.193.0/26",
           "139.217.48.64/27",
           "139.217.168.64/27",
           "2404:7940:1:402::170/125",
@@ -1280,6 +1286,38 @@
       }
     },
     {
+      "name": "EOPExternalPublishedIPs",
+      "id": "EOPExternalPublishedIPs",
+      "properties": {
+        "changeNumber": 1,
+        "region": "",
+        "regionId": 0,
+        "platform": "Azure",
+        "systemService": "EOPExtPublished",
+        "addressPrefixes": [
+          "42.159.33.192/27",
+          "42.159.36.0/24",
+          "42.159.161.192/27",
+          "42.159.164.0/24",
+          "139.219.16.0/27",
+          "139.219.17.0/24",
+          "139.219.24.0/22",
+          "139.219.145.0/27",
+          "139.219.146.0/24",
+          "139.219.156.0/22",
+          "2406:e500:4400::/40",
+          "2406:e500:c020::/44",
+          "2406:e500:c120::/44"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
+      }
+    },
+    {
       "name": "GatewayManager",
       "id": "GatewayManager",
       "properties": {
@@ -1535,6 +1573,29 @@
           "2404:7940:101::200/123",
           "2404:7940:201::200/123",
           "2404:7940:301::200/123"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
+      }
+    },
+    {
+      "name": "SCCservice",
+      "id": "SCCservice",
+      "properties": {
+        "changeNumber": 1,
+        "region": "",
+        "regionId": 0,
+        "platform": "Azure",
+        "systemService": "SCCservice",
+        "addressPrefixes": [
+          "52.130.40.16/29",
+          "52.130.112.24/29",
+          "52.130.120.8/29",
+          "52.130.128.8/29"
         ],
         "networkFeatures": [
           "API",
@@ -2815,13 +2876,14 @@
       "name": "EventHub.ChinaEast2",
       "id": "EventHub.ChinaEast2",
       "properties": {
-        "changeNumber": 2,
+        "changeNumber": 3,
         "region": "chinaeast2",
         "regionId": 55,
         "platform": "Azure",
         "systemService": "AzureEventHub",
         "addressPrefixes": [
           "40.73.168.32/27",
+          "52.131.192.192/26",
           "2404:7940:301:402::1c0/123"
         ],
         "networkFeatures": [
@@ -2836,7 +2898,7 @@
       "name": "EventHub.ChinaNorth",
       "id": "EventHub.ChinaNorth",
       "properties": {
-        "changeNumber": 2,
+        "changeNumber": 3,
         "region": "chinanorth",
         "regionId": 14,
         "platform": "Azure",
@@ -2844,6 +2906,7 @@
         "addressPrefixes": [
           "42.159.4.151/32",
           "42.159.83.71/32",
+          "52.130.48.128/26",
           "139.217.18.134/32",
           "139.217.48.32/27",
           "2404:7940:1:402::1c0/123"
@@ -2860,13 +2923,14 @@
       "name": "EventHub.ChinaNorth2",
       "id": "EventHub.ChinaNorth2",
       "properties": {
-        "changeNumber": 2,
+        "changeNumber": 3,
         "region": "chinanorth2",
         "regionId": 54,
         "platform": "Azure",
         "systemService": "AzureEventHub",
         "addressPrefixes": [
           "40.73.136.32/27",
+          "52.131.65.0/26",
           "2404:7940:101:402::9c0/123"
         ],
         "networkFeatures": [
@@ -3664,13 +3728,14 @@
       "name": "ServiceBus.ChinaEast2",
       "id": "ServiceBus.ChinaEast2",
       "properties": {
-        "changeNumber": 2,
+        "changeNumber": 3,
         "region": "chinaeast2",
         "regionId": 55,
         "platform": "Azure",
         "systemService": "AzureServiceBus",
         "addressPrefixes": [
           "40.73.168.64/27",
+          "52.131.193.0/26",
           "2404:7940:301:402::170/125"
         ],
         "networkFeatures": [
@@ -3685,12 +3750,13 @@
       "name": "ServiceBus.ChinaNorth",
       "id": "ServiceBus.ChinaNorth",
       "properties": {
-        "changeNumber": 2,
+        "changeNumber": 3,
         "region": "chinanorth",
         "regionId": 14,
         "platform": "Azure",
         "systemService": "AzureServiceBus",
         "addressPrefixes": [
+          "52.130.48.192/26",
           "139.217.48.64/27",
           "2404:7940:1:402::170/125"
         ],
@@ -3706,13 +3772,14 @@
       "name": "ServiceBus.ChinaNorth2",
       "id": "ServiceBus.ChinaNorth2",
       "properties": {
-        "changeNumber": 2,
+        "changeNumber": 3,
         "region": "chinanorth2",
         "regionId": 54,
         "platform": "Azure",
         "systemService": "AzureServiceBus",
         "addressPrefixes": [
           "40.73.136.64/27",
+          "52.131.65.64/26",
           "2404:7940:101:402::970/125"
         ],
         "networkFeatures": [
@@ -4642,6 +4709,86 @@
       }
     },
     {
+      "name": "SCCservice.ChinaEast",
+      "id": "SCCservice.ChinaEast",
+      "properties": {
+        "changeNumber": 1,
+        "region": "chinaeast",
+        "regionId": 13,
+        "platform": "Azure",
+        "systemService": "SCCservice",
+        "addressPrefixes": [
+          "52.130.112.24/29"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
+      }
+    },
+    {
+      "name": "SCCservice.ChinaEast2",
+      "id": "SCCservice.ChinaEast2",
+      "properties": {
+        "changeNumber": 1,
+        "region": "chinaeast2",
+        "regionId": 55,
+        "platform": "Azure",
+        "systemService": "SCCservice",
+        "addressPrefixes": [
+          "52.130.120.8/29"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
+      }
+    },
+    {
+      "name": "SCCservice.ChinaNorth",
+      "id": "SCCservice.ChinaNorth",
+      "properties": {
+        "changeNumber": 1,
+        "region": "chinanorth",
+        "regionId": 14,
+        "platform": "Azure",
+        "systemService": "SCCservice",
+        "addressPrefixes": [
+          "52.130.128.8/29"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
+      }
+    },
+    {
+      "name": "SCCservice.ChinaNorth2",
+      "id": "SCCservice.ChinaNorth2",
+      "properties": {
+        "changeNumber": 1,
+        "region": "chinanorth2",
+        "regionId": 54,
+        "platform": "Azure",
+        "systemService": "SCCservice",
+        "addressPrefixes": [
+          "52.130.40.16/29"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
+      }
+    },
+    {
       "name": "StorageSyncService.ChinaEast",
       "id": "StorageSyncService.ChinaEast",
       "properties": {
@@ -5328,5 +5475,5 @@
       }
     }
   ],
-  "createDate": "20210412"
+  "createDate": "20210426"
 }
