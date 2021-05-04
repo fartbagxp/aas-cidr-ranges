@@ -1,5 +1,5 @@
 {
-  "changeNumber": 144,
+  "changeNumber": 145,
   "cloud": "China",
   "values": [
     {
@@ -364,9 +364,7 @@
         ],
         "networkFeatures": [
           "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -557,12 +555,13 @@
       "name": "EventHub",
       "id": "EventHub",
       "properties": {
-        "changeNumber": 3,
+        "changeNumber": 4,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
         "systemService": "AzureEventHub",
         "addressPrefixes": [
+          "40.72.168.64/26",
           "40.73.136.32/27",
           "40.73.168.32/27",
           "42.159.4.151/32",
@@ -576,9 +575,13 @@
           "139.217.18.134/32",
           "139.217.48.32/27",
           "139.217.168.32/27",
+          "2404:7940:1:1::600/120",
           "2404:7940:1:402::1c0/123",
+          "2404:7940:101:1::600/120",
           "2404:7940:101:402::9c0/123",
+          "2404:7940:201:1::600/120",
           "2404:7940:201:402::1c0/123",
+          "2404:7940:301:1::600/120",
           "2404:7940:301:402::1c0/123"
         ],
         "networkFeatures": [
@@ -983,12 +986,13 @@
       "name": "ServiceBus",
       "id": "ServiceBus",
       "properties": {
-        "changeNumber": 3,
+        "changeNumber": 4,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
         "systemService": "AzureServiceBus",
         "addressPrefixes": [
+          "40.72.168.128/26",
           "40.73.136.64/27",
           "40.73.168.64/27",
           "52.130.48.192/26",
@@ -996,9 +1000,13 @@
           "52.131.193.0/26",
           "139.217.48.64/27",
           "139.217.168.64/27",
+          "2404:7940:1:1::700/120",
           "2404:7940:1:402::170/125",
+          "2404:7940:101:1::700/120",
           "2404:7940:101:402::970/125",
+          "2404:7940:201:1::700/120",
           "2404:7940:201:402::170/125",
+          "2404:7940:301:1::700/120",
           "2404:7940:301:402::170/125"
         ],
         "networkFeatures": [
@@ -1178,7 +1186,7 @@
       "name": "CognitiveServicesManagement",
       "id": "CognitiveServicesManagement",
       "properties": {
-        "changeNumber": 10,
+        "changeNumber": 11,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -1189,6 +1197,7 @@
           "40.72.74.144/29",
           "40.72.77.64/26",
           "40.72.79.128/28",
+          "40.72.168.0/27",
           "40.73.3.152/32",
           "40.73.37.173/32",
           "40.73.38.19/32",
@@ -1215,6 +1224,7 @@
           "52.130.21.0/26",
           "52.130.21.64/27",
           "52.130.23.96/28",
+          "52.130.48.96/27",
           "52.130.112.8/29",
           "139.217.15.215/32",
           "139.217.52.88/29",
@@ -1640,7 +1650,7 @@
       "name": "SqlManagement",
       "id": "SqlManagement",
       "properties": {
-        "changeNumber": 3,
+        "changeNumber": 4,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -1658,6 +1668,7 @@
           "52.130.4.16/30",
           "52.130.10.140/30",
           "52.130.10.240/29",
+          "52.130.15.228/30",
           "52.130.19.0/29",
           "52.130.19.8/30",
           "139.217.48.224/27",
@@ -1708,6 +1719,36 @@
           "API",
           "NSG",
           "UDR",
+          "FW"
+        ]
+      }
+    },
+    {
+      "name": "WindowsVirtualDesktop",
+      "id": "WindowsVirtualDesktop",
+      "properties": {
+        "changeNumber": 1,
+        "region": "",
+        "regionId": 0,
+        "platform": "Azure",
+        "systemService": "WindowsVirtualDesktop",
+        "addressPrefixes": [
+          "40.72.107.122/32",
+          "40.72.108.84/32",
+          "40.73.5.127/32",
+          "40.73.23.165/32",
+          "52.130.90.36/32",
+          "52.130.144.12/32",
+          "52.130.144.78/32",
+          "52.130.144.91/32",
+          "52.130.145.3/32",
+          "52.131.224.124/32",
+          "52.131.224.159/32",
+          "52.131.224.179/32"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
           "FW"
         ]
       }
@@ -1816,9 +1857,7 @@
         ],
         "networkFeatures": [
           "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -1839,9 +1878,7 @@
         ],
         "networkFeatures": [
           "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -1865,9 +1902,7 @@
         ],
         "networkFeatures": [
           "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -1888,9 +1923,7 @@
         ],
         "networkFeatures": [
           "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -1913,9 +1946,7 @@
         ],
         "networkFeatures": [
           "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -1936,9 +1967,7 @@
         ],
         "networkFeatures": [
           "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -1962,9 +1991,7 @@
         ],
         "networkFeatures": [
           "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -1985,9 +2012,7 @@
         ],
         "networkFeatures": [
           "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -2008,10 +2033,7 @@
           "2404:7940:201:402::100/122"
         ],
         "networkFeatures": [
-          "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -2029,10 +2051,7 @@
           "2404:7940:301:402::100/122"
         ],
         "networkFeatures": [
-          "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -2074,10 +2093,7 @@
           "2404:7940:101:402::900/122"
         ],
         "networkFeatures": [
-          "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -2358,9 +2374,7 @@
         ],
         "networkFeatures": [
           "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -2380,9 +2394,7 @@
         ],
         "networkFeatures": [
           "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -2402,9 +2414,7 @@
         ],
         "networkFeatures": [
           "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -2424,9 +2434,7 @@
         ],
         "networkFeatures": [
           "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -2449,9 +2457,7 @@
         ],
         "networkFeatures": [
           "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -2474,9 +2480,7 @@
         ],
         "networkFeatures": [
           "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -2499,9 +2503,7 @@
         ],
         "networkFeatures": [
           "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -2524,9 +2526,7 @@
         ],
         "networkFeatures": [
           "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -2549,9 +2549,7 @@
         ],
         "networkFeatures": [
           "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -2574,9 +2572,7 @@
         ],
         "networkFeatures": [
           "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -2599,9 +2595,7 @@
         ],
         "networkFeatures": [
           "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -2624,9 +2618,7 @@
         ],
         "networkFeatures": [
           "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -2852,23 +2844,23 @@
       "name": "EventHub.ChinaEast",
       "id": "EventHub.ChinaEast",
       "properties": {
-        "changeNumber": 2,
+        "changeNumber": 3,
         "region": "chinaeast",
         "regionId": 13,
         "platform": "Azure",
         "systemService": "AzureEventHub",
         "addressPrefixes": [
+          "40.72.168.64/26",
           "42.159.132.40/32",
           "42.159.146.225/32",
           "42.159.197.206/32",
           "139.217.168.32/27",
+          "2404:7940:201:1::600/120",
           "2404:7940:201:402::1c0/123"
         ],
         "networkFeatures": [
           "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -2876,7 +2868,7 @@
       "name": "EventHub.ChinaEast2",
       "id": "EventHub.ChinaEast2",
       "properties": {
-        "changeNumber": 3,
+        "changeNumber": 4,
         "region": "chinaeast2",
         "regionId": 55,
         "platform": "Azure",
@@ -2884,13 +2876,12 @@
         "addressPrefixes": [
           "40.73.168.32/27",
           "52.131.192.192/26",
+          "2404:7940:301:1::600/120",
           "2404:7940:301:402::1c0/123"
         ],
         "networkFeatures": [
           "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -2898,7 +2889,7 @@
       "name": "EventHub.ChinaNorth",
       "id": "EventHub.ChinaNorth",
       "properties": {
-        "changeNumber": 3,
+        "changeNumber": 4,
         "region": "chinanorth",
         "regionId": 14,
         "platform": "Azure",
@@ -2909,13 +2900,12 @@
           "52.130.48.128/26",
           "139.217.18.134/32",
           "139.217.48.32/27",
+          "2404:7940:1:1::600/120",
           "2404:7940:1:402::1c0/123"
         ],
         "networkFeatures": [
           "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -2923,7 +2913,7 @@
       "name": "EventHub.ChinaNorth2",
       "id": "EventHub.ChinaNorth2",
       "properties": {
-        "changeNumber": 3,
+        "changeNumber": 4,
         "region": "chinanorth2",
         "regionId": 54,
         "platform": "Azure",
@@ -2931,13 +2921,12 @@
         "addressPrefixes": [
           "40.73.136.32/27",
           "52.131.65.0/26",
+          "2404:7940:101:1::600/120",
           "2404:7940:101:402::9c0/123"
         ],
         "networkFeatures": [
           "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -3057,9 +3046,7 @@
         ],
         "networkFeatures": [
           "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -3081,9 +3068,7 @@
         ],
         "networkFeatures": [
           "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -3105,9 +3090,7 @@
         ],
         "networkFeatures": [
           "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -3128,9 +3111,7 @@
         ],
         "networkFeatures": [
           "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -3239,10 +3220,7 @@
           "2404:7940:201:1::400/121"
         ],
         "networkFeatures": [
-          "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -3276,10 +3254,7 @@
           "2404:7940:301:1::400/121"
         ],
         "networkFeatures": [
-          "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -3317,10 +3292,7 @@
           "2404:7940:1:1::400/121"
         ],
         "networkFeatures": [
-          "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -3352,10 +3324,7 @@
           "2404:7940:101:1::400/121"
         ],
         "networkFeatures": [
-          "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -3604,9 +3573,7 @@
         ],
         "networkFeatures": [
           "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -3632,9 +3599,7 @@
         ],
         "networkFeatures": [
           "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -3667,9 +3632,7 @@
         ],
         "networkFeatures": [
           "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -3697,9 +3660,7 @@
         ],
         "networkFeatures": [
           "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -3707,20 +3668,20 @@
       "name": "ServiceBus.ChinaEast",
       "id": "ServiceBus.ChinaEast",
       "properties": {
-        "changeNumber": 2,
+        "changeNumber": 3,
         "region": "chinaeast",
         "regionId": 13,
         "platform": "Azure",
         "systemService": "AzureServiceBus",
         "addressPrefixes": [
+          "40.72.168.128/26",
           "139.217.168.64/27",
+          "2404:7940:201:1::700/120",
           "2404:7940:201:402::170/125"
         ],
         "networkFeatures": [
           "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -3728,7 +3689,7 @@
       "name": "ServiceBus.ChinaEast2",
       "id": "ServiceBus.ChinaEast2",
       "properties": {
-        "changeNumber": 3,
+        "changeNumber": 4,
         "region": "chinaeast2",
         "regionId": 55,
         "platform": "Azure",
@@ -3736,13 +3697,12 @@
         "addressPrefixes": [
           "40.73.168.64/27",
           "52.131.193.0/26",
+          "2404:7940:301:1::700/120",
           "2404:7940:301:402::170/125"
         ],
         "networkFeatures": [
           "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -3750,7 +3710,7 @@
       "name": "ServiceBus.ChinaNorth",
       "id": "ServiceBus.ChinaNorth",
       "properties": {
-        "changeNumber": 3,
+        "changeNumber": 4,
         "region": "chinanorth",
         "regionId": 14,
         "platform": "Azure",
@@ -3758,13 +3718,12 @@
         "addressPrefixes": [
           "52.130.48.192/26",
           "139.217.48.64/27",
+          "2404:7940:1:1::700/120",
           "2404:7940:1:402::170/125"
         ],
         "networkFeatures": [
           "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -3772,7 +3731,7 @@
       "name": "ServiceBus.ChinaNorth2",
       "id": "ServiceBus.ChinaNorth2",
       "properties": {
-        "changeNumber": 3,
+        "changeNumber": 4,
         "region": "chinanorth2",
         "regionId": 54,
         "platform": "Azure",
@@ -3780,13 +3739,12 @@
         "addressPrefixes": [
           "40.73.136.64/27",
           "52.131.65.64/26",
+          "2404:7940:101:1::700/120",
           "2404:7940:101:402::970/125"
         ],
         "networkFeatures": [
           "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -3874,9 +3832,7 @@
         ],
         "networkFeatures": [
           "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -3899,9 +3855,7 @@
         ],
         "networkFeatures": [
           "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -3925,9 +3879,7 @@
         ],
         "networkFeatures": [
           "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -3947,9 +3899,7 @@
         ],
         "networkFeatures": [
           "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -3970,10 +3920,7 @@
           "2404:7940:201::300/122"
         ],
         "networkFeatures": [
-          "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -3994,10 +3941,7 @@
           "2404:7940:301::300/122"
         ],
         "networkFeatures": [
-          "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -4018,10 +3962,7 @@
           "2404:7940:1::300/122"
         ],
         "networkFeatures": [
-          "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -4042,10 +3983,7 @@
           "2404:7940:101::300/122"
         ],
         "networkFeatures": [
-          "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -4091,10 +4029,7 @@
           "2404:7940:301:402::4e0/124"
         ],
         "networkFeatures": [
-          "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -4265,9 +4200,7 @@
         ],
         "networkFeatures": [
           "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -4289,9 +4222,7 @@
         ],
         "networkFeatures": [
           "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -4313,9 +4244,7 @@
         ],
         "networkFeatures": [
           "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -4337,9 +4266,7 @@
         ],
         "networkFeatures": [
           "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -4557,9 +4484,7 @@
         ],
         "networkFeatures": [
           "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -4578,9 +4503,7 @@
         ],
         "networkFeatures": [
           "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -4599,9 +4522,7 @@
         ],
         "networkFeatures": [
           "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -4620,9 +4541,7 @@
         ],
         "networkFeatures": [
           "API",
-          "NSG",
-          "UDR",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -4873,6 +4792,54 @@
       }
     },
     {
+      "name": "WindowsVirtualDesktop.ChinaEast2",
+      "id": "WindowsVirtualDesktop.ChinaEast2",
+      "properties": {
+        "changeNumber": 1,
+        "region": "chinaeast2",
+        "regionId": 55,
+        "platform": "Azure",
+        "systemService": "WindowsVirtualDesktop",
+        "addressPrefixes": [
+          "40.72.107.122/32",
+          "40.72.108.84/32",
+          "52.130.90.36/32",
+          "52.131.224.124/32",
+          "52.131.224.159/32",
+          "52.131.224.179/32"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "FW"
+        ]
+      }
+    },
+    {
+      "name": "WindowsVirtualDesktop.ChinaNorth2",
+      "id": "WindowsVirtualDesktop.ChinaNorth2",
+      "properties": {
+        "changeNumber": 1,
+        "region": "chinanorth2",
+        "regionId": 54,
+        "platform": "Azure",
+        "systemService": "WindowsVirtualDesktop",
+        "addressPrefixes": [
+          "40.73.5.127/32",
+          "40.73.23.165/32",
+          "52.130.144.12/32",
+          "52.130.144.78/32",
+          "52.130.144.91/32",
+          "52.130.145.3/32"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "FW"
+        ]
+      }
+    },
+    {
       "name": "AzureActiveDirectoryDomainServices",
       "id": "AzureActiveDirectoryDomainServices",
       "properties": {
@@ -5029,7 +4996,7 @@
       "name": "AzureCloud.chinaeast2",
       "id": "AzureCloud.chinaeast2",
       "properties": {
-        "changeNumber": 22,
+        "changeNumber": 23,
         "region": "chinaeast2",
         "regionId": 55,
         "platform": "Azure",
@@ -5064,6 +5031,7 @@
           "52.130.192.0/18",
           "52.131.130.0/23",
           "52.131.192.0/21",
+          "52.131.208.0/20",
           "52.131.224.0/19",
           "139.217.176.0/20",
           "139.217.216.0/21",
@@ -5279,7 +5247,7 @@
       "name": "AzureCloud",
       "id": "AzureCloud",
       "properties": {
-        "changeNumber": 34,
+        "changeNumber": 35,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -5411,6 +5379,7 @@
           "52.131.128.0/23",
           "52.131.130.0/23",
           "52.131.192.0/21",
+          "52.131.208.0/20",
           "52.131.224.0/19",
           "103.9.10.0/24",
           "139.217.0.0/19",
@@ -5475,5 +5444,5 @@
       }
     }
   ],
-  "createDate": "20210426"
+  "createDate": "20210503"
 }
