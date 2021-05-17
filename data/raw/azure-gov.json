@@ -1,5 +1,5 @@
 {
-  "changeNumber": 147,
+  "changeNumber": 148,
   "cloud": "AzureGovernment",
   "values": [
     {
@@ -58,7 +58,7 @@
       "name": "AzureActiveDirectory",
       "id": "AzureActiveDirectory",
       "properties": {
-        "changeNumber": 7,
+        "changeNumber": 8,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -68,6 +68,7 @@
           "13.73.64.64/26",
           "13.73.208.128/25",
           "20.140.53.32/27",
+          "20.140.53.122/31",
           "20.140.144.128/29",
           "20.140.232.0/23",
           "52.126.194.0/23",
@@ -82,6 +83,7 @@
           "52.127.59.96/27",
           "52.227.174.114/32",
           "52.227.221.153/32",
+          "52.235.251.228/31",
           "52.238.165.247/32",
           "52.238.166.25/32",
           "52.243.154.47/32",
@@ -1507,7 +1509,7 @@
       "name": "AzureSignalR",
       "id": "AzureSignalR",
       "properties": {
-        "changeNumber": 3,
+        "changeNumber": 4,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -1520,7 +1522,11 @@
           "52.127.10.224/27",
           "52.127.18.224/27",
           "52.127.45.192/27",
-          "52.235.250.160/27"
+          "52.235.250.160/27",
+          "2001:489a:3003::200/120",
+          "2001:489a:3103:2::300/120",
+          "2001:489a:3303:2::300/120",
+          "2001:489a:3604:2::300/120"
         ],
         "networkFeatures": [
           "API",
@@ -5350,10 +5356,25 @@
       }
     },
     {
+      "name": "AzureSignalR.USDoDEast",
+      "id": "AzureSignalR.USDoDEast",
+      "properties": {
+        "changeNumber": 1,
+        "region": "usdodeast",
+        "regionId": 45,
+        "platform": "Azure",
+        "systemService": "AzureSignalR",
+        "addressPrefixes": [
+          "2001:489a:3303:2::300/120"
+        ],
+        "networkFeatures": null
+      }
+    },
+    {
       "name": "AzureSignalR.USGovArizona",
       "id": "AzureSignalR.USGovArizona",
       "properties": {
-        "changeNumber": 2,
+        "changeNumber": 3,
         "region": "usgovarizona",
         "regionId": 39,
         "platform": "Azure",
@@ -5362,7 +5383,23 @@
           "20.141.8.0/27",
           "52.127.5.160/27",
           "52.127.10.224/27",
-          "52.127.18.224/27"
+          "52.127.18.224/27",
+          "2001:489a:3604:2::300/120"
+        ],
+        "networkFeatures": null
+      }
+    },
+    {
+      "name": "AzureSignalR.USGovIowa",
+      "id": "AzureSignalR.USGovIowa",
+      "properties": {
+        "changeNumber": 1,
+        "region": "usgoviowa",
+        "regionId": 40,
+        "platform": "Azure",
+        "systemService": "AzureSignalR",
+        "addressPrefixes": [
+          "2001:489a:3003::200/120"
         ],
         "networkFeatures": null
       }
@@ -5371,7 +5408,7 @@
       "name": "AzureSignalR.USGovVirginia",
       "id": "AzureSignalR.USGovVirginia",
       "properties": {
-        "changeNumber": 2,
+        "changeNumber": 3,
         "region": "usgovvirginia",
         "regionId": 42,
         "platform": "Azure",
@@ -5380,7 +5417,8 @@
           "20.140.94.96/27",
           "20.140.133.160/27",
           "52.127.45.192/27",
-          "52.235.250.160/27"
+          "52.235.250.160/27",
+          "2001:489a:3103:2::300/120"
         ],
         "networkFeatures": null
       }
@@ -7883,5 +7921,5 @@
       }
     }
   ],
-  "createDate": "20210510"
+  "createDate": "20210517"
 }
