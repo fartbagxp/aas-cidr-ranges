@@ -1,5 +1,5 @@
 {
-  "changeNumber": 147,
+  "changeNumber": 148,
   "cloud": "China",
   "values": [
     {
@@ -1000,6 +1000,29 @@
           "NSG",
           "UDR",
           "VSE",
+          "FW"
+        ]
+      }
+    },
+    {
+      "name": "AzureSecurityCenter",
+      "id": "AzureSecurityCenter",
+      "properties": {
+        "changeNumber": 1,
+        "region": "",
+        "regionId": 0,
+        "platform": "Azure",
+        "systemService": "AzureSecurityCenter",
+        "addressPrefixes": [
+          "52.130.40.96/27",
+          "52.130.112.160/27",
+          "52.130.120.96/27",
+          "52.130.128.96/27"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
           "FW"
         ]
       }
@@ -3756,6 +3779,86 @@
       }
     },
     {
+      "name": "AzureSecurityCenter.ChinaEast",
+      "id": "AzureSecurityCenter.ChinaEast",
+      "properties": {
+        "changeNumber": 1,
+        "region": "chinaeast",
+        "regionId": 13,
+        "platform": "Azure",
+        "systemService": "AzureSecurityCenter",
+        "addressPrefixes": [
+          "52.130.112.160/27"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
+      }
+    },
+    {
+      "name": "AzureSecurityCenter.ChinaEast2",
+      "id": "AzureSecurityCenter.ChinaEast2",
+      "properties": {
+        "changeNumber": 1,
+        "region": "chinaeast2",
+        "regionId": 55,
+        "platform": "Azure",
+        "systemService": "AzureSecurityCenter",
+        "addressPrefixes": [
+          "52.130.120.96/27"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
+      }
+    },
+    {
+      "name": "AzureSecurityCenter.ChinaNorth",
+      "id": "AzureSecurityCenter.ChinaNorth",
+      "properties": {
+        "changeNumber": 1,
+        "region": "chinanorth",
+        "regionId": 14,
+        "platform": "Azure",
+        "systemService": "AzureSecurityCenter",
+        "addressPrefixes": [
+          "52.130.128.96/27"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
+      }
+    },
+    {
+      "name": "AzureSecurityCenter.ChinaNorth2",
+      "id": "AzureSecurityCenter.ChinaNorth2",
+      "properties": {
+        "changeNumber": 1,
+        "region": "chinanorth2",
+        "regionId": 54,
+        "platform": "Azure",
+        "systemService": "AzureSecurityCenter",
+        "addressPrefixes": [
+          "52.130.40.96/27"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
+      }
+    },
+    {
       "name": "ServiceBus.ChinaEast",
       "id": "ServiceBus.ChinaEast",
       "properties": {
@@ -5578,5 +5681,5 @@
       }
     }
   ],
-  "createDate": "20210517"
+  "createDate": "20210524"
 }

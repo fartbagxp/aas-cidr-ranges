@@ -1,5 +1,5 @@
 {
-  "changeNumber": 148,
+  "changeNumber": 149,
   "cloud": "AzureGovernment",
   "values": [
     {
@@ -573,7 +573,7 @@
       "name": "AzureConnectors",
       "id": "AzureConnectors",
       "properties": {
-        "changeNumber": 4,
+        "changeNumber": 5,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -581,6 +581,12 @@
         "addressPrefixes": [
           "20.140.94.192/27",
           "20.140.137.128/27",
+          "20.140.146.192/27",
+          "20.140.146.224/28",
+          "20.141.9.240/28",
+          "20.141.10.0/27",
+          "20.141.17.64/27",
+          "20.141.17.96/28",
           "52.126.202.80/28",
           "52.126.205.192/27",
           "52.127.2.160/28",
@@ -590,6 +596,10 @@
           "52.127.42.128/28",
           "52.127.58.160/28",
           "52.127.61.192/27",
+          "52.235.252.144/28",
+          "52.235.252.160/27",
+          "52.245.153.80/28",
+          "52.245.153.96/27",
           "2001:489a:3103:402::180/122",
           "2001:489a:3203:402::180/122",
           "2001:489a:3303:402::180/122",
@@ -1447,6 +1457,31 @@
           "UDR",
           "FW",
           "VSE"
+        ]
+      }
+    },
+    {
+      "name": "AzureSecurityCenter",
+      "id": "AzureSecurityCenter",
+      "properties": {
+        "changeNumber": 1,
+        "region": "",
+        "regionId": 0,
+        "platform": "Azure",
+        "systemService": "AzureSecurityCenter",
+        "addressPrefixes": [
+          "20.140.200.32/27",
+          "20.140.224.64/27",
+          "52.127.29.96/27",
+          "52.127.38.128/27",
+          "52.245.128.0/27",
+          "52.245.136.0/27"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
         ]
       }
     },
@@ -3392,7 +3427,7 @@
       "name": "AzureConnectors.USDoDCentral",
       "id": "AzureConnectors.USDoDCentral",
       "properties": {
-        "changeNumber": 3,
+        "changeNumber": 4,
         "region": "usdodcentral",
         "regionId": 44,
         "platform": "Azure",
@@ -3400,6 +3435,8 @@
         "addressPrefixes": [
           "52.127.58.160/28",
           "52.127.61.192/27",
+          "52.245.153.80/28",
+          "52.245.153.96/27",
           "2001:489a:3203:402::180/122"
         ],
         "networkFeatures": [
@@ -3414,12 +3451,14 @@
       "name": "AzureConnectors.USDoDEast",
       "id": "AzureConnectors.USDoDEast",
       "properties": {
-        "changeNumber": 3,
+        "changeNumber": 4,
         "region": "usdodeast",
         "regionId": 45,
         "platform": "Azure",
         "systemService": "AzureConnectors",
         "addressPrefixes": [
+          "20.141.17.64/27",
+          "20.141.17.96/28",
           "52.126.202.80/28",
           "52.126.205.192/27",
           "2001:489a:3303:402::180/122"
@@ -3436,12 +3475,14 @@
       "name": "AzureConnectors.USGovArizona",
       "id": "AzureConnectors.USGovArizona",
       "properties": {
-        "changeNumber": 3,
+        "changeNumber": 4,
         "region": "usgovarizona",
         "regionId": 39,
         "platform": "Azure",
         "systemService": "AzureConnectors",
         "addressPrefixes": [
+          "20.141.9.240/28",
+          "20.141.10.0/27",
           "52.127.2.160/28",
           "52.127.5.224/27",
           "2001:489a:3604:402::180/122"
@@ -3478,13 +3519,15 @@
       "name": "AzureConnectors.USGovTexas",
       "id": "AzureConnectors.USGovTexas",
       "properties": {
-        "changeNumber": 3,
+        "changeNumber": 4,
         "region": "usgovtexas",
         "regionId": 41,
         "platform": "Azure",
         "systemService": "AzureConnectors",
         "addressPrefixes": [
           "20.140.137.128/27",
+          "20.140.146.192/27",
+          "20.140.146.224/28",
           "52.127.34.160/28",
           "2001:489a:3403:402::180/122"
         ],
@@ -3500,7 +3543,7 @@
       "name": "AzureConnectors.USGovVirginia",
       "id": "AzureConnectors.USGovVirginia",
       "properties": {
-        "changeNumber": 4,
+        "changeNumber": 5,
         "region": "usgovvirginia",
         "regionId": 42,
         "platform": "Azure",
@@ -3508,6 +3551,8 @@
         "addressPrefixes": [
           "20.140.94.192/27",
           "52.127.42.128/28",
+          "52.235.252.144/28",
+          "52.235.252.160/27",
           "2001:489a:3103:402::180/122"
         ],
         "networkFeatures": [
@@ -5209,6 +5254,126 @@
           "2001:489a:3103:801::800/123",
           "2001:489a:3103:c00::800/123",
           "2001:489a:3103:c01::/123"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
+      }
+    },
+    {
+      "name": "AzureSecurityCenter.USDoDCentral",
+      "id": "AzureSecurityCenter.USDoDCentral",
+      "properties": {
+        "changeNumber": 1,
+        "region": "usdodcentral",
+        "regionId": 44,
+        "platform": "Azure",
+        "systemService": "AzureSecurityCenter",
+        "addressPrefixes": [
+          "52.245.128.0/27"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
+      }
+    },
+    {
+      "name": "AzureSecurityCenter.USDoDEast",
+      "id": "AzureSecurityCenter.USDoDEast",
+      "properties": {
+        "changeNumber": 1,
+        "region": "usdodeast",
+        "regionId": 45,
+        "platform": "Azure",
+        "systemService": "AzureSecurityCenter",
+        "addressPrefixes": [
+          "52.245.136.0/27"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
+      }
+    },
+    {
+      "name": "AzureSecurityCenter.USGovArizona",
+      "id": "AzureSecurityCenter.USGovArizona",
+      "properties": {
+        "changeNumber": 1,
+        "region": "usgovarizona",
+        "regionId": 39,
+        "platform": "Azure",
+        "systemService": "AzureSecurityCenter",
+        "addressPrefixes": [
+          "20.140.224.64/27"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
+      }
+    },
+    {
+      "name": "AzureSecurityCenter.USGovIowa",
+      "id": "AzureSecurityCenter.USGovIowa",
+      "properties": {
+        "changeNumber": 1,
+        "region": "usgoviowa",
+        "regionId": 40,
+        "platform": "Azure",
+        "systemService": "AzureSecurityCenter",
+        "addressPrefixes": [
+          "52.127.29.96/27"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
+      }
+    },
+    {
+      "name": "AzureSecurityCenter.USGovTexas",
+      "id": "AzureSecurityCenter.USGovTexas",
+      "properties": {
+        "changeNumber": 1,
+        "region": "usgovtexas",
+        "regionId": 41,
+        "platform": "Azure",
+        "systemService": "AzureSecurityCenter",
+        "addressPrefixes": [
+          "52.127.38.128/27"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
+      }
+    },
+    {
+      "name": "AzureSecurityCenter.USGovVirginia",
+      "id": "AzureSecurityCenter.USGovVirginia",
+      "properties": {
+        "changeNumber": 1,
+        "region": "usgovvirginia",
+        "regionId": 42,
+        "platform": "Azure",
+        "systemService": "AzureSecurityCenter",
+        "addressPrefixes": [
+          "20.140.200.32/27"
         ],
         "networkFeatures": [
           "API",
@@ -7921,5 +8086,5 @@
       }
     }
   ],
-  "createDate": "20210517"
+  "createDate": "20210524"
 }
