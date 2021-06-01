@@ -1,5 +1,5 @@
 {
-  "changeNumber": 148,
+  "changeNumber": 149,
   "cloud": "China",
   "values": [
     {
@@ -347,18 +347,26 @@
       "name": "AzureConnectors",
       "id": "AzureConnectors",
       "properties": {
-        "changeNumber": 4,
+        "changeNumber": 5,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
         "systemService": "AzureConnectors",
         "addressPrefixes": [
+          "40.72.168.48/28",
+          "40.72.168.192/27",
           "40.73.136.224/28",
           "40.73.141.192/27",
           "40.73.168.224/28",
+          "52.130.49.16/28",
+          "52.130.49.32/27",
           "52.130.112.32/27",
           "52.130.120.32/27",
           "52.130.128.32/27",
+          "52.131.65.160/27",
+          "52.131.65.192/28",
+          "52.131.193.128/27",
+          "52.131.193.160/28",
           "139.217.48.112/28",
           "139.217.168.112/28",
           "2404:7940:1:402::180/122",
@@ -2373,12 +2381,14 @@
       "name": "AzureConnectors.ChinaEast",
       "id": "AzureConnectors.ChinaEast",
       "properties": {
-        "changeNumber": 3,
+        "changeNumber": 4,
         "region": "chinaeast",
         "regionId": 13,
         "platform": "Azure",
         "systemService": "AzureConnectors",
         "addressPrefixes": [
+          "40.72.168.48/28",
+          "40.72.168.192/27",
           "52.130.112.32/27",
           "139.217.168.112/28",
           "2404:7940:201:402::180/122"
@@ -2393,7 +2403,7 @@
       "name": "AzureConnectors.ChinaEast2",
       "id": "AzureConnectors.ChinaEast2",
       "properties": {
-        "changeNumber": 3,
+        "changeNumber": 4,
         "region": "chinaeast2",
         "regionId": 55,
         "platform": "Azure",
@@ -2401,6 +2411,8 @@
         "addressPrefixes": [
           "40.73.168.224/28",
           "52.130.120.32/27",
+          "52.131.193.128/27",
+          "52.131.193.160/28",
           "2404:7940:301:402::180/122"
         ],
         "networkFeatures": [
@@ -2413,12 +2425,14 @@
       "name": "AzureConnectors.ChinaNorth",
       "id": "AzureConnectors.ChinaNorth",
       "properties": {
-        "changeNumber": 3,
+        "changeNumber": 4,
         "region": "chinanorth",
         "regionId": 14,
         "platform": "Azure",
         "systemService": "AzureConnectors",
         "addressPrefixes": [
+          "52.130.49.16/28",
+          "52.130.49.32/27",
           "52.130.128.32/27",
           "139.217.48.112/28",
           "2404:7940:1:402::180/122"
@@ -2433,7 +2447,7 @@
       "name": "AzureConnectors.ChinaNorth2",
       "id": "AzureConnectors.ChinaNorth2",
       "properties": {
-        "changeNumber": 3,
+        "changeNumber": 4,
         "region": "chinanorth2",
         "regionId": 54,
         "platform": "Azure",
@@ -2441,6 +2455,8 @@
         "addressPrefixes": [
           "40.73.136.224/28",
           "40.73.141.192/27",
+          "52.131.65.160/27",
+          "52.131.65.192/28",
           "2404:7940:101:402::980/122"
         ],
         "networkFeatures": [
@@ -5681,5 +5697,5 @@
       }
     }
   ],
-  "createDate": "20210524"
+  "createDate": "20210531"
 }
