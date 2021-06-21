@@ -1,5 +1,5 @@
 {
-  "changeNumber": 152,
+  "changeNumber": 153,
   "cloud": "AzureGovernment",
   "values": [
     {
@@ -571,7 +571,7 @@
       "name": "AzureCognitiveSearch",
       "id": "AzureCognitiveSearch",
       "properties": {
-        "changeNumber": 4,
+        "changeNumber": 5,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -586,6 +586,7 @@
           "52.227.216.86/32",
           "52.243.155.184/32",
           "52.244.34.54/32",
+          "2001:489a:3003::180/121",
           "2001:489a:3103::180/121",
           "2001:489a:3203::180/121",
           "2001:489a:3303::180/121",
@@ -3529,13 +3530,14 @@
       "name": "AzureCognitiveSearch.USGovIowa",
       "id": "AzureCognitiveSearch.USGovIowa",
       "properties": {
-        "changeNumber": 1,
+        "changeNumber": 2,
         "region": "usgoviowa",
         "regionId": 40,
         "platform": "Azure",
         "systemService": "AzureCognitiveSearch",
         "addressPrefixes": [
-          "20.140.152.32/28"
+          "20.140.152.32/28",
+          "2001:489a:3003::180/121"
         ],
         "networkFeatures": [
           "API",
@@ -8243,5 +8245,5 @@
       }
     }
   ],
-  "createDate": "20210614"
+  "createDate": "20210621"
 }
