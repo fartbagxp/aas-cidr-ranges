@@ -1,5 +1,5 @@
 {
-  "changeNumber": 153,
+  "changeNumber": 154,
   "cloud": "AzureGovernment",
   "values": [
     {
@@ -7329,7 +7329,6 @@
           "2001:489a:3604:402::580/121"
         ],
         "networkFeatures": [
-          "API",
           "NSG",
           "UDR",
           "FW"
@@ -7409,7 +7408,12 @@
           "2001:489a:3604:802::210/124",
           "2001:489a:3604:c02::190/124"
         ],
-        "networkFeatures": null
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
       }
     },
     {
@@ -8245,5 +8249,5 @@
       }
     }
   ],
-  "createDate": "20210621"
+  "createDate": "20210628"
 }
