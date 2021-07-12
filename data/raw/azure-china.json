@@ -1,5 +1,5 @@
 {
-  "changeNumber": 154,
+  "changeNumber": 155,
   "cloud": "China",
   "values": [
     {
@@ -2536,12 +2536,7 @@
         "addressPrefixes": [
           "52.130.112.132/30"
         ],
-        "networkFeatures": [
-          "API",
-          "NSG",
-          "UDR",
-          "FW"
-        ]
+        "networkFeatures": null
       }
     },
     {
@@ -2556,12 +2551,7 @@
         "addressPrefixes": [
           "52.130.120.84/30"
         ],
-        "networkFeatures": [
-          "API",
-          "NSG",
-          "UDR",
-          "FW"
-        ]
+        "networkFeatures": null
       }
     },
     {
@@ -2577,12 +2567,7 @@
           "52.131.144.44/30",
           "2406:e500:2402:1::1a0/124"
         ],
-        "networkFeatures": [
-          "API",
-          "NSG",
-          "UDR",
-          "FW"
-        ]
+        "networkFeatures": null
       }
     },
     {
@@ -2597,12 +2582,7 @@
         "addressPrefixes": [
           "52.130.128.84/30"
         ],
-        "networkFeatures": [
-          "API",
-          "NSG",
-          "UDR",
-          "FW"
-        ]
+        "networkFeatures": null
       }
     },
     {
@@ -2617,12 +2597,7 @@
         "addressPrefixes": [
           "52.130.40.28/30"
         ],
-        "networkFeatures": [
-          "API",
-          "NSG",
-          "UDR",
-          "FW"
-        ]
+        "networkFeatures": null
       }
     },
     {
@@ -2638,12 +2613,7 @@
           "52.131.16.44/30",
           "2406:e500:2602:1::1a0/124"
         ],
-        "networkFeatures": [
-          "API",
-          "NSG",
-          "UDR",
-          "FW"
-        ]
+        "networkFeatures": null
       }
     },
     {
@@ -6464,7 +6434,7 @@
       "name": "AzureCloud.chinanorth2",
       "id": "AzureCloud.chinanorth2",
       "properties": {
-        "changeNumber": 17,
+        "changeNumber": 18,
         "region": "chinanorth2",
         "regionId": 54,
         "platform": "Azure",
@@ -6496,7 +6466,7 @@
           "52.130.98.0/23",
           "52.130.144.0/20",
           "52.131.2.0/23",
-          "52.131.64.0/19",
+          "52.131.64.0/18",
           "139.217.56.0/21",
           "139.217.64.0/18",
           "2404:7940:100::/47",
@@ -6582,7 +6552,7 @@
       "name": "AzureCloud",
       "id": "AzureCloud",
       "properties": {
-        "changeNumber": 37,
+        "changeNumber": 38,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -6710,7 +6680,7 @@
           "52.130.192.0/18",
           "52.131.0.0/23",
           "52.131.2.0/23",
-          "52.131.64.0/19",
+          "52.131.64.0/18",
           "52.131.128.0/23",
           "52.131.130.0/23",
           "52.131.192.0/21",
@@ -6779,5 +6749,5 @@
       }
     }
   ],
-  "createDate": "20210705"
+  "createDate": "20210712"
 }
