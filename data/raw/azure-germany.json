@@ -1,5 +1,5 @@
 {
-  "changeNumber": 158,
+  "changeNumber": 159,
   "cloud": "AzureGermany",
   "values": [
     {
@@ -783,7 +783,7 @@
         "networkFeatures": [
           "API",
           "NSG",
-          "VSE",
+          "UDR",
           "FW"
         ]
       }
@@ -816,9 +816,7 @@
           "51.8.226.64/26"
         ],
         "networkFeatures": [
-          "API",
-          "NSG",
-          "FW"
+          "NSG"
         ]
       }
     },
@@ -1252,8 +1250,8 @@
           "51.8.234.48/29"
         ],
         "networkFeatures": [
-          "NSG",
-          "API"
+          "API",
+          "NSG"
         ]
       }
     },
@@ -1271,8 +1269,8 @@
           "51.8.226.32/28"
         ],
         "networkFeatures": [
-          "NSG",
-          "API"
+          "API",
+          "NSG"
         ]
       }
     },
@@ -1671,5 +1669,5 @@
       }
     }
   ],
-  "createDate": "20210719"
+  "createDate": "20210726"
 }

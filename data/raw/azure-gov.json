@@ -1,5 +1,5 @@
 {
-  "changeNumber": 157,
+  "changeNumber": 158,
   "cloud": "AzureGovernment",
   "values": [
     {
@@ -2776,8 +2776,7 @@
           "API",
           "NSG",
           "UDR",
-          "FW",
-          "VSE"
+          "FW"
         ]
       }
     },
@@ -2827,8 +2826,7 @@
           "API",
           "NSG",
           "UDR",
-          "FW",
-          "VSE"
+          "FW"
         ]
       }
     },
@@ -2915,11 +2913,7 @@
           "52.182.93.40/32",
           "2001:489a:3203:402::100/122"
         ],
-        "networkFeatures": [
-          "API",
-          "NSG",
-          "FW"
-        ]
+        "networkFeatures": null
       }
     },
     {
@@ -2937,11 +2931,7 @@
           "2001:489a:3303:802::100/122",
           "2001:489a:3303:c02::80/122"
         ],
-        "networkFeatures": [
-          "API",
-          "NSG",
-          "FW"
-        ]
+        "networkFeatures": null
       }
     },
     {
@@ -2992,11 +2982,7 @@
           "52.238.74.16/32",
           "2001:489a:3403:402::100/122"
         ],
-        "networkFeatures": [
-          "API",
-          "NSG",
-          "FW"
-        ]
+        "networkFeatures": null
       }
     },
     {
@@ -3729,7 +3715,9 @@
         ],
         "networkFeatures": [
           "API",
-          "NSG"
+          "NSG",
+          "UDR",
+          "FW"
         ]
       }
     },
@@ -3762,7 +3750,9 @@
         ],
         "networkFeatures": [
           "API",
-          "NSG"
+          "NSG",
+          "UDR",
+          "FW"
         ]
       }
     },
@@ -6234,7 +6224,9 @@
         ],
         "networkFeatures": [
           "API",
-          "NSG"
+          "NSG",
+          "UDR",
+          "FW"
         ]
       }
     },
@@ -6305,7 +6297,9 @@
         ],
         "networkFeatures": [
           "API",
-          "NSG"
+          "NSG",
+          "UDR",
+          "FW"
         ]
       }
     },
@@ -6378,10 +6372,7 @@
           "2001:489a:3203:402::3c0/124",
           "2001:489a:3203:402::3e0/123"
         ],
-        "networkFeatures": [
-          "API",
-          "NSG"
-        ]
+        "networkFeatures": null
       }
     },
     {
@@ -6439,10 +6430,7 @@
           "52.127.29.16/28",
           "52.127.29.32/27"
         ],
-        "networkFeatures": [
-          "API",
-          "NSG"
-        ]
+        "networkFeatures": null
       }
     },
     {
@@ -6490,10 +6478,7 @@
           "2001:489a:3103:402::3c0/124",
           "2001:489a:3103:402::3e0/123"
         ],
-        "networkFeatures": [
-          "API",
-          "NSG"
-        ]
+        "networkFeatures": null
       }
     },
     {
@@ -6644,7 +6629,9 @@
         ],
         "networkFeatures": [
           "API",
-          "NSG"
+          "NSG",
+          "UDR",
+          "FW"
         ]
       }
     },
@@ -8130,5 +8117,5 @@
       }
     }
   ],
-  "createDate": "20210719"
+  "createDate": "20210726"
 }
