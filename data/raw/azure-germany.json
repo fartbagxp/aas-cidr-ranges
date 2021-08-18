@@ -1,5 +1,5 @@
 {
-  "changeNumber": 161,
+  "changeNumber": 163,
   "cloud": "AzureGermany",
   "values": [
     {
@@ -489,7 +489,7 @@
       "name": "Storage",
       "id": "Storage",
       "properties": {
-        "changeNumber": 2,
+        "changeNumber": 3,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -508,7 +508,6 @@
           "51.5.248.112/28",
           "51.5.248.128/28",
           "51.5.248.160/27",
-          "51.8.144.0/27",
           "51.8.144.64/26",
           "51.8.144.128/25",
           "51.8.147.0/25",
@@ -734,7 +733,12 @@
           "51.8.234.232/31",
           "51.8.235.160/28"
         ],
-        "networkFeatures": null
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
       }
     },
     {
@@ -750,7 +754,12 @@
           "51.8.226.224/31",
           "51.8.227.160/28"
         ],
-        "networkFeatures": null
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
       }
     },
     {
@@ -765,7 +774,12 @@
         "addressPrefixes": [
           "51.8.234.96/27"
         ],
-        "networkFeatures": null
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
       }
     },
     {
@@ -800,7 +814,9 @@
         "addressPrefixes": [
           "51.8.234.128/26"
         ],
-        "networkFeatures": null
+        "networkFeatures": [
+          "NSG"
+        ]
       }
     },
     {
@@ -924,7 +940,12 @@
         "addressPrefixes": [
           "51.8.234.80/28"
         ],
-        "networkFeatures": null
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
       }
     },
     {
@@ -939,7 +960,12 @@
         "addressPrefixes": [
           "51.8.226.192/28"
         ],
-        "networkFeatures": null
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
       }
     },
     {
@@ -954,7 +980,12 @@
         "addressPrefixes": [
           "51.8.234.64/29"
         ],
-        "networkFeatures": null
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
       }
     },
     {
@@ -969,7 +1000,12 @@
         "addressPrefixes": [
           "51.8.226.56/29"
         ],
-        "networkFeatures": null
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
       }
     },
     {
@@ -987,7 +1023,12 @@
           "51.8.242.80/29",
           "51.8.250.112/29"
         ],
-        "networkFeatures": null
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
       }
     },
     {
@@ -1002,7 +1043,12 @@
         "addressPrefixes": [
           "51.5.144.198/32"
         ],
-        "networkFeatures": null
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
       }
     },
     {
@@ -1020,7 +1066,12 @@
           "51.4.147.190/32",
           "51.8.234.32/28"
         ],
-        "networkFeatures": null
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
       }
     },
     {
@@ -1038,7 +1089,12 @@
           "51.5.146.33/32",
           "51.8.226.0/27"
         ],
-        "networkFeatures": null
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
       }
     },
     {
@@ -1088,7 +1144,12 @@
           "51.4.145.57/32",
           "51.4.145.82/32"
         ],
-        "networkFeatures": null
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
       }
     },
     {
@@ -1104,7 +1165,12 @@
           "51.5.144.216/32",
           "51.5.144.237/32"
         ],
-        "networkFeatures": null
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
       }
     },
     {
@@ -1141,7 +1207,9 @@
           "51.8.250.0/30",
           "51.8.250.8/29"
         ],
-        "networkFeatures": null
+        "networkFeatures": [
+          "NSG"
+        ]
       }
     },
     {
@@ -1157,7 +1225,9 @@
           "51.8.226.240/28",
           "51.8.227.224/29"
         ],
-        "networkFeatures": null
+        "networkFeatures": [
+          "NSG"
+        ]
       }
     },
     {
@@ -1213,7 +1283,12 @@
           "51.8.248.0/27",
           "51.8.249.0/27"
         ],
-        "networkFeatures": null
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
       }
     },
     {
@@ -1233,7 +1308,12 @@
           "51.8.224.0/27",
           "51.8.225.0/27"
         ],
-        "networkFeatures": null
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
       }
     },
     {
@@ -1278,7 +1358,7 @@
       "name": "Storage.GermanyCentral",
       "id": "Storage.GermanyCentral",
       "properties": {
-        "changeNumber": 1,
+        "changeNumber": 2,
         "region": "germanycentral",
         "regionId": 5,
         "platform": "Azure",
@@ -1290,11 +1370,15 @@
           "51.4.208.16/28",
           "51.4.208.32/28",
           "51.4.232.32/27",
-          "51.8.144.0/27",
           "51.8.144.128/25",
           "51.8.150.0/24"
         ],
-        "networkFeatures": null
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
       }
     },
     {
@@ -1318,7 +1402,12 @@
           "51.8.147.0/25",
           "51.8.151.0/24"
         ],
-        "networkFeatures": null
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
       }
     },
     {
@@ -1337,7 +1426,9 @@
           "51.8.242.72/29",
           "51.8.250.104/29"
         ],
-        "networkFeatures": null
+        "networkFeatures": [
+          "NSG"
+        ]
       }
     },
     {
@@ -1352,7 +1443,9 @@
         "addressPrefixes": [
           "51.5.144.140/31"
         ],
-        "networkFeatures": null
+        "networkFeatures": [
+          "NSG"
+        ]
       }
     },
     {
@@ -1372,7 +1465,9 @@
           "51.8.234.72/29",
           "51.18.32.72/29"
         ],
-        "networkFeatures": null
+        "networkFeatures": [
+          "NSG"
+        ]
       }
     },
     {
@@ -1392,7 +1487,9 @@
           "51.8.226.208/29",
           "51.18.40.72/29"
         ],
-        "networkFeatures": null
+        "networkFeatures": [
+          "NSG"
+        ]
       }
     },
     {
@@ -1409,7 +1506,12 @@
           "51.4.146.80/32",
           "51.8.234.248/29"
         ],
-        "networkFeatures": null
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
       }
     },
     {
@@ -1426,7 +1528,12 @@
           "51.5.150.132/32",
           "51.8.226.232/29"
         ],
-        "networkFeatures": null
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
       }
     },
     {
@@ -1441,7 +1548,12 @@
         "addressPrefixes": [
           "51.8.234.56/29"
         ],
-        "networkFeatures": null
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
       }
     },
     {
@@ -1456,7 +1568,12 @@
         "addressPrefixes": [
           "51.8.226.48/29"
         ],
-        "networkFeatures": null
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
       }
     },
     {
@@ -1539,7 +1656,7 @@
       "name": "AzureCloud.germanycentral",
       "id": "AzureCloud.germanycentral",
       "properties": {
-        "changeNumber": 8,
+        "changeNumber": 9,
         "region": "germanycentral",
         "regionId": 5,
         "platform": "Azure",
@@ -1550,7 +1667,6 @@
           "51.4.128.0/17",
           "51.8.32.0/19",
           "51.8.128.0/20",
-          "51.8.144.0/27",
           "51.8.144.128/25",
           "51.8.145.0/24",
           "51.8.148.0/24",
@@ -1614,7 +1730,7 @@
       "name": "AzureCloud",
       "id": "AzureCloud",
       "properties": {
-        "changeNumber": 9,
+        "changeNumber": 10,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -1629,7 +1745,6 @@
           "51.8.32.0/19",
           "51.8.64.0/18",
           "51.8.128.0/20",
-          "51.8.144.0/27",
           "51.8.144.64/26",
           "51.8.144.128/25",
           "51.8.145.0/24",
@@ -1669,5 +1784,5 @@
       }
     }
   ],
-  "createDate": "20210802"
+  "createDate": "20210816"
 }
