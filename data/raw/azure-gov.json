@@ -1,5 +1,5 @@
 {
-  "changeNumber": 163,
+  "changeNumber": 164,
   "cloud": "AzureGovernment",
   "values": [
     {
@@ -256,7 +256,7 @@
       "name": "AppService",
       "id": "AppService",
       "properties": {
-        "changeNumber": 8,
+        "changeNumber": 9,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -271,6 +271,9 @@
           "20.140.93.160/27",
           "20.140.130.160/27",
           "20.140.152.224/27",
+          "20.141.17.224/27",
+          "20.141.18.0/26",
+          "20.141.18.64/27",
           "23.97.10.232/32",
           "23.97.28.154/32",
           "52.126.202.96/27",
@@ -284,6 +287,7 @@
           "52.238.74.74/32",
           "52.238.119.68/32",
           "52.244.204.248/32",
+          "52.245.154.0/25",
           "52.247.175.244/32",
           "2001:489a:3103:402::a0/123",
           "2001:489a:3103:802::a0/123",
@@ -310,7 +314,7 @@
       "name": "AppServiceManagement",
       "id": "AppServiceManagement",
       "properties": {
-        "changeNumber": 5,
+        "changeNumber": 6,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -321,20 +325,28 @@
           "20.140.91.0/26",
           "20.140.93.0/26",
           "20.140.131.192/26",
+          "20.140.147.112/28",
+          "20.141.17.208/28",
           "23.97.29.209/32",
           "52.181.183.11/32",
           "52.182.93.40/32",
           "52.227.80.100/32",
+          "52.235.253.64/28",
           "52.238.74.16/32",
           "52.244.79.34/32",
           "52.244.206.254/32",
+          "52.245.153.160/28",
+          "2001:489a:3103:2::c0/123",
           "2001:489a:3103:402::100/122",
           "2001:489a:3103:802::100/122",
           "2001:489a:3103:c04::80/122",
+          "2001:489a:3203:1::660/123",
           "2001:489a:3203:402::100/122",
+          "2001:489a:3303:1::720/123",
           "2001:489a:3303:402::100/122",
           "2001:489a:3303:802::100/122",
           "2001:489a:3303:c02::80/122",
+          "2001:489a:3403:1::6e0/123",
           "2001:489a:3403:402::100/122",
           "2001:489a:3604:402::100/122",
           "2001:489a:3604:802::100/122",
@@ -2771,7 +2783,7 @@
       "name": "AppService.USDoDCentral",
       "id": "AppService.USDoDCentral",
       "properties": {
-        "changeNumber": 4,
+        "changeNumber": 5,
         "region": "usdodcentral",
         "regionId": 44,
         "platform": "Azure",
@@ -2780,6 +2792,7 @@
           "20.140.73.96/27",
           "52.127.58.96/27",
           "52.182.92.142/32",
+          "52.245.154.0/25",
           "2001:489a:3203:402::a0/123"
         ],
         "networkFeatures": [
@@ -2794,13 +2807,16 @@
       "name": "AppService.USDoDEast",
       "id": "AppService.USDoDEast",
       "properties": {
-        "changeNumber": 4,
+        "changeNumber": 5,
         "region": "usdodeast",
         "regionId": 45,
         "platform": "Azure",
         "systemService": "AzureAppService",
         "addressPrefixes": [
           "20.140.65.96/27",
+          "20.141.17.224/27",
+          "20.141.18.0/26",
+          "20.141.18.64/27",
           "52.126.202.96/27",
           "52.181.160.209/32",
           "2001:489a:3303:402::a0/123",
@@ -2854,12 +2870,7 @@
           "23.97.28.154/32",
           "52.127.27.192/27"
         ],
-        "networkFeatures": [
-          "API",
-          "NSG",
-          "UDR",
-          "FW"
-        ]
+        "networkFeatures": null
       }
     },
     {
@@ -2919,38 +2930,38 @@
       "name": "AppServiceManagement.USDoDCentral",
       "id": "AppServiceManagement.USDoDCentral",
       "properties": {
-        "changeNumber": 3,
+        "changeNumber": 4,
         "region": "usdodcentral",
         "regionId": 44,
         "platform": "Azure",
         "systemService": "AzureAppServiceManagement",
         "addressPrefixes": [
           "52.182.93.40/32",
+          "52.245.153.160/28",
+          "2001:489a:3203:1::660/123",
           "2001:489a:3203:402::100/122"
         ],
-        "networkFeatures": [
-          "NSG"
-        ]
+        "networkFeatures": null
       }
     },
     {
       "name": "AppServiceManagement.USDoDEast",
       "id": "AppServiceManagement.USDoDEast",
       "properties": {
-        "changeNumber": 3,
+        "changeNumber": 4,
         "region": "usdodeast",
         "regionId": 45,
         "platform": "Azure",
         "systemService": "AzureAppServiceManagement",
         "addressPrefixes": [
+          "20.141.17.208/28",
           "52.181.183.11/32",
+          "2001:489a:3303:1::720/123",
           "2001:489a:3303:402::100/122",
           "2001:489a:3303:802::100/122",
           "2001:489a:3303:c02::80/122"
         ],
-        "networkFeatures": [
-          "NSG"
-        ]
+        "networkFeatures": null
       }
     },
     {
@@ -2969,9 +2980,7 @@
           "2001:489a:3604:802::100/122",
           "2001:489a:3604:c02::80/122"
         ],
-        "networkFeatures": [
-          "NSG"
-        ]
+        "networkFeatures": null
       }
     },
     {
@@ -2987,34 +2996,32 @@
           "13.72.180.105/32",
           "23.97.29.209/32"
         ],
-        "networkFeatures": [
-          "NSG"
-        ]
+        "networkFeatures": null
       }
     },
     {
       "name": "AppServiceManagement.USGovTexas",
       "id": "AppServiceManagement.USGovTexas",
       "properties": {
-        "changeNumber": 3,
+        "changeNumber": 4,
         "region": "usgovtexas",
         "regionId": 41,
         "platform": "Azure",
         "systemService": "AzureAppServiceManagement",
         "addressPrefixes": [
+          "20.140.147.112/28",
           "52.238.74.16/32",
+          "2001:489a:3403:1::6e0/123",
           "2001:489a:3403:402::100/122"
         ],
-        "networkFeatures": [
-          "NSG"
-        ]
+        "networkFeatures": null
       }
     },
     {
       "name": "AppServiceManagement.USGovVirginia",
       "id": "AppServiceManagement.USGovVirginia",
       "properties": {
-        "changeNumber": 5,
+        "changeNumber": 6,
         "region": "usgovvirginia",
         "regionId": 42,
         "platform": "Azure",
@@ -3025,6 +3032,8 @@
           "20.140.93.0/26",
           "20.140.131.192/26",
           "52.227.80.100/32",
+          "52.235.253.64/28",
+          "2001:489a:3103:2::c0/123",
           "2001:489a:3103:402::100/122",
           "2001:489a:3103:802::100/122",
           "2001:489a:3103:c04::80/122"
@@ -3958,12 +3967,7 @@
         "addressPrefixes": [
           "20.140.153.160/27"
         ],
-        "networkFeatures": [
-          "API",
-          "NSG",
-          "UDR",
-          "FW"
-        ]
+        "networkFeatures": null
       }
     },
     {
@@ -8147,5 +8151,5 @@
       }
     }
   ],
-  "createDate": "20210823"
+  "createDate": "20210830"
 }

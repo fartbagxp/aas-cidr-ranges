@@ -1,5 +1,5 @@
 {
-  "changeNumber": 162,
+  "changeNumber": 163,
   "cloud": "China",
   "values": [
     {
@@ -199,7 +199,7 @@
       "name": "AppServiceManagement",
       "id": "AppServiceManagement",
       "properties": {
-        "changeNumber": 7,
+        "changeNumber": 8,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -213,18 +213,26 @@
           "42.159.132.32/32",
           "52.130.129.128/26",
           "52.131.26.192/26",
+          "52.131.66.64/28",
           "52.131.154.192/26",
+          "52.131.194.16/28",
           "139.217.168.192/26",
           "139.219.1.79/32",
           "139.219.128.217/32",
           "139.219.196.3/32",
+          "159.27.21.144/28",
           "159.27.194.192/26",
           "159.27.202.192/26",
+          "163.228.53.144/28",
           "2404:7940:1:402::100/122",
+          "2404:7940:101:2::200/123",
           "2404:7940:101:402::900/122",
           "2404:7940:201:402::100/122",
+          "2404:7940:301:1::5a0/123",
           "2404:7940:301:402::100/122",
+          "2406:e500:2402:2::2a0/123",
           "2406:e500:2402:400::80/122",
+          "2406:e500:2602:2::2a0/123",
           "2406:e500:2602:400::80/122",
           "2406:e500:2602:800::80/122",
           "2406:e500:2602:c00::80/122"
@@ -2444,13 +2452,15 @@
       "name": "AppServiceManagement.ChinaEast2",
       "id": "AppServiceManagement.ChinaEast2",
       "properties": {
-        "changeNumber": 2,
+        "changeNumber": 3,
         "region": "chinaeast2",
         "regionId": 55,
         "platform": "Azure",
         "systemService": "AzureAppServiceManagement",
         "addressPrefixes": [
           "40.73.168.128/26",
+          "52.131.194.16/28",
+          "2404:7940:301:1::5a0/123",
           "2404:7940:301:402::100/122"
         ],
         "networkFeatures": [
@@ -2462,13 +2472,15 @@
       "name": "AppServiceManagement.ChinaEast3",
       "id": "AppServiceManagement.ChinaEast3",
       "properties": {
-        "changeNumber": 1,
+        "changeNumber": 2,
         "region": "chinaeast3",
         "regionId": 90,
         "platform": "Azure",
         "systemService": "AzureAppServiceManagement",
         "addressPrefixes": [
           "52.131.154.192/26",
+          "163.228.53.144/28",
+          "2406:e500:2402:2::2a0/123",
           "2406:e500:2402:400::80/122"
         ],
         "networkFeatures": null
@@ -2503,13 +2515,15 @@
       "name": "AppServiceManagement.ChinaNorth2",
       "id": "AppServiceManagement.ChinaNorth2",
       "properties": {
-        "changeNumber": 2,
+        "changeNumber": 3,
         "region": "chinanorth2",
         "regionId": 54,
         "platform": "Azure",
         "systemService": "AzureAppServiceManagement",
         "addressPrefixes": [
           "40.73.136.128/26",
+          "52.131.66.64/28",
+          "2404:7940:101:2::200/123",
           "2404:7940:101:402::900/122"
         ],
         "networkFeatures": [
@@ -2521,15 +2535,17 @@
       "name": "AppServiceManagement.ChinaNorth3",
       "id": "AppServiceManagement.ChinaNorth3",
       "properties": {
-        "changeNumber": 3,
+        "changeNumber": 4,
         "region": "chinanorth3",
         "regionId": 89,
         "platform": "Azure",
         "systemService": "AzureAppServiceManagement",
         "addressPrefixes": [
           "52.131.26.192/26",
+          "159.27.21.144/28",
           "159.27.194.192/26",
           "159.27.202.192/26",
+          "2406:e500:2602:2::2a0/123",
           "2406:e500:2602:400::80/122",
           "2406:e500:2602:800::80/122",
           "2406:e500:2602:c00::80/122"
@@ -4971,13 +4987,14 @@
       "name": "Storage.ChinaNorth3",
       "id": "Storage.ChinaNorth3",
       "properties": {
-        "changeNumber": 1,
+        "changeNumber": 2,
         "region": "chinanorth3",
         "regionId": 89,
         "platform": "Azure",
         "systemService": "AzureStorage",
         "addressPrefixes": [
-          "52.130.106.0/23"
+          "52.130.106.0/23",
+          "52.130.108.0/23"
         ],
         "networkFeatures": null
       }
@@ -6465,7 +6482,7 @@
       "name": "AzureCloud.chinanorth3",
       "id": "AzureCloud.chinanorth3",
       "properties": {
-        "changeNumber": 3,
+        "changeNumber": 4,
         "region": "chinanorth3",
         "regionId": 89,
         "platform": "Azure",
@@ -6478,15 +6495,19 @@
           "40.73.228.0/23",
           "40.73.230.0/24",
           "52.130.106.0/23",
+          "52.130.108.0/23",
           "52.130.141.0/24",
           "52.131.6.0/23",
           "52.131.8.0/22",
           "52.131.16.0/20",
           "159.27.0.0/17",
           "159.27.132.0/27",
-          "159.27.132.32/29",
+          "159.27.132.32/28",
+          "159.27.132.48/29",
+          "159.27.132.56/31",
           "159.27.192.0/18",
-          "2406:e500:2501::/61",
+          "2406:e500:2501::/60",
+          "2406:e500:2501:10::/64",
           "2406:e500:2600::/48",
           "2406:e500:2601::/48",
           "2406:e500:2602::/48"
@@ -6564,7 +6585,7 @@
       "name": "AzureCloud",
       "id": "AzureCloud",
       "properties": {
-        "changeNumber": 41,
+        "changeNumber": 42,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -6701,6 +6722,7 @@
           "52.130.103.0/24",
           "52.130.104.0/23",
           "52.130.106.0/23",
+          "52.130.108.0/23",
           "52.130.112.0/21",
           "52.130.120.0/21",
           "52.130.128.0/21",
@@ -6760,7 +6782,9 @@
           "159.27.128.40/30",
           "159.27.128.44/31",
           "159.27.132.0/27",
-          "159.27.132.32/29",
+          "159.27.132.32/28",
+          "159.27.132.48/29",
+          "159.27.132.56/31",
           "159.27.192.0/18",
           "163.228.0.0/17",
           "2404:7940::/47",
@@ -6787,7 +6811,8 @@
           "2406:e500:2500::/61",
           "2406:e500:2500:8::/63",
           "2406:e500:2500:a::/64",
-          "2406:e500:2501::/61",
+          "2406:e500:2501::/60",
+          "2406:e500:2501:10::/64",
           "2406:e500:2600::/48",
           "2406:e500:2601::/48",
           "2406:e500:2602::/48",
@@ -6806,5 +6831,5 @@
       }
     }
   ],
-  "createDate": "20210823"
+  "createDate": "20210830"
 }
