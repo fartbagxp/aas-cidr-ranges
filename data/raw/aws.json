@@ -1,6 +1,6 @@
 {
-  "syncToken": "1631127794",
-  "createDate": "2021-09-08-19-03-14",
+  "syncToken": "1631208793",
+  "createDate": "2021-09-09-17-33-13",
   "prefixes": [
     {
       "ip_prefix": "3.5.140.0/22",
@@ -931,6 +931,12 @@
       "region": "us-east-1",
       "service": "AMAZON",
       "network_border_group": "us-east-1-atl-1"
+    },
+    {
+      "ip_prefix": "15.230.200.0/24",
+      "region": "ap-southeast-1",
+      "service": "AMAZON",
+      "network_border_group": "ap-southeast-1"
     },
     {
       "ip_prefix": "18.232.0.0/14",
@@ -16569,6 +16575,12 @@
       "network_border_group": "eu-north-1"
     },
     {
+      "ip_prefix": "13.34.59.0/27",
+      "region": "me-central-1",
+      "service": "AMAZON",
+      "network_border_group": "me-central-1"
+    },
+    {
       "ip_prefix": "15.177.0.0/18",
       "region": "GLOBAL",
       "service": "AMAZON",
@@ -18847,6 +18859,12 @@
       "region": "eu-west-3",
       "service": "AMAZON",
       "network_border_group": "eu-west-3"
+    },
+    {
+      "ip_prefix": "13.34.59.32/27",
+      "region": "me-central-1",
+      "service": "AMAZON",
+      "network_border_group": "me-central-1"
     },
     {
       "ip_prefix": "15.177.92.0/24",
@@ -24607,6 +24625,12 @@
       "region": "us-east-2",
       "service": "EC2",
       "network_border_group": "us-east-2"
+    },
+    {
+      "ip_prefix": "18.254.0.0/16",
+      "region": "us-gov-east-1",
+      "service": "EC2",
+      "network_border_group": "us-gov-east-1"
     },
     {
       "ip_prefix": "64.252.105.0/24",
@@ -33140,7 +33164,7 @@
       "ipv6_prefix": "2406:da15::/36",
       "region": "ap-northeast-2",
       "service": "AMAZON",
-      "network_border_group": "ap-northeast-2"
+      "network_border_group": "ap-northeast-2-wl1-cjj-wlz-1"
     },
     {
       "ipv6_prefix": "240f:80f9:4000::/40",
@@ -37352,7 +37376,7 @@
       "ipv6_prefix": "2406:da15::/36",
       "region": "ap-northeast-2",
       "service": "EC2",
-      "network_border_group": "ap-northeast-2"
+      "network_border_group": "ap-northeast-2-wl1-cjj-wlz-1"
     },
     {
       "ipv6_prefix": "2406:da70:8000::/40",
