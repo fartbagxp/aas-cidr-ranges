@@ -1,5 +1,5 @@
 {
-  "changeNumber": 166,
+  "changeNumber": 167,
   "cloud": "AzureGovernment",
   "values": [
     {
@@ -256,7 +256,7 @@
       "name": "AppService",
       "id": "AppService",
       "properties": {
-        "changeNumber": 9,
+        "changeNumber": 10,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -270,10 +270,14 @@
           "20.140.90.160/27",
           "20.140.93.160/27",
           "20.140.130.160/27",
+          "20.140.147.176/28",
+          "20.140.148.0/23",
+          "20.140.150.0/24",
           "20.140.152.224/27",
           "20.141.17.224/27",
           "20.141.18.0/26",
           "20.141.18.64/27",
+          "20.141.160.0/24",
           "23.97.10.232/32",
           "23.97.28.154/32",
           "52.126.202.96/27",
@@ -284,6 +288,8 @@
           "52.127.58.96/27",
           "52.181.160.209/32",
           "52.182.92.142/32",
+          "52.235.253.96/28",
+          "52.235.254.0/23",
           "52.238.74.74/32",
           "52.238.119.68/32",
           "52.244.204.248/32",
@@ -292,10 +298,13 @@
           "2001:489a:3103:402::a0/123",
           "2001:489a:3103:802::a0/123",
           "2001:489a:3103:c04::20/123",
+          "2001:489a:3203:2::100/120",
           "2001:489a:3203:402::a0/123",
+          "2001:489a:3303:2::500/120",
           "2001:489a:3303:402::a0/123",
           "2001:489a:3303:802::a0/123",
           "2001:489a:3303:c02::20/123",
+          "2001:489a:3403:2::400/118",
           "2001:489a:3403:402::a0/123",
           "2001:489a:3604:402::a0/123",
           "2001:489a:3604:802::a0/123",
@@ -2193,6 +2202,25 @@
       }
     },
     {
+      "name": "MicrosoftAzureFluidRelay",
+      "id": "MicrosoftAzureFluidRelay",
+      "properties": {
+        "changeNumber": 1,
+        "region": "",
+        "regionId": 0,
+        "platform": "Azure",
+        "systemService": "MicrosoftAzureFluidRelay",
+        "addressPrefixes": [
+          "20.141.9.192/29",
+          "52.235.251.200/29"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG"
+        ]
+      }
+    },
+    {
       "name": "MicrosoftCloudAppSecurity",
       "id": "MicrosoftCloudAppSecurity",
       "properties": {
@@ -2868,7 +2896,7 @@
       "name": "AppService.USDoDCentral",
       "id": "AppService.USDoDCentral",
       "properties": {
-        "changeNumber": 5,
+        "changeNumber": 6,
         "region": "usdodcentral",
         "regionId": 44,
         "platform": "Azure",
@@ -2878,6 +2906,7 @@
           "52.127.58.96/27",
           "52.182.92.142/32",
           "52.245.154.0/25",
+          "2001:489a:3203:2::100/120",
           "2001:489a:3203:402::a0/123"
         ],
         "networkFeatures": [
@@ -2892,7 +2921,7 @@
       "name": "AppService.USDoDEast",
       "id": "AppService.USDoDEast",
       "properties": {
-        "changeNumber": 5,
+        "changeNumber": 6,
         "region": "usdodeast",
         "regionId": 45,
         "platform": "Azure",
@@ -2904,6 +2933,7 @@
           "20.141.18.64/27",
           "52.126.202.96/27",
           "52.181.160.209/32",
+          "2001:489a:3303:2::500/120",
           "2001:489a:3303:402::a0/123",
           "2001:489a:3303:802::a0/123",
           "2001:489a:3303:c02::20/123"
@@ -2962,16 +2992,20 @@
       "name": "AppService.USGovTexas",
       "id": "AppService.USGovTexas",
       "properties": {
-        "changeNumber": 5,
+        "changeNumber": 6,
         "region": "usgovtexas",
         "regionId": 41,
         "platform": "Azure",
         "systemService": "AzureAppService",
         "addressPrefixes": [
           "20.140.57.160/27",
+          "20.140.147.176/28",
+          "20.140.148.0/23",
+          "20.140.150.0/24",
           "52.127.34.96/27",
           "52.238.74.74/32",
           "52.238.119.68/32",
+          "2001:489a:3403:2::400/118",
           "2001:489a:3403:402::a0/123"
         ],
         "networkFeatures": [
@@ -2986,7 +3020,7 @@
       "name": "AppService.USGovVirginia",
       "id": "AppService.USGovVirginia",
       "properties": {
-        "changeNumber": 5,
+        "changeNumber": 6,
         "region": "usgovvirginia",
         "regionId": 42,
         "platform": "Azure",
@@ -2996,8 +3030,11 @@
           "20.140.90.160/27",
           "20.140.93.160/27",
           "20.140.130.160/27",
+          "20.141.160.0/24",
           "23.97.10.232/32",
           "52.127.50.128/27",
+          "52.235.253.96/28",
+          "52.235.254.0/23",
           "52.247.175.244/32",
           "2001:489a:3103:402::a0/123",
           "2001:489a:3103:802::a0/123",
@@ -5957,6 +5994,7 @@
           "2001:489a:3203::400/122"
         ],
         "networkFeatures": [
+          "API",
           "NSG"
         ]
       }
@@ -5979,6 +6017,7 @@
           "2001:489a:3303::340/122"
         ],
         "networkFeatures": [
+          "API",
           "NSG"
         ]
       }
@@ -6002,6 +6041,7 @@
           "2001:489a:3604::340/122"
         ],
         "networkFeatures": [
+          "API",
           "NSG"
         ]
       }
@@ -6020,6 +6060,7 @@
           "52.127.26.192/27"
         ],
         "networkFeatures": [
+          "API",
           "NSG"
         ]
       }
@@ -6041,6 +6082,7 @@
           "2001:489a:3403::400/122"
         ],
         "networkFeatures": [
+          "API",
           "NSG"
         ]
       }
@@ -6063,6 +6105,7 @@
           "2001:489a:3103::340/122"
         ],
         "networkFeatures": [
+          "API",
           "NSG"
         ]
       }
@@ -6085,7 +6128,10 @@
           "2001:489a:3203::500/121",
           "2001:489a:3203:402::330/124"
         ],
-        "networkFeatures": null
+        "networkFeatures": [
+          "API",
+          "NSG"
+        ]
       }
     },
     {
@@ -6111,6 +6157,7 @@
           "2001:489a:3303:c02::190/124"
         ],
         "networkFeatures": [
+          "API",
           "NSG"
         ]
       }
@@ -6141,6 +6188,7 @@
           "2001:489a:3604:c02::190/124"
         ],
         "networkFeatures": [
+          "API",
           "NSG"
         ]
       }
@@ -6163,7 +6211,10 @@
           "2001:489a:3403::500/121",
           "2001:489a:3403:402::330/124"
         ],
-        "networkFeatures": null
+        "networkFeatures": [
+          "API",
+          "NSG"
+        ]
       }
     },
     {
@@ -6191,6 +6242,7 @@
           "2001:489a:3103:c04::190/124"
         ],
         "networkFeatures": [
+          "API",
           "NSG"
         ]
       }
@@ -8246,5 +8298,5 @@
       }
     }
   ],
-  "createDate": "20210913"
+  "createDate": "20210920"
 }
