@@ -1,5 +1,5 @@
 {
-  "changeNumber": 168,
+  "changeNumber": 169,
   "cloud": "AzureGovernment",
   "values": [
     {
@@ -323,7 +323,7 @@
       "name": "AppServiceManagement",
       "id": "AppServiceManagement",
       "properties": {
-        "changeNumber": 6,
+        "changeNumber": 7,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -339,6 +339,7 @@
           "23.97.29.209/32",
           "52.181.183.11/32",
           "52.182.93.40/32",
+          "52.227.64.26/32",
           "52.227.80.100/32",
           "52.235.253.64/28",
           "52.238.74.16/32",
@@ -3143,7 +3144,7 @@
       "name": "AppServiceManagement.USGovVirginia",
       "id": "AppServiceManagement.USGovVirginia",
       "properties": {
-        "changeNumber": 6,
+        "changeNumber": 7,
         "region": "usgovvirginia",
         "regionId": 42,
         "platform": "Azure",
@@ -3153,6 +3154,7 @@
           "20.140.91.0/26",
           "20.140.93.0/26",
           "20.140.131.192/26",
+          "52.227.64.26/32",
           "52.227.80.100/32",
           "52.235.253.64/28",
           "2001:489a:3103:2::c0/123",
@@ -8298,5 +8300,5 @@
       }
     }
   ],
-  "createDate": "20210927"
+  "createDate": "20211004"
 }
