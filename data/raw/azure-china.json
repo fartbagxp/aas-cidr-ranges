@@ -1,5 +1,5 @@
 {
-  "changeNumber": 169,
+  "changeNumber": 170,
   "cloud": "China",
   "values": [
     {
@@ -1382,6 +1382,29 @@
         "networkFeatures": [
           "API",
           "NSG"
+        ]
+      }
+    },
+    {
+      "name": "AzureStack",
+      "id": "AzureStack",
+      "properties": {
+        "changeNumber": 1,
+        "region": "",
+        "regionId": 0,
+        "platform": "Azure",
+        "systemService": "AzureStack",
+        "addressPrefixes": [
+          "40.72.79.48/28",
+          "52.130.15.64/28",
+          "52.131.65.128/28",
+          "52.131.193.96/28"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
         ]
       }
     },
@@ -7048,5 +7071,5 @@
       }
     }
   ],
-  "createDate": "20211004"
+  "createDate": "20211011"
 }

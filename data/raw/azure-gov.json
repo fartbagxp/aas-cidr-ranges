@@ -1,5 +1,5 @@
 {
-  "changeNumber": 170,
+  "changeNumber": 171,
   "cloud": "AzureGovernment",
   "values": [
     {
@@ -1691,6 +1691,28 @@
           "NSG",
           "UDR",
           "FW"
+        ]
+      }
+    },
+    {
+      "name": "AzureStack",
+      "id": "AzureStack",
+      "properties": {
+        "changeNumber": 1,
+        "region": "",
+        "regionId": 0,
+        "platform": "Azure",
+        "systemService": "AzureStack",
+        "addressPrefixes": [
+          "20.140.69.80/28",
+          "20.140.77.80/28",
+          "20.140.144.224/28",
+          "20.141.8.32/28",
+          "52.235.250.144/28"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG"
         ]
       }
     },
@@ -8366,5 +8388,5 @@
       }
     }
   ],
-  "createDate": "20211004"
+  "createDate": "20211011"
 }
