@@ -28,6 +28,8 @@ jobs:
 
       - name: Setup pipenv environment
         uses: dschep/install-pipenv-action@v1
+        with:
+          version: 2021.5.29
 
       - name: Run an update in a pip environment
         run: |
