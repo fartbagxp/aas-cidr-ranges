@@ -1,5 +1,5 @@
 {
-  "changeNumber": 173,
+  "changeNumber": 174,
   "cloud": "China",
   "values": [
     {
@@ -1851,6 +1851,29 @@
         "networkFeatures": [
           "API",
           "NSG"
+        ]
+      }
+    },
+    {
+      "name": "M365ManagementActivityApiWebhook",
+      "id": "M365ManagementActivityApiWebhook",
+      "properties": {
+        "changeNumber": 1,
+        "region": "",
+        "regionId": 0,
+        "platform": "Azure",
+        "systemService": "M365ManagementActivityApiWebhook",
+        "addressPrefixes": [
+          "40.73.141.156/30",
+          "52.130.112.0/30",
+          "52.130.120.0/30",
+          "52.130.128.0/30"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
         ]
       }
     },
@@ -6489,7 +6512,7 @@
       "name": "AzureCloud.chinaeast2",
       "id": "AzureCloud.chinaeast2",
       "properties": {
-        "changeNumber": 25,
+        "changeNumber": 26,
         "region": "chinaeast2",
         "regionId": 55,
         "platform": "Azure",
@@ -6532,6 +6555,7 @@
           "139.217.176.0/20",
           "139.217.216.0/21",
           "139.217.224.0/19",
+          "163.228.128.0/19",
           "2404:7940:300::/47",
           "2406:e500:2100::/123",
           "2406:e500:2101::/48",
@@ -6828,7 +6852,7 @@
       "name": "AzureCloud",
       "id": "AzureCloud",
       "properties": {
-        "changeNumber": 45,
+        "changeNumber": 46,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -7030,6 +7054,7 @@
           "159.27.144.0/20",
           "159.27.192.0/18",
           "163.228.0.0/17",
+          "163.228.128.0/19",
           "2404:7940::/47",
           "2404:7940:3::/48",
           "2404:7940:100::/47",
@@ -7079,5 +7104,5 @@
       }
     }
   ],
-  "createDate": "20211101"
+  "createDate": "20211108"
 }

@@ -1,5 +1,5 @@
 {
-  "changeNumber": 174,
+  "changeNumber": 175,
   "cloud": "AzureGovernment",
   "values": [
     {
@@ -2228,6 +2228,27 @@
           "NSG",
           "UDR",
           "FW"
+        ]
+      }
+    },
+    {
+      "name": "M365ManagementActivityApiWebhook",
+      "id": "M365ManagementActivityApiWebhook",
+      "properties": {
+        "changeNumber": 1,
+        "region": "",
+        "regionId": 0,
+        "platform": "Azure",
+        "systemService": "M365ManagementActivityApiWebhook",
+        "addressPrefixes": [
+          "20.140.133.156/30",
+          "20.140.224.36/30",
+          "52.245.128.36/30",
+          "52.245.136.32/30"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG"
         ]
       }
     },
@@ -8402,5 +8423,5 @@
       }
     }
   ],
-  "createDate": "20211101"
+  "createDate": "20211108"
 }
