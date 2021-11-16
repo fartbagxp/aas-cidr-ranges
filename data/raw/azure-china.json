@@ -1,5 +1,5 @@
 {
-  "changeNumber": 174,
+  "changeNumber": 175,
   "cloud": "China",
   "values": [
     {
@@ -689,14 +689,22 @@
       "name": "AzureDigitalTwins",
       "id": "AzureDigitalTwins",
       "properties": {
-        "changeNumber": 1,
+        "changeNumber": 2,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
         "systemService": "AzureDigitalTwins",
         "addressPrefixes": [
+          "40.72.169.96/27",
+          "40.72.169.128/29",
+          "52.130.49.192/27",
+          "52.130.49.224/29",
           "52.131.20.64/27",
+          "52.131.66.104/29",
+          "52.131.66.128/27",
           "52.131.148.64/27",
+          "52.131.194.64/27",
+          "52.131.194.96/29",
           "2406:e500:2402:1::100/121",
           "2406:e500:2602:1::100/121"
         ],
@@ -3672,6 +3680,38 @@
       }
     },
     {
+      "name": "AzureDigitalTwins.ChinaEast",
+      "id": "AzureDigitalTwins.ChinaEast",
+      "properties": {
+        "changeNumber": 1,
+        "region": "chinaeast",
+        "regionId": 13,
+        "platform": "Azure",
+        "systemService": "AzureDigitalTwins",
+        "addressPrefixes": [
+          "40.72.169.96/27",
+          "40.72.169.128/29"
+        ],
+        "networkFeatures": null
+      }
+    },
+    {
+      "name": "AzureDigitalTwins.ChinaEast2",
+      "id": "AzureDigitalTwins.ChinaEast2",
+      "properties": {
+        "changeNumber": 1,
+        "region": "chinaeast2",
+        "regionId": 55,
+        "platform": "Azure",
+        "systemService": "AzureDigitalTwins",
+        "addressPrefixes": [
+          "52.131.194.64/27",
+          "52.131.194.96/29"
+        ],
+        "networkFeatures": null
+      }
+    },
+    {
       "name": "AzureDigitalTwins.ChinaEast3",
       "id": "AzureDigitalTwins.ChinaEast3",
       "properties": {
@@ -3683,6 +3723,38 @@
         "addressPrefixes": [
           "52.131.148.64/27",
           "2406:e500:2402:1::100/121"
+        ],
+        "networkFeatures": null
+      }
+    },
+    {
+      "name": "AzureDigitalTwins.ChinaNorth",
+      "id": "AzureDigitalTwins.ChinaNorth",
+      "properties": {
+        "changeNumber": 1,
+        "region": "chinanorth",
+        "regionId": 14,
+        "platform": "Azure",
+        "systemService": "AzureDigitalTwins",
+        "addressPrefixes": [
+          "52.130.49.192/27",
+          "52.130.49.224/29"
+        ],
+        "networkFeatures": null
+      }
+    },
+    {
+      "name": "AzureDigitalTwins.ChinaNorth2",
+      "id": "AzureDigitalTwins.ChinaNorth2",
+      "properties": {
+        "changeNumber": 1,
+        "region": "chinanorth2",
+        "regionId": 54,
+        "platform": "Azure",
+        "systemService": "AzureDigitalTwins",
+        "addressPrefixes": [
+          "52.131.66.104/29",
+          "52.131.66.128/27"
         ],
         "networkFeatures": null
       }
@@ -5185,14 +5257,13 @@
       "name": "Storage.ChinaNorth",
       "id": "Storage.ChinaNorth",
       "properties": {
-        "changeNumber": 2,
+        "changeNumber": 3,
         "region": "chinanorth",
         "regionId": 14,
         "platform": "Azure",
         "systemService": "AzureStorage",
         "addressPrefixes": [
           "40.72.64.0/24",
-          "40.72.68.0/24",
           "40.125.216.0/27",
           "40.125.216.48/28",
           "40.125.216.64/28",
@@ -5229,12 +5300,13 @@
       "name": "Storage.ChinaNorth3",
       "id": "Storage.ChinaNorth3",
       "properties": {
-        "changeNumber": 3,
+        "changeNumber": 4,
         "region": "chinanorth3",
         "regionId": 89,
         "platform": "Azure",
         "systemService": "AzureStorage",
         "addressPrefixes": [
+          "40.72.68.0/24",
           "52.130.102.0/24",
           "52.130.106.0/23",
           "52.130.108.0/23"
@@ -6747,12 +6819,13 @@
       "name": "AzureCloud.chinanorth3",
       "id": "AzureCloud.chinanorth3",
       "properties": {
-        "changeNumber": 7,
+        "changeNumber": 8,
         "region": "chinanorth3",
         "regionId": 89,
         "platform": "Azure",
         "systemService": "",
         "addressPrefixes": [
+          "40.72.68.0/24",
           "40.73.145.0/25",
           "40.73.145.128/26",
           "40.73.145.192/28",
@@ -6788,7 +6861,7 @@
       "name": "AzureCloud.chinanorth",
       "id": "AzureCloud.chinanorth",
       "properties": {
-        "changeNumber": 16,
+        "changeNumber": 17,
         "region": "chinanorth",
         "regionId": 14,
         "platform": "Azure",
@@ -6796,7 +6869,6 @@
         "addressPrefixes": [
           "40.72.0.0/18",
           "40.72.64.0/22",
-          "40.72.68.0/24",
           "40.72.72.0/21",
           "40.72.80.0/21",
           "40.72.127.0/24",
@@ -7104,5 +7176,5 @@
       }
     }
   ],
-  "createDate": "20211108"
+  "createDate": "20211115"
 }
