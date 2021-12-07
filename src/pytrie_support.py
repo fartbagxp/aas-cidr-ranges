@@ -181,3 +181,47 @@ class PytrieSupport():
               'source': 'Atlassian',
               'website': 'https://ip-ranges.atlassian.com/'
           }
+
+  def add_digitalocean_cidr(self, pytrie, result):
+    lines = result.split('\n')
+    for r in lines:
+      r = r.strip()
+      if r:
+        items = r.split(',')
+        cidr = items[0]
+        country = items[1]
+        subdivision = items[2]
+        city = items[3]
+        zipcode = items[4]
+
+        pytrie[r] = {
+          'source': 'DigitalOcean',
+          'website': 'https://digitalocean.com/geo/google.csv',
+          'country': country,
+          'subdivision': subdivision,
+          'city': city,
+          'zipcode': zipcode
+        }
+
+  def add_linode_cidr(self, pytrie, result):
+    lines = result.split('\n')
+    for r in lines:
+      r = r.strip()
+      if r and r.startswith('#') is False:
+        items = r.split(',')
+        prefix = items[0]
+        country = items[1]
+        subdivision = items[2]
+        city = items[3]
+        zipcode = items[4]
+        allocation_size = items[5]
+
+        pytrie[r] = {
+          'source': 'Linode',
+          'website': 'https://geoip.linode.com/',
+          'country': country,
+          'subdivision': subdivision,
+          'city': city,
+          'zipcode': zipcode,
+          'allocation_size': allocation_size
+        }

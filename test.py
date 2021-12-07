@@ -75,6 +75,12 @@ def run_test():
   data = reader.read('data/raw/pingdom-ipv6.txt')
   support.add_pingdom_cidr(pyt, data)
 
+  data = reader.read('data/raw/digitalocean.txt')
+  support.add_digitalocean_cidr(pyt, data)
+
+  data = reader.read('data/raw/linode.txt')
+  support.add_linode_cidr(pyt, data)
+
   '''
     Testing - AWS
     {'region': 'us-east-1', 'service': 'EC2'}
@@ -125,15 +131,11 @@ def run_test():
   print(pyt.get('13.115.46.213/32'))
   print(pyt.get('63.35.33.198/32'))
   print(pyt.get('3.233.144.0/20'))
-  print(pyt.get('3.228.27.0/25'))
-  print(pyt.get('2600:1f18:63f7:b900::/56'))
   print(pyt.get('99.79.87.237/32'))
 
   print(pyt.get(pyt.parent('13.115.46.213/32')))
   print(pyt.get(pyt.parent('63.35.33.198/32')))
   print(pyt.get(pyt.parent('3.233.144.0/20')))
-  print(pyt.get(pyt.parent('3.228.27.0/25')))
-  print(pyt.get(pyt.parent('2600:1f18:63f7:b900::/56')))
   print(pyt.get(pyt.parent('99.79.87.237/32')))
 
   '''
@@ -153,6 +155,16 @@ def run_test():
   '''
   print(pyt.get('43.229.84.12'))
   print(pyt.get('2a02:6ea0:c305::4041'))
+
+  '''
+  Testing - Digital Ocean
+  '''
+  print(pyt.get('45.55.192.0'))
+
+  '''
+  Testing - Linode
+  '''
+  print(pyt.get('72.14.177.0'))
 
   '''
   Testing - Whois

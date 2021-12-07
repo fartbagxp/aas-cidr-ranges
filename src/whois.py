@@ -4,7 +4,7 @@ from pprint import pprint
 
 def whois(ip):
   obj = IPWhois(ip)
-  results = obj.lookup_rdap(depth=1)
+  results = obj.lookup_rdap(depth=1,retry_count=5,rate_limit_timeout=5)
 
   results_stripped = {
       "asn": results.get("asn"),

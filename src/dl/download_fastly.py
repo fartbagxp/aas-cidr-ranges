@@ -1,6 +1,3 @@
-# Endpoint: https://api.fastly.com/public-ip-list
-
-
 import requests
 
 
