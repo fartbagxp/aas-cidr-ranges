@@ -9,5 +9,5 @@ class LinodeCidrDownloader():
       data = r.text
       return data
     except requests.exceptions.RequestException as e:
-      print(f'Failure to scrape Github IP range endpoint, error was {e}')
+      print(f'Failure to scrape Linode IP range endpoint, error was {e}')
       return None
