@@ -225,3 +225,12 @@ class PytrieSupport():
           'zipcode': zipcode,
           'allocation_size': allocation_size
         }
+
+  def add_maxcdn_cidr(self, pytrie, result):
+    results = result.split('\n')
+    for r in results:
+      if r.strip():
+        pytrie[r] = {
+            'source': 'MaxCDN',
+            'website': 'https://support.maxcdn.com/hc/en-us/articles/360036932271-IP-Blocks'
+        }

@@ -167,6 +167,11 @@ def generate_reader():
   support.add_linode_cidr(pyt, data)
   pytries.append(pyt)
 
+  pyt = pytricia.PyTricia(128)
+  data = reader.read('data/raw/maxcdn.txt')
+  support.add_maxcdn_cidr(pyt, data)
+  pytries.append(pyt)
+
   return pytries
 
 

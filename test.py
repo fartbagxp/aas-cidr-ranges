@@ -81,6 +81,9 @@ def run_test():
   data = reader.read('data/raw/linode.txt')
   support.add_linode_cidr(pyt, data)
 
+  data = reader.read('data/raw/maxcdn.txt')
+  support.add_maxcdn_cidr(pyt, data)
+
   '''
     Testing - AWS
     {'region': 'us-east-1', 'service': 'EC2'}
@@ -165,6 +168,11 @@ def run_test():
   Testing - Linode
   '''
   print(pyt.get('72.14.177.0'))
+
+  '''
+  Testing - MaxCDN
+  '''
+  print(pyt.get('108.168.175.204'))
 
   '''
   Testing - Whois
