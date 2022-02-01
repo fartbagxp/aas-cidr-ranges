@@ -1,5 +1,5 @@
 {
-  "changeNumber": 185,
+  "changeNumber": 186,
   "cloud": "China",
   "values": [
     {
@@ -2155,7 +2155,7 @@
       "name": "SqlManagement",
       "id": "SqlManagement",
       "properties": {
-        "changeNumber": 9,
+        "changeNumber": 10,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -2180,6 +2180,7 @@
           "52.131.27.224/27",
           "52.131.29.128/27",
           "52.131.64.88/30",
+          "52.131.66.196/30",
           "52.131.151.240/28",
           "52.131.155.224/27",
           "52.131.157.128/27",
@@ -6135,6 +6136,52 @@
       }
     },
     {
+      "name": "PowerPlatformInfra.ChinaEast2",
+      "id": "PowerPlatformInfra.ChinaEast2",
+      "properties": {
+        "changeNumber": 1,
+        "region": "chinaeast2",
+        "regionId": 55,
+        "platform": "Azure",
+        "systemService": "PowerPlatformInfra",
+        "addressPrefixes": [
+          "40.73.122.133/32",
+          "40.73.122.212/32",
+          "52.130.4.32/27",
+          "52.130.4.64/26",
+          "52.130.4.152/29"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "FW"
+        ]
+      }
+    },
+    {
+      "name": "PowerPlatformInfra.ChinaNorth2",
+      "id": "PowerPlatformInfra.ChinaNorth2",
+      "properties": {
+        "changeNumber": 1,
+        "region": "chinanorth2",
+        "regionId": 54,
+        "platform": "Azure",
+        "systemService": "PowerPlatformInfra",
+        "addressPrefixes": [
+          "40.73.47.202/32",
+          "52.130.19.32/27",
+          "52.130.19.64/26",
+          "52.130.20.240/29",
+          "139.217.65.46/32"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "FW"
+        ]
+      }
+    },
+    {
       "name": "PowerQueryOnline.ChinaEast",
       "id": "PowerQueryOnline.ChinaEast",
       "properties": {
@@ -7188,5 +7235,5 @@
       }
     }
   ],
-  "createDate": "20220124"
+  "createDate": "20220131"
 }
