@@ -1,5 +1,5 @@
 {
-  "changeNumber": 188,
+  "changeNumber": 189,
   "cloud": "AzureGovernment",
   "values": [
     {
@@ -816,7 +816,7 @@
       "name": "AzureCosmosDB",
       "id": "AzureCosmosDB",
       "properties": {
-        "changeNumber": 8,
+        "changeNumber": 9,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -841,7 +841,6 @@
           "52.180.252.170/32",
           "52.181.176.132/32",
           "52.181.180.183/32",
-          "52.181.182.96/32",
           "52.182.54.215/32",
           "52.227.165.220/32",
           "52.238.116.57/32",
@@ -1826,14 +1825,20 @@
       "name": "AzureTrafficManager",
       "id": "AzureTrafficManager",
       "properties": {
-        "changeNumber": 1,
+        "changeNumber": 2,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
         "systemService": "AzureTrafficManager",
         "addressPrefixes": [
           "13.72.186.25/32",
-          "52.227.168.90/32"
+          "20.141.81.44/32",
+          "23.97.16.0/32",
+          "23.97.22.130/32",
+          "52.227.168.90/32",
+          "52.244.202.176/32",
+          "2001:489a:3102:4::29/128",
+          "2001:489a:3600:1::6b/128"
         ],
         "networkFeatures": [
           "API",
@@ -4247,7 +4252,7 @@
       "name": "AzureCosmosDB.USDoDEast",
       "id": "AzureCosmosDB.USDoDEast",
       "properties": {
-        "changeNumber": 5,
+        "changeNumber": 6,
         "region": "usdodeast",
         "regionId": 45,
         "platform": "Azure",
@@ -4257,7 +4262,6 @@
           "52.126.202.0/27",
           "52.181.176.132/32",
           "52.181.180.183/32",
-          "52.181.182.96/32",
           "2001:489a:3303:1::320/123",
           "2001:489a:3303:402::c0/122",
           "2001:489a:3303:802::c0/122",
@@ -6041,7 +6045,7 @@
       "name": "Storage.USDoDCentral",
       "id": "Storage.USDoDCentral",
       "properties": {
-        "changeNumber": 6,
+        "changeNumber": 7,
         "region": "usdodcentral",
         "regionId": 44,
         "platform": "Azure",
@@ -6054,7 +6058,8 @@
           "52.182.96.64/27",
           "52.182.96.112/28",
           "52.182.96.128/28",
-          "52.182.96.160/27"
+          "52.182.96.160/27",
+          "2001:489a:3205::/48"
         ],
         "networkFeatures": [
           "API",
@@ -6068,7 +6073,7 @@
       "name": "Storage.USDoDEast",
       "id": "Storage.USDoDEast",
       "properties": {
-        "changeNumber": 4,
+        "changeNumber": 5,
         "region": "usdodeast",
         "regionId": 45,
         "platform": "Azure",
@@ -6081,7 +6086,8 @@
           "52.181.112.32/28",
           "52.181.112.64/27",
           "52.181.112.112/28",
-          "52.181.112.128/28"
+          "52.181.112.128/28",
+          "2001:489a:3305::/48"
         ],
         "networkFeatures": [
           "API",
@@ -6095,7 +6101,7 @@
       "name": "Storage.USGovArizona",
       "id": "Storage.USGovArizona",
       "properties": {
-        "changeNumber": 4,
+        "changeNumber": 5,
         "region": "usgovarizona",
         "regionId": 39,
         "platform": "Azure",
@@ -6106,7 +6112,8 @@
           "20.141.7.0/24",
           "52.126.192.0/25",
           "52.127.119.0/24",
-          "52.239.166.0/24"
+          "52.239.166.0/24",
+          "2001:489a:3606::/48"
         ],
         "networkFeatures": [
           "API",
@@ -6146,7 +6153,7 @@
       "name": "Storage.USGovTexas",
       "id": "Storage.USGovTexas",
       "properties": {
-        "changeNumber": 6,
+        "changeNumber": 7,
         "region": "usgovtexas",
         "regionId": 41,
         "platform": "Azure",
@@ -6162,7 +6169,8 @@
           "52.238.120.64/27",
           "52.238.176.16/28",
           "52.238.176.32/28",
-          "52.239.176.0/25"
+          "52.239.176.0/25",
+          "2001:489a:3405::/48"
         ],
         "networkFeatures": [
           "API",
@@ -6176,7 +6184,7 @@
       "name": "Storage.USGovVirginia",
       "id": "Storage.USGovVirginia",
       "properties": {
-        "changeNumber": 8,
+        "changeNumber": 9,
         "region": "usgovvirginia",
         "regionId": 42,
         "platform": "Azure",
@@ -6196,7 +6204,8 @@
           "52.127.117.128/26",
           "52.227.72.32/27",
           "52.227.128.16/28",
-          "52.227.128.32/28"
+          "52.227.128.32/28",
+          "2001:489a:3109::/48"
         ],
         "networkFeatures": [
           "API",
@@ -8659,5 +8668,5 @@
       }
     }
   ],
-  "createDate": "20220207"
+  "createDate": "20220214"
 }
