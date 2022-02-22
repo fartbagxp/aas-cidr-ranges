@@ -1,5 +1,5 @@
 {
-  "changeNumber": 188,
+  "changeNumber": 189,
   "cloud": "China",
   "values": [
     {
@@ -45,6 +45,27 @@
           "52.131.192.180/31"
         ],
         "networkFeatures": null
+      }
+    },
+    {
+      "name": "AzureHealthcareAPIs",
+      "id": "AzureHealthcareAPIs",
+      "properties": {
+        "changeNumber": 1,
+        "region": "",
+        "regionId": 0,
+        "platform": "Azure",
+        "systemService": "AzureAPIForFHIR",
+        "addressPrefixes": [
+          "52.131.20.224/27",
+          "52.131.148.224/27",
+          "2406:e500:2402:1::1c0/123",
+          "2406:e500:2602:1::1c0/123"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG"
+        ]
       }
     },
     {
@@ -1748,6 +1769,34 @@
         "networkFeatures": [
           "API",
           "NSG"
+        ]
+      }
+    },
+    {
+      "name": "GenevaActions",
+      "id": "GenevaActions",
+      "properties": {
+        "changeNumber": 1,
+        "region": "",
+        "regionId": 0,
+        "platform": "Azure",
+        "systemService": "GenevaActions",
+        "addressPrefixes": [
+          "40.72.169.72/30",
+          "40.73.43.232/32",
+          "40.73.110.213/32",
+          "52.130.49.104/30",
+          "52.131.66.96/30",
+          "52.131.194.8/30",
+          "139.219.15.26/32",
+          "139.219.136.139/32",
+          "159.27.21.160/30"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
         ]
       }
     },
@@ -7258,5 +7307,5 @@
       }
     }
   ],
-  "createDate": "20220214"
+  "createDate": "20220221"
 }
