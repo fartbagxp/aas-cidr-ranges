@@ -5,6 +5,7 @@ from src.dl.download_zoom import ZoomCidrDownloader
 from src.dl.download_cloudflare import CloudflareCidrDownloader
 from src.dl.download_fastly import FastlyCidrDownloader
 from src.dl.download_datadog import DatadogCidrDownloader
+from src.dl.download_google import GcpCidrDownloader
 from src.dl.download_github import GithubCidrDownloader
 from src.dl.download_atlassian import AtlassianCidrDownloader
 from src.dl.download_pingdom import PingdomCidrDownloader
@@ -75,6 +76,10 @@ def update():
   github_downloader = GithubCidrDownloader()
   result = github_downloader.get_range()
   writer.write('data/raw/github.json', json.dumps(result, indent=2))
+
+  google_downloader = GcpCidrDownloader()
+  result = google_downloader.get_range()
+  writer.write('data/raw/gcp.json', json.dumps(result, indent=2))
 
   atlassian_downloader = AtlassianCidrDownloader()
   result = atlassian_downloader.get_range()

@@ -15,10 +15,7 @@ The goal of this project is to be able to quickly determine what Software-as-a-S
 For coding and running locally, the following is required:
 
 - [Python 3.8+](https://www.python.org/downloads/)
-- [pyenv](https://github.com/pyenv/pyenv)
-- [pipenv](https://github.com/pypa/pipenv)
-
-For deployment:
+  For deployment:
 
 - [Node 14+](https://nodejs.org/en/)
 
@@ -27,9 +24,10 @@ For deployment:
 1. Download the code:  
    `git clone git@github.com:fartbagxp/aas-cidr-ranges.git`
 1. Setup dependencies:  
-   `pipenv shell`
+   `python -m venv .venv`  
+   `source .venv/activate`
 1. Install dependencies:  
-   `pipenv install`
+   `pip install -r requirements.txt`
 1. Run the code to test it out:  
    `python test.py`
 
