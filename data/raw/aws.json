@@ -1,6 +1,6 @@
 {
-  "syncToken": "1647545007",
-  "createDate": "2022-03-17-19-23-27",
+  "syncToken": "1647559406",
+  "createDate": "2022-03-17-23-23-26",
   "prefixes": [
     {
       "ip_prefix": "3.5.140.0/22",
@@ -31863,6 +31863,12 @@
       "network_border_group": "cn-north-1"
     },
     {
+      "ip_prefix": "140.179.144.128/25",
+      "region": "cn-north-1",
+      "service": "API_GATEWAY",
+      "network_border_group": "cn-north-1"
+    },
+    {
       "ip_prefix": "140.179.15.0/26",
       "region": "cn-north-1",
       "service": "AMAZON",
@@ -31872,6 +31878,12 @@
       "ip_prefix": "140.179.15.64/26",
       "region": "cn-north-1",
       "service": "AMAZON",
+      "network_border_group": "cn-north-1"
+    },
+    {
+      "ip_prefix": "140.179.176.0/23",
+      "region": "cn-north-1",
+      "service": "API_GATEWAY",
       "network_border_group": "cn-north-1"
     },
     {
@@ -32082,6 +32094,12 @@
       "ip_prefix": "69.234.197.72/29",
       "region": "cn-northwest-1",
       "service": "CODEBUILD",
+      "network_border_group": "cn-northwest-1"
+    },
+    {
+      "ip_prefix": "69.235.170.0/23",
+      "region": "cn-northwest-1",
+      "service": "API_GATEWAY",
       "network_border_group": "cn-northwest-1"
     },
     {
@@ -33345,6 +33363,30 @@
       "network_border_group": "ap-northeast-2"
     },
     {
+      "ip_prefix": "3.39.113.0/24",
+      "region": "ap-northeast-2",
+      "service": "API_GATEWAY",
+      "network_border_group": "ap-northeast-2"
+    },
+    {
+      "ip_prefix": "3.39.114.0/23",
+      "region": "ap-northeast-2",
+      "service": "API_GATEWAY",
+      "network_border_group": "ap-northeast-2"
+    },
+    {
+      "ip_prefix": "3.39.116.0/26",
+      "region": "ap-northeast-2",
+      "service": "API_GATEWAY",
+      "network_border_group": "ap-northeast-2"
+    },
+    {
+      "ip_prefix": "3.39.82.128/25",
+      "region": "ap-northeast-2",
+      "service": "API_GATEWAY",
+      "network_border_group": "ap-northeast-2"
+    },
+    {
       "ip_prefix": "52.78.247.128/26",
       "region": "ap-northeast-2",
       "service": "CLOUDFRONT",
@@ -33976,6 +34018,24 @@
     },
     {
       "ip_prefix": "13.214.228.0/22",
+      "region": "ap-southeast-1",
+      "service": "API_GATEWAY",
+      "network_border_group": "ap-southeast-1"
+    },
+    {
+      "ip_prefix": "13.215.92.0/24",
+      "region": "ap-southeast-1",
+      "service": "API_GATEWAY",
+      "network_border_group": "ap-southeast-1"
+    },
+    {
+      "ip_prefix": "13.215.93.0/25",
+      "region": "ap-southeast-1",
+      "service": "API_GATEWAY",
+      "network_border_group": "ap-southeast-1"
+    },
+    {
+      "ip_prefix": "13.215.93.128/26",
       "region": "ap-southeast-1",
       "service": "API_GATEWAY",
       "network_border_group": "ap-southeast-1"
@@ -35152,6 +35212,18 @@
     },
     {
       "ip_prefix": "3.71.120.0/22",
+      "region": "eu-central-1",
+      "service": "API_GATEWAY",
+      "network_border_group": "eu-central-1"
+    },
+    {
+      "ip_prefix": "3.72.168.0/24",
+      "region": "eu-central-1",
+      "service": "API_GATEWAY",
+      "network_border_group": "eu-central-1"
+    },
+    {
+      "ip_prefix": "3.72.33.128/25",
       "region": "eu-central-1",
       "service": "API_GATEWAY",
       "network_border_group": "eu-central-1"
@@ -36724,6 +36796,12 @@
     },
     {
       "ip_prefix": "157.241.2.0/23",
+      "region": "me-south-1",
+      "service": "API_GATEWAY",
+      "network_border_group": "me-south-1"
+    },
+    {
+      "ip_prefix": "157.241.25.0/24",
       "region": "me-south-1",
       "service": "API_GATEWAY",
       "network_border_group": "me-south-1"
@@ -38691,7 +38769,25 @@
       "network_border_group": "us-west-1"
     },
     {
+      "ip_prefix": "3.101.201.128/25",
+      "region": "us-west-1",
+      "service": "API_GATEWAY",
+      "network_border_group": "us-west-1"
+    },
+    {
       "ip_prefix": "3.101.202.0/23",
+      "region": "us-west-1",
+      "service": "API_GATEWAY",
+      "network_border_group": "us-west-1"
+    },
+    {
+      "ip_prefix": "3.101.208.0/24",
+      "region": "us-west-1",
+      "service": "API_GATEWAY",
+      "network_border_group": "us-west-1"
+    },
+    {
+      "ip_prefix": "3.101.209.0/26",
       "region": "us-west-1",
       "service": "API_GATEWAY",
       "network_border_group": "us-west-1"
