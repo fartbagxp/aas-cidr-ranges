@@ -1,5 +1,5 @@
 {
-  "changeNumber": 193,
+  "changeNumber": 194,
   "cloud": "AzureGovernment",
   "values": [
     {
@@ -729,12 +729,16 @@
       "name": "AzureConnectors",
       "id": "AzureConnectors",
       "properties": {
-        "changeNumber": 5,
+        "changeNumber": 6,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
         "systemService": "AzureConnectors",
         "addressPrefixes": [
+          "13.72.10.90/32",
+          "13.72.23.139/32",
+          "13.72.50.37/32",
+          "13.72.55.169/32",
           "20.140.94.192/27",
           "20.140.137.128/27",
           "20.140.146.192/27",
@@ -743,6 +747,7 @@
           "20.141.10.0/27",
           "20.141.17.64/27",
           "20.141.17.96/28",
+          "40.112.40.25/32",
           "52.126.202.80/28",
           "52.126.205.192/27",
           "52.127.2.160/28",
@@ -752,8 +757,20 @@
           "52.127.42.128/28",
           "52.127.58.160/28",
           "52.127.61.192/27",
+          "52.181.178.59/32",
+          "52.181.180.34/32",
+          "52.182.48.97/32",
+          "52.182.48.136/32",
+          "52.227.143.61/32",
+          "52.227.162.91/32",
           "52.235.252.144/28",
           "52.235.252.160/27",
+          "52.238.75.237/32",
+          "52.238.79.18/32",
+          "52.238.161.42/32",
+          "52.238.161.225/32",
+          "52.238.162.70/32",
+          "52.244.64.91/32",
           "52.245.153.80/28",
           "52.245.153.96/27",
           "2001:489a:3103:402::180/122",
@@ -3985,7 +4002,7 @@
       "name": "AzureConnectors.USDoDCentral",
       "id": "AzureConnectors.USDoDCentral",
       "properties": {
-        "changeNumber": 4,
+        "changeNumber": 5,
         "region": "usdodcentral",
         "regionId": 44,
         "platform": "Azure",
@@ -3993,6 +4010,8 @@
         "addressPrefixes": [
           "52.127.58.160/28",
           "52.127.61.192/27",
+          "52.182.48.97/32",
+          "52.182.48.136/32",
           "52.245.153.80/28",
           "52.245.153.96/27",
           "2001:489a:3203:402::180/122"
@@ -4009,7 +4028,7 @@
       "name": "AzureConnectors.USDoDEast",
       "id": "AzureConnectors.USDoDEast",
       "properties": {
-        "changeNumber": 4,
+        "changeNumber": 5,
         "region": "usdodeast",
         "regionId": 45,
         "platform": "Azure",
@@ -4019,6 +4038,8 @@
           "20.141.17.96/28",
           "52.126.202.80/28",
           "52.126.205.192/27",
+          "52.181.178.59/32",
+          "52.181.180.34/32",
           "2001:489a:3303:402::180/122"
         ],
         "networkFeatures": [
@@ -4033,7 +4054,7 @@
       "name": "AzureConnectors.USGovArizona",
       "id": "AzureConnectors.USGovArizona",
       "properties": {
-        "changeNumber": 4,
+        "changeNumber": 5,
         "region": "usgovarizona",
         "regionId": 39,
         "platform": "Azure",
@@ -4043,6 +4064,7 @@
           "20.141.10.0/27",
           "52.127.2.160/28",
           "52.127.5.224/27",
+          "52.244.64.91/32",
           "2001:489a:3604:402::180/122"
         ],
         "networkFeatures": [
@@ -4077,7 +4099,7 @@
       "name": "AzureConnectors.USGovTexas",
       "id": "AzureConnectors.USGovTexas",
       "properties": {
-        "changeNumber": 4,
+        "changeNumber": 5,
         "region": "usgovtexas",
         "regionId": 41,
         "platform": "Azure",
@@ -4086,7 +4108,13 @@
           "20.140.137.128/27",
           "20.140.146.192/27",
           "20.140.146.224/28",
+          "40.112.40.25/32",
           "52.127.34.160/28",
+          "52.238.75.237/32",
+          "52.238.79.18/32",
+          "52.238.161.42/32",
+          "52.238.161.225/32",
+          "52.238.162.70/32",
           "2001:489a:3403:402::180/122"
         ],
         "networkFeatures": [
@@ -4101,14 +4129,20 @@
       "name": "AzureConnectors.USGovVirginia",
       "id": "AzureConnectors.USGovVirginia",
       "properties": {
-        "changeNumber": 5,
+        "changeNumber": 6,
         "region": "usgovvirginia",
         "regionId": 42,
         "platform": "Azure",
         "systemService": "AzureConnectors",
         "addressPrefixes": [
+          "13.72.10.90/32",
+          "13.72.23.139/32",
+          "13.72.50.37/32",
+          "13.72.55.169/32",
           "20.140.94.192/27",
           "52.127.42.128/28",
+          "52.227.143.61/32",
+          "52.227.162.91/32",
           "52.235.252.144/28",
           "52.235.252.160/27",
           "2001:489a:3103:402::180/122"
@@ -8741,5 +8775,5 @@
       }
     }
   ],
-  "createDate": "20220314"
+  "createDate": "20220321"
 }
