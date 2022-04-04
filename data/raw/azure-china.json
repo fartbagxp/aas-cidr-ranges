@@ -1,5 +1,5 @@
 {
-  "changeNumber": 194,
+  "changeNumber": 195,
   "cloud": "China",
   "values": [
     {
@@ -889,6 +889,27 @@
           "UDR",
           "VSE",
           "FW"
+        ]
+      }
+    },
+    {
+      "name": "AzureInformationProtection",
+      "id": "AzureInformationProtection",
+      "properties": {
+        "changeNumber": 1,
+        "region": "",
+        "regionId": 0,
+        "platform": "Azure",
+        "systemService": "AzureInformationProtection",
+        "addressPrefixes": [
+          "52.131.66.244/30",
+          "52.131.66.248/31",
+          "52.131.194.228/30",
+          "52.131.194.232/31"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG"
         ]
       }
     },
@@ -7378,5 +7399,5 @@
       }
     }
   ],
-  "createDate": "20220328"
+  "createDate": "20220404"
 }
