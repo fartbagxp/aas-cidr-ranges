@@ -1,5 +1,5 @@
 {
-  "changeNumber": 197,
+  "changeNumber": 198,
   "cloud": "AzureGovernment",
   "values": [
     {
@@ -1913,6 +1913,35 @@
       }
     },
     {
+      "name": "AzureVideoAnalyzerForMedia",
+      "id": "AzureVideoAnalyzerForMedia",
+      "properties": {
+        "changeNumber": 1,
+        "region": "",
+        "regionId": 0,
+        "platform": "Azure",
+        "systemService": "AzureVideoAnalyzerForMedia",
+        "addressPrefixes": [
+          "13.77.235.36/32",
+          "20.141.10.218/31",
+          "20.141.11.40/32",
+          "52.235.253.232/31",
+          "52.235.253.234/32",
+          "52.244.55.227/32",
+          "52.244.212.146/32",
+          "52.244.212.151/32",
+          "52.245.211.14/32",
+          "52.245.211.54/32"
+        ],
+        "networkFeatures": [
+          "NSG",
+          "API",
+          "FW",
+          "UDR"
+        ]
+      }
+    },
+    {
       "name": "BatchNodeManagement",
       "id": "BatchNodeManagement",
       "properties": {
@@ -2204,38 +2233,6 @@
           "2001:489a:3303::40/122",
           "2001:489a:3403::40/122",
           "2001:489a:3604::40/122"
-        ],
-        "networkFeatures": [
-          "API",
-          "NSG",
-          "UDR",
-          "FW"
-        ]
-      }
-    },
-    {
-      "name": "GenevaActions",
-      "id": "GenevaActions",
-      "properties": {
-        "changeNumber": 1,
-        "region": "",
-        "regionId": 0,
-        "platform": "Azure",
-        "systemService": "GenevaActions",
-        "addressPrefixes": [
-          "20.140.147.164/30",
-          "20.141.10.192/30",
-          "20.141.16.152/30",
-          "23.97.0.17/32",
-          "23.97.16.184/32",
-          "23.97.17.74/32",
-          "52.181.180.148/32",
-          "52.182.48.254/32",
-          "52.227.224.70/32",
-          "52.235.252.248/30",
-          "52.238.77.236/32",
-          "52.244.33.156/32",
-          "52.245.152.24/30"
         ],
         "networkFeatures": [
           "API",
@@ -8783,5 +8780,5 @@
       }
     }
   ],
-  "createDate": "20220411"
+  "createDate": "20220418"
 }
