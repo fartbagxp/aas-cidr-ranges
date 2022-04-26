@@ -1,5 +1,5 @@
 {
-  "changeNumber": 198,
+  "changeNumber": 199,
   "cloud": "AzureGovernment",
   "values": [
     {
@@ -2651,7 +2651,7 @@
       "name": "PowerQueryOnline",
       "id": "PowerQueryOnline",
       "properties": {
-        "changeNumber": 3,
+        "changeNumber": 4,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -2662,9 +2662,15 @@
           "20.140.56.116/31",
           "20.140.64.116/31",
           "20.140.72.116/31",
+          "20.140.147.174/31",
+          "20.140.151.64/29",
           "20.140.152.72/31",
+          "20.141.11.88/29",
+          "20.141.18.216/29",
+          "20.141.161.136/29",
           "52.127.49.88/30",
           "52.127.49.136/29",
+          "52.245.154.232/29",
           "2001:489a:3103::200/123",
           "2001:489a:3203::200/123",
           "2001:489a:3303::200/123",
@@ -7278,13 +7284,14 @@
       "name": "PowerQueryOnline.USDoDCentral",
       "id": "PowerQueryOnline.USDoDCentral",
       "properties": {
-        "changeNumber": 1,
+        "changeNumber": 2,
         "region": "usdodcentral",
         "regionId": 44,
         "platform": "Azure",
         "systemService": "PowerQueryOnline",
         "addressPrefixes": [
           "20.140.72.116/31",
+          "52.245.154.232/29",
           "2001:489a:3203::200/123"
         ],
         "networkFeatures": null
@@ -7294,13 +7301,14 @@
       "name": "PowerQueryOnline.USDoDEast",
       "id": "PowerQueryOnline.USDoDEast",
       "properties": {
-        "changeNumber": 1,
+        "changeNumber": 2,
         "region": "usdodeast",
         "regionId": 45,
         "platform": "Azure",
         "systemService": "PowerQueryOnline",
         "addressPrefixes": [
           "20.140.64.116/31",
+          "20.141.18.216/29",
           "2001:489a:3303::200/123"
         ],
         "networkFeatures": null
@@ -7310,7 +7318,7 @@
       "name": "PowerQueryOnline.USGovArizona",
       "id": "PowerQueryOnline.USGovArizona",
       "properties": {
-        "changeNumber": 1,
+        "changeNumber": 2,
         "region": "usgovarizona",
         "regionId": 39,
         "platform": "Azure",
@@ -7318,6 +7326,7 @@
         "addressPrefixes": [
           "20.140.48.116/31",
           "20.140.48.200/29",
+          "20.141.11.88/29",
           "2001:489a:3604::200/123"
         ],
         "networkFeatures": null
@@ -7342,13 +7351,15 @@
       "name": "PowerQueryOnline.USGovTexas",
       "id": "PowerQueryOnline.USGovTexas",
       "properties": {
-        "changeNumber": 1,
+        "changeNumber": 2,
         "region": "usgovtexas",
         "regionId": 41,
         "platform": "Azure",
         "systemService": "PowerQueryOnline",
         "addressPrefixes": [
           "20.140.56.116/31",
+          "20.140.147.174/31",
+          "20.140.151.64/29",
           "2001:489a:3403::200/123"
         ],
         "networkFeatures": null
@@ -7358,12 +7369,13 @@
       "name": "PowerQueryOnline.USGovVirginia",
       "id": "PowerQueryOnline.USGovVirginia",
       "properties": {
-        "changeNumber": 1,
+        "changeNumber": 2,
         "region": "usgovvirginia",
         "regionId": 42,
         "platform": "Azure",
         "systemService": "PowerQueryOnline",
         "addressPrefixes": [
+          "20.141.161.136/29",
           "52.127.49.88/30",
           "52.127.49.136/29",
           "2001:489a:3103::200/123"
@@ -8780,5 +8792,5 @@
       }
     }
   ],
-  "createDate": "20220418"
+  "createDate": "20220425"
 }

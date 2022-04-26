@@ -1,5 +1,5 @@
 {
-  "changeNumber": 197,
+  "changeNumber": 198,
   "cloud": "China",
   "values": [
     {
@@ -2160,7 +2160,7 @@
       "name": "PowerQueryOnline",
       "id": "PowerQueryOnline",
       "properties": {
-        "changeNumber": 3,
+        "changeNumber": 4,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -2169,7 +2169,13 @@
           "52.130.1.84/30",
           "52.130.16.132/30",
           "52.131.16.20/31",
+          "52.131.70.128/29",
           "52.131.144.20/31",
+          "52.131.194.240/29",
+          "159.27.241.200/29",
+          "159.27.241.208/31",
+          "163.228.53.220/31",
+          "163.228.57.136/29",
           "2404:7940:1::200/123",
           "2404:7940:101::200/123",
           "2404:7940:201::200/123",
@@ -6396,13 +6402,14 @@
       "name": "PowerQueryOnline.ChinaEast2",
       "id": "PowerQueryOnline.ChinaEast2",
       "properties": {
-        "changeNumber": 2,
+        "changeNumber": 3,
         "region": "chinaeast2",
         "regionId": 55,
         "platform": "Azure",
         "systemService": "PowerQueryOnline",
         "addressPrefixes": [
           "52.130.1.84/30",
+          "52.131.194.240/29",
           "2404:7940:301::200/123"
         ],
         "networkFeatures": null
@@ -6412,13 +6419,15 @@
       "name": "PowerQueryOnline.ChinaEast3",
       "id": "PowerQueryOnline.ChinaEast3",
       "properties": {
-        "changeNumber": 1,
+        "changeNumber": 2,
         "region": "chinaeast3",
         "regionId": 90,
         "platform": "Azure",
         "systemService": "PowerQueryOnline",
         "addressPrefixes": [
           "52.131.144.20/31",
+          "163.228.53.220/31",
+          "163.228.57.136/29",
           "2406:e500:2402::540/123"
         ],
         "networkFeatures": null
@@ -6443,13 +6452,14 @@
       "name": "PowerQueryOnline.ChinaNorth2",
       "id": "PowerQueryOnline.ChinaNorth2",
       "properties": {
-        "changeNumber": 2,
+        "changeNumber": 3,
         "region": "chinanorth2",
         "regionId": 54,
         "platform": "Azure",
         "systemService": "PowerQueryOnline",
         "addressPrefixes": [
           "52.130.16.132/30",
+          "52.131.70.128/29",
           "2404:7940:101::200/123"
         ],
         "networkFeatures": null
@@ -6459,13 +6469,15 @@
       "name": "PowerQueryOnline.ChinaNorth3",
       "id": "PowerQueryOnline.ChinaNorth3",
       "properties": {
-        "changeNumber": 1,
+        "changeNumber": 2,
         "region": "chinanorth3",
         "regionId": 89,
         "platform": "Azure",
         "systemService": "PowerQueryOnline",
         "addressPrefixes": [
           "52.131.16.20/31",
+          "159.27.241.200/29",
+          "159.27.241.208/31",
           "2406:e500:2602::540/123"
         ],
         "networkFeatures": null
@@ -7460,5 +7472,5 @@
       }
     }
   ],
-  "createDate": "20220418"
+  "createDate": "20220425"
 }
