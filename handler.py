@@ -8,7 +8,6 @@ from src.pytrie_support import PytrieSupport
 
 from src.whois import whois
 
-
 def sanitize_parameter(event):
   body = {
       'error': '',
