@@ -59,7 +59,14 @@ def run_test():
   support.add_zoom_cidr(pyt, data,
                         zoom.get_config().get('source').get('range'),
                         zoom.get_config().get('url').get('range'))
-
+  data = reader.read('data/raw/zoom-contact-center.txt')                   
+  support.add_zoom_cidr(pyt, data,
+                        zoom.get_config().get('source').get('cc'),
+                        zoom.get_config().get('url').get('cc'))
+  data = reader.read('data/raw/zoom-cdn.txt')
+  support.add_zoom_cidr(pyt, data,
+                        zoom.get_config().get('source').get('cdn'),
+                        zoom.get_config().get('url').get('cdn'))
   data = reader.read('data/raw/datadog.json')
   support.add_datadog_cidr(pyt, json.loads(data))
 
@@ -124,9 +131,9 @@ def run_test():
   '''
   Testing - Zoom
   '''
-  print(pyt.get('3.80.20.128'))
-  print(pyt.get('103.122.166.0'))
-
+  print(pyt.get('13.32.101.253'))
+  print(pyt.get('3.208.72.0/32'))
+  print(pyt.get('204.80.104.0'))
   '''
   Testing - Datadog
   '''

@@ -25,7 +25,7 @@ For coding and running locally, the following is required:
    `git clone git@github.com:fartbagxp/aas-cidr-ranges.git`
 1. Setup dependencies:  
    `python -m venv .venv`  
-   `source .venv/activate`
+   `source .venv/bin/activate`
 1. Install dependencies:  
    `pip install -r requirements.txt`
 1. Run the code to test it out:  

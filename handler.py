@@ -132,6 +132,14 @@ def generate_reader():
   support.add_zoom_cidr(pyt, data,
                         zoom.get_config().get('source').get('range'),
                         zoom.get_config().get('url').get('range'))
+  data = reader.read('data/raw/zoom-contact-center.txt')
+  support.add_zoom_cidr(pyt, data,
+                        zoom.get_config().get('source').get('cc'),
+                        zoom.get_config().get('url').get('cc'))
+  data = reader.read('data/raw/zoom-cdn.txt')
+  support.add_zoom_cidr(pyt, data,
+                        zoom.get_config().get('source').get('cdn'),
+                        zoom.get_config().get('url').get('cdn'))
   pytries.append(pyt)
 
   pyt = pytricia.PyTricia(128)
