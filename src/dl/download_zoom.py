@@ -22,13 +22,17 @@ class ZoomCidrDownloader():
             'zoom': 'https://assets.zoom.us/docs/ipranges/Zoom.txt',
             'meeting': 'https://assets.zoom.us/docs/ipranges/ZoomMeetings.txt',
             'crc': 'https://assets.zoom.us/docs/ipranges/ZoomCRC.txt',
-            'phone': 'https://assets.zoom.us/docs/ipranges/ZoomPhone.txt'
+            'phone': 'https://assets.zoom.us/docs/ipranges/ZoomPhone.txt',
+            'cc': 'https://assets.zoom.us/docs/ipranges/ZoomCC.txt',
+            'cdn': 'https://assets.zoom.us/docs/ipranges/ZoomCDN.txt'
         },
         'source': {
             'zoom': 'Zoom',
             'meeting': "Zoom Meetings",
             'crc': "Zoom Cloud Room Connector",
-            'phone': 'Zoom Phone'
+            'phone': 'Zoom Phone',
+            'cc': 'Zoom Contact Center',
+            'cdn': 'Zoom CDN'
         }
     }
 
@@ -78,6 +82,30 @@ class ZoomCidrDownloader():
       return data, source, URL
     except requests.exceptions.RequestException as e:
       print(f'Failure to scrape Zoom Phone IP range endpoint, error was {e}')
+      return None
+
+
+  def get_zoom_cc_range(self):
+    try:
+      URL = self.config.get('url').get('cc')
+      r = requests.get(url=URL, headers=self.headers)
+      data = r.text
+      source = self.config.get('source').get('cc')
+      return data, source, URL
+    except requests.exceptions.RequestException as e:
+      print(
+          f'Failure to scrape Zoom Contact Center Connector IP range endpoint, error was {e}')
+      return None
+
+  def get_zoom_cdn_range(self):
+    try:
+      URL = self.config.get('url').get('cdn')
+      r = requests.get(url=URL, headers=self.headers)
+      data = r.text
+      source = self.config.get('source').get('cdn')
+      return data, source, URL
+    except requests.exceptions.RequestException as e:
+      print(f'Failure to scrape Zoom CDN IP range endpoint, error was {e}')
       return None
 
   '''

@@ -31,16 +31,20 @@ def update():
 
   azure_downloader = AzureCidrDownloader()
   result = azure_downloader.get_public_range()
-  writer.write('data/raw/azure-public.json', json.dumps(result, indent=2))
+  if result != None:
+    writer.write('data/raw/azure-public.json', json.dumps(result, indent=2))
 
   result = azure_downloader.get_china_range()
-  writer.write('data/raw/azure-china.json', json.dumps(result, indent=2))
+  if result != None:
+    writer.write('data/raw/azure-china.json', json.dumps(result, indent=2))
 
   result = azure_downloader.get_germany_range()
-  writer.write('data/raw/azure-germany.json', json.dumps(result, indent=2))
+  if result != None:
+    writer.write('data/raw/azure-germany.json', json.dumps(result, indent=2))
 
   result = azure_downloader.get_gov_range()
-  writer.write('data/raw/azure-gov.json', json.dumps(result, indent=2))
+  if result != None:
+    writer.write('data/raw/azure-gov.json', json.dumps(result, indent=2))
 
   cloudflare_downloader = CloudflareCidrDownloader()
   result = cloudflare_downloader.get_range_v4()
@@ -66,8 +70,11 @@ def update():
   result, source, website = zoom_downloader.get_zoom_phone_range()
   writer.write('data/raw/zoom-phone.txt', result)
 
-  result, source, website = zoom_downloader.get_zoom_phone_range()
-  writer.write('data/raw/zoom-phone.txt', result)
+  result, source, website = zoom_downloader.get_zoom_cc_range()
+  writer.write('data/raw/zoom-contact-center.txt', result)
+
+  result, source, website = zoom_downloader.get_zoom_cdn_range()
+  writer.write('data/raw/zoom-cdn.txt', result)
 
   datadog_downloader = DatadogCidrDownloader()
   result = datadog_downloader.get_range()
