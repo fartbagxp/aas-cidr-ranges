@@ -31,8 +31,10 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - run: npm install
 
-      - name: Setup pipenv
-        run: pip install pipenv
+      - name: Setup pipenv environment
+        uses: dschep/install-pipenv-action@v1
+        with:
+          version: 2022.4.21
 
       - name: Serverless Deploy
         run: npm run deploy
