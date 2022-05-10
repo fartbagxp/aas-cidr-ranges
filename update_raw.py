@@ -12,6 +12,7 @@ from src.dl.download_pingdom import PingdomCidrDownloader
 from src.dl.download_digitalocean import DigitalOceanCidrDownloader
 from src.dl.download_linode import LinodeCidrDownloader
 from src.dl.download_maxcdn import MaxCDNCidrDownloader
+from src.dl.download_grafana import GrafanaCidrDownloader
 from src.dl.download import CidrWriter
 
 '''
@@ -110,6 +111,18 @@ def update():
   maxcdn_downloader = MaxCDNCidrDownloader()
   result = maxcdn_downloader.get_range()
   writer.write('data/raw/maxcdn.txt', result)
+
+  grafana_downloader = GrafanaCidrDownloader()
+  result = grafana_downloader.get_hosted_alerts_range()
+  writer.write('data/raw/grafana-hosted-alerts.txt', result)
+  result = grafana_downloader.get_hosted_grafana_range()
+  writer.write('data/raw/grafana-hosted.txt', result)
+  result = grafana_downloader.get_hosted_metrics_range()
+  writer.write('data/raw/grafana-hosted-metrics.txt', result)
+  result = grafana_downloader.get_hosted_traces_range()
+  writer.write('data/raw/grafana-hosted-traces.txt', result)
+  result = grafana_downloader.get_hosted_logs_range()
+  writer.write('data/raw/grafana-hosted-logs.txt', result)
 
 def main():
   update()

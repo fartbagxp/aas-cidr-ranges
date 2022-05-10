@@ -91,6 +91,17 @@ def run_test():
   data = reader.read('data/raw/maxcdn.txt')
   support.add_maxcdn_cidr(pyt, data)
 
+  data = reader.read('data/raw/grafana-hosted-alerts.txt')
+  support.add_grafana_cidr(pyt, data, 'hosted alerts')
+  data = reader.read('data/raw/grafana-hosted-logs.txt')
+  support.add_grafana_cidr(pyt, data, 'hosted logs')
+  data = reader.read('data/raw/grafana-hosted-metrics.txt')
+  support.add_grafana_cidr(pyt, data, 'hosted metrics')
+  data = reader.read('data/raw/grafana-hosted-traces.txt')
+  support.add_grafana_cidr(pyt, data, 'hosted traces')
+  data = reader.read('data/raw/grafana-hosted.txt')
+  support.add_grafana_cidr(pyt, data, 'hosted grafana')
+
   '''
     Testing - AWS
     {'region': 'us-east-1', 'service': 'EC2'}
@@ -180,6 +191,11 @@ def run_test():
   Testing - MaxCDN
   '''
   print(pyt.get('108.168.175.204'))
+
+  '''
+  Testing - Grafana
+  '''
+  print(pyt.get('35.227.211.64'))
 
   '''
   Testing - Whois

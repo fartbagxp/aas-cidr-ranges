@@ -179,6 +179,19 @@ def generate_reader():
   support.add_maxcdn_cidr(pyt, data)
   pytries.append(pyt)
 
+  pyt = pytricia.PyTricia(128)
+  data = reader.read('data/raw/grafana-hosted-alerts.txt')
+  support.add_grafana_cidr(pyt, data, 'hosted alerts')
+  data = reader.read('data/raw/grafana-hosted-logs.txt')
+  support.add_grafana_cidr(pyt, data, 'hosted logs')
+  data = reader.read('data/raw/grafana-hosted-metrics.txt')
+  support.add_grafana_cidr(pyt, data, 'hosted metrics')
+  data = reader.read('data/raw/grafana-hosted-traces.txt')
+  support.add_grafana_cidr(pyt, data, 'hosted traces')
+  data = reader.read('data/raw/grafana-hosted.txt')
+  support.add_grafana_cidr(pyt, data, 'hosted grafana')
+  pytries.append(pyt)
+
   return pytries
 
 
