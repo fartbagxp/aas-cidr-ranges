@@ -1,6 +1,7 @@
 # Documentation can be found here: https://grafana.com/docs/grafana-cloud/reference/allow-list/
 
 import requests
+from ..dns import resolve_all_dns
 
 class GrafanaCidrDownloader():
 
@@ -55,26 +56,30 @@ class GrafanaCidrDownloader():
       return None
 
   def get_dns_names(self):
-    pass
-    # sm-amsterdam.grafana.net
-    # sm-atlanta.grafana.net
-    # sm-bangalore.grafana.net
-    # sm-capetown.grafana.net
-    # sm-dallas.grafana.net
-    # sm-frankfurt.grafana.net
-    # sm-london.grafana.net
-    # sm-mumbai.grafana.net
-    # sm-newark.grafana.net
-    # sm-newyork.grafana.net
-    # sm-northcalifornia.grafana.net
-    # sm-northvirginia.grafana.net
-    # sm-ohio.grafana.net
-    # sm-oregon.grafana.net
-    # sm-paris.grafana.net
-    # sm-sanfrancisco.grafana.net
-    # sm-saopaulo.grafana.net
-    # sm-seoul.grafana.net
-    # sm-singapore.grafana.net
-    # sm-sydney.grafana.net
-    # sm-tokyo.grafana.net
-    # sm-toronto.grafana.net
+    # This list came from https://grafana.com/docs/grafana-cloud/reference/allow-list/
+    dns_list = [
+      'sm-amsterdam.grafana.net', 
+      'sm-atlanta.grafana.net'
+      'sm-bangalore.grafana.net',
+      'sm-capetown.grafana.net',
+      'sm-dallas.grafana.net',
+      'sm-frankfurt.grafana.net',
+      'sm-london.grafana.net',
+      'sm-mumbai.grafana.net',
+      'sm-newark.grafana.net',
+      'sm-newyork.grafana.net',
+      'sm-northcalifornia.grafana.net',
+      'sm-northvirginia.grafana.net',
+      'sm-ohio.grafana.net',
+      'sm-oregon.grafana.net',
+      'sm-paris.grafana.net',
+      'sm-sanfrancisco.grafana.net',
+      'sm-saopaulo.grafana.net',
+      'sm-seoul.grafana.net',
+      'sm-singapore.grafana.net',
+      'sm-sydney.grafana.net',
+      'sm-tokyo.grafana.net',
+      'sm-toronto.grafana.net',
+    ]
+    results = resolve_all_dns(dns_list)
+    return results
