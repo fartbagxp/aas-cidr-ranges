@@ -235,12 +235,22 @@ class PytrieSupport():
             'website': 'https://support.maxcdn.com/hc/en-us/articles/360036932271-IP-Blocks'
         }
 
-  def add_grafana_cidr(self, pytrie, result, filename):
+  def add_grafana_cidr(self, pytrie, result, service):
     results = result.split('\n')
     for r in results:
       if r.strip():
         pytrie[r] = {
             'source': 'Grafana',
-            'service': filename,
+            'service': service,
+            'website': 'https://grafana.com/docs/grafana-cloud/reference/allow-list/'
+        }
+
+  def add_grafana_synthetics(self, pytrie, result, service):
+    for r in result:
+      for ip in result[r]:
+        pytrie[ip] = {
+            'source': 'Grafana',
+            'service': service,
+            'url': r,
             'website': 'https://grafana.com/docs/grafana-cloud/reference/allow-list/'
         }

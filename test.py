@@ -101,6 +101,8 @@ def run_test():
   support.add_grafana_cidr(pyt, data, 'hosted traces')
   data = reader.read('data/raw/grafana-hosted.txt')
   support.add_grafana_cidr(pyt, data, 'hosted grafana')
+  data = reader.read('data/raw/grafana-synthetic-monitoring.json')
+  support.add_grafana_synthetics(pyt, json.loads(data), 'grafana synthetic monitoring')
 
   '''
     Testing - AWS
@@ -196,6 +198,7 @@ def run_test():
   Testing - Grafana
   '''
   print(pyt.get('35.227.211.64'))
+  print(pyt.get('13.245.152.138'))
 
   '''
   Testing - Whois

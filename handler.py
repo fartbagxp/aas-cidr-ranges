@@ -190,10 +190,11 @@ def generate_reader():
   support.add_grafana_cidr(pyt, data, 'hosted traces')
   data = reader.read('data/raw/grafana-hosted.txt')
   support.add_grafana_cidr(pyt, data, 'hosted grafana')
+  data = reader.read('data/raw/grafana-synthetic-monitoring.json')
+  support.add_grafana_synthetics(pyt, json.loads(data), 'grafana synthetic monitoring')
   pytries.append(pyt)
 
   return pytries
-
 
 '''
 Provides an entry point to a job for providing results about a particular
