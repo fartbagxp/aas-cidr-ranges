@@ -230,6 +230,7 @@ class PytrieSupport():
     results = result.split('\n')
     for r in results:
       if r.strip():
+        print(r)
         pytrie[r] = {
             'source': 'MaxCDN',
             'website': 'https://support.maxcdn.com/hc/en-us/articles/360036932271-IP-Blocks'
@@ -253,4 +254,14 @@ class PytrieSupport():
             'service': service,
             'url': r,
             'website': 'https://grafana.com/docs/grafana-cloud/reference/allow-list/'
+        }
+
+  def add_okta_cidr(self, pytrie, result):
+    for r in result:
+      ips = result[r].get('ip_ranges', [])
+      for ip in ips:
+        pytrie[ip] = {
+            'source': 'Okta',
+            'url': r,
+            'website': 'https://s3.amazonaws.com/okta-ip-ranges/ip_ranges.json'
         }
