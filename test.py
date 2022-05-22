@@ -104,6 +104,9 @@ def run_test():
   data = reader.read('data/raw/grafana-synthetic-monitoring.json')
   support.add_grafana_synthetics(pyt, json.loads(data), 'grafana synthetic monitoring')
 
+  data = reader.read('data/raw/okta.json')
+  support.add_okta_cidr(pyt, json.loads(data))
+
   '''
     Testing - AWS
     {'region': 'us-east-1', 'service': 'EC2'}
@@ -199,6 +202,11 @@ def run_test():
   '''
   print(pyt.get('35.227.211.64'))
   print(pyt.get('13.245.152.138'))
+
+  '''
+  Testing - Okta
+  '''
+  print(pyt.get('3.33.185.234'))
 
   '''
   Testing - Whois

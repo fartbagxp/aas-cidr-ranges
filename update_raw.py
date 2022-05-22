@@ -13,6 +13,7 @@ from src.dl.download_digitalocean import DigitalOceanCidrDownloader
 from src.dl.download_linode import LinodeCidrDownloader
 from src.dl.download_maxcdn import MaxCDNCidrDownloader
 from src.dl.download_grafana import GrafanaCidrDownloader
+from src.dl.download_okta import OktaCidrDownloader
 from src.dl.download import CidrWriter
 
 '''
@@ -125,6 +126,10 @@ def update():
   writer.write('data/raw/grafana-hosted-logs.txt', result)
   result = grafana_downloader.get_dns_names()
   writer.write('data/raw/grafana-synthetic-monitoring.json', json.dumps(result, indent=2))
+
+  okta_downloader = OktaCidrDownloader()
+  result = okta_downloader.get_range()
+  writer.write('data/raw/okta.json', json.dumps(result, indent=2))
 
 def main():
   update()
