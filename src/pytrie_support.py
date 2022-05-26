@@ -5,11 +5,31 @@ different schema of files provided.
 Essentially, this is a collection of parsers on parsing the various files and
 inputting it into the IP trie.
 '''
-
+import ipaddress 
 import collections
 
 
 class PytrieSupport():
+
+  def validate_ip_address(self, address):
+    try:
+      try:
+        ip = ipaddress.ip_address(address)
+        # if isinstance(ip, ipaddress.IPv4Address):
+        #   print("{} is an IPv4 address".format(address))
+        # elif isinstance(ip, ipaddress.IPv6Address):
+        #   print("{} is an IPv6 address".format(address))
+        return True
+      except ValueError:
+        ip = ipaddress.ip_network(address)
+        # if isinstance(ip, ipaddress.IPv4Network):
+        #   print("{} is an IPv4 network".format(address))
+        # elif isinstance(ip, ipaddress.IPv6Network):
+        #   print("{} is an IPv6 network".format(address))
+        return True
+    except ValueError:
+      # print("IP address {} is not valid".format(address)) 
+      return False
 
   def add_aws_cidr(self, pytrie, result):
     for prefix in result['prefixes']:
@@ -157,11 +177,13 @@ class PytrieSupport():
     for key in result:
       if isinstance(result[key], list):
         for ip in result[key]:
-          pytrie[ip] = {
-              'source': 'Github',
-              'product': key,
-              'website': 'https://help.github.com/en/github/authenticating-to-github/about-githubs-ip-addresses'
-          }
+          ip = ip.strip()
+          if self.validate_ip_address(ip):
+            pytrie[ip] = {
+                'source': 'Github',
+                'product': key,
+                'website': 'https://help.github.com/en/github/authenticating-to-github/about-githubs-ip-addresses'
+            }
 
   def add_pingdom_cidr(self, pytrie, result):
     results = result.split('\n')
@@ -230,7 +252,6 @@ class PytrieSupport():
     results = result.split('\n')
     for r in results:
       if r.strip():
-        print(r)
         pytrie[r] = {
             'source': 'MaxCDN',
             'website': 'https://support.maxcdn.com/hc/en-us/articles/360036932271-IP-Blocks'
