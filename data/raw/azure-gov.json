@@ -1,5 +1,5 @@
 {
-  "changeNumber": 203,
+  "changeNumber": 204,
   "cloud": "AzureGovernment",
   "values": [
     {
@@ -465,7 +465,7 @@
       "name": "AzureArcInfrastructure",
       "id": "AzureArcInfrastructure",
       "properties": {
-        "changeNumber": 3,
+        "changeNumber": 4,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -489,7 +489,7 @@
           "52.127.12.234/31",
           "52.127.18.86/31",
           "52.127.27.141/32",
-          "52.127.34.194/32",
+          "52.127.34.194/31",
           "52.127.38.196/30",
           "52.127.42.163/32",
           "52.127.50.160/30",
@@ -2786,12 +2786,13 @@
       "name": "SqlManagement",
       "id": "SqlManagement",
       "properties": {
-        "changeNumber": 6,
+        "changeNumber": 7,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
         "systemService": "SqlManagement",
         "addressPrefixes": [
+          "13.77.226.176/32",
           "20.140.51.104/29",
           "20.140.51.112/30",
           "20.140.59.0/29",
@@ -2806,6 +2807,7 @@
           "20.140.133.96/27",
           "20.140.152.108/30",
           "20.140.153.128/29",
+          "20.141.107.202/32",
           "23.97.0.26/32",
           "23.97.16.19/32",
           "52.126.202.128/27",
@@ -2829,6 +2831,7 @@
           "52.182.88.23/32",
           "52.235.251.224/30",
           "52.238.116.34/32",
+          "52.244.164.114/32",
           "2001:489a:3103:1::540/123",
           "2001:489a:3103:402::380/122",
           "2001:489a:3103:802::260/123",
@@ -3573,7 +3576,7 @@
       "name": "AzureArcInfrastructure.USGovTexas",
       "id": "AzureArcInfrastructure.USGovTexas",
       "properties": {
-        "changeNumber": 2,
+        "changeNumber": 3,
         "region": "usgovtexas",
         "regionId": 41,
         "platform": "Azure",
@@ -3581,7 +3584,7 @@
         "addressPrefixes": [
           "20.140.57.112/30",
           "20.140.60.116/30",
-          "52.127.34.194/32",
+          "52.127.34.194/31",
           "52.127.38.196/30"
         ],
         "networkFeatures": null
@@ -8808,5 +8811,5 @@
       }
     }
   ],
-  "createDate": "20220523"
+  "createDate": "20220530"
 }
