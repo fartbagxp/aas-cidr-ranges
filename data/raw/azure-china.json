@@ -1,5 +1,5 @@
 {
-  "changeNumber": 203,
+  "changeNumber": 204,
   "cloud": "China",
   "values": [
     {
@@ -2902,7 +2902,7 @@
       "name": "AzureArcInfrastructure.ChinaEast2",
       "id": "AzureArcInfrastructure.ChinaEast2",
       "properties": {
-        "changeNumber": 1,
+        "changeNumber": 2,
         "region": "chinaeast2",
         "regionId": 55,
         "platform": "Azure",
@@ -2911,7 +2911,8 @@
           "52.130.2.224/30",
           "52.130.5.196/30",
           "52.130.120.6/32",
-          "52.130.120.180/30"
+          "52.130.120.180/30",
+          "52.130.121.0/29"
         ],
         "networkFeatures": null
       }
@@ -2920,7 +2921,7 @@
       "name": "AzureArcInfrastructure.ChinaNorth",
       "id": "AzureArcInfrastructure.ChinaNorth",
       "properties": {
-        "changeNumber": 1,
+        "changeNumber": 2,
         "region": "chinanorth",
         "regionId": 14,
         "platform": "Azure",
@@ -2929,6 +2930,7 @@
           "40.72.72.144/30",
           "40.72.79.32/30",
           "52.130.128.236/30",
+          "52.130.128.240/29",
           "139.217.52.186/32"
         ],
         "networkFeatures": null
@@ -2938,7 +2940,7 @@
       "name": "AzureArcInfrastructure.ChinaNorth2",
       "id": "AzureArcInfrastructure.ChinaNorth2",
       "properties": {
-        "changeNumber": 1,
+        "changeNumber": 2,
         "region": "chinanorth2",
         "regionId": 54,
         "platform": "Azure",
@@ -2947,7 +2949,8 @@
           "40.73.141.152/32",
           "52.130.16.148/30",
           "52.130.21.232/30",
-          "52.130.40.164/30"
+          "52.130.40.164/30",
+          "52.130.40.176/29"
         ],
         "networkFeatures": null
       }
@@ -7490,5 +7493,5 @@
       }
     }
   ],
-  "createDate": "20220530"
+  "createDate": "20220606"
 }
