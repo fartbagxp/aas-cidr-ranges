@@ -1,6 +1,6 @@
 {
-  "version": 49,
-  "modified": "2022-05-18-12-00-00",
+  "version": 50,
+  "modified": "2022-06-22-12-00-00",
   "agents": {
     "prefixes_ipv4": [
       "3.233.144.0/20"
@@ -216,6 +216,14 @@
       ]
     },
     "prefixes_ipv6_by_location": {}
+  },
+  "synthetics-private-locations": {
+    "prefixes_ipv4": [
+      "3.233.144.0/20"
+    ],
+    "prefixes_ipv6": [
+      "2600:1f18:24e6:b900::/56"
+    ]
   },
   "webhooks": {
     "prefixes_ipv4": [
