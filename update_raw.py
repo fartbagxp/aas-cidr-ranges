@@ -14,6 +14,7 @@ from src.dl.download_linode import LinodeCidrDownloader
 from src.dl.download_maxcdn import MaxCDNCidrDownloader
 from src.dl.download_grafana import GrafanaCidrDownloader
 from src.dl.download_okta import OktaCidrDownloader
+from src.dl.download_oracle import OracleCidrDownloader
 from src.dl.download import CidrWriter
 
 '''
@@ -130,6 +131,10 @@ def update():
   okta_downloader = OktaCidrDownloader()
   result = okta_downloader.get_range()
   writer.write('data/raw/okta.json', json.dumps(result, indent=2))
+
+  oracle_downloader = OracleCidrDownloader()
+  result = oracle_downloader.get_range()
+  writer.write('data/raw/oracle.json', json.dumps(result, indent=2))
 
 def main():
   update()
