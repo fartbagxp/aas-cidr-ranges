@@ -286,3 +286,21 @@ class PytrieSupport():
             'url': r,
             'website': 'https://s3.amazonaws.com/okta-ip-ranges/ip_ranges.json'
         }
+
+  def add_oracle_cidr(self, pytrie, result):
+    timestamp = result.get('last_updated_timestamp','')
+    regions = result.get('regions',[])
+    for r in regions:
+      region_name = r.get('region', '')
+      cidrs = r.get('cidrs', [])
+      for cidr_info in cidrs:
+        cidr = cidr_info.get('cidr', '')
+        tags = cidr_info.get('tags', [])
+        tags = ','.join(tags)
+        pytrie[cidr] = {
+            'source': 'Oracle',
+            'region_name': region_name,
+            'tags': tags,
+            'website': 'https://docs.oracle.com/en-us/iaas/tools/public_ip_ranges.json',
+            'updated_timestamp': timestamp
+        }

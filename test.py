@@ -162,6 +162,14 @@ def run_test():
   result = belong({'queryStringParameters': {
       'ip': '3.33.185.234'}}, None)
   print(result)
+
+  '''
+  Testing - Oracle
+  '''
+  result = belong({'queryStringParameters': {
+      'ip': '129.146.0.0'}}, None)
+  print(result)
+
   '''
   Testing - Whois
   '''
