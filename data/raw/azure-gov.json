@@ -1,5 +1,5 @@
 {
-  "changeNumber": 208,
+  "changeNumber": 209,
   "cloud": "AzureGovernment",
   "values": [
     {
@@ -2003,7 +2003,7 @@
       "name": "CognitiveServicesManagement",
       "id": "CognitiveServicesManagement",
       "properties": {
-        "changeNumber": 11,
+        "changeNumber": 12,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -2036,8 +2036,6 @@
           "20.140.200.0/28",
           "20.140.224.16/29",
           "20.141.8.48/28",
-          "40.66.3.1/32",
-          "40.66.3.74/32",
           "52.127.20.0/28",
           "52.127.38.28/30",
           "52.127.43.224/28",
@@ -6321,7 +6319,7 @@
       "name": "Storage.USGovVirginia",
       "id": "Storage.USGovVirginia",
       "properties": {
-        "changeNumber": 9,
+        "changeNumber": 10,
         "region": "usgovvirginia",
         "regionId": 42,
         "platform": "Azure",
@@ -6330,6 +6328,7 @@
           "13.72.43.16/28",
           "13.72.43.32/28",
           "20.140.240.0/23",
+          "20.140.248.0/23",
           "20.141.1.0/24",
           "20.141.4.0/24",
           "23.97.32.64/26",
@@ -8460,7 +8459,7 @@
       "name": "AzureCloud.usgovvirginia",
       "id": "AzureCloud.usgovvirginia",
       "properties": {
-        "changeNumber": 32,
+        "changeNumber": 33,
         "region": "usgovvirginia",
         "regionId": 42,
         "platform": "Azure",
@@ -8483,6 +8482,7 @@
           "20.140.192.0/19",
           "20.140.232.128/25",
           "20.140.240.0/23",
+          "20.140.248.0/23",
           "20.141.1.0/24",
           "20.141.4.0/24",
           "20.141.24.0/21",
@@ -8547,7 +8547,7 @@
       "name": "AzureCloud",
       "id": "AzureCloud",
       "properties": {
-        "changeNumber": 55,
+        "changeNumber": 56,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -8609,6 +8609,7 @@
           "20.140.242.0/23",
           "20.140.244.0/23",
           "20.140.246.0/23",
+          "20.140.248.0/23",
           "20.141.0.0/24",
           "20.141.1.0/24",
           "20.141.2.0/24",
@@ -8828,5 +8829,5 @@
       }
     }
   ],
-  "createDate": "20220627"
+  "createDate": "20220704"
 }
