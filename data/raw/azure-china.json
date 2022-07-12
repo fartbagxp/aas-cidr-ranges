@@ -1,5 +1,5 @@
 {
-  "changeNumber": 208,
+  "changeNumber": 209,
   "cloud": "China",
   "values": [
     {
@@ -1609,7 +1609,7 @@
       "name": "CognitiveServicesManagement",
       "id": "CognitiveServicesManagement",
       "properties": {
-        "changeNumber": 14,
+        "changeNumber": 15,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -1652,10 +1652,14 @@
           "52.131.21.96/28",
           "52.131.23.0/26",
           "52.131.23.232/29",
+          "52.131.71.64/26",
+          "52.131.71.128/25",
           "52.131.149.64/27",
           "52.131.149.96/28",
           "52.131.151.0/26",
           "52.131.151.232/29",
+          "52.131.199.0/25",
+          "52.131.199.128/26",
           "139.217.15.215/32",
           "139.217.52.88/29",
           "139.217.52.96/29",
@@ -2149,6 +2153,25 @@
           "52.130.19.64/26",
           "52.130.20.240/29",
           "139.217.65.46/32"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG"
+        ]
+      }
+    },
+    {
+      "name": "PowerPlatformPlex",
+      "id": "PowerPlatformPlex",
+      "properties": {
+        "changeNumber": 1,
+        "region": "",
+        "regionId": 0,
+        "platform": "Azure",
+        "systemService": "PowerPlatformPlex",
+        "addressPrefixes": [
+          "52.131.70.140/30",
+          "52.131.194.252/30"
         ],
         "networkFeatures": [
           "API",
@@ -5432,7 +5455,7 @@
       "name": "Storage.ChinaEast2",
       "id": "Storage.ChinaEast2",
       "properties": {
-        "changeNumber": 7,
+        "changeNumber": 8,
         "region": "chinaeast2",
         "regionId": 55,
         "platform": "Azure",
@@ -5443,7 +5466,6 @@
           "40.73.85.32/27",
           "52.130.97.0/24",
           "52.130.100.0/23",
-          "52.130.103.0/24",
           "2406:e500:2105::/48"
         ],
         "networkFeatures": [
@@ -5456,12 +5478,13 @@
       "name": "Storage.ChinaEast3",
       "id": "Storage.ChinaEast3",
       "properties": {
-        "changeNumber": 2,
+        "changeNumber": 3,
         "region": "chinaeast3",
         "regionId": 90,
         "platform": "Azure",
         "systemService": "AzureStorage",
         "addressPrefixes": [
+          "52.130.103.0/24",
           "52.130.104.0/23",
           "2406:e500:2403::/48"
         ],
@@ -6393,6 +6416,42 @@
       }
     },
     {
+      "name": "PowerPlatformPlex.ChinaEast2",
+      "id": "PowerPlatformPlex.ChinaEast2",
+      "properties": {
+        "changeNumber": 1,
+        "region": "chinaeast2",
+        "regionId": 55,
+        "platform": "Azure",
+        "systemService": "PowerPlatformPlex",
+        "addressPrefixes": [
+          "52.131.194.252/30"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG"
+        ]
+      }
+    },
+    {
+      "name": "PowerPlatformPlex.ChinaNorth2",
+      "id": "PowerPlatformPlex.ChinaNorth2",
+      "properties": {
+        "changeNumber": 1,
+        "region": "chinanorth2",
+        "regionId": 54,
+        "platform": "Azure",
+        "systemService": "PowerPlatformPlex",
+        "addressPrefixes": [
+          "52.131.70.140/30"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG"
+        ]
+      }
+    },
+    {
       "name": "PowerQueryOnline.ChinaEast",
       "id": "PowerQueryOnline.ChinaEast",
       "properties": {
@@ -6869,7 +6928,7 @@
       "name": "AzureCloud.chinaeast2",
       "id": "AzureCloud.chinaeast2",
       "properties": {
-        "changeNumber": 26,
+        "changeNumber": 27,
         "region": "chinaeast2",
         "regionId": 55,
         "platform": "Azure",
@@ -6901,7 +6960,6 @@
           "52.130.64.0/19",
           "52.130.97.0/24",
           "52.130.100.0/23",
-          "52.130.103.0/24",
           "52.130.120.0/21",
           "52.130.160.0/19",
           "52.130.192.0/18",
@@ -6932,7 +6990,7 @@
       "name": "AzureCloud.chinaeast3",
       "id": "AzureCloud.chinaeast3",
       "properties": {
-        "changeNumber": 9,
+        "changeNumber": 10,
         "region": "chinaeast3",
         "regionId": 90,
         "platform": "Azure",
@@ -6943,6 +7001,7 @@
           "40.73.146.32/27",
           "40.73.147.0/27",
           "40.73.231.0/24",
+          "52.130.103.0/24",
           "52.130.104.0/23",
           "52.130.140.0/24",
           "52.131.4.0/23",
@@ -7493,5 +7552,5 @@
       }
     }
   ],
-  "createDate": "20220704"
+  "createDate": "20220711"
 }
