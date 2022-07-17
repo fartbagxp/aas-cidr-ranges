@@ -218,8 +218,6 @@ def belong(event, context):
     return results
 
   ip = event['queryStringParameters']['ip']
-  print(ip)
-
   isValidParameter = False
   isValidIP = False
   isValidCIDR = False
@@ -239,6 +237,14 @@ def belong(event, context):
 
   if isValidParameter == False:
     body['error'] = "Request must have field 'ip' with value of an IP address or valid CIDR notation"
+    return {
+        'statusCode': 400,
+        'body': json.dumps(body)
+    }
+
+  if isValidIP is True and ipaddress.ip_address(ip).is_private:
+    body['error'] = ''
+    body['data'] = 'Private IP'
     return {
         'statusCode': 200,
         'body': json.dumps(body)
@@ -270,6 +276,7 @@ def belong(event, context):
 
 
 def main():
+  from pprint import pprint
   result = belong({'queryStringParameters': {
       'ip': '100.100.100.100'}}, None)
   print(result)
@@ -284,10 +291,11 @@ def main():
   result = belong({'queryStringParameters': {'ip': '13.115.46.213/32'}}, None)
   print(result)
   result = belong({'queryStringParameters': {'ip': '140.82.114.3'}}, None)
-  print(result)
+  pprint(result)
   result = belong({'queryStringParameters': {'ip': '18.229.199.252/32'}}, None)
-  print(result)
-
+  pprint(result)
+  result = belong({'queryStringParameters': {'ip': '192.168.1.1'}}, None)
+  pprint(result)
 
 if __name__ == "__main__":
   main()

@@ -33,14 +33,25 @@ def whois(ip):
 
   return results_stripped
 
+def whois_asn(asn):
+  from ipwhois.net import Net
+  from ipwhois.asn import ASNOrigin
+  from pprint import pprint
+
+  net = Net('2001:1234:1234::')
+  obj = ASNOrigin(net)
+  results = obj.lookup(asn=asn)
+  pprint(results)
+
 
 def main():
   # result = whois('127.0.0.1')
   # pprint(result)
-  result = whois('213.199.183.0')
-  pprint(result)
-  result = whois('35.180.0.0')
-  pprint(result)
+  # result = whois('213.199.183.0')
+  # pprint(result)
+  # result = whois('35.180.0.0')
+  # pprint(result)
+  whois_asn('AS26810')
 
 
 if __name__ == "__main__":
