@@ -1,5 +1,5 @@
 {
-  "changeNumber": 210,
+  "changeNumber": 211,
   "cloud": "AzureGovernment",
   "values": [
     {
@@ -2772,7 +2772,7 @@
       "name": "ServiceFabric",
       "id": "ServiceFabric",
       "properties": {
-        "changeNumber": 3,
+        "changeNumber": 4,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -2782,6 +2782,7 @@
           "13.72.185.65/32",
           "20.140.94.128/30",
           "20.140.133.152/30",
+          "20.158.130.0/30",
           "52.126.202.160/29",
           "52.127.2.184/29",
           "52.127.34.184/29",
@@ -7648,12 +7649,13 @@
       "name": "ServiceFabric.USGovArizona",
       "id": "ServiceFabric.USGovArizona",
       "properties": {
-        "changeNumber": 1,
+        "changeNumber": 2,
         "region": "usgovarizona",
         "regionId": 39,
         "platform": "Azure",
         "systemService": "ServiceFabric",
         "addressPrefixes": [
+          "20.158.130.0/30",
           "52.127.2.184/29",
           "52.244.48.45/32",
           "2001:489a:3604:402::98/125",
@@ -8390,7 +8392,7 @@
       "name": "AzureCloud.usgovarizona",
       "id": "AzureCloud.usgovarizona",
       "properties": {
-        "changeNumber": 25,
+        "changeNumber": 26,
         "region": "usgovarizona",
         "regionId": 39,
         "platform": "Azure",
@@ -8409,6 +8411,9 @@
           "20.141.2.0/24",
           "20.141.7.0/24",
           "20.141.8.0/21",
+          "20.158.128.0/24",
+          "20.158.130.0/30",
+          "20.158.160.0/19",
           "40.66.0.192/26",
           "40.66.2.64/27",
           "40.66.3.64/27",
@@ -8567,7 +8572,7 @@
       "name": "AzureCloud.usgovvirginia",
       "id": "AzureCloud.usgovvirginia",
       "properties": {
-        "changeNumber": 33,
+        "changeNumber": 34,
         "region": "usgovvirginia",
         "regionId": 42,
         "platform": "Azure",
@@ -8597,6 +8602,7 @@
           "20.141.32.0/19",
           "20.141.64.0/19",
           "20.141.128.0/17",
+          "20.158.0.0/18",
           "23.97.0.0/20",
           "23.97.32.0/21",
           "40.66.1.64/26",
@@ -8655,7 +8661,7 @@
       "name": "AzureCloud",
       "id": "AzureCloud",
       "properties": {
-        "changeNumber": 56,
+        "changeNumber": 57,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -8733,6 +8739,10 @@
           "20.141.64.0/19",
           "20.141.96.0/19",
           "20.141.128.0/17",
+          "20.158.0.0/18",
+          "20.158.128.0/24",
+          "20.158.130.0/30",
+          "20.158.160.0/19",
           "23.97.0.0/20",
           "23.97.16.0/20",
           "23.97.32.0/21",
@@ -8937,5 +8947,5 @@
       }
     }
   ],
-  "createDate": "20220711"
+  "createDate": "20220718"
 }
