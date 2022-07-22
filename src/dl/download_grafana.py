@@ -1,7 +1,7 @@
 # Documentation can be found here: https://grafana.com/docs/grafana-cloud/reference/allow-list/
 
 import requests
-from ..dns import resolve_all_dns
+from ..async_dns import resolve_all_dns
 
 class GrafanaCidrDownloader():
 
