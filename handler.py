@@ -246,14 +246,20 @@ def belong(event, context):
     body['error'] = ''
     body['data'] = 'Private IP'
     return {
-        'statusCode': 200,
-        'body': json.dumps(body)
+      'statusCode': 200,
+      'body': json.dumps(body)
     }
+
+  responseTypes = {
+    'provider': 'provider',
+    'whois': 'whois',
+  }
 
   pytries = generate_reader()
   result = get_ip_info(pytries, ip)
   if result != None:
     body['error'] = ''
+    body['source_from'] = responseTypes['provider']
     body['data'] = result
     return {
         'statusCode': 200,
@@ -262,18 +268,21 @@ def belong(event, context):
 
   if result == None and isValidIP is True:
     body['error'] = ''
-    body['data'] = whois(ip)
-    return {
-        'statusCode': 200,
-        'body': json.dumps(body)
-    }
+    body['source_from'] = responseTypes['whois']
+    try:
+      body['data'] = whois(ip)
+      return {
+          'statusCode': 200,
+          'body': json.dumps(body)
+      }
+    except:
+      pass
 
   body['error'] = 'No available information'
   return {
       'statusCode': 200,
       'body': json.dumps(body)
   }
-
 
 def main():
   from pprint import pprint

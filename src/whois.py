@@ -1,7 +1,6 @@
 from ipwhois import IPWhois
 from pprint import pprint
 
-
 def whois(ip):
   obj = IPWhois(ip)
   results = obj.lookup_rdap(depth=1,retry_count=5,rate_limit_timeout=5)
@@ -34,14 +33,10 @@ def whois(ip):
   return results_stripped
 
 def whois_asn(asn):
-  from ipwhois.net import Net
-  from ipwhois.asn import ASNOrigin
-  from pprint import pprint
-
-  net = Net('2001:1234:1234::')
-  obj = ASNOrigin(net)
+  net = ipwhois.net('2001:1234:1234::')
+  obj = ipwhois.asn(net)
   results = obj.lookup(asn=asn)
-  pprint(results)
+  return results
 
 
 def main():
@@ -52,7 +47,7 @@ def main():
   # result = whois('35.180.0.0')
   # pprint(result)
   whois_asn('AS26810')
-
+  pprint(results)
 
 if __name__ == "__main__":
   main()

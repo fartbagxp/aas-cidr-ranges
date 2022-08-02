@@ -172,8 +172,12 @@ def run_test():
 
   '''
   Testing - Whois
+  Note: this requires an internet connection for the test to run successfully
   '''
-  print(whois('1.1.1.1'))
+  try:
+    print(whois('1.1.1.1'))
+  except:
+    print('Failed whois request: it is likely whois is failing due to no internet connection')
 
 
 def main():

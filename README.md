@@ -51,3 +51,7 @@ For coding and running locally, the following is required:
 - [Examples of Serverless deployment](https://github.com/serverless/examples)
 
 - [Rate Limits / API Keys to Serverless](https://www.serverless.com/framework/docs/providers/aws/events/apigateway/)
+
+
+## Todo
+- Precommit hook and excluding data/raw files.
