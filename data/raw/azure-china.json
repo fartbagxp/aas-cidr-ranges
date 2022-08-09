@@ -1,5 +1,5 @@
 {
-  "changeNumber": 212,
+  "changeNumber": 213,
   "cloud": "China",
   "values": [
     {
@@ -1014,7 +1014,7 @@
       "name": "AzureMachineLearning",
       "id": "AzureMachineLearning",
       "properties": {
-        "changeNumber": 4,
+        "changeNumber": 5,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -1028,6 +1028,7 @@
           "52.130.18.0/28",
           "52.131.17.0/27",
           "52.131.145.0/27",
+          "159.27.243.128/27",
           "2404:7940:1::240/122",
           "2404:7940:101::240/122",
           "2404:7940:201::240/122",
@@ -4565,13 +4566,14 @@
       "name": "AzureMachineLearning.ChinaNorth3",
       "id": "AzureMachineLearning.ChinaNorth3",
       "properties": {
-        "changeNumber": 1,
+        "changeNumber": 2,
         "region": "chinanorth3",
         "regionId": 89,
         "platform": "Azure",
         "systemService": "AzureMachineLearning",
         "addressPrefixes": [
           "52.131.17.0/27",
+          "159.27.243.128/27",
           "2406:e500:2602::580/122"
         ],
         "networkFeatures": null
@@ -6990,7 +6992,7 @@
       "name": "AzureCloud.chinaeast3",
       "id": "AzureCloud.chinaeast3",
       "properties": {
-        "changeNumber": 10,
+        "changeNumber": 11,
         "region": "chinaeast3",
         "regionId": 90,
         "platform": "Azure",
@@ -7013,9 +7015,7 @@
           "159.27.160.0/23",
           "159.27.162.0/26",
           "159.27.162.64/27",
-          "159.27.168.0/24",
-          "159.27.169.0/25",
-          "159.27.169.128/27",
+          "159.27.168.0/23",
           "163.228.0.0/17",
           "2406:e500:2400::/48",
           "2406:e500:2401::/48",
@@ -7171,7 +7171,7 @@
       "name": "AzureCloud.chinanorth3",
       "id": "AzureCloud.chinanorth3",
       "properties": {
-        "changeNumber": 15,
+        "changeNumber": 16,
         "region": "chinanorth3",
         "regionId": 89,
         "platform": "Azure",
@@ -7199,11 +7199,8 @@
           "159.27.132.104/30",
           "159.27.132.108/31",
           "159.27.164.0/23",
-          "159.27.166.0/26",
-          "159.27.166.64/27",
-          "159.27.170.0/24",
-          "159.27.171.0/25",
-          "159.27.171.128/27",
+          "159.27.166.0/24",
+          "159.27.170.0/23",
           "159.27.192.0/18",
           "2406:e500:2501::/59",
           "2406:e500:2501:20::/61",
@@ -7287,7 +7284,7 @@
       "name": "AzureCloud",
       "id": "AzureCloud",
       "properties": {
-        "changeNumber": 54,
+        "changeNumber": 55,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -7495,14 +7492,9 @@
           "159.27.162.0/26",
           "159.27.162.64/27",
           "159.27.164.0/23",
-          "159.27.166.0/26",
-          "159.27.166.64/27",
-          "159.27.168.0/24",
-          "159.27.169.0/25",
-          "159.27.169.128/27",
-          "159.27.170.0/24",
-          "159.27.171.0/25",
-          "159.27.171.128/27",
+          "159.27.166.0/24",
+          "159.27.168.0/23",
+          "159.27.170.0/23",
           "159.27.192.0/18",
           "163.228.0.0/17",
           "163.228.128.0/19",
@@ -7558,5 +7550,5 @@
       }
     }
   ],
-  "createDate": "20220801"
+  "createDate": "20220808"
 }
