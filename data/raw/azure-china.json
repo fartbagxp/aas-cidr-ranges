@@ -1,5 +1,5 @@
 {
-  "changeNumber": 215,
+  "changeNumber": 216,
   "cloud": "China",
   "values": [
     {
@@ -2138,7 +2138,7 @@
       "name": "PowerPlatformInfra",
       "id": "PowerPlatformInfra",
       "properties": {
-        "changeNumber": 1,
+        "changeNumber": 2,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -2153,7 +2153,11 @@
           "52.130.19.32/27",
           "52.130.19.64/26",
           "52.130.20.240/29",
-          "139.217.65.46/32"
+          "139.217.65.46/32",
+          "159.27.243.224/27",
+          "159.27.246.0/26",
+          "163.228.59.64/26",
+          "163.228.59.128/27"
         ],
         "networkFeatures": [
           "API",
@@ -2165,14 +2169,16 @@
       "name": "PowerPlatformPlex",
       "id": "PowerPlatformPlex",
       "properties": {
-        "changeNumber": 1,
+        "changeNumber": 2,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
         "systemService": "PowerPlatformPlex",
         "addressPrefixes": [
           "52.131.70.140/30",
-          "52.131.194.252/30"
+          "52.131.194.252/30",
+          "159.27.243.192/29",
+          "163.228.59.40/29"
         ],
         "networkFeatures": [
           "API",
@@ -6395,6 +6401,26 @@
       }
     },
     {
+      "name": "PowerPlatformInfra.ChinaEast3",
+      "id": "PowerPlatformInfra.ChinaEast3",
+      "properties": {
+        "changeNumber": 1,
+        "region": "chinaeast3",
+        "regionId": 90,
+        "platform": "Azure",
+        "systemService": "PowerPlatformInfra",
+        "addressPrefixes": [
+          "163.228.59.64/26",
+          "163.228.59.128/27"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "FW"
+        ]
+      }
+    },
+    {
       "name": "PowerPlatformInfra.ChinaNorth2",
       "id": "PowerPlatformInfra.ChinaNorth2",
       "properties": {
@@ -6409,6 +6435,26 @@
           "52.130.19.64/26",
           "52.130.20.240/29",
           "139.217.65.46/32"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "FW"
+        ]
+      }
+    },
+    {
+      "name": "PowerPlatformInfra.ChinaNorth3",
+      "id": "PowerPlatformInfra.ChinaNorth3",
+      "properties": {
+        "changeNumber": 1,
+        "region": "chinanorth3",
+        "regionId": 89,
+        "platform": "Azure",
+        "systemService": "PowerPlatformInfra",
+        "addressPrefixes": [
+          "159.27.243.224/27",
+          "159.27.246.0/26"
         ],
         "networkFeatures": [
           "API",
@@ -6436,6 +6482,24 @@
       }
     },
     {
+      "name": "PowerPlatformPlex.ChinaEast3",
+      "id": "PowerPlatformPlex.ChinaEast3",
+      "properties": {
+        "changeNumber": 1,
+        "region": "chinaeast3",
+        "regionId": 90,
+        "platform": "Azure",
+        "systemService": "PowerPlatformPlex",
+        "addressPrefixes": [
+          "163.228.59.40/29"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG"
+        ]
+      }
+    },
+    {
       "name": "PowerPlatformPlex.ChinaNorth2",
       "id": "PowerPlatformPlex.ChinaNorth2",
       "properties": {
@@ -6446,6 +6510,24 @@
         "systemService": "PowerPlatformPlex",
         "addressPrefixes": [
           "52.131.70.140/30"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG"
+        ]
+      }
+    },
+    {
+      "name": "PowerPlatformPlex.ChinaNorth3",
+      "id": "PowerPlatformPlex.ChinaNorth3",
+      "properties": {
+        "changeNumber": 1,
+        "region": "chinanorth3",
+        "regionId": 89,
+        "platform": "Azure",
+        "systemService": "PowerPlatformPlex",
+        "addressPrefixes": [
+          "159.27.243.192/29"
         ],
         "networkFeatures": [
           "API",
@@ -6930,7 +7012,7 @@
       "name": "AzureCloud.chinaeast2",
       "id": "AzureCloud.chinaeast2",
       "properties": {
-        "changeNumber": 27,
+        "changeNumber": 28,
         "region": "chinaeast2",
         "regionId": 55,
         "platform": "Azure",
@@ -6973,6 +7055,7 @@
           "139.217.216.0/21",
           "139.217.224.0/19",
           "163.228.128.0/19",
+          "163.228.192.0/19",
           "2404:7940:300::/47",
           "2406:e500:2100::/123",
           "2406:e500:2101::/48",
@@ -7282,7 +7365,7 @@
       "name": "AzureCloud",
       "id": "AzureCloud",
       "properties": {
-        "changeNumber": 56,
+        "changeNumber": 57,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -7494,6 +7577,7 @@
           "163.228.0.0/17",
           "163.228.128.0/19",
           "163.228.160.0/19",
+          "163.228.192.0/19",
           "2404:7940::/47",
           "2404:7940:3::/48",
           "2404:7940:100::/47",
@@ -7546,5 +7630,5 @@
       }
     }
   ],
-  "createDate": "20220822"
+  "createDate": "20220829"
 }
