@@ -1,5 +1,5 @@
 {
-  "changeNumber": 219,
+  "changeNumber": 220,
   "cloud": "AzureGovernment",
   "values": [
     {
@@ -420,7 +420,7 @@
       "name": "AppServiceManagement",
       "id": "AppServiceManagement",
       "properties": {
-        "changeNumber": 9,
+        "changeNumber": 10,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -435,6 +435,7 @@
           "20.141.17.208/28",
           "23.97.29.209/32",
           "52.127.15.64/26",
+          "52.127.23.0/26",
           "52.181.183.11/32",
           "52.182.93.40/32",
           "52.227.64.26/32",
@@ -549,7 +550,7 @@
       "name": "GuestAndHybridManagement",
       "id": "GuestAndHybridManagement",
       "properties": {
-        "changeNumber": 6,
+        "changeNumber": 7,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -611,7 +612,8 @@
           "2001:489a:3604:402::2c0/124",
           "2001:489a:3604:802::200/124",
           "2001:489a:3604:802::400/123",
-          "2001:489a:3604:c02::180/124"
+          "2001:489a:3604:c02::180/124",
+          "2001:489a:3604:c02::320/123"
         ],
         "networkFeatures": [
           "API",
@@ -625,7 +627,7 @@
       "name": "AzureBackup",
       "id": "AzureBackup",
       "properties": {
-        "changeNumber": 6,
+        "changeNumber": 7,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -647,6 +649,7 @@
           "52.127.3.0/26",
           "52.127.3.64/27",
           "52.127.15.128/26",
+          "52.127.23.128/26",
           "52.127.26.96/27",
           "52.127.26.128/26",
           "52.127.34.224/27",
@@ -750,7 +753,7 @@
       "name": "AzureConnectors",
       "id": "AzureConnectors",
       "properties": {
-        "changeNumber": 6,
+        "changeNumber": 7,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -798,6 +801,7 @@
           "2001:489a:3203:402::180/122",
           "2001:489a:3303:402::180/122",
           "2001:489a:3403:402::180/122",
+          "2001:489a:3604:3::4c0/122",
           "2001:489a:3604:402::180/122"
         ],
         "networkFeatures": [
@@ -897,7 +901,7 @@
       "name": "AzureCosmosDB",
       "id": "AzureCosmosDB",
       "properties": {
-        "changeNumber": 10,
+        "changeNumber": 11,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -916,6 +920,7 @@
           "52.127.10.144/29",
           "52.127.15.0/26",
           "52.127.18.176/29",
+          "52.127.23.120/29",
           "52.127.34.0/27",
           "52.127.42.0/27",
           "52.127.54.32/27",
@@ -1053,7 +1058,7 @@
       "name": "AzureEventGrid",
       "id": "AzureEventGrid",
       "properties": {
-        "changeNumber": 4,
+        "changeNumber": 5,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -1072,6 +1077,7 @@
           "52.243.156.192/28",
           "52.244.34.80/28",
           "52.244.34.96/28",
+          "52.244.234.128/25",
           "2001:489a:3103::380/121",
           "2001:489a:3203::380/121",
           "2001:489a:3303::380/121",
@@ -1090,7 +1096,7 @@
       "name": "EventHub",
       "id": "EventHub",
       "properties": {
-        "changeNumber": 7,
+        "changeNumber": 8,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -1110,6 +1116,7 @@
           "23.97.16.249/32",
           "52.126.202.32/28",
           "52.127.2.32/27",
+          "52.127.23.192/26",
           "52.127.26.0/27",
           "52.127.34.32/27",
           "52.127.42.32/27",
@@ -1251,7 +1258,7 @@
       "name": "AzureKeyVault",
       "id": "AzureKeyVault",
       "properties": {
-        "changeNumber": 6,
+        "changeNumber": 7,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -1275,6 +1282,7 @@
           "23.97.30.16/32",
           "23.97.31.219/32",
           "52.127.12.236/30",
+          "52.127.23.68/30",
           "52.181.160.79/32",
           "52.181.160.83/32",
           "52.182.88.66/32",
@@ -1347,7 +1355,7 @@
       "name": "AzureMonitor",
       "id": "AzureMonitor",
       "properties": {
-        "changeNumber": 19,
+        "changeNumber": 20,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -1392,6 +1400,7 @@
           "52.127.10.210/32",
           "52.127.18.80/30",
           "52.127.18.88/29",
+          "52.127.23.112/29",
           "52.127.26.80/28",
           "52.127.27.128/29",
           "52.127.34.208/28",
@@ -1450,6 +1459,7 @@
           "2001:489a:3604:1::300/123",
           "2001:489a:3604:1::700/123",
           "2001:489a:3604:1::780/121",
+          "2001:489a:3604:3::500/121",
           "2001:489a:3604:402::580/121"
         ],
         "networkFeatures": [
@@ -1588,7 +1598,7 @@
       "name": "Sql",
       "id": "Sql",
       "properties": {
-        "changeNumber": 7,
+        "changeNumber": 8,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -1631,6 +1641,8 @@
           "52.127.16.0/27",
           "52.127.17.0/27",
           "52.127.20.48/29",
+          "52.127.21.64/27",
+          "52.127.22.64/27",
           "52.127.24.0/27",
           "52.127.25.0/27",
           "52.127.32.0/27",
@@ -1725,7 +1737,7 @@
       "name": "ServiceBus",
       "id": "ServiceBus",
       "properties": {
-        "changeNumber": 6,
+        "changeNumber": 7,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -1740,6 +1752,8 @@
           "52.127.2.64/28",
           "52.127.12.248/29",
           "52.127.15.192/28",
+          "52.127.23.72/29",
+          "52.127.23.80/28",
           "52.127.26.32/28",
           "52.127.34.64/28",
           "52.127.42.64/28",
@@ -1813,7 +1827,7 @@
       "name": "AzureSiteRecovery",
       "id": "AzureSiteRecovery",
       "properties": {
-        "changeNumber": 4,
+        "changeNumber": 5,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -1830,6 +1844,7 @@
           "52.126.205.32/28",
           "52.127.5.80/28",
           "52.127.15.208/28",
+          "52.127.23.96/28",
           "52.127.38.0/28",
           "52.127.45.16/28",
           "52.127.48.96/28",
@@ -1972,7 +1987,7 @@
       "name": "AzureVideoAnalyzerForMedia",
       "id": "AzureVideoAnalyzerForMedia",
       "properties": {
-        "changeNumber": 2,
+        "changeNumber": 3,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -1986,6 +2001,7 @@
           "52.244.55.227/32",
           "52.244.212.146/32",
           "52.244.212.151/32",
+          "52.244.233.80/30",
           "52.245.211.14/32",
           "52.245.211.54/32",
           "2001:489a:3604:3::80/124"
@@ -2522,7 +2538,7 @@
       "name": "MicrosoftContainerRegistry",
       "id": "MicrosoftContainerRegistry",
       "properties": {
-        "changeNumber": 4,
+        "changeNumber": 5,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -2533,6 +2549,7 @@
           "52.126.202.56/29",
           "52.127.2.80/29",
           "52.127.12.240/29",
+          "52.127.20.56/29",
           "52.127.34.80/29",
           "52.127.42.80/29",
           "52.127.58.80/29",
@@ -2814,7 +2831,7 @@
       "name": "ServiceFabric",
       "id": "ServiceFabric",
       "properties": {
-        "changeNumber": 4,
+        "changeNumber": 5,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -2827,6 +2844,7 @@
           "20.158.130.0/30",
           "52.126.202.160/29",
           "52.127.2.184/29",
+          "52.127.23.64/30",
           "52.127.34.184/29",
           "52.127.42.152/29",
           "52.127.58.184/29",
@@ -3503,13 +3521,14 @@
       "name": "AppServiceManagement.USGovArizona",
       "id": "AppServiceManagement.USGovArizona",
       "properties": {
-        "changeNumber": 3,
+        "changeNumber": 4,
         "region": "usgovarizona",
         "regionId": 39,
         "platform": "Azure",
         "systemService": "AzureAppServiceManagement",
         "addressPrefixes": [
           "52.127.15.64/26",
+          "52.127.23.0/26",
           "52.244.79.34/32",
           "52.244.206.254/32",
           "2001:489a:3604:402::100/122",
@@ -3829,7 +3848,7 @@
       "name": "AzureBackup.USGovArizona",
       "id": "AzureBackup.USGovArizona",
       "properties": {
-        "changeNumber": 3,
+        "changeNumber": 4,
         "region": "usgovarizona",
         "regionId": 39,
         "platform": "Azure",
@@ -3839,6 +3858,7 @@
           "52.127.3.0/26",
           "52.127.3.64/27",
           "52.127.15.128/26",
+          "52.127.23.128/26",
           "2001:489a:3604:2::780/121",
           "2001:489a:3604:402::200/121",
           "2001:489a:3604:802::180/121",
@@ -4163,7 +4183,7 @@
       "name": "AzureConnectors.USGovArizona",
       "id": "AzureConnectors.USGovArizona",
       "properties": {
-        "changeNumber": 5,
+        "changeNumber": 6,
         "region": "usgovarizona",
         "regionId": 39,
         "platform": "Azure",
@@ -4174,6 +4194,7 @@
           "52.127.2.160/28",
           "52.127.5.224/27",
           "52.244.64.91/32",
+          "2001:489a:3604:3::4c0/122",
           "2001:489a:3604:402::180/122"
         ],
         "networkFeatures": [
@@ -4497,7 +4518,7 @@
       "name": "AzureCosmosDB.USGovArizona",
       "id": "AzureCosmosDB.USGovArizona",
       "properties": {
-        "changeNumber": 6,
+        "changeNumber": 7,
         "region": "usgovarizona",
         "regionId": 39,
         "platform": "Azure",
@@ -4508,6 +4529,7 @@
           "52.127.10.144/29",
           "52.127.15.0/26",
           "52.127.18.176/29",
+          "52.127.23.120/29",
           "52.244.48.69/32",
           "52.244.65.141/32",
           "2001:489a:3604:1::320/123",
@@ -4749,7 +4771,7 @@
       "name": "AzureEventGrid.USGovArizona",
       "id": "AzureEventGrid.USGovArizona",
       "properties": {
-        "changeNumber": 1,
+        "changeNumber": 2,
         "region": "usgovarizona",
         "regionId": 39,
         "platform": "Azure",
@@ -4758,6 +4780,7 @@
           "20.140.49.0/26",
           "52.244.34.80/28",
           "52.244.34.96/28",
+          "52.244.234.128/25",
           "2001:489a:3604::380/121"
         ],
         "networkFeatures": null
@@ -4870,7 +4893,7 @@
       "name": "EventHub.USGovArizona",
       "id": "EventHub.USGovArizona",
       "properties": {
-        "changeNumber": 5,
+        "changeNumber": 6,
         "region": "usgovarizona",
         "regionId": 39,
         "platform": "Azure",
@@ -4879,6 +4902,7 @@
           "20.141.9.64/26",
           "20.158.88.0/26",
           "52.127.2.32/27",
+          "52.127.23.192/26",
           "52.244.48.75/32",
           "52.244.48.85/32",
           "52.244.202.159/32",
@@ -5150,7 +5174,7 @@
       "name": "AzureKeyVault.USGovArizona",
       "id": "AzureKeyVault.USGovArizona",
       "properties": {
-        "changeNumber": 4,
+        "changeNumber": 5,
         "region": "usgovarizona",
         "regionId": 39,
         "platform": "Azure",
@@ -5159,6 +5183,7 @@
           "20.141.8.104/29",
           "20.141.8.112/30",
           "52.127.12.236/30",
+          "52.127.23.68/30",
           "52.244.48.22/31",
           "2001:489a:3604:1::3b8/125",
           "2001:489a:3604:402::80/125",
@@ -5392,7 +5417,7 @@
       "name": "AzureMonitor.USGovArizona",
       "id": "AzureMonitor.USGovArizona",
       "properties": {
-        "changeNumber": 12,
+        "changeNumber": 13,
         "region": "usgovarizona",
         "regionId": 39,
         "platform": "Azure",
@@ -5416,6 +5441,7 @@
           "52.127.10.210/32",
           "52.127.18.80/30",
           "52.127.18.88/29",
+          "52.127.23.112/29",
           "52.244.69.33/32",
           "52.244.71.27/32",
           "52.244.233.72/29",
@@ -5427,6 +5453,7 @@
           "2001:489a:3604:1::300/123",
           "2001:489a:3604:1::700/123",
           "2001:489a:3604:1::780/121",
+          "2001:489a:3604:3::500/121",
           "2001:489a:3604:402::580/121"
         ],
         "networkFeatures": [
@@ -5852,7 +5879,7 @@
       "name": "Sql.USGovArizona",
       "id": "Sql.USGovArizona",
       "properties": {
-        "changeNumber": 5,
+        "changeNumber": 6,
         "region": "usgovarizona",
         "regionId": 39,
         "platform": "Azure",
@@ -5872,6 +5899,8 @@
           "52.127.16.0/27",
           "52.127.17.0/27",
           "52.127.20.48/29",
+          "52.127.21.64/27",
+          "52.127.22.64/27",
           "52.244.48.33/32",
           "52.244.48.34/32",
           "2001:489a:3604:1::560/123",
@@ -6131,7 +6160,7 @@
       "name": "ServiceBus.USGovArizona",
       "id": "ServiceBus.USGovArizona",
       "properties": {
-        "changeNumber": 5,
+        "changeNumber": 6,
         "region": "usgovarizona",
         "regionId": 39,
         "platform": "Azure",
@@ -6141,6 +6170,8 @@
           "52.127.2.64/28",
           "52.127.12.248/29",
           "52.127.15.192/28",
+          "52.127.23.72/29",
+          "52.127.23.80/28",
           "2001:489a:3604::220/123",
           "2001:489a:3604:2::100/120",
           "2001:489a:3604:402::170/125",
@@ -7223,7 +7254,7 @@
       "name": "MicrosoftContainerRegistry.USGovArizona",
       "id": "MicrosoftContainerRegistry.USGovArizona",
       "properties": {
-        "changeNumber": 3,
+        "changeNumber": 4,
         "region": "usgovarizona",
         "regionId": 39,
         "platform": "Azure",
@@ -7231,6 +7262,7 @@
         "addressPrefixes": [
           "52.127.2.80/29",
           "52.127.12.240/29",
+          "52.127.20.56/29",
           "2001:489a:3604:402::88/125",
           "2001:489a:3604:802::88/125",
           "2001:489a:3604:c02::8/125"
@@ -7722,7 +7754,7 @@
       "name": "ServiceFabric.USGovArizona",
       "id": "ServiceFabric.USGovArizona",
       "properties": {
-        "changeNumber": 2,
+        "changeNumber": 3,
         "region": "usgovarizona",
         "regionId": 39,
         "platform": "Azure",
@@ -7730,6 +7762,7 @@
         "addressPrefixes": [
           "20.158.130.0/30",
           "52.127.2.184/29",
+          "52.127.23.64/30",
           "52.244.48.45/32",
           "2001:489a:3604:402::98/125",
           "2001:489a:3604:802::98/125",
@@ -8008,7 +8041,7 @@
       "name": "AzureMonitor.Core",
       "id": "AzureMonitor.Core",
       "properties": {
-        "changeNumber": 3,
+        "changeNumber": 4,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -8022,6 +8055,7 @@
           "20.140.144.112/28",
           "20.140.224.48/28",
           "20.158.88.64/29",
+          "52.127.23.112/29",
           "52.127.55.192/28",
           "52.245.128.48/28",
           "52.245.136.48/28",
@@ -8469,7 +8503,7 @@
       "name": "AzureCloud.usgovarizona",
       "id": "AzureCloud.usgovarizona",
       "properties": {
-        "changeNumber": 29,
+        "changeNumber": 30,
         "region": "usgovarizona",
         "regionId": 39,
         "platform": "Azure",
@@ -8488,8 +8522,7 @@
           "20.141.2.0/24",
           "20.141.7.0/24",
           "20.141.8.0/21",
-          "20.158.64.0/19",
-          "20.158.96.0/20",
+          "20.158.64.0/18",
           "20.158.128.0/24",
           "20.158.130.0/30",
           "20.158.160.0/19",
@@ -8742,7 +8775,7 @@
       "name": "AzureCloud",
       "id": "AzureCloud",
       "properties": {
-        "changeNumber": 60,
+        "changeNumber": 61,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -8821,8 +8854,7 @@
           "20.141.96.0/19",
           "20.141.128.0/17",
           "20.158.0.0/18",
-          "20.158.64.0/19",
-          "20.158.96.0/20",
+          "20.158.64.0/18",
           "20.158.128.0/24",
           "20.158.130.0/30",
           "20.158.160.0/19",
@@ -9032,5 +9064,5 @@
       }
     }
   ],
-  "createDate": "20220912"
+  "createDate": "20220919"
 }
