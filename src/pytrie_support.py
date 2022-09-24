@@ -31,6 +31,16 @@ class PytrieSupport():
       # print("IP address {} is not valid".format(address)) 
       return False
 
+  def add_atlassian_cidr(self, pytrie, result):
+    for items in result['items']:
+      for item in items:
+        ip = items['cidr']
+        if ip is not None:
+          pytrie[ip] = {
+              'source': 'Atlassian',
+              'website': 'https://ip-ranges.atlassian.com/'
+          }
+
   def add_aws_cidr(self, pytrie, result):
     for prefix in result['prefixes']:
       ip = prefix['ip_prefix']
@@ -84,24 +94,6 @@ class PytrieSupport():
             'cloud': cloud,
             'changeNumber': result['changeNumber'],
             'createDate': result['createDate']
-        }
-
-  def add_gcp_cidr(self, pytrie, result):
-    results = result.split('\n')
-    for r in results:
-      if r.strip():
-        pytrie[r] = {
-            'source': 'Google',
-            'website': 'https://cloud.google.com/compute/docs/faq'
-        }
-
-  def add_zoom_cidr(self, pytrie, result, source, website):
-    results = result.split('\n')
-    for r in results:
-      if r.strip():
-        pytrie[r] = {
-            'source': source,
-            'website': website
         }
 
   def add_cloudflare_cidr(self, pytrie, result):
@@ -173,37 +165,6 @@ class PytrieSupport():
                 'integration': integration
             }
 
-  def add_github_cidr(self, pytrie, result):
-    for key in result:
-      if isinstance(result[key], list):
-        for ip in result[key]:
-          ip = ip.strip()
-          if self.validate_ip_address(ip):
-            pytrie[ip] = {
-                'source': 'Github',
-                'product': key,
-                'website': 'https://help.github.com/en/github/authenticating-to-github/about-githubs-ip-addresses'
-            }
-
-  def add_pingdom_cidr(self, pytrie, result):
-    results = result.split('\n')
-    for r in results:
-      if r.strip():
-        pytrie[r] = {
-            'source': 'Pingdom',
-            'website': 'https://documentation.solarwinds.com/en/Success_Center/pingdom/content/topics/pingdom-probe-servers-ip-addresses.htm'
-        }
-
-  def add_atlassian_cidr(self, pytrie, result):
-    for items in result['items']:
-      for item in items:
-        ip = items['cidr']
-        if ip is not None:
-          pytrie[ip] = {
-              'source': 'Atlassian',
-              'website': 'https://ip-ranges.atlassian.com/'
-          }
-
   def add_digitalocean_cidr(self, pytrie, result):
     lines = result.split('\n')
     for r in lines:
@@ -223,6 +184,70 @@ class PytrieSupport():
           'subdivision': subdivision,
           'city': city,
           'zipcode': zipcode
+        }
+
+  def add_gcp_cidr(self, pytrie, result):
+    results = result.split('\n')
+    for r in results:
+      if r.strip():
+        pytrie[r] = {
+            'source': 'Google',
+            'website': 'https://cloud.google.com/compute/docs/faq'
+        }
+
+  def add_github_cidr(self, pytrie, result):
+    for key in result:
+      if isinstance(result[key], list):
+        for ip in result[key]:
+          ip = ip.strip()
+          if self.validate_ip_address(ip):
+            pytrie[ip] = {
+                'source': 'Github',
+                'product': key,
+                'website': 'https://help.github.com/en/github/authenticating-to-github/about-githubs-ip-addresses'
+            }
+
+  def add_grafana_cidr(self, pytrie, result, service):
+    results = result.split('\n')
+    for r in results:
+      if r.strip():
+        pytrie[r] = {
+            'source': 'Grafana',
+            'service': service,
+            'website': 'https://grafana.com/docs/grafana-cloud/reference/allow-list/'
+        }
+
+  def add_grafana_synthetics(self, pytrie, result, service):
+    for r in result:
+      for ip in result[r]:
+        pytrie[ip] = {
+            'source': 'Grafana',
+            'service': service,
+            'url': r,
+            'website': 'https://grafana.com/docs/grafana-cloud/reference/allow-list/'
+        }
+
+  def add_iana_cidr(self, pytrie, result):
+    lines = result.split('\n')
+    for r in lines:
+      r = r.strip()
+      if r and r.startswith('#') is False:
+        items = r.split(',')
+        prefix = items[0]
+        country = items[1]
+        subdivision = items[2]
+        city = items[3]
+        zipcode = items[4]
+        allocation_size = items[5]
+
+        pytrie[r] = {
+          'source': 'Linode',
+          'website': 'https://geoip.linode.com/',
+          'country': country,
+          'subdivision': subdivision,
+          'city': city,
+          'zipcode': zipcode,
+          'allocation_size': allocation_size
         }
 
   def add_linode_cidr(self, pytrie, result):
@@ -257,26 +282,6 @@ class PytrieSupport():
             'website': 'https://support.maxcdn.com/hc/en-us/articles/360036932271-IP-Blocks'
         }
 
-  def add_grafana_cidr(self, pytrie, result, service):
-    results = result.split('\n')
-    for r in results:
-      if r.strip():
-        pytrie[r] = {
-            'source': 'Grafana',
-            'service': service,
-            'website': 'https://grafana.com/docs/grafana-cloud/reference/allow-list/'
-        }
-
-  def add_grafana_synthetics(self, pytrie, result, service):
-    for r in result:
-      for ip in result[r]:
-        pytrie[ip] = {
-            'source': 'Grafana',
-            'service': service,
-            'url': r,
-            'website': 'https://grafana.com/docs/grafana-cloud/reference/allow-list/'
-        }
-
   def add_okta_cidr(self, pytrie, result):
     for r in result:
       ips = result[r].get('ip_ranges', [])
@@ -303,4 +308,22 @@ class PytrieSupport():
             'tags': tags,
             'website': 'https://docs.oracle.com/en-us/iaas/tools/public_ip_ranges.json',
             'updated_timestamp': timestamp
+        }
+
+  def add_pingdom_cidr(self, pytrie, result):
+    results = result.split('\n')
+    for r in results:
+      if r.strip():
+        pytrie[r] = {
+            'source': 'Pingdom',
+            'website': 'https://documentation.solarwinds.com/en/Success_Center/pingdom/content/topics/pingdom-probe-servers-ip-addresses.htm'
+        }
+
+  def add_zoom_cidr(self, pytrie, result, source, website):
+    results = result.split('\n')
+    for r in results:
+      if r.strip():
+        pytrie[r] = {
+            'source': source,
+            'website': website
         }
