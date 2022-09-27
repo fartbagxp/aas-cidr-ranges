@@ -1,5 +1,5 @@
 {
-  "changeNumber": 220,
+  "changeNumber": 221,
   "cloud": "AzureGovernment",
   "values": [
     {
@@ -8503,7 +8503,7 @@
       "name": "AzureCloud.usgovarizona",
       "id": "AzureCloud.usgovarizona",
       "properties": {
-        "changeNumber": 30,
+        "changeNumber": 31,
         "region": "usgovarizona",
         "regionId": 39,
         "platform": "Azure",
@@ -8511,6 +8511,9 @@
         "addressPrefixes": [
           "20.34.40.0/22",
           "20.34.44.0/23",
+          "20.35.248.112/28",
+          "20.35.248.160/27",
+          "20.35.250.0/27",
           "20.140.16.0/22",
           "20.140.48.0/21",
           "20.140.81.0/24",
@@ -8775,7 +8778,7 @@
       "name": "AzureCloud",
       "id": "AzureCloud",
       "properties": {
-        "changeNumber": 61,
+        "changeNumber": 62,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -8798,8 +8801,11 @@
           "20.35.248.0/26",
           "20.35.248.64/27",
           "20.35.248.96/28",
+          "20.35.248.112/28",
           "20.35.248.128/27",
+          "20.35.248.160/27",
           "20.35.248.192/26",
+          "20.35.250.0/27",
           "20.140.0.0/21",
           "20.140.8.0/21",
           "20.140.16.0/22",
@@ -9064,5 +9070,5 @@
       }
     }
   ],
-  "createDate": "20220919"
+  "createDate": "20220926"
 }
