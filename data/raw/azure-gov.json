@@ -1,5 +1,5 @@
 {
-  "changeNumber": 222,
+  "changeNumber": 223,
   "cloud": "AzureGovernment",
   "values": [
     {
@@ -2708,7 +2708,9 @@
         ],
         "networkFeatures": [
           "API",
-          "NSG"
+          "NSG",
+          "UDR",
+          "FW"
         ]
       }
     },
@@ -9070,5 +9072,5 @@
       }
     }
   ],
-  "createDate": "20221003"
+  "createDate": "20221010"
 }
