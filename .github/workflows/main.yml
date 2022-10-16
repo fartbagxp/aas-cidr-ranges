@@ -12,22 +12,22 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: [3.8]
+        python-version: [3.10]
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@93ea575cb5d8a053eaa0ac8fa3b40d7e05a33cc8 #v3.1.0
 
       - name: Install netcat
         run: |
           sudo apt-get install -y netcat
 
       - name: Setup Python ${{ matrix.python-version }}
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@13ae5bb136fac2878aff31522b9efb785519f984 #v4.3.0
         with:
           python-version: ${{ matrix.python-version }}
 
       - name: Setup pipenv environment
-        uses: dschep/install-pipenv-action@v1
+        uses: dschep/install-pipenv-action@aaac0310d5f4a052d150e5f490b44354e08fbb8c #v1.0.0
         with:
           version: 2022.4.21
 
@@ -41,7 +41,7 @@ jobs:
           bash src/dl/download_google.sh > data/raw/gcp.txt
 
       - name: Commit CIDR changes
-        uses: EndBug/add-and-commit@v7
+        uses: EndBug/add-and-commit@61a88be553afe4206585b31aa72387c64295d08b #v9.1.1
         with:
           author_name: Github Action Bot
           author_email: noreply@github.com
@@ -50,7 +50,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Push changes
-        uses: ad-m/github-push-action@master
+        uses: ad-m/github-push-action@4dcce6dea3e3c8187237fc86b7dfdc93e5aaae58 #v0.6.0 + latest changes (Oct 11 2022)
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ github.ref }}
