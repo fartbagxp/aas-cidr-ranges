@@ -1,5 +1,5 @@
 {
-  "changeNumber": 226,
+  "changeNumber": 227,
   "cloud": "AzureGovernment",
   "values": [
     {
@@ -1738,6 +1738,33 @@
       }
     },
     {
+      "name": "AzureSentinel",
+      "id": "AzureSentinel",
+      "properties": {
+        "changeNumber": 1,
+        "region": "",
+        "regionId": 0,
+        "platform": "Azure",
+        "systemService": "AzureSentinel",
+        "addressPrefixes": [
+          "20.141.12.46/31",
+          "20.141.161.228/31",
+          "20.141.164.144/30",
+          "52.244.75.232/32",
+          "52.244.79.71/32",
+          "52.244.233.96/30",
+          "52.245.212.209/32",
+          "52.247.149.197/32"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
+      }
+    },
+    {
       "name": "ServiceBus",
       "id": "ServiceBus",
       "properties": {
@@ -2017,6 +2044,32 @@
           "API",
           "FW",
           "UDR"
+        ]
+      }
+    },
+    {
+      "name": "AzureWebPubSub",
+      "id": "AzureWebPubSub",
+      "properties": {
+        "changeNumber": 1,
+        "region": "",
+        "regionId": 0,
+        "platform": "Azure",
+        "systemService": "AzureWebPubSub",
+        "addressPrefixes": [
+          "20.140.94.224/27",
+          "20.141.8.128/27",
+          "52.127.12.192/27",
+          "52.235.251.64/27",
+          "2001:489a:3103:2::400/120",
+          "2001:489a:3203:2::/120",
+          "2001:489a:3303:2::400/120",
+          "2001:489a:3403:2::/120",
+          "2001:489a:3604:2::400/120"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG"
         ]
       }
     },
@@ -9078,5 +9131,5 @@
       }
     }
   ],
-  "createDate": "20221031"
+  "createDate": "20221107"
 }
