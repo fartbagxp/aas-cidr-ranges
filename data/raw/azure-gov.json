@@ -1,5 +1,5 @@
 {
-  "changeNumber": 228,
+  "changeNumber": 229,
   "cloud": "AzureGovernment",
   "values": [
     {
@@ -8073,7 +8073,7 @@
       "name": "AzureActiveDirectory.ServiceEndpoint",
       "id": "AzureActiveDirectory.ServiceEndpoint",
       "properties": {
-        "changeNumber": 2,
+        "changeNumber": 3,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -8098,7 +8098,13 @@
           "52.126.195.96/29",
           "2001:489a:3500::/121",
           "2001:489a:3500:20::/121",
-          "2001:489a:3500:40::/121"
+          "2001:489a:3500:28::/121",
+          "2001:489a:3500:30::/121",
+          "2001:489a:3500:38::/121",
+          "2001:489a:3500:40::/121",
+          "2001:489a:3500:48::/121",
+          "2001:489a:3500:50::/121",
+          "2001:489a:3500:58::/121"
         ],
         "networkFeatures": null
       }
@@ -8464,7 +8470,7 @@
       "name": "AzureCloud.usdodcentral",
       "id": "AzureCloud.usdodcentral",
       "properties": {
-        "changeNumber": 18,
+        "changeNumber": 19,
         "region": "usdodcentral",
         "regionId": 44,
         "platform": "Azure",
@@ -8505,7 +8511,8 @@
           "2001:489a:2206:8010::/63",
           "2001:489a:3200::/46",
           "2001:489a:3204::/48",
-          "2001:489a:3205::/48"
+          "2001:489a:3205::/48",
+          "2001:489a:3500:60::/59"
         ],
         "networkFeatures": [
           "API",
@@ -8517,7 +8524,7 @@
       "name": "AzureCloud.usdodeast",
       "id": "AzureCloud.usdodeast",
       "properties": {
-        "changeNumber": 18,
+        "changeNumber": 19,
         "region": "usdodeast",
         "regionId": 45,
         "platform": "Azure",
@@ -8557,7 +8564,8 @@
           "2001:489a:2206:8000::/63",
           "2001:489a:3300::/46",
           "2001:489a:3304::/48",
-          "2001:489a:3305::/48"
+          "2001:489a:3305::/48",
+          "2001:489a:3500:80::/59"
         ],
         "networkFeatures": [
           "API",
@@ -8844,7 +8852,7 @@
       "name": "AzureCloud",
       "id": "AzureCloud",
       "properties": {
-        "changeNumber": 62,
+        "changeNumber": 63,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -9123,6 +9131,8 @@
           "2001:489a:3500::/59",
           "2001:489a:3500:20::/59",
           "2001:489a:3500:40::/59",
+          "2001:489a:3500:60::/59",
+          "2001:489a:3500:80::/59",
           "2001:489a:3600::/47",
           "2001:489a:3602::/48",
           "2001:489a:3604::/48",
@@ -9136,5 +9146,5 @@
       }
     }
   ],
-  "createDate": "20221114"
+  "createDate": "20221121"
 }
