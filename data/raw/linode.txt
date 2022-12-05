@@ -1,5 +1,5 @@
 # This file contains a self-published geofeed as defined in http://tools.ietf.org/html/draft-google-self-published-geofeeds-02 (draft02)
-# Last modified: 2022-11-03 10:00:05.895361
+# Last modified: 2022-12-05 19:03:22.360083
 # prefix, country, subdivision, city, zipcode, allocation_size
 2400:8901::/32,SG,SG-04,Singapore,,
 2400:8902::/32,JP,JP-13,Tokyo,,
@@ -14,6 +14,7 @@
 2600:3c04::/32,CA,CA-ON,Toronto,,
 2a01:7e00::/32,GB,GB-ENG,London,,
 2a01:7e01::/32,DE,DE-HE,Frankfurt,,
+2600:3c05::/32,US,US-VA,Ashburn,,
 72.14.177.0/24,US,US-TX,Richardson,,
 72.14.176.0/24,US,US-TX,Richardson,,
 72.14.178.0/24,US,US-TX,Richardson,,
@@ -1698,6 +1699,7 @@
 139.144.133.0/24,US,US-NJ,Cedar Knolls,,
 139.144.134.0/24,US,US-NJ,Cedar Knolls,,
 139.144.135.0/24,US,US-NJ,Cedar Knolls,,
+139.144.192.0/24,US,US-VA,Ashburn,,
 139.144.168.0/24,US,US-GA,Atlanta,,
 139.144.169.0/24,US,US-GA,Atlanta,,
 139.144.170.0/24,US,US-GA,Atlanta,,
@@ -2357,6 +2359,7 @@
 45.79.63.0/24,US,US-TX,Richardson,,
 45.79.229.0/24,US,US-CA,Fremont,,
 45.79.230.0/24,US,US-CA,Fremont,,
+45.79.231.0/24,US,US-CA,Fremont,,
 45.79.240.0/24,US,US-TX,Richardson,,
 45.79.241.0/24,US,US-TX,Richardson,,
 45.79.242.0/24,US,US-TX,Richardson,,
@@ -2386,7 +2389,11 @@
 139.144.127.0/24,SG,SG-04,Singapore,,
 139.144.159.0/24,GB,GB-ENG,London,,
 139.144.160.0/24,DE,DE-HE,Frankfurt,,
+139.144.161.0/24,DE,DE-HE,Frankfurt,,
+139.144.162.0/24,DE,DE-HE,Frankfurt,,
 139.144.164.0/24,US,US-GA,Atlanta,,
+139.144.240.0/24,US,US-NJ,Cedar Knolls,,
+139.144.241.0/24,US,US-NJ,Cedar Knolls,,
 178.79.175.0/24,GB,GB-ENG,London,,
 185.3.92.0/24,GB,GB-ENG,London,,
 185.3.93.0/24,GB,GB-ENG,London,,
