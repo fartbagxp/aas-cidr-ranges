@@ -1,5 +1,5 @@
 {
-  "changeNumber": 230,
+  "changeNumber": 231,
   "cloud": "AzureGovernment",
   "values": [
     {
@@ -8470,7 +8470,7 @@
       "name": "AzureCloud.usdodcentral",
       "id": "AzureCloud.usdodcentral",
       "properties": {
-        "changeNumber": 19,
+        "changeNumber": 20,
         "region": "usdodcentral",
         "regionId": 44,
         "platform": "Azure",
@@ -8483,6 +8483,7 @@
           "20.140.166.0/24",
           "20.140.233.64/26",
           "20.141.5.0/24",
+          "20.158.144.0/20",
           "40.66.0.160/27",
           "40.66.1.32/27",
           "40.66.1.160/27",
@@ -8699,7 +8700,7 @@
       "name": "AzureCloud.usgovtexas",
       "id": "AzureCloud.usgovtexas",
       "properties": {
-        "changeNumber": 20,
+        "changeNumber": 21,
         "region": "usgovtexas",
         "regionId": 41,
         "platform": "Azure",
@@ -8718,6 +8719,8 @@
           "20.140.242.0/23",
           "20.140.246.0/23",
           "20.141.96.0/19",
+          "20.158.136.0/21",
+          "20.158.224.0/19",
           "40.66.2.32/27",
           "40.66.3.32/27",
           "40.66.4.32/27",
@@ -8763,7 +8766,7 @@
       "name": "AzureCloud.usgovvirginia",
       "id": "AzureCloud.usgovvirginia",
       "properties": {
-        "changeNumber": 34,
+        "changeNumber": 35,
         "region": "usgovvirginia",
         "regionId": 42,
         "platform": "Azure",
@@ -8794,6 +8797,7 @@
           "20.141.64.0/19",
           "20.141.128.0/17",
           "20.158.0.0/18",
+          "20.158.192.0/19",
           "23.97.0.0/20",
           "23.97.32.0/21",
           "40.66.1.64/26",
@@ -8852,7 +8856,7 @@
       "name": "AzureCloud",
       "id": "AzureCloud",
       "properties": {
-        "changeNumber": 63,
+        "changeNumber": 64,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -8937,7 +8941,11 @@
           "20.158.64.0/18",
           "20.158.128.0/24",
           "20.158.130.0/30",
+          "20.158.136.0/21",
+          "20.158.144.0/20",
           "20.158.160.0/19",
+          "20.158.192.0/19",
+          "20.158.224.0/19",
           "23.97.0.0/20",
           "23.97.16.0/20",
           "23.97.32.0/21",
@@ -9146,5 +9154,5 @@
       }
     }
   ],
-  "createDate": "20221128"
+  "createDate": "20221205"
 }
