@@ -1,5 +1,5 @@
 {
-  "changeNumber": 232,
+  "changeNumber": 233,
   "cloud": "AzureGovernment",
   "values": [
     {
@@ -2022,37 +2022,6 @@
       }
     },
     {
-      "name": "AzureVideoAnalyzerForMedia",
-      "id": "AzureVideoAnalyzerForMedia",
-      "properties": {
-        "changeNumber": 3,
-        "region": "",
-        "regionId": 0,
-        "platform": "Azure",
-        "systemService": "AzureVideoAnalyzerForMedia",
-        "addressPrefixes": [
-          "13.77.235.36/32",
-          "20.141.10.218/31",
-          "20.141.11.40/32",
-          "52.235.253.232/31",
-          "52.235.253.234/32",
-          "52.244.55.227/32",
-          "52.244.212.146/32",
-          "52.244.212.151/32",
-          "52.244.233.80/30",
-          "52.245.211.14/32",
-          "52.245.211.54/32",
-          "2001:489a:3604:3::80/124"
-        ],
-        "networkFeatures": [
-          "NSG",
-          "API",
-          "FW",
-          "UDR"
-        ]
-      }
-    },
-    {
       "name": "AzureWebPubSub",
       "id": "AzureWebPubSub",
       "properties": {
@@ -2333,7 +2302,7 @@
       "name": "GatewayManager",
       "id": "GatewayManager",
       "properties": {
-        "changeNumber": 4,
+        "changeNumber": 5,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -2350,6 +2319,8 @@
           "20.141.18.128/27",
           "23.97.16.189/32",
           "23.97.16.251/32",
+          "23.97.18.212/32",
+          "23.97.18.229/32",
           "52.126.202.72/29",
           "52.127.2.176/29",
           "52.127.26.64/29",
@@ -6898,7 +6869,7 @@
       "name": "GatewayManager.USGovIowa",
       "id": "GatewayManager.USGovIowa",
       "properties": {
-        "changeNumber": 3,
+        "changeNumber": 4,
         "region": "usgoviowa",
         "regionId": 40,
         "platform": "Azure",
@@ -6908,6 +6879,8 @@
           "20.140.154.224/27",
           "23.97.16.189/32",
           "23.97.16.251/32",
+          "23.97.18.212/32",
+          "23.97.18.229/32",
           "52.127.26.64/29"
         ],
         "networkFeatures": [
@@ -8073,7 +8046,7 @@
       "name": "AzureActiveDirectory.ServiceEndpoint",
       "id": "AzureActiveDirectory.ServiceEndpoint",
       "properties": {
-        "changeNumber": 3,
+        "changeNumber": 4,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -8104,7 +8077,12 @@
           "2001:489a:3500:40::/121",
           "2001:489a:3500:48::/121",
           "2001:489a:3500:50::/121",
-          "2001:489a:3500:58::/121"
+          "2001:489a:3500:58::/121",
+          "2001:489a:3500:60::/121",
+          "2001:489a:3500:80::/121",
+          "2001:489a:3500:88::/121",
+          "2001:489a:3500:90::/121",
+          "2001:489a:3500:98::/121"
         ],
         "networkFeatures": null
       }
@@ -8700,7 +8678,7 @@
       "name": "AzureCloud.usgovtexas",
       "id": "AzureCloud.usgovtexas",
       "properties": {
-        "changeNumber": 21,
+        "changeNumber": 22,
         "region": "usgovtexas",
         "regionId": 41,
         "platform": "Azure",
@@ -8721,6 +8699,7 @@
           "20.141.96.0/19",
           "20.158.136.0/21",
           "20.158.224.0/19",
+          "20.159.64.0/20",
           "40.66.2.32/27",
           "40.66.3.32/27",
           "40.66.4.32/27",
@@ -8766,7 +8745,7 @@
       "name": "AzureCloud.usgovvirginia",
       "id": "AzureCloud.usgovvirginia",
       "properties": {
-        "changeNumber": 35,
+        "changeNumber": 36,
         "region": "usgovvirginia",
         "regionId": 42,
         "platform": "Azure",
@@ -8798,6 +8777,7 @@
           "20.141.128.0/17",
           "20.158.0.0/18",
           "20.158.192.0/19",
+          "20.159.0.0/18",
           "23.97.0.0/20",
           "23.97.32.0/21",
           "40.66.1.64/26",
@@ -8856,7 +8836,7 @@
       "name": "AzureCloud",
       "id": "AzureCloud",
       "properties": {
-        "changeNumber": 64,
+        "changeNumber": 65,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -8946,6 +8926,8 @@
           "20.158.160.0/19",
           "20.158.192.0/19",
           "20.158.224.0/19",
+          "20.159.0.0/18",
+          "20.159.64.0/20",
           "23.97.0.0/20",
           "23.97.16.0/20",
           "23.97.32.0/21",
@@ -9154,5 +9136,5 @@
       }
     }
   ],
-  "createDate": "20221212"
+  "createDate": "20221219"
 }

@@ -1,5 +1,5 @@
 {
-  "changeNumber": 231,
+  "changeNumber": 232,
   "cloud": "China",
   "values": [
     {
@@ -6989,7 +6989,7 @@
       "name": "AzureActiveDirectory.ServiceEndpoint",
       "id": "AzureActiveDirectory.ServiceEndpoint",
       "properties": {
-        "changeNumber": 3,
+        "changeNumber": 4,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -7017,7 +7017,9 @@
           "2406:e500:5500:60::/121",
           "2406:e500:5500:68::/121",
           "2406:e500:5500:70::/121",
-          "2406:e500:5500:78::/121"
+          "2406:e500:5500:78::/121",
+          "2406:e500:5500:80::/121",
+          "2406:e500:5500:a0::/121"
         ],
         "networkFeatures": null
       }
@@ -7773,5 +7775,5 @@
       }
     }
   ],
-  "createDate": "20221212"
+  "createDate": "20221219"
 }
