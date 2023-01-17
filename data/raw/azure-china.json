@@ -1,5 +1,5 @@
 {
-  "changeNumber": 235,
+  "changeNumber": 236,
   "cloud": "China",
   "values": [
     {
@@ -526,7 +526,7 @@
       "name": "AzureConnectors",
       "id": "AzureConnectors",
       "properties": {
-        "changeNumber": 8,
+        "changeNumber": 9,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -557,6 +557,7 @@
           "139.217.114.96/32",
           "139.217.168.112/28",
           "139.219.192.103/32",
+          "159.27.10.146/32",
           "159.27.247.192/27",
           "159.27.247.224/28",
           "163.228.60.48/28",
@@ -2700,6 +2701,7 @@
           "2406:e500:2402:1::180/124"
         ],
         "networkFeatures": [
+          "API",
           "NSG"
         ]
       }
@@ -2763,6 +2765,7 @@
           "2406:e500:2602:1::180/124"
         ],
         "networkFeatures": [
+          "API",
           "NSG"
         ]
       }
@@ -2832,6 +2835,7 @@
           "2406:e500:2402:2::400/118"
         ],
         "networkFeatures": [
+          "API",
           "NSG"
         ]
       }
@@ -2902,6 +2906,7 @@
           "2406:e500:2602:2::400/118"
         ],
         "networkFeatures": [
+          "API",
           "NSG"
         ]
       }
@@ -3622,13 +3627,14 @@
       "name": "AzureConnectors.ChinaNorth3",
       "id": "AzureConnectors.ChinaNorth3",
       "properties": {
-        "changeNumber": 2,
+        "changeNumber": 3,
         "region": "chinanorth3",
         "regionId": 89,
         "platform": "Azure",
         "systemService": "AzureConnectors",
         "addressPrefixes": [
           "52.131.29.192/26",
+          "159.27.10.146/32",
           "159.27.247.192/27",
           "159.27.247.224/28",
           "2406:e500:2602:400::300/122"
@@ -3704,6 +3710,7 @@
           "2406:e500:2402:400::180/121"
         ],
         "networkFeatures": [
+          "API",
           "NSG"
         ]
       }
@@ -3781,6 +3788,7 @@
           "2406:e500:2602:c00::180/121"
         ],
         "networkFeatures": [
+          "API",
           "NSG"
         ]
       }
@@ -3848,6 +3856,7 @@
           "2406:e500:2402:400::/122"
         ],
         "networkFeatures": [
+          "API",
           "NSG"
         ]
       }
@@ -3919,6 +3928,7 @@
           "2406:e500:2602:c00::/122"
         ],
         "networkFeatures": [
+          "API",
           "NSG"
         ]
       }
@@ -4299,6 +4309,7 @@
           "2406:e500:2402:1::300/120"
         ],
         "networkFeatures": [
+          "API",
           "NSG"
         ]
       }
@@ -4367,6 +4378,7 @@
           "2406:e500:2602:1::300/120"
         ],
         "networkFeatures": [
+          "API",
           "NSG"
         ]
       }
@@ -4547,6 +4559,7 @@
           "2406:e500:2402:1::530/125"
         ],
         "networkFeatures": [
+          "API",
           "NSG"
         ]
       }
@@ -4614,6 +4627,7 @@
           "2406:e500:2602:1::530/125"
         ],
         "networkFeatures": [
+          "API",
           "NSG"
         ]
       }
@@ -5204,6 +5218,7 @@
           "2406:e500:2402:2::300/121"
         ],
         "networkFeatures": [
+          "API",
           "NSG"
         ]
       }
@@ -5294,6 +5309,7 @@
           "2406:e500:2602:2::300/121"
         ],
         "networkFeatures": [
+          "API",
           "NSG"
         ]
       }
@@ -5416,6 +5432,7 @@
           "2406:e500:2402:1::280/121"
         ],
         "networkFeatures": [
+          "API",
           "NSG"
         ]
       }
@@ -5482,6 +5499,7 @@
           "2406:e500:2602:1::280/121"
         ],
         "networkFeatures": [
+          "API",
           "NSG"
         ]
       }
@@ -5632,6 +5650,7 @@
           "2406:e500:2403::/48"
         ],
         "networkFeatures": [
+          "API",
           "NSG"
         ]
       }
@@ -5698,6 +5717,7 @@
           "2406:e500:2603::/48"
         ],
         "networkFeatures": [
+          "API",
           "NSG"
         ]
       }
@@ -5865,7 +5885,10 @@
           "2404:7940:301:402::4e0/124"
         ],
         "networkFeatures": [
-          "NSG"
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
         ]
       }
     },
@@ -5884,7 +5907,12 @@
           "2406:e500:2402:1::400/121",
           "2406:e500:2402:400::70/124"
         ],
-        "networkFeatures": null
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
       }
     },
     {
@@ -5960,7 +5988,12 @@
           "2406:e500:2602:800::70/124",
           "2406:e500:2602:c00::70/124"
         ],
-        "networkFeatures": null
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
       }
     },
     {
@@ -6129,6 +6162,7 @@
           "2406:e500:2402:1::520/124"
         ],
         "networkFeatures": [
+          "API",
           "NSG"
         ]
       }
@@ -6191,6 +6225,7 @@
           "2406:e500:2602:1::520/124"
         ],
         "networkFeatures": [
+          "API",
           "NSG"
         ]
       }
@@ -6441,6 +6476,7 @@
           "2406:e500:2402:400::40/125"
         ],
         "networkFeatures": [
+          "API",
           "NSG"
         ]
       }
@@ -6501,6 +6537,7 @@
           "2406:e500:2602:c00::40/125"
         ],
         "networkFeatures": [
+          "API",
           "NSG"
         ]
       }
@@ -7781,5 +7818,5 @@
       }
     }
   ],
-  "createDate": "20230109"
+  "createDate": "20230116"
 }
