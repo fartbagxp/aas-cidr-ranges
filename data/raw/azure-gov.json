@@ -1,5 +1,5 @@
 {
-  "changeNumber": 238,
+  "changeNumber": 239,
   "cloud": "AzureGovernment",
   "values": [
     {
@@ -201,7 +201,7 @@
       "name": "AzureAdvancedThreatProtection",
       "id": "AzureAdvancedThreatProtection",
       "properties": {
-        "changeNumber": 3,
+        "changeNumber": 4,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -213,6 +213,7 @@
           "20.140.72.128/29",
           "20.140.152.64/29",
           "52.127.49.80/29",
+          "52.244.235.224/27",
           "2001:489a:3103::140/123",
           "2001:489a:3203::140/123",
           "2001:489a:3303::140/123",
@@ -1171,7 +1172,7 @@
       "name": "AzureInformationProtection",
       "id": "AzureInformationProtection",
       "properties": {
-        "changeNumber": 3,
+        "changeNumber": 4,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -1181,6 +1182,7 @@
           "20.141.11.44/30",
           "20.141.11.80/31",
           "20.141.161.128/30",
+          "20.141.167.4/31",
           "23.97.2.223/32",
           "52.227.0.19/32",
           "52.227.178.165/32",
@@ -1194,6 +1196,7 @@
           "52.244.167.187/32",
           "52.244.205.54/32",
           "52.244.207.30/32",
+          "52.244.233.242/31",
           "52.247.146.134/32",
           "52.247.146.147/32",
           "52.247.146.195/32"
@@ -8556,7 +8559,7 @@
       "name": "AzureCloud.usgovarizona",
       "id": "AzureCloud.usgovarizona",
       "properties": {
-        "changeNumber": 32,
+        "changeNumber": 33,
         "region": "usgovarizona",
         "regionId": 39,
         "platform": "Azure",
@@ -8588,6 +8591,7 @@
           "40.66.4.64/27",
           "40.112.41.0/24",
           "40.112.42.0/23",
+          "52.108.140.0/24",
           "52.112.21.0/24",
           "52.115.248.0/22",
           "52.126.0.0/18",
@@ -8836,7 +8840,7 @@
       "name": "AzureCloud",
       "id": "AzureCloud",
       "properties": {
-        "changeNumber": 66,
+        "changeNumber": 67,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -8977,6 +8981,7 @@
           "40.112.47.0/24",
           "52.108.64.0/23",
           "52.108.66.0/23",
+          "52.108.140.0/24",
           "52.112.20.0/24",
           "52.112.21.0/24",
           "52.115.248.0/22",
@@ -9136,5 +9141,5 @@
       }
     }
   ],
-  "createDate": "20230123"
+  "createDate": "20230130"
 }
