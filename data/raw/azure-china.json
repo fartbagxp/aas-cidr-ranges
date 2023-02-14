@@ -1,5 +1,5 @@
 {
-  "changeNumber": 239,
+  "changeNumber": 240,
   "cloud": "China",
   "values": [
     {
@@ -1077,7 +1077,7 @@
       "name": "AzureMachineLearning",
       "id": "AzureMachineLearning",
       "properties": {
-        "changeNumber": 5,
+        "changeNumber": 6,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -1091,6 +1091,7 @@
           "52.130.18.0/28",
           "52.131.17.0/27",
           "52.131.145.0/27",
+          "159.27.147.144/28",
           "159.27.243.128/27",
           "2404:7940:1::240/122",
           "2404:7940:101::240/122",
@@ -2096,6 +2097,37 @@
           "52.130.120.0/30",
           "52.130.120.184/31",
           "52.130.128.0/30"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
+      }
+    },
+    {
+      "name": "Marketplace",
+      "id": "Marketplace",
+      "properties": {
+        "changeNumber": 1,
+        "region": "",
+        "regionId": 0,
+        "platform": "Azure",
+        "systemService": "Marketplace",
+        "addressPrefixes": [
+          "40.72.74.156/30",
+          "40.72.74.176/28",
+          "40.72.77.16/28",
+          "40.73.141.136/29",
+          "40.73.172.120/29",
+          "52.130.1.230/31",
+          "52.130.3.24/29",
+          "52.130.8.156/30",
+          "52.130.10.144/28",
+          "52.130.18.96/29",
+          "52.130.18.104/31",
+          "139.217.172.176/28"
         ],
         "networkFeatures": [
           "API",
@@ -4709,13 +4741,14 @@
       "name": "AzureMachineLearning.ChinaNorth2",
       "id": "AzureMachineLearning.ChinaNorth2",
       "properties": {
-        "changeNumber": 2,
+        "changeNumber": 3,
         "region": "chinanorth2",
         "regionId": 54,
         "platform": "Azure",
         "systemService": "AzureMachineLearning",
         "addressPrefixes": [
           "52.130.18.0/28",
+          "159.27.147.144/28",
           "2404:7940:101::240/122"
         ],
         "networkFeatures": null
@@ -7823,5 +7856,5 @@
       }
     }
   ],
-  "createDate": "20230206"
+  "createDate": "20230213"
 }
