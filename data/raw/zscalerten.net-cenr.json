@@ -1,0 +1,72 @@
+{
+  "zscalerten.net": {
+    "continent : Americas": {
+      "city : Chicago": [
+        {
+          "range": "136.226.32.0/23",
+          "vpn": "chi1-vpn.zscalernet.net",
+          "gre": "136.226.32.22",
+          "hostname": "chi1.sme.zscalerten.net",
+          "latitude": "41",
+          "longitude": "-87"
+        },
+        {
+          "range": "136.226.34.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "41",
+          "longitude": "-87"
+        }
+      ],
+      "city : San Francisco IV": [
+        {
+          "range": "136.226.26.0/23",
+          "vpn": "sjc4-vpn.zscalerten.net",
+          "gre": "136.226.26.22",
+          "hostname": "sjc4.sme.zscalerten.net",
+          "latitude": "38",
+          "longitude": "-123"
+        },
+        {
+          "range": "136.226.28.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "38",
+          "longitude": "-123"
+        },
+        {
+          "range": "136.226.42.0/24",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "38",
+          "longitude": "-123"
+        }
+      ],
+      "city : Washington DC": [
+        {
+          "range": "136.226.38.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "39",
+          "longitude": "-77"
+        },
+        {
+          "range": "136.226.40.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "39",
+          "longitude": "-77"
+        }
+      ]
+    }
+  },
+  "for": "ZScaler Internet Access (ZIA)",
+  "cloud": "zscalerten.net",
+  "section": "Cloud Enforcement Node Ranges",
+  "link": "https://api.config.zscaler.com/zscalerten.net/cenr/json"
+}
