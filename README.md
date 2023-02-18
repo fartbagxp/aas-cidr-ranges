@@ -22,14 +22,28 @@ For coding and running locally, the following is required:
 ## How to run locally
 
 1. Download the code:  
-   `git clone git@github.com:fartbagxp/aas-cidr-ranges.git`
-1. Setup dependencies:  
-   `python -m venv .venv`  
-   `source .venv/bin/activate`
-1. Install dependencies:  
-   `pip install -r requirements.txt`
+   - git clone git@github.com:fartbagxp/aas-cidr-ranges.git
+1. Setup dependencies:
+   ```bash
+   python -m venv .venv
+   source .venv/bin/activate
+   pip install -r requirements.txt
+   ```
 1. Run the code to test it out:  
-   `python test.py`
+   - python test.py
+
+### Upgrading old dependencies
+
+```bash
+pip install --upgrade --force-reinstall -r requirements.txt
+```
+
+- Freezing dependencies
+
+```bash
+pip freeze > requirements.txt
+```
+
 
 ## Deployment
 

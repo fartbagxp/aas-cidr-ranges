@@ -309,6 +309,15 @@ class PytrieSupport():
             'website': 'https://docs.oracle.com/en-us/iaas/tools/public_ip_ranges.json',
             'updated_timestamp': timestamp
         }
+      
+  def add_stripe_cidr(self, pytrie, result):
+    results = result.split('\n')
+    for r in results:
+      if r.strip():
+        pytrie[r] = {
+            'source': 'Stripe',
+            'website': 'https://stripe.com/docs/ips'
+        }
 
   def add_pingdom_cidr(self, pytrie, result):
     results = result.split('\n')
