@@ -204,6 +204,19 @@ def generate_reader():
   support.add_oracle_cidr(pyt, json.loads(data))
   pytries.append(pyt)
 
+  pyt = pytricia.PyTricia(128)
+  data = reader.read('data/raw/oracle.json')
+  support.add_oracle_cidr(pyt, json.loads(data))
+  pytries.append(pyt)
+
+  pyt = pytricia.PyTricia(128)
+  data = reader.read('data/raw/stripe-api-ip-range.txt')
+  support.add_stripe_cidr(pyt, data)
+  pytries.append(pyt)
+  data = reader.read('data/raw/stripe-webhook-ip-range.txt')
+  support.add_stripe_cidr(pyt, data)
+  pytries.append(pyt)
+
   return pytries
 
 '''
