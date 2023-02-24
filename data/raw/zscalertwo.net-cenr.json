@@ -1059,7 +1059,7 @@
           "longitude": "-3"
         },
         {
-          "range": "136.226.210.0/23",
+          "range": "147.161.158.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -1067,7 +1067,7 @@
           "longitude": "-3"
         },
         {
-          "range": "147.161.158.0/23",
+          "range": "136.226.210.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -1525,17 +1525,17 @@
           "longitude": "12"
         },
         {
-          "range": "147.161.156.0/23",
+          "range": "147.161.168.0/23",
           "vpn": "",
-          "gre": "",
+          "gre": "147.161.176.65",
           "hostname": "",
           "latitude": "48",
           "longitude": "12"
         },
         {
-          "range": "147.161.168.0/23",
+          "range": "147.161.156.0/23",
           "vpn": "",
-          "gre": "147.161.176.65",
+          "gre": "",
           "hostname": "",
           "latitude": "48",
           "longitude": "12"
@@ -1549,17 +1549,17 @@
           "longitude": "12"
         },
         {
-          "range": "147.161.158.0/23",
+          "range": "147.161.170.0/23",
           "vpn": "",
-          "gre": "",
+          "gre": "147.161.176.65",
           "hostname": "",
           "latitude": "48",
           "longitude": "12"
         },
         {
-          "range": "147.161.170.0/23",
+          "range": "147.161.158.0/23",
           "vpn": "",
-          "gre": "147.161.176.65",
+          "gre": "",
           "hostname": "",
           "latitude": "48",
           "longitude": "12"
@@ -2363,17 +2363,17 @@
           "longitude": "-84"
         },
         {
-          "range": "136.226.2.0/23",
+          "range": "136.226.116.0/23",
           "vpn": "",
-          "gre": "104.129.205.76",
+          "gre": "",
           "hostname": "",
           "latitude": "34",
           "longitude": "-84"
         },
         {
-          "range": "136.226.116.0/23",
+          "range": "136.226.2.0/23",
           "vpn": "",
-          "gre": "",
+          "gre": "104.129.205.76",
           "hostname": "",
           "latitude": "34",
           "longitude": "-84"
@@ -3005,7 +3005,7 @@
           "longitude": "-74"
         },
         {
-          "range": "136.226.90.0/23",
+          "range": "136.226.116.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -3013,7 +3013,7 @@
           "longitude": "-74"
         },
         {
-          "range": "136.226.116.0/23",
+          "range": "136.226.90.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -3263,18 +3263,18 @@
       ],
       "city : Sao Paulo IV": [
         {
-          "range": "147.161.128.0/23",
-          "vpn": "sao4-vpn.zscalertwo.net",
-          "gre": "147.161.128.23",
-          "hostname": "sao4.sme.zscalertwo.net",
-          "latitude": "-23",
-          "longitude": "-47"
-        },
-        {
           "range": "136.226.62.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
+          "latitude": "-23",
+          "longitude": "-47"
+        },
+        {
+          "range": "147.161.128.0/23",
+          "vpn": "sao4-vpn.zscalertwo.net",
+          "gre": "147.161.128.23",
+          "hostname": "sao4.sme.zscalertwo.net",
           "latitude": "-23",
           "longitude": "-47"
         }
@@ -3535,7 +3535,7 @@
           "longitude": "-77"
         },
         {
-          "range": "2605:4300:1414::/48",
+          "range": "165.225.48.0/24",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -3543,7 +3543,7 @@
           "longitude": "-77"
         },
         {
-          "range": "165.225.48.0/24",
+          "range": "2605:4300:1414::/48",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -3673,7 +3673,7 @@
         {
           "range": "136.226.252.0/23",
           "vpn": "",
-          "gre": "",
+          "gre": "165.225.122.22",
           "hostname": "",
           "latitude": "13",
           "longitude": "80"
