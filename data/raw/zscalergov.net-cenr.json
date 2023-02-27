@@ -3,6 +3,14 @@
     "continent : Americas": {
       "city : Chicago": [
         {
+          "range": "136.226.10.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "41",
+          "longitude": "-87"
+        },
+        {
           "range": "165.225.3.0/24",
           "vpn": "chi1-vpn.zscalergov.net",
           "gre": "165.225.3.8",
@@ -36,14 +44,6 @@
         },
         {
           "range": "2605:4300:1614::/48",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "41",
-          "longitude": "-87"
-        },
-        {
-          "range": "136.226.10.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
