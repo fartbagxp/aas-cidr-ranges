@@ -1,5 +1,5 @@
 {
-  "changeNumber": 243,
+  "changeNumber": 244,
   "cloud": "China",
   "values": [
     {
@@ -831,7 +831,12 @@
           "2406:e500:2402::600/121",
           "2406:e500:2602::600/121"
         ],
-        "networkFeatures": null
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
       }
     },
     {
@@ -7918,5 +7923,5 @@
       }
     }
   ],
-  "createDate": "20230306"
+  "createDate": "20230313"
 }
