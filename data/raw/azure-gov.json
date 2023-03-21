@@ -1,5 +1,5 @@
 {
-  "changeNumber": 245,
+  "changeNumber": 246,
   "cloud": "AzureGovernment",
   "values": [
     {
@@ -1172,13 +1172,15 @@
       "name": "AzureInformationProtection",
       "id": "AzureInformationProtection",
       "properties": {
-        "changeNumber": 6,
+        "changeNumber": 7,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
         "systemService": "AzureInformationProtection",
         "addressPrefixes": [
           "13.72.32.53/32",
+          "20.140.200.216/29",
+          "20.140.224.104/29",
           "20.141.11.44/30",
           "20.141.11.80/31",
           "20.141.161.128/30",
@@ -1203,9 +1205,11 @@
           "2001:489a:3103:2::f2/127",
           "2001:489a:3103:2::f4/127",
           "2001:489a:3103:2::f8/126",
+          "2001:489a:3103:2::780/125",
           "2001:489a:3604:3::36/127",
           "2001:489a:3604:3::38/127",
-          "2001:489a:3604:3::3c/126"
+          "2001:489a:3604:3::3c/126",
+          "2001:489a:3604:3::680/125"
         ],
         "networkFeatures": [
           "API",
@@ -2161,7 +2165,7 @@
       "name": "CognitiveServicesManagement",
       "id": "CognitiveServicesManagement",
       "properties": {
-        "changeNumber": 14,
+        "changeNumber": 15,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -2200,6 +2204,7 @@
           "20.141.15.192/26",
           "20.141.162.0/25",
           "20.141.162.128/26",
+          "20.141.167.48/28",
           "52.127.20.0/28",
           "52.127.38.28/30",
           "52.127.43.224/28",
@@ -2231,6 +2236,7 @@
           "52.244.71.40/32",
           "52.244.160.223/32",
           "52.244.207.12/32",
+          "52.244.236.96/28",
           "52.244.248.188/32",
           "52.247.159.180/32",
           "2001:489a:3103::640/122",
@@ -9271,5 +9277,5 @@
       }
     }
   ],
-  "createDate": "20230313"
+  "createDate": "20230320"
 }
