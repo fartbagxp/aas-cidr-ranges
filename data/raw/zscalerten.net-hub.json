@@ -1,6 +1,11 @@
 {
-  "status": "failed",
-  "message": "Invalid cloud JSON request",
+  "cloudName": "zscalerten.net",
+  "type": "recommended",
+  "hubPrefixes": [
+    "136.226.24.0/23",
+    "136.226.30.0/23",
+    "136.226.36.0/23"
+  ],
   "for": "ZScaler Internet Access (ZIA)",
   "cloud": "zscalerten.net",
   "section": "Zscaler Hub IP addresses",
