@@ -1,5 +1,5 @@
 {
-  "changeNumber": 250,
+  "changeNumber": 251,
   "cloud": "AzureGovernment",
   "values": [
     {
@@ -2821,7 +2821,7 @@
       "name": "PowerPlatformInfra",
       "id": "PowerPlatformInfra",
       "properties": {
-        "changeNumber": 2,
+        "changeNumber": 3,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -2843,8 +2843,10 @@
           "20.140.74.192/26",
           "20.140.76.160/29",
           "20.140.144.96/28",
+          "20.141.167.160/29",
           "20.159.0.16/28",
           "20.159.0.32/28",
+          "20.159.0.64/26",
           "52.127.52.124/30",
           "52.127.53.0/26",
           "52.127.53.64/27",
@@ -2869,7 +2871,9 @@
           "52.243.159.166/32",
           "52.243.159.168/32",
           "52.243.242.48/28",
-          "52.243.242.160/28"
+          "52.243.242.160/28",
+          "52.243.242.184/29",
+          "52.243.242.192/26"
         ],
         "networkFeatures": [
           "API",
@@ -7502,7 +7506,7 @@
       "name": "PowerPlatformInfra.USGovTexas",
       "id": "PowerPlatformInfra.USGovTexas",
       "properties": {
-        "changeNumber": 2,
+        "changeNumber": 3,
         "region": "usgovtexas",
         "regionId": 41,
         "platform": "Azure",
@@ -7522,7 +7526,9 @@
           "52.243.159.166/32",
           "52.243.159.168/32",
           "52.243.242.48/28",
-          "52.243.242.160/28"
+          "52.243.242.160/28",
+          "52.243.242.184/29",
+          "52.243.242.192/26"
         ],
         "networkFeatures": [
           "API",
@@ -7535,14 +7541,16 @@
       "name": "PowerPlatformInfra.USGovVirginia",
       "id": "PowerPlatformInfra.USGovVirginia",
       "properties": {
-        "changeNumber": 2,
+        "changeNumber": 3,
         "region": "usgovvirginia",
         "regionId": 42,
         "platform": "Azure",
         "systemService": "PowerPlatformInfra",
         "addressPrefixes": [
+          "20.141.167.160/29",
           "20.159.0.16/28",
           "20.159.0.32/28",
+          "20.159.0.64/26",
           "52.127.52.124/30",
           "52.127.53.0/26",
           "52.127.53.64/27",
@@ -8650,7 +8658,7 @@
       "name": "AzureCloud.usgovarizona",
       "id": "AzureCloud.usgovarizona",
       "properties": {
-        "changeNumber": 34,
+        "changeNumber": 35,
         "region": "usgovarizona",
         "regionId": 39,
         "platform": "Azure",
@@ -8716,6 +8724,7 @@
           "2001:489a:3604::/48",
           "2001:489a:3605::/48",
           "2001:489a:3606::/48",
+          "2603:1063:35::/64",
           "2603:1063:128::/55"
         ],
         "networkFeatures": [
@@ -8774,7 +8783,7 @@
       "name": "AzureCloud.usgovtexas",
       "id": "AzureCloud.usgovtexas",
       "properties": {
-        "changeNumber": 24,
+        "changeNumber": 25,
         "region": "usgovtexas",
         "regionId": 41,
         "platform": "Azure",
@@ -8831,6 +8840,7 @@
           "2001:489a:3404::/48",
           "2001:489a:3405::/48",
           "2001:489a:3500::/59",
+          "2603:1063:36::/64",
           "2603:1063:127::/55"
         ],
         "networkFeatures": [
@@ -8935,7 +8945,7 @@
       "name": "AzureCloud",
       "id": "AzureCloud",
       "properties": {
-        "changeNumber": 68,
+        "changeNumber": 69,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -9230,6 +9240,8 @@
           "2001:489a:3604::/48",
           "2001:489a:3605::/48",
           "2001:489a:3606::/48",
+          "2603:1063:35::/64",
+          "2603:1063:36::/64",
           "2603:1063:127::/55",
           "2603:1063:128::/55"
         ],
@@ -9240,5 +9252,5 @@
       }
     }
   ],
-  "createDate": "20230417"
+  "createDate": "20230424"
 }
