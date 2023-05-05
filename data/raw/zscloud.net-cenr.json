@@ -847,6 +847,14 @@
           "longitude": "0"
         },
         {
+          "range": "147.161.156.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "51",
+          "longitude": "0"
+        },
+        {
           "range": "147.161.224.0/23",
           "vpn": "",
           "gre": "165.225.16.236",
@@ -863,7 +871,7 @@
           "longitude": "0"
         },
         {
-          "range": "147.161.156.0/23",
+          "range": "147.161.158.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -875,14 +883,6 @@
           "vpn": "lon3-2-vpn.zscloud.net",
           "gre": "165.225.16.236",
           "hostname": "lon3-2.sme.zscloud.net",
-          "latitude": "51",
-          "longitude": "0"
-        },
-        {
-          "range": "147.161.158.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
           "latitude": "51",
           "longitude": "0"
         },
@@ -2729,14 +2729,6 @@
           "longitude": "-97"
         },
         {
-          "range": "136.226.102.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "33",
-          "longitude": "-97"
-        },
-        {
           "range": "136.226.100.0/23",
           "vpn": "",
           "gre": "",
@@ -2745,7 +2737,7 @@
           "longitude": "-97"
         },
         {
-          "range": "136.226.104.0/23",
+          "range": "136.226.102.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -2756,6 +2748,14 @@
           "range": "165.225.32.0/23",
           "vpn": "",
           "gre": "165.225.34.36",
+          "hostname": "",
+          "latitude": "33",
+          "longitude": "-97"
+        },
+        {
+          "range": "136.226.104.0/23",
+          "vpn": "",
+          "gre": "",
           "hostname": "",
           "latitude": "33",
           "longitude": "-97"
@@ -3303,18 +3303,18 @@
       ],
       "city : Sao Paulo IV": [
         {
-          "range": "136.226.62.0/23",
-          "vpn": "",
-          "gre": "147.161.128.45",
-          "hostname": "",
-          "latitude": "-23",
-          "longitude": "-47"
-        },
-        {
           "range": "147.161.128.0/23",
           "vpn": "sao4-vpn.zscloud.net",
           "gre": "147.161.128.45",
           "hostname": "sao4.sme.zscloud.net",
+          "latitude": "-23",
+          "longitude": "-47"
+        },
+        {
+          "range": "136.226.62.0/23",
+          "vpn": "",
+          "gre": "147.161.128.45",
+          "hostname": "",
           "latitude": "-23",
           "longitude": "-47"
         }
