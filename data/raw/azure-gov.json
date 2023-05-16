@@ -1,5 +1,5 @@
 {
-  "changeNumber": 253,
+  "changeNumber": 254,
   "cloud": "AzureGovernment",
   "values": [
     {
@@ -2897,7 +2897,7 @@
       "name": "PowerPlatformPlex",
       "id": "PowerPlatformPlex",
       "properties": {
-        "changeNumber": 2,
+        "changeNumber": 3,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -2912,8 +2912,10 @@
           "20.141.161.188/30",
           "20.141.161.224/30",
           "20.141.164.96/29",
+          "20.141.167.192/29",
           "52.235.253.224/29",
           "52.243.240.112/29",
+          "52.243.243.24/29",
           "52.245.154.200/29"
         ],
         "networkFeatures": [
@@ -7624,7 +7626,7 @@
       "name": "PowerPlatformPlex.USGovTexas",
       "id": "PowerPlatformPlex.USGovTexas",
       "properties": {
-        "changeNumber": 2,
+        "changeNumber": 3,
         "region": "usgovtexas",
         "regionId": 41,
         "platform": "Azure",
@@ -7634,7 +7636,8 @@
           "20.140.151.48/30",
           "20.140.151.116/30",
           "20.140.151.120/30",
-          "52.243.240.112/29"
+          "52.243.240.112/29",
+          "52.243.243.24/29"
         ],
         "networkFeatures": [
           "API",
@@ -7646,7 +7649,7 @@
       "name": "PowerPlatformPlex.USGovVirginia",
       "id": "PowerPlatformPlex.USGovVirginia",
       "properties": {
-        "changeNumber": 2,
+        "changeNumber": 3,
         "region": "usgovvirginia",
         "regionId": 42,
         "platform": "Azure",
@@ -7655,6 +7658,7 @@
           "20.141.161.188/30",
           "20.141.161.224/30",
           "20.141.164.96/29",
+          "20.141.167.192/29",
           "52.235.253.224/29"
         ],
         "networkFeatures": [
@@ -9262,5 +9266,5 @@
       }
     }
   ],
-  "createDate": "20230508"
+  "createDate": "20230515"
 }
