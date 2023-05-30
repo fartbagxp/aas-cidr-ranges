@@ -3455,5 +3455,35 @@
     "18.213.123.130/32",
     "3.217.79.163/32",
     "3.217.93.44/32"
-  ]
+  ],
+  "domains": {
+    "website": [
+      "*.github.com",
+      "*.github.dev",
+      "*.github.io",
+      "*.githubassets.com",
+      "*.githubusercontent.com"
+    ],
+    "codespaces": [
+      "*.github.com",
+      "*.api.github.com",
+      "*.azureedge.net",
+      "*.github.dev",
+      "*.msecnd.net",
+      "*.visualstudio.com",
+      "*.vscode-webview.net",
+      "*.windows.net"
+    ],
+    "copilot": [
+      "*.github.com",
+      "*.githubusercontent.com",
+      "default.exp-tas.com"
+    ],
+    "packages": [
+      "*.github.com",
+      "*.pkg.github.com",
+      "*.ghcr.io",
+      "*.githubusercontent.com"
+    ]
+  }
 }
