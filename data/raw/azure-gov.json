@@ -1,5 +1,5 @@
 {
-  "changeNumber": 256,
+  "changeNumber": 257,
   "cloud": "AzureGovernment",
   "values": [
     {
@@ -8597,7 +8597,7 @@
       "name": "AzureCloud.usdodcentral",
       "id": "AzureCloud.usdodcentral",
       "properties": {
-        "changeNumber": 21,
+        "changeNumber": 22,
         "region": "usdodcentral",
         "regionId": 44,
         "platform": "Azure",
@@ -8638,6 +8638,7 @@
           "104.210.20.0/22",
           "2001:489a:2206:8010::/60",
           "2001:489a:2208:4::/64",
+          "2001:489a:2208:8010::/60",
           "2001:489a:3200::/46",
           "2001:489a:3204::/48",
           "2001:489a:3205::/48",
@@ -8653,7 +8654,7 @@
       "name": "AzureCloud.usdodeast",
       "id": "AzureCloud.usdodeast",
       "properties": {
-        "changeNumber": 20,
+        "changeNumber": 21,
         "region": "usdodeast",
         "regionId": 45,
         "platform": "Azure",
@@ -8692,6 +8693,7 @@
           "104.210.16.0/22",
           "2001:489a:2206:8000::/60",
           "2001:489a:2208:3::/64",
+          "2001:489a:2208:8000::/60",
           "2001:489a:3300::/46",
           "2001:489a:3304::/48",
           "2001:489a:3305::/48",
@@ -8998,7 +9000,7 @@
       "name": "AzureCloud",
       "id": "AzureCloud",
       "properties": {
-        "changeNumber": 71,
+        "changeNumber": 72,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -9276,6 +9278,8 @@
           "2001:489a:2208:2::/64",
           "2001:489a:2208:3::/64",
           "2001:489a:2208:4::/64",
+          "2001:489a:2208:8000::/60",
+          "2001:489a:2208:8010::/60",
           "2001:489a:3000::/46",
           "2001:489a:3100::/46",
           "2001:489a:3108::/48",
@@ -9311,5 +9315,5 @@
       }
     }
   ],
-  "createDate": "20230529"
+  "createDate": "20230605"
 }
