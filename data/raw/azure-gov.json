@@ -1,5 +1,5 @@
 {
-  "changeNumber": 259,
+  "changeNumber": 260,
   "cloud": "AzureGovernment",
   "values": [
     {
@@ -1356,7 +1356,7 @@
       "name": "AzureMonitor",
       "id": "AzureMonitor",
       "properties": {
-        "changeNumber": 21,
+        "changeNumber": 22,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -1451,10 +1451,12 @@
           "2001:489a:3303:1::780/121",
           "2001:489a:3303:402::680/121",
           "2001:489a:3400::31/128",
+          "2001:489a:3400::4a/128",
           "2001:489a:3403::2a0/123",
           "2001:489a:3403::780/121",
           "2001:489a:3403:1::500/121",
           "2001:489a:3403:402::600/121",
+          "2001:489a:3600::9f/128",
           "2001:489a:3604::280/122",
           "2001:489a:3604:1::60/123",
           "2001:489a:3604:1::1c0/122",
@@ -5607,7 +5609,7 @@
       "name": "AzureMonitor.USGovArizona",
       "id": "AzureMonitor.USGovArizona",
       "properties": {
-        "changeNumber": 14,
+        "changeNumber": 15,
         "region": "usgovarizona",
         "regionId": 39,
         "platform": "Azure",
@@ -5638,6 +5640,7 @@
           "52.244.233.72/29",
           "52.244.252.10/32",
           "52.244.252.98/32",
+          "2001:489a:3600::9f/128",
           "2001:489a:3604::280/122",
           "2001:489a:3604:1::60/123",
           "2001:489a:3604:1::1c0/122",
@@ -5676,7 +5679,7 @@
       "name": "AzureMonitor.USGovTexas",
       "id": "AzureMonitor.USGovTexas",
       "properties": {
-        "changeNumber": 7,
+        "changeNumber": 8,
         "region": "usgovtexas",
         "regionId": 41,
         "platform": "Azure",
@@ -5688,6 +5691,7 @@
           "52.127.34.208/28",
           "52.127.35.208/29",
           "2001:489a:3400::31/128",
+          "2001:489a:3400::4a/128",
           "2001:489a:3403::2a0/123",
           "2001:489a:3403::780/121",
           "2001:489a:3403:1::500/121",
@@ -9363,5 +9367,5 @@
       }
     }
   ],
-  "createDate": "20230619"
+  "createDate": "20230626"
 }
