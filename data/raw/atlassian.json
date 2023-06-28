@@ -1,6 +1,6 @@
 {
-  "creationDate": "2023-05-31T09:32:55.112922",
-  "syncToken": 1685525575,
+  "creationDate": "2023-06-28T06:01:45.398861",
+  "syncToken": 1687932105,
   "items": [
     {
       "network": "3.26.128.128",
@@ -651,6 +651,28 @@
       ]
     },
     {
+      "network": "104.192.136.0",
+      "mask_len": 24,
+      "cidr": "104.192.136.0/24",
+      "mask": "255.255.255.0",
+      "region": [
+        "ca-central-1"
+      ],
+      "product": [
+        "bitbucket",
+        "confluence",
+        "halp",
+        "jira",
+        "opsgenie",
+        "statuspage",
+        "trello"
+      ],
+      "direction": [
+        "egress",
+        "ingress"
+      ]
+    },
+    {
       "network": "104.192.136.240",
       "mask_len": 28,
       "cidr": "104.192.136.240/28",
@@ -672,6 +694,28 @@
       ]
     },
     {
+      "network": "104.192.137.0",
+      "mask_len": 24,
+      "cidr": "104.192.137.0/24",
+      "mask": "255.255.255.0",
+      "region": [
+        "ap-southeast-1"
+      ],
+      "product": [
+        "bitbucket",
+        "confluence",
+        "halp",
+        "jira",
+        "opsgenie",
+        "statuspage",
+        "trello"
+      ],
+      "direction": [
+        "egress",
+        "ingress"
+      ]
+    },
+    {
       "network": "104.192.137.240",
       "mask_len": 28,
       "cidr": "104.192.137.240/28",
@@ -690,6 +734,28 @@
       ],
       "direction": [
         "egress"
+      ]
+    },
+    {
+      "network": "104.192.138.0",
+      "mask_len": 24,
+      "cidr": "104.192.138.0/24",
+      "mask": "255.255.255.0",
+      "region": [
+        "us-west-1"
+      ],
+      "product": [
+        "bitbucket",
+        "confluence",
+        "halp",
+        "jira",
+        "opsgenie",
+        "statuspage",
+        "trello"
+      ],
+      "direction": [
+        "egress",
+        "ingress"
       ]
     },
     {
@@ -715,6 +781,28 @@
       ]
     },
     {
+      "network": "104.192.140.0",
+      "mask_len": 24,
+      "cidr": "104.192.140.0/24",
+      "mask": "255.255.255.0",
+      "region": [
+        "us-west-2"
+      ],
+      "product": [
+        "bitbucket",
+        "confluence",
+        "halp",
+        "jira",
+        "opsgenie",
+        "statuspage",
+        "trello"
+      ],
+      "direction": [
+        "egress",
+        "ingress"
+      ]
+    },
+    {
       "network": "104.192.140.240",
       "mask_len": 28,
       "cidr": "104.192.140.240/28",
@@ -736,6 +824,28 @@
       ]
     },
     {
+      "network": "104.192.142.0",
+      "mask_len": 24,
+      "cidr": "104.192.142.0/24",
+      "mask": "255.255.255.0",
+      "region": [
+        "us-east-1"
+      ],
+      "product": [
+        "bitbucket",
+        "confluence",
+        "halp",
+        "jira",
+        "opsgenie",
+        "statuspage",
+        "trello"
+      ],
+      "direction": [
+        "egress",
+        "ingress"
+      ]
+    },
+    {
       "network": "104.192.142.240",
       "mask_len": 28,
       "cidr": "104.192.142.240/28",
@@ -754,6 +864,28 @@
       ],
       "direction": [
         "egress"
+      ]
+    },
+    {
+      "network": "104.192.143.0",
+      "mask_len": 24,
+      "cidr": "104.192.143.0/24",
+      "mask": "255.255.255.0",
+      "region": [
+        "ap-northeast-2"
+      ],
+      "product": [
+        "bitbucket",
+        "confluence",
+        "halp",
+        "jira",
+        "opsgenie",
+        "statuspage",
+        "trello"
+      ],
+      "direction": [
+        "egress",
+        "ingress"
       ]
     },
     {
@@ -803,6 +935,72 @@
       ]
     },
     {
+      "network": "185.166.140.0",
+      "mask_len": 24,
+      "cidr": "185.166.140.0/24",
+      "mask": "255.255.255.0",
+      "region": [
+        "ap-northeast-1"
+      ],
+      "product": [
+        "bitbucket",
+        "confluence",
+        "halp",
+        "jira",
+        "opsgenie",
+        "statuspage",
+        "trello"
+      ],
+      "direction": [
+        "egress",
+        "ingress"
+      ]
+    },
+    {
+      "network": "185.166.141.0",
+      "mask_len": 24,
+      "cidr": "185.166.141.0/24",
+      "mask": "255.255.255.0",
+      "region": [
+        "eu-west-2"
+      ],
+      "product": [
+        "bitbucket",
+        "confluence",
+        "halp",
+        "jira",
+        "opsgenie",
+        "statuspage",
+        "trello"
+      ],
+      "direction": [
+        "egress",
+        "ingress"
+      ]
+    },
+    {
+      "network": "185.166.142.0",
+      "mask_len": 24,
+      "cidr": "185.166.142.0/24",
+      "mask": "255.255.255.0",
+      "region": [
+        "eu-west-1"
+      ],
+      "product": [
+        "bitbucket",
+        "confluence",
+        "halp",
+        "jira",
+        "opsgenie",
+        "statuspage",
+        "trello"
+      ],
+      "direction": [
+        "egress",
+        "ingress"
+      ]
+    },
+    {
       "network": "185.166.142.240",
       "mask_len": 28,
       "cidr": "185.166.142.240/28",
@@ -821,6 +1019,28 @@
       ],
       "direction": [
         "egress"
+      ]
+    },
+    {
+      "network": "185.166.143.0",
+      "mask_len": 24,
+      "cidr": "185.166.143.0/24",
+      "mask": "255.255.255.0",
+      "region": [
+        "eu-central-1"
+      ],
+      "product": [
+        "bitbucket",
+        "confluence",
+        "halp",
+        "jira",
+        "opsgenie",
+        "statuspage",
+        "trello"
+      ],
+      "direction": [
+        "egress",
+        "ingress"
       ]
     },
     {
