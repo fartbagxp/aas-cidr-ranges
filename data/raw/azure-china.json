@@ -1,5 +1,5 @@
 {
-  "changeNumber": 259,
+  "changeNumber": 260,
   "cloud": "China",
   "values": [
     {
@@ -894,7 +894,7 @@
       "name": "AzureActiveDirectory",
       "id": "AzureActiveDirectory",
       "properties": {
-        "changeNumber": 10,
+        "changeNumber": 11,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -913,8 +913,6 @@
           "40.73.107.129/32",
           "40.73.139.128/27",
           "40.73.171.128/27",
-          "42.159.87.106/32",
-          "42.159.92.96/32",
           "52.130.2.32/27",
           "52.130.2.192/27",
           "52.130.3.64/27",
@@ -927,17 +925,7 @@
           "52.130.21.136/29",
           "52.130.48.12/31",
           "139.217.51.192/27",
-          "139.217.115.121/32",
-          "139.217.118.25/32",
-          "139.217.118.46/32",
-          "139.217.118.54/32",
           "139.217.171.192/27",
-          "139.217.228.95/32",
-          "139.217.231.198/32",
-          "139.217.231.208/32",
-          "139.217.231.219/32",
-          "139.219.132.56/32",
-          "139.219.133.182/32",
           "159.27.24.105/32",
           "159.27.24.242/32",
           "159.27.25.110/32",
@@ -2444,16 +2432,20 @@
       "name": "PowerPlatformPlex",
       "id": "PowerPlatformPlex",
       "properties": {
-        "changeNumber": 2,
+        "changeNumber": 3,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
         "systemService": "PowerPlatformPlex",
         "addressPrefixes": [
+          "52.130.157.64/26",
           "52.131.70.140/30",
           "52.131.194.252/30",
+          "52.131.245.128/26",
           "159.27.243.192/29",
-          "163.228.59.40/29"
+          "163.228.59.40/29",
+          "163.228.70.128/26",
+          "163.228.231.192/26"
         ],
         "networkFeatures": [
           "API",
@@ -3251,6 +3243,21 @@
       }
     },
     {
+      "name": "AzureArcInfrastructure.ChinaEast3",
+      "id": "AzureArcInfrastructure.ChinaEast3",
+      "properties": {
+        "changeNumber": 1,
+        "region": "chinaeast3",
+        "regionId": 90,
+        "platform": "Azure",
+        "systemService": "AzureArcInfrastructure",
+        "addressPrefixes": [
+          "52.131.158.208/31"
+        ],
+        "networkFeatures": null
+      }
+    },
+    {
       "name": "AzureArcInfrastructure.ChinaNorth",
       "id": "AzureArcInfrastructure.ChinaNorth",
       "properties": {
@@ -3284,6 +3291,22 @@
           "52.130.21.232/30",
           "52.130.40.164/30",
           "52.130.40.176/29"
+        ],
+        "networkFeatures": null
+      }
+    },
+    {
+      "name": "AzureArcInfrastructure.ChinaNorth3",
+      "id": "AzureArcInfrastructure.ChinaNorth3",
+      "properties": {
+        "changeNumber": 1,
+        "region": "chinanorth3",
+        "regionId": 89,
+        "platform": "Azure",
+        "systemService": "AzureArcInfrastructure",
+        "addressPrefixes": [
+          "52.131.30.128/31",
+          "159.27.197.184/31"
         ],
         "networkFeatures": null
       }
@@ -6820,13 +6843,14 @@
       "name": "PowerPlatformPlex.ChinaEast2",
       "id": "PowerPlatformPlex.ChinaEast2",
       "properties": {
-        "changeNumber": 1,
+        "changeNumber": 2,
         "region": "chinaeast2",
         "regionId": 55,
         "platform": "Azure",
         "systemService": "PowerPlatformPlex",
         "addressPrefixes": [
-          "52.131.194.252/30"
+          "52.131.194.252/30",
+          "52.131.245.128/26"
         ],
         "networkFeatures": [
           "API",
@@ -6838,13 +6862,14 @@
       "name": "PowerPlatformPlex.ChinaEast3",
       "id": "PowerPlatformPlex.ChinaEast3",
       "properties": {
-        "changeNumber": 1,
+        "changeNumber": 2,
         "region": "chinaeast3",
         "regionId": 90,
         "platform": "Azure",
         "systemService": "PowerPlatformPlex",
         "addressPrefixes": [
-          "163.228.59.40/29"
+          "163.228.59.40/29",
+          "163.228.70.128/26"
         ],
         "networkFeatures": [
           "API",
@@ -6856,12 +6881,13 @@
       "name": "PowerPlatformPlex.ChinaNorth2",
       "id": "PowerPlatformPlex.ChinaNorth2",
       "properties": {
-        "changeNumber": 1,
+        "changeNumber": 2,
         "region": "chinanorth2",
         "regionId": 54,
         "platform": "Azure",
         "systemService": "PowerPlatformPlex",
         "addressPrefixes": [
+          "52.130.157.64/26",
           "52.131.70.140/30"
         ],
         "networkFeatures": [
@@ -6874,13 +6900,14 @@
       "name": "PowerPlatformPlex.ChinaNorth3",
       "id": "PowerPlatformPlex.ChinaNorth3",
       "properties": {
-        "changeNumber": 1,
+        "changeNumber": 2,
         "region": "chinanorth3",
         "regionId": 89,
         "platform": "Azure",
         "systemService": "PowerPlatformPlex",
         "addressPrefixes": [
-          "159.27.243.192/29"
+          "159.27.243.192/29",
+          "163.228.231.192/26"
         ],
         "networkFeatures": [
           "API",
@@ -7220,7 +7247,7 @@
       "name": "AzureActiveDirectory.ServiceEndpoint",
       "id": "AzureActiveDirectory.ServiceEndpoint",
       "properties": {
-        "changeNumber": 4,
+        "changeNumber": 5,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -7234,14 +7261,6 @@
           "52.130.2.32/27",
           "52.130.9.64/27",
           "52.130.17.192/27",
-          "139.217.115.121/32",
-          "139.217.118.25/32",
-          "139.217.118.46/32",
-          "139.217.118.54/32",
-          "139.217.228.95/32",
-          "139.217.231.198/32",
-          "139.217.231.208/32",
-          "139.217.231.219/32",
           "2406:e500:5500::/121",
           "2406:e500:5500:20::/121",
           "2406:e500:5500:40::/121",
@@ -8075,5 +8094,5 @@
       }
     }
   ],
-  "createDate": "20230626"
+  "createDate": "20230703"
 }
