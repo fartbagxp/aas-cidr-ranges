@@ -1,5 +1,5 @@
 {
-  "changeNumber": 261,
+  "changeNumber": 262,
   "cloud": "AzureGovernment",
   "values": [
     {
@@ -155,7 +155,7 @@
       "name": "AzureAdvancedThreatProtection",
       "id": "AzureAdvancedThreatProtection",
       "properties": {
-        "changeNumber": 4,
+        "changeNumber": 5,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -166,8 +166,11 @@
           "20.140.64.128/29",
           "20.140.72.128/29",
           "20.140.152.64/29",
+          "20.141.167.208/29",
           "52.127.49.80/29",
+          "52.243.243.32/29",
           "52.244.235.224/27",
+          "52.244.236.160/29",
           "2001:489a:3103::140/123",
           "2001:489a:3203::140/123",
           "2001:489a:3303::140/123",
@@ -439,7 +442,7 @@
       "name": "AzureArcInfrastructure",
       "id": "AzureArcInfrastructure",
       "properties": {
-        "changeNumber": 5,
+        "changeNumber": 6,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -459,6 +462,7 @@
           "20.140.153.144/30",
           "20.140.200.18/31",
           "20.140.224.34/31",
+          "20.158.160.32/29",
           "52.126.205.62/32",
           "52.127.5.154/32",
           "52.127.12.234/31",
@@ -1356,7 +1360,7 @@
       "name": "AzureMonitor",
       "id": "AzureMonitor",
       "properties": {
-        "changeNumber": 23,
+        "changeNumber": 24,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -1394,6 +1398,7 @@
           "20.158.88.64/29",
           "20.158.88.80/28",
           "20.158.88.96/28",
+          "20.158.176.0/28",
           "23.97.3.12/32",
           "23.97.4.113/32",
           "52.126.203.64/29",
@@ -1771,7 +1776,7 @@
       "name": "ServiceBus",
       "id": "ServiceBus",
       "properties": {
-        "changeNumber": 7,
+        "changeNumber": 8,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -1782,6 +1787,7 @@
           "20.140.146.128/26",
           "20.141.9.128/26",
           "20.141.17.0/26",
+          "23.97.1.36/32",
           "52.126.202.48/29",
           "52.127.2.64/28",
           "52.127.12.248/29",
@@ -1792,6 +1798,7 @@
           "52.127.34.64/28",
           "52.127.42.64/28",
           "52.127.58.64/28",
+          "52.181.160.40/32",
           "52.227.161.208/32",
           "52.235.252.64/26",
           "52.245.153.0/26",
@@ -3838,7 +3845,7 @@
       "name": "AzureArcInfrastructure.USGovArizona",
       "id": "AzureArcInfrastructure.USGovArizona",
       "properties": {
-        "changeNumber": 2,
+        "changeNumber": 3,
         "region": "usgovarizona",
         "regionId": 39,
         "platform": "Azure",
@@ -3847,6 +3854,7 @@
           "20.140.48.252/30",
           "20.140.52.96/30",
           "20.140.224.34/31",
+          "20.158.160.32/29",
           "52.127.5.154/32",
           "52.127.12.234/31",
           "52.127.18.86/31"
@@ -5616,7 +5624,7 @@
       "name": "AzureMonitor.USGovArizona",
       "id": "AzureMonitor.USGovArizona",
       "properties": {
-        "changeNumber": 16,
+        "changeNumber": 17,
         "region": "usgovarizona",
         "regionId": 39,
         "platform": "Azure",
@@ -5636,6 +5644,7 @@
           "20.158.88.64/29",
           "20.158.88.80/28",
           "20.158.88.96/28",
+          "20.158.176.0/28",
           "52.127.2.232/29",
           "52.127.3.184/29",
           "52.127.10.80/30",
@@ -6341,7 +6350,7 @@
       "name": "ServiceBus.USDoDEast",
       "id": "ServiceBus.USDoDEast",
       "properties": {
-        "changeNumber": 4,
+        "changeNumber": 5,
         "region": "usdodeast",
         "regionId": 45,
         "platform": "Azure",
@@ -6349,6 +6358,7 @@
         "addressPrefixes": [
           "20.141.17.0/26",
           "52.126.202.48/29",
+          "52.181.160.40/32",
           "2001:489a:3303::220/123",
           "2001:489a:3303:2::100/120",
           "2001:489a:3303:402::170/125",
@@ -6433,7 +6443,7 @@
       "name": "ServiceBus.USGovVirginia",
       "id": "ServiceBus.USGovVirginia",
       "properties": {
-        "changeNumber": 5,
+        "changeNumber": 6,
         "region": "usgovvirginia",
         "regionId": 42,
         "platform": "Azure",
@@ -6441,6 +6451,7 @@
         "addressPrefixes": [
           "20.140.90.128/29",
           "20.140.130.128/29",
+          "23.97.1.36/32",
           "52.127.42.64/28",
           "52.227.161.208/32",
           "52.235.252.64/26",
@@ -9381,5 +9392,5 @@
       }
     }
   ],
-  "createDate": "20230703"
+  "createDate": "20230710"
 }

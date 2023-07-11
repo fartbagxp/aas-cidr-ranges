@@ -1,5 +1,5 @@
 {
-  "changeNumber": 260,
+  "changeNumber": 261,
   "cloud": "China",
   "values": [
     {
@@ -314,6 +314,45 @@
           "2406:e500:2602:400::80/122",
           "2406:e500:2602:800::80/122",
           "2406:e500:2602:c00::80/122"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG"
+        ]
+      }
+    },
+    {
+      "name": "AzureArcInfrastructure",
+      "id": "AzureArcInfrastructure",
+      "properties": {
+        "changeNumber": 1,
+        "region": "",
+        "regionId": 0,
+        "platform": "Azure",
+        "systemService": "AzureArcInfrastructure",
+        "addressPrefixes": [
+          "40.72.72.144/30",
+          "40.72.79.32/30",
+          "40.73.141.152/32",
+          "52.130.2.224/30",
+          "52.130.5.196/30",
+          "52.130.8.144/30",
+          "52.130.12.236/30",
+          "52.130.16.148/30",
+          "52.130.21.232/30",
+          "52.130.40.164/30",
+          "52.130.40.176/29",
+          "52.130.120.6/32",
+          "52.130.120.180/30",
+          "52.130.121.0/29",
+          "52.130.128.236/30",
+          "52.130.128.240/29",
+          "52.131.30.128/31",
+          "52.131.89.0/29",
+          "52.131.158.208/31",
+          "139.217.52.186/32",
+          "139.217.172.170/32",
+          "159.27.197.184/31"
         ],
         "networkFeatures": [
           "API",
@@ -3280,7 +3319,7 @@
       "name": "AzureArcInfrastructure.ChinaNorth2",
       "id": "AzureArcInfrastructure.ChinaNorth2",
       "properties": {
-        "changeNumber": 2,
+        "changeNumber": 3,
         "region": "chinanorth2",
         "regionId": 54,
         "platform": "Azure",
@@ -3290,7 +3329,8 @@
           "52.130.16.148/30",
           "52.130.21.232/30",
           "52.130.40.164/30",
-          "52.130.40.176/29"
+          "52.130.40.176/29",
+          "52.131.89.0/29"
         ],
         "networkFeatures": null
       }
@@ -8094,5 +8134,5 @@
       }
     }
   ],
-  "createDate": "20230703"
+  "createDate": "20230710"
 }
