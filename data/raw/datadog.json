@@ -1,6 +1,6 @@
 {
-  "version": 53,
-  "modified": "2023-03-29-11-00-00",
+  "version": 54,
+  "modified": "2023-07-14-00-00-00",
   "agents": {
     "prefixes_ipv4": [
       "3.233.144.0/20"
@@ -50,6 +50,14 @@
     ]
   },
   "process": {
+    "prefixes_ipv4": [
+      "3.233.144.0/20"
+    ],
+    "prefixes_ipv6": [
+      "2600:1f18:24e6:b900::/56"
+    ]
+  },
+  "remote-configuration": {
     "prefixes_ipv4": [
       "3.233.144.0/20"
     ],
