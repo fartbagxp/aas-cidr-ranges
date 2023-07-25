@@ -1,5 +1,5 @@
 {
-  "changeNumber": 262,
+  "changeNumber": 263,
   "cloud": "China",
   "values": [
     {
@@ -1154,7 +1154,7 @@
       "name": "AzureManagedGrafana",
       "id": "AzureManagedGrafana",
       "properties": {
-        "changeNumber": 1,
+        "changeNumber": 2,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -1163,7 +1163,11 @@
           "159.27.248.212/31",
           "159.27.248.214/32",
           "163.228.63.16/31",
-          "163.228.63.18/32"
+          "163.228.63.18/32",
+          "2406:e500:2402:3::84/127",
+          "2406:e500:2402:3::86/128",
+          "2406:e500:2602:3::86/127",
+          "2406:e500:2602:3::98/128"
         ],
         "networkFeatures": [
           "NSG",
@@ -8134,5 +8138,5 @@
       }
     }
   ],
-  "createDate": "20230717"
+  "createDate": "20230724"
 }

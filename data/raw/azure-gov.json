@@ -1,5 +1,5 @@
 {
-  "changeNumber": 263,
+  "changeNumber": 264,
   "cloud": "AzureGovernment",
   "values": [
     {
@@ -1335,7 +1335,7 @@
       "name": "AzureManagedGrafana",
       "id": "AzureManagedGrafana",
       "properties": {
-        "changeNumber": 1,
+        "changeNumber": 2,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -1346,7 +1346,13 @@
           "20.141.167.7/32",
           "20.141.167.128/31",
           "52.244.233.196/31",
-          "52.244.233.198/32"
+          "52.244.233.198/32",
+          "2001:489a:3103:3::80/127",
+          "2001:489a:3103:3::82/128",
+          "2001:489a:3403:2::268/127",
+          "2001:489a:3403:2::26a/128",
+          "2001:489a:3604:3::35/128",
+          "2001:489a:3604:3::3a/127"
         ],
         "networkFeatures": [
           "NSG",
@@ -9406,5 +9412,5 @@
       }
     }
   ],
-  "createDate": "20230717"
+  "createDate": "20230724"
 }
