@@ -1,5 +1,5 @@
 {
-  "changeNumber": 265,
+  "changeNumber": 266,
   "cloud": "China",
   "values": [
     {
@@ -2290,7 +2290,7 @@
       "name": "MicrosoftAzureFluidRelay",
       "id": "MicrosoftAzureFluidRelay",
       "properties": {
-        "changeNumber": 2,
+        "changeNumber": 3,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -2298,7 +2298,8 @@
         "addressPrefixes": [
           "52.131.192.184/29",
           "159.27.248.144/29",
-          "163.228.62.8/29"
+          "163.228.62.8/29",
+          "2404:7940:301:2::2a8/125"
         ],
         "networkFeatures": [
           "API",
@@ -8172,5 +8173,5 @@
       }
     }
   ],
-  "createDate": "20230807"
+  "createDate": "20230814"
 }

@@ -1,5 +1,5 @@
 {
-  "changeNumber": 266,
+  "changeNumber": 267,
   "cloud": "AzureGovernment",
   "values": [
     {
@@ -2677,7 +2677,7 @@
       "name": "MicrosoftAzureFluidRelay",
       "id": "MicrosoftAzureFluidRelay",
       "properties": {
-        "changeNumber": 3,
+        "changeNumber": 4,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -2688,9 +2688,11 @@
           "52.235.251.200/29",
           "52.243.241.232/29",
           "52.245.156.72/29",
+          "2001:489a:3103:2::790/125",
           "2001:489a:3203:2::308/125",
           "2001:489a:3303:2::98/125",
-          "2001:489a:3403:2::270/125"
+          "2001:489a:3403:2::270/125",
+          "2001:489a:3604:3::690/125"
         ],
         "networkFeatures": [
           "API",
@@ -9436,5 +9438,5 @@
       }
     }
   ],
-  "createDate": "20230807"
+  "createDate": "20230814"
 }
