@@ -1,5 +1,5 @@
 {
-  "changeNumber": 269,
+  "changeNumber": 270,
   "cloud": "AzureGovernment",
   "values": [
     {
@@ -8820,7 +8820,7 @@
       "name": "AzureCloud.usgovarizona",
       "id": "AzureCloud.usgovarizona",
       "properties": {
-        "changeNumber": 39,
+        "changeNumber": 40,
         "region": "usgovarizona",
         "regionId": 39,
         "platform": "Azure",
@@ -8892,7 +8892,9 @@
           "2001:489a:3605::/48",
           "2001:489a:3606::/48",
           "2603:1063:35::/64",
-          "2603:1063:128::/55"
+          "2603:1063:128::/55",
+          "2603:1063:300::/48",
+          "2603:1063:380::/48"
         ],
         "networkFeatures": [
           "API",
@@ -8950,7 +8952,7 @@
       "name": "AzureCloud.usgovtexas",
       "id": "AzureCloud.usgovtexas",
       "properties": {
-        "changeNumber": 27,
+        "changeNumber": 28,
         "region": "usgovtexas",
         "regionId": 41,
         "platform": "Azure",
@@ -9011,7 +9013,9 @@
           "2001:489a:3405::/48",
           "2001:489a:3500::/59",
           "2603:1063:36::/64",
-          "2603:1063:127::/55"
+          "2603:1063:127::/55",
+          "2603:1063:302::/48",
+          "2603:1063:382::/48"
         ],
         "networkFeatures": [
           "API",
@@ -9023,7 +9027,7 @@
       "name": "AzureCloud.usgovvirginia",
       "id": "AzureCloud.usgovvirginia",
       "properties": {
-        "changeNumber": 39,
+        "changeNumber": 40,
         "region": "usgovvirginia",
         "regionId": 42,
         "platform": "Azure",
@@ -9105,7 +9109,9 @@
           "2001:489a:3100::/46",
           "2001:489a:3108::/48",
           "2001:489a:3109::/48",
-          "2001:489a:3500:40::/59"
+          "2001:489a:3500:40::/59",
+          "2603:1063:303::/48",
+          "2603:1063:383::/48"
         ],
         "networkFeatures": [
           "API",
@@ -9117,7 +9123,7 @@
       "name": "AzureCloud",
       "id": "AzureCloud",
       "properties": {
-        "changeNumber": 74,
+        "changeNumber": 75,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -9429,7 +9435,15 @@
           "2603:1063:35::/64",
           "2603:1063:36::/64",
           "2603:1063:127::/55",
-          "2603:1063:128::/55"
+          "2603:1063:128::/55",
+          "2603:1063:300::/48",
+          "2603:1063:302::/48",
+          "2603:1063:303::/48",
+          "2603:1063:304::/48",
+          "2603:1063:380::/48",
+          "2603:1063:382::/48",
+          "2603:1063:383::/48",
+          "2603:1063:384::/48"
         ],
         "networkFeatures": [
           "API",
@@ -9438,5 +9452,5 @@
       }
     }
   ],
-  "createDate": "20230828"
+  "createDate": "20230904"
 }
