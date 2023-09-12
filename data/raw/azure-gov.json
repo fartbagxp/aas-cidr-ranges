@@ -1,5 +1,5 @@
 {
-  "changeNumber": 270,
+  "changeNumber": 271,
   "cloud": "AzureGovernment",
   "values": [
     {
@@ -442,7 +442,7 @@
       "name": "AzureArcInfrastructure",
       "id": "AzureArcInfrastructure",
       "properties": {
-        "changeNumber": 6,
+        "changeNumber": 7,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -462,7 +462,13 @@
           "20.140.153.144/30",
           "20.140.200.18/31",
           "20.140.224.34/31",
+          "20.141.20.134/31",
+          "20.141.20.152/29",
+          "20.141.167.218/31",
+          "20.141.167.224/29",
           "20.158.160.32/29",
+          "20.158.170.192/29",
+          "20.158.170.200/31",
           "52.126.205.62/32",
           "52.127.5.154/32",
           "52.127.12.234/31",
@@ -473,7 +479,11 @@
           "52.127.42.163/32",
           "52.127.50.160/30",
           "52.127.55.0/30",
-          "52.127.61.102/32"
+          "52.127.61.102/32",
+          "52.243.243.40/29",
+          "52.243.243.48/31",
+          "52.245.156.122/31",
+          "52.245.156.152/29"
         ],
         "networkFeatures": [
           "API",
@@ -1327,6 +1337,28 @@
           "2001:489a:3303::2c0/122",
           "2001:489a:3403::300/122",
           "2001:489a:3604::2c0/122"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
+      }
+    },
+    {
+      "name": "AzureMachineLearningInference",
+      "id": "AzureMachineLearningInference",
+      "properties": {
+        "changeNumber": 1,
+        "region": "",
+        "regionId": 0,
+        "platform": "Azure",
+        "systemService": "AzureMachineLearningInference",
+        "addressPrefixes": [
+          "20.140.53.128/27",
+          "52.235.250.0/27",
+          "2001:489a:3604:2::600/122"
         ],
         "networkFeatures": [
           "API",
@@ -3838,7 +3870,7 @@
       "name": "AzureArcInfrastructure.USDoDCentral",
       "id": "AzureArcInfrastructure.USDoDCentral",
       "properties": {
-        "changeNumber": 1,
+        "changeNumber": 2,
         "region": "usdodcentral",
         "regionId": 44,
         "platform": "Azure",
@@ -3846,7 +3878,9 @@
         "addressPrefixes": [
           "20.140.73.44/30",
           "20.140.74.132/30",
-          "52.127.61.102/32"
+          "52.127.61.102/32",
+          "52.245.156.122/31",
+          "52.245.156.152/29"
         ],
         "networkFeatures": null
       }
@@ -3855,7 +3889,7 @@
       "name": "AzureArcInfrastructure.USDoDEast",
       "id": "AzureArcInfrastructure.USDoDEast",
       "properties": {
-        "changeNumber": 1,
+        "changeNumber": 2,
         "region": "usdodeast",
         "regionId": 45,
         "platform": "Azure",
@@ -3863,6 +3897,8 @@
         "addressPrefixes": [
           "20.140.65.44/30",
           "20.140.66.136/30",
+          "20.141.20.134/31",
+          "20.141.20.152/29",
           "52.126.205.62/32"
         ],
         "networkFeatures": null
@@ -3872,7 +3908,7 @@
       "name": "AzureArcInfrastructure.USGovArizona",
       "id": "AzureArcInfrastructure.USGovArizona",
       "properties": {
-        "changeNumber": 3,
+        "changeNumber": 4,
         "region": "usgovarizona",
         "regionId": 39,
         "platform": "Azure",
@@ -3882,6 +3918,8 @@
           "20.140.52.96/30",
           "20.140.224.34/31",
           "20.158.160.32/29",
+          "20.158.170.192/29",
+          "20.158.170.200/31",
           "52.127.5.154/32",
           "52.127.12.234/31",
           "52.127.18.86/31"
@@ -3909,7 +3947,7 @@
       "name": "AzureArcInfrastructure.USGovTexas",
       "id": "AzureArcInfrastructure.USGovTexas",
       "properties": {
-        "changeNumber": 4,
+        "changeNumber": 5,
         "region": "usgovtexas",
         "regionId": 41,
         "platform": "Azure",
@@ -3919,7 +3957,9 @@
           "20.140.60.116/30",
           "20.140.138.0/29",
           "52.127.34.194/31",
-          "52.127.38.196/30"
+          "52.127.38.196/30",
+          "52.243.243.40/29",
+          "52.243.243.48/31"
         ],
         "networkFeatures": null
       }
@@ -3928,7 +3968,7 @@
       "name": "AzureArcInfrastructure.USGovVirginia",
       "id": "AzureArcInfrastructure.USGovVirginia",
       "properties": {
-        "changeNumber": 2,
+        "changeNumber": 3,
         "region": "usgovvirginia",
         "regionId": 42,
         "platform": "Azure",
@@ -3937,6 +3977,8 @@
           "20.140.95.24/31",
           "20.140.134.68/31",
           "20.140.200.18/31",
+          "20.141.167.218/31",
+          "20.141.167.224/29",
           "52.127.42.163/32",
           "52.127.50.160/30",
           "52.127.55.0/30"
@@ -9452,5 +9494,5 @@
       }
     }
   ],
-  "createDate": "20230904"
+  "createDate": "20230911"
 }
