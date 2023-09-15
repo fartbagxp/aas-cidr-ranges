@@ -37,6 +37,14 @@
           "longitude": "5"
         },
         {
+          "range": "2a03:eec0:1200::/40",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "52",
+          "longitude": "5"
+        },
+        {
           "range": "147.161.158.0/23",
           "vpn": "",
           "gre": "",
@@ -61,14 +69,6 @@
           "longitude": "5"
         },
         {
-          "range": "136.226.198.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "52",
-          "longitude": "5"
-        },
-        {
           "range": "136.226.200.0/23",
           "vpn": "",
           "gre": "",
@@ -88,14 +88,6 @@
           "range": "136.226.204.0/23",
           "vpn": "",
           "gre": "",
-          "hostname": "",
-          "latitude": "52",
-          "longitude": "5"
-        },
-        {
-          "range": "147.161.172.0/23",
-          "vpn": "",
-          "gre": "185.46.212.36",
           "hostname": "",
           "latitude": "52",
           "longitude": "5"
@@ -125,15 +117,15 @@
           "longitude": "5"
         },
         {
-          "range": "136.226.212.0/23",
+          "range": "147.161.172.0/23",
           "vpn": "",
-          "gre": "",
+          "gre": "185.46.212.36",
           "hostname": "",
           "latitude": "52",
           "longitude": "5"
         },
         {
-          "range": "2a03:eec0:1200::/40",
+          "range": "136.226.212.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -143,7 +135,15 @@
       ],
       "city : Brussels II": [
         {
-          "range": "136.226.200.0/23",
+          "range": "136.226.204.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "50",
+          "longitude": "5"
+        },
+        {
+          "range": "136.226.206.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -159,14 +159,6 @@
           "longitude": "5"
         },
         {
-          "range": "136.226.202.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "50",
-          "longitude": "5"
-        },
-        {
           "range": "147.161.148.0/23",
           "vpn": "",
           "gre": "165.225.12.42",
@@ -175,7 +167,7 @@
           "longitude": "5"
         },
         {
-          "range": "136.226.204.0/23",
+          "range": "136.226.208.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -199,7 +191,7 @@
           "longitude": "5"
         },
         {
-          "range": "136.226.206.0/23",
+          "range": "136.226.210.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -215,22 +207,6 @@
           "longitude": "5"
         },
         {
-          "range": "136.226.208.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "50",
-          "longitude": "5"
-        },
-        {
-          "range": "136.226.210.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "50",
-          "longitude": "5"
-        },
-        {
           "range": "136.226.212.0/23",
           "vpn": "",
           "gre": "",
@@ -239,7 +215,15 @@
           "longitude": "5"
         },
         {
-          "range": "136.226.198.0/23",
+          "range": "136.226.200.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "50",
+          "longitude": "5"
+        },
+        {
+          "range": "136.226.202.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -259,23 +243,95 @@
       ],
       "city : Capetown IV": [
         {
-          "range": "2a03:eec0:1700::/40",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "-33.9248685",
-          "longitude": "18.4240553"
-        },
-        {
           "range": "136.226.216.0/23",
           "vpn": "cpt4-vpn.zscloud.net",
           "gre": "136.226.216.45",
           "hostname": "cpt4.sme.zscloud.net",
           "latitude": "-33.9248685",
           "longitude": "18.4240553"
+        },
+        {
+          "range": "2a03:eec0:1700::/40",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "-33.9248685",
+          "longitude": "18.4240553"
         }
       ],
       "city : Copenhagen II": [
+        {
+          "range": "136.226.210.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "55",
+          "longitude": "12"
+        },
+        {
+          "range": "136.226.212.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "55",
+          "longitude": "12"
+        },
+        {
+          "range": "2a03:eec0:1600::/40",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "55",
+          "longitude": "12"
+        },
+        {
+          "range": "147.161.154.0/23",
+          "vpn": "",
+          "gre": "165.225.194.35",
+          "hostname": "",
+          "latitude": "55",
+          "longitude": "12"
+        },
+        {
+          "range": "165.225.194.0/23",
+          "vpn": "cph2-vpn.zscloud.net",
+          "gre": "165.225.194.35",
+          "hostname": "cph2.sme.zscloud.net",
+          "latitude": "55",
+          "longitude": "12"
+        },
+        {
+          "range": "136.226.200.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "55",
+          "longitude": "12"
+        },
+        {
+          "range": "147.161.156.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "55",
+          "longitude": "12"
+        },
+        {
+          "range": "136.226.202.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "55",
+          "longitude": "12"
+        },
+        {
+          "range": "147.161.158.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "55",
+          "longitude": "12"
+        },
         {
           "range": "136.226.204.0/23",
           "vpn": "",
@@ -294,86 +350,6 @@
         },
         {
           "range": "136.226.208.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "55",
-          "longitude": "12"
-        },
-        {
-          "range": "2a03:eec0:1600::/40",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "55",
-          "longitude": "12"
-        },
-        {
-          "range": "136.226.210.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "55",
-          "longitude": "12"
-        },
-        {
-          "range": "136.226.212.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "55",
-          "longitude": "12"
-        },
-        {
-          "range": "165.225.194.0/23",
-          "vpn": "cph2-vpn.zscloud.net",
-          "gre": "165.225.194.35",
-          "hostname": "cph2.sme.zscloud.net",
-          "latitude": "55",
-          "longitude": "12"
-        },
-        {
-          "range": "147.161.154.0/23",
-          "vpn": "",
-          "gre": "165.225.194.35",
-          "hostname": "",
-          "latitude": "55",
-          "longitude": "12"
-        },
-        {
-          "range": "147.161.156.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "55",
-          "longitude": "12"
-        },
-        {
-          "range": "147.161.158.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "55",
-          "longitude": "12"
-        },
-        {
-          "range": "136.226.198.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "55",
-          "longitude": "12"
-        },
-        {
-          "range": "136.226.200.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "55",
-          "longitude": "12"
-        },
-        {
-          "range": "136.226.202.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -401,15 +377,7 @@
       ],
       "city : Dusseldorf I": [
         {
-          "range": "136.226.172.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "51.2277411",
-          "longitude": "6.7734556"
-        },
-        {
-          "range": "136.226.198.0/23",
+          "range": "136.226.170.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -425,7 +393,15 @@
           "longitude": "6.7734556"
         },
         {
-          "range": "136.226.202.0/23",
+          "range": "136.226.172.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "51.2277411",
+          "longitude": "6.7734556"
+        },
+        {
+          "range": "136.226.200.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -441,33 +417,17 @@
           "longitude": "6.7734556"
         },
         {
-          "range": "147.161.230.0/23",
-          "vpn": "",
-          "gre": "147.161.226.193",
-          "hostname": "",
-          "latitude": "51.2277411",
-          "longitude": "6.7734556"
-        },
-        {
-          "range": "2a03:eec0:1800::/40",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "51.2277411",
-          "longitude": "6.7734556"
-        },
-        {
-          "range": "136.226.200.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "51.2277411",
-          "longitude": "6.7734556"
-        },
-        {
           "range": "136.226.204.0/23",
           "vpn": "",
           "gre": "",
+          "hostname": "",
+          "latitude": "51.2277411",
+          "longitude": "6.7734556"
+        },
+        {
+          "range": "147.161.230.0/23",
+          "vpn": "",
+          "gre": "147.161.226.193",
           "hostname": "",
           "latitude": "51.2277411",
           "longitude": "6.7734556"
@@ -482,6 +442,38 @@
         },
         {
           "range": "136.226.208.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "51.2277411",
+          "longitude": "6.7734556"
+        },
+        {
+          "range": "136.226.210.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "51.2277411",
+          "longitude": "6.7734556"
+        },
+        {
+          "range": "2a03:eec0:1800::/40",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "51.2277411",
+          "longitude": "6.7734556"
+        },
+        {
+          "range": "136.226.212.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "51.2277411",
+          "longitude": "6.7734556"
+        },
+        {
+          "range": "136.226.202.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -497,31 +489,7 @@
           "longitude": "6.7734556"
         },
         {
-          "range": "136.226.210.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "51.2277411",
-          "longitude": "6.7734556"
-        },
-        {
           "range": "147.161.158.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "51.2277411",
-          "longitude": "6.7734556"
-        },
-        {
-          "range": "136.226.170.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "51.2277411",
-          "longitude": "6.7734556"
-        },
-        {
-          "range": "136.226.212.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -531,7 +499,23 @@
       ],
       "city : Frankfurt IV": [
         {
-          "range": "136.226.198.0/23",
+          "range": "136.226.204.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "50",
+          "longitude": "9"
+        },
+        {
+          "range": "136.226.206.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "50",
+          "longitude": "9"
+        },
+        {
+          "range": "136.226.208.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -547,7 +531,7 @@
           "longitude": "9"
         },
         {
-          "range": "136.226.200.0/23",
+          "range": "136.226.210.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -555,23 +539,7 @@
           "longitude": "9"
         },
         {
-          "range": "136.226.202.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "50",
-          "longitude": "9"
-        },
-        {
-          "range": "136.226.204.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "50",
-          "longitude": "9"
-        },
-        {
-          "range": "2a03:eec0:1300::/40",
+          "range": "136.226.212.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -587,7 +555,7 @@
           "longitude": "9"
         },
         {
-          "range": "136.226.206.0/23",
+          "range": "2a03:eec0:1300::/40",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -603,26 +571,10 @@
           "longitude": "9"
         },
         {
-          "range": "136.226.208.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "50",
-          "longitude": "9"
-        },
-        {
           "range": "165.225.26.0/23",
           "vpn": "fra4-2-vpn.zscloud.net",
           "gre": "165.225.26.39",
           "hostname": "fra4-2.sme.zscloud.net",
-          "latitude": "50",
-          "longitude": "9"
-        },
-        {
-          "range": "136.226.210.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
           "latitude": "50",
           "longitude": "9"
         },
@@ -643,17 +595,17 @@
           "longitude": "9"
         },
         {
-          "range": "147.161.164.0/23",
+          "range": "136.226.200.0/23",
           "vpn": "",
-          "gre": "165.225.26.39",
+          "gre": "",
           "hostname": "",
           "latitude": "50",
           "longitude": "9"
         },
         {
-          "range": "136.226.212.0/23",
+          "range": "147.161.164.0/23",
           "vpn": "",
-          "gre": "",
+          "gre": "165.225.26.39",
           "hostname": "",
           "latitude": "50",
           "longitude": "9"
@@ -665,43 +617,19 @@
           "hostname": "",
           "latitude": "50",
           "longitude": "9"
-        }
-      ],
-      "city : Frankfurt VI": [
-        {
-          "range": "136.226.200.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "50.1109221",
-          "longitude": "8.6821267"
         },
         {
           "range": "136.226.202.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
-          "latitude": "50.1109221",
-          "longitude": "8.6821267"
-        },
+          "latitude": "50",
+          "longitude": "9"
+        }
+      ],
+      "city : Frankfurt VI": [
         {
-          "range": "136.226.204.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "50.1109221",
-          "longitude": "8.6821267"
-        },
-        {
-          "range": "136.226.206.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "50.1109221",
-          "longitude": "8.6821267"
-        },
-        {
-          "range": "136.226.208.0/23",
+          "range": "136.226.212.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -717,7 +645,7 @@
           "longitude": "8.6821267"
         },
         {
-          "range": "136.226.210.0/23",
+          "range": "136.226.200.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -733,7 +661,7 @@
           "longitude": "8.6821267"
         },
         {
-          "range": "136.226.162.0/23",
+          "range": "136.226.202.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -749,7 +677,31 @@
           "longitude": "8.6821267"
         },
         {
-          "range": "136.226.212.0/23",
+          "range": "147.161.138.0/23",
+          "vpn": "fra6-vpn.zscloud.net",
+          "gre": "147.161.134.193",
+          "hostname": "fra6.sme.zscloud.net",
+          "latitude": "50.1109221",
+          "longitude": "8.6821267"
+        },
+        {
+          "range": "136.226.204.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "50.1109221",
+          "longitude": "8.6821267"
+        },
+        {
+          "range": "147.161.158.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "50.1109221",
+          "longitude": "8.6821267"
+        },
+        {
+          "range": "136.226.162.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -765,10 +717,10 @@
           "longitude": "8.6821267"
         },
         {
-          "range": "147.161.138.0/23",
-          "vpn": "fra6-vpn.zscloud.net",
-          "gre": "147.161.134.193",
-          "hostname": "fra6.sme.zscloud.net",
+          "range": "136.226.206.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
           "latitude": "50.1109221",
           "longitude": "8.6821267"
         },
@@ -781,7 +733,7 @@
           "longitude": "8.6821267"
         },
         {
-          "range": "147.161.158.0/23",
+          "range": "136.226.208.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -789,7 +741,7 @@
           "longitude": "8.6821267"
         },
         {
-          "range": "136.226.198.0/23",
+          "range": "136.226.210.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -799,23 +751,7 @@
       ],
       "city : Helsinki I": [
         {
-          "range": "136.226.210.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "60.16985569999999",
-          "longitude": "24.9383791"
-        },
-        {
           "range": "147.161.158.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "60.16985569999999",
-          "longitude": "24.9383791"
-        },
-        {
-          "range": "136.226.200.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -827,6 +763,38 @@
           "vpn": "hel1-vpn.zscloud.net",
           "gre": "147.161.186.42",
           "hostname": "hel1.sme.zscloud.net",
+          "latitude": "60.16985569999999",
+          "longitude": "24.9383791"
+        },
+        {
+          "range": "136.226.202.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "60.16985569999999",
+          "longitude": "24.9383791"
+        },
+        {
+          "range": "136.226.206.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "60.16985569999999",
+          "longitude": "24.9383791"
+        },
+        {
+          "range": "136.226.210.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "60.16985569999999",
+          "longitude": "24.9383791"
+        },
+        {
+          "range": "136.226.200.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
           "latitude": "60.16985569999999",
           "longitude": "24.9383791"
         },
@@ -855,31 +823,7 @@
           "longitude": "24.9383791"
         },
         {
-          "range": "136.226.198.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "60.16985569999999",
-          "longitude": "24.9383791"
-        },
-        {
           "range": "2a03:eec0:1b00::/40",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "60.16985569999999",
-          "longitude": "24.9383791"
-        },
-        {
-          "range": "136.226.202.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "60.16985569999999",
-          "longitude": "24.9383791"
-        },
-        {
-          "range": "136.226.206.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -935,7 +879,7 @@
       ],
       "city : London III": [
         {
-          "range": "136.226.202.0/23",
+          "range": "136.226.210.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -943,7 +887,15 @@
           "longitude": "0"
         },
         {
-          "range": "136.226.204.0/23",
+          "range": "2a03:eec0:1d00::/40",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "51",
+          "longitude": "0"
+        },
+        {
+          "range": "136.226.212.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -967,6 +919,14 @@
           "longitude": "0"
         },
         {
+          "range": "136.226.200.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "51",
+          "longitude": "0"
+        },
+        {
           "range": "165.225.80.0/22",
           "vpn": "lon3-vpn.zscloud.net",
           "gre": "165.225.80.36",
@@ -983,6 +943,14 @@
           "longitude": "0"
         },
         {
+          "range": "136.226.202.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "51",
+          "longitude": "0"
+        },
+        {
           "range": "165.225.16.0/23",
           "vpn": "lon3-2-vpn.zscloud.net",
           "gre": "165.225.16.236",
@@ -991,7 +959,23 @@
           "longitude": "0"
         },
         {
+          "range": "136.226.204.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "51",
+          "longitude": "0"
+        },
+        {
           "range": "147.161.166.0/23",
+          "vpn": "",
+          "gre": "165.225.80.36",
+          "hostname": "",
+          "latitude": "51",
+          "longitude": "0"
+        },
+        {
+          "range": "147.161.224.0/23",
           "vpn": "",
           "gre": "165.225.80.36",
           "hostname": "",
@@ -1013,59 +997,11 @@
           "hostname": "",
           "latitude": "51",
           "longitude": "0"
-        },
-        {
-          "range": "136.226.210.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "51",
-          "longitude": "0"
-        },
-        {
-          "range": "147.161.224.0/23",
-          "vpn": "",
-          "gre": "165.225.80.36",
-          "hostname": "",
-          "latitude": "51",
-          "longitude": "0"
-        },
-        {
-          "range": "136.226.212.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "51",
-          "longitude": "0"
-        },
-        {
-          "range": "136.226.198.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "51",
-          "longitude": "0"
-        },
-        {
-          "range": "2a03:eec0:1d00::/40",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "51",
-          "longitude": "0"
-        },
-        {
-          "range": "136.226.200.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "51",
-          "longitude": "0"
         }
       ],
       "city : London V": [
         {
-          "range": "2a03:eec0:1e00::/40",
+          "range": "136.226.204.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -1074,6 +1010,14 @@
         },
         {
           "range": "147.161.158.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "51.5072178",
+          "longitude": "-0.1275862"
+        },
+        {
+          "range": "2a03:eec0:1e00::/40",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -1121,30 +1065,6 @@
           "longitude": "-0.1275862"
         },
         {
-          "range": "136.226.212.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "51.5072178",
-          "longitude": "-0.1275862"
-        },
-        {
-          "range": "136.226.198.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "51.5072178",
-          "longitude": "-0.1275862"
-        },
-        {
-          "range": "136.226.200.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "51.5072178",
-          "longitude": "-0.1275862"
-        },
-        {
           "range": "147.161.142.0/23",
           "vpn": "lon5-vpn.zscloud.net",
           "gre": "147.161.140.193",
@@ -1153,7 +1073,7 @@
           "longitude": "-0.1275862"
         },
         {
-          "range": "136.226.202.0/23",
+          "range": "136.226.212.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -1169,7 +1089,7 @@
           "longitude": "-0.1275862"
         },
         {
-          "range": "136.226.204.0/23",
+          "range": "136.226.200.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -1180,6 +1100,14 @@
           "range": "147.161.144.0/23",
           "vpn": "",
           "gre": "147.161.140.193",
+          "hostname": "",
+          "latitude": "51.5072178",
+          "longitude": "-0.1275862"
+        },
+        {
+          "range": "136.226.202.0/23",
+          "vpn": "",
+          "gre": "",
           "hostname": "",
           "latitude": "51.5072178",
           "longitude": "-0.1275862"
@@ -1235,17 +1163,17 @@
           "longitude": "-3"
         },
         {
-          "range": "136.226.206.0/23",
+          "range": "136.226.214.0/23",
           "vpn": "",
-          "gre": "",
+          "gre": "165.225.92.39",
           "hostname": "",
           "latitude": "41",
           "longitude": "-3"
         },
         {
-          "range": "136.226.214.0/23",
+          "range": "136.226.206.0/23",
           "vpn": "",
-          "gre": "165.225.92.39",
+          "gre": "",
           "hostname": "",
           "latitude": "41",
           "longitude": "-3"
@@ -1297,25 +1225,9 @@
           "hostname": "",
           "latitude": "41",
           "longitude": "-3"
-        },
-        {
-          "range": "136.226.198.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "41",
-          "longitude": "-3"
         }
       ],
       "city : Manchester I": [
-        {
-          "range": "136.226.204.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "53.4",
-          "longitude": "-2.3"
-        },
         {
           "range": "147.161.236.0/23",
           "vpn": "",
@@ -1326,14 +1238,6 @@
         },
         {
           "range": "136.226.206.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "53.4",
-          "longitude": "-2.3"
-        },
-        {
-          "range": "2a03:eec0:2200::/40",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -1357,7 +1261,7 @@
           "longitude": "-2.3"
         },
         {
-          "range": "136.226.190.0/23",
+          "range": "2a03:eec0:2200::/40",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -1366,6 +1270,14 @@
         },
         {
           "range": "136.226.212.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "53.4",
+          "longitude": "-2.3"
+        },
+        {
+          "range": "136.226.190.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -1405,14 +1317,6 @@
           "longitude": "-2.3"
         },
         {
-          "range": "136.226.198.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "53.4",
-          "longitude": "-2.3"
-        },
-        {
           "range": "136.226.200.0/23",
           "vpn": "",
           "gre": "",
@@ -1427,27 +1331,19 @@
           "hostname": "",
           "latitude": "53.4",
           "longitude": "-2.3"
+        },
+        {
+          "range": "136.226.204.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "53.4",
+          "longitude": "-2.3"
         }
       ],
       "city : Marseille I": [
         {
-          "range": "136.226.210.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "43.296482",
-          "longitude": "5.36978"
-        },
-        {
           "range": "136.226.212.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "43.296482",
-          "longitude": "5.36978"
-        },
-        {
-          "range": "2a03:eec0:2500::/40",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -1471,7 +1367,15 @@
           "longitude": "5.36978"
         },
         {
-          "range": "136.226.198.0/23",
+          "range": "2a03:eec0:2500::/40",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "43.296482",
+          "longitude": "5.36978"
+        },
+        {
+          "range": "136.226.200.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -1487,23 +1391,7 @@
           "longitude": "5.36978"
         },
         {
-          "range": "136.226.200.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "43.296482",
-          "longitude": "5.36978"
-        },
-        {
           "range": "136.226.202.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "43.296482",
-          "longitude": "5.36978"
-        },
-        {
-          "range": "147.161.156.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -1519,7 +1407,7 @@
           "longitude": "5.36978"
         },
         {
-          "range": "147.161.158.0/23",
+          "range": "147.161.156.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -1535,7 +1423,23 @@
           "longitude": "5.36978"
         },
         {
+          "range": "147.161.158.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "43.296482",
+          "longitude": "5.36978"
+        },
+        {
           "range": "136.226.208.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "43.296482",
+          "longitude": "5.36978"
+        },
+        {
+          "range": "136.226.210.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -1553,7 +1457,7 @@
           "longitude": "10"
         },
         {
-          "range": "136.226.198.0/23",
+          "range": "136.226.200.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -1561,7 +1465,39 @@
           "longitude": "10"
         },
         {
-          "range": "136.226.200.0/23",
+          "range": "136.226.202.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "46",
+          "longitude": "10"
+        },
+        {
+          "range": "136.226.204.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "46",
+          "longitude": "10"
+        },
+        {
+          "range": "136.226.206.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "46",
+          "longitude": "10"
+        },
+        {
+          "range": "147.161.244.0/23",
+          "vpn": "",
+          "gre": "165.225.202.42",
+          "hostname": "",
+          "latitude": "46",
+          "longitude": "10"
+        },
+        {
+          "range": "136.226.208.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -1585,17 +1521,9 @@
           "longitude": "10"
         },
         {
-          "range": "136.226.202.0/23",
+          "range": "136.226.210.0/23",
           "vpn": "",
           "gre": "",
-          "hostname": "",
-          "latitude": "46",
-          "longitude": "10"
-        },
-        {
-          "range": "147.161.244.0/23",
-          "vpn": "",
-          "gre": "165.225.202.42",
           "hostname": "",
           "latitude": "46",
           "longitude": "10"
@@ -1609,39 +1537,7 @@
           "longitude": "10"
         },
         {
-          "range": "136.226.204.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "46",
-          "longitude": "10"
-        },
-        {
-          "range": "136.226.206.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "46",
-          "longitude": "10"
-        },
-        {
-          "range": "136.226.208.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "46",
-          "longitude": "10"
-        },
-        {
-          "range": "170.85.30.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "46",
-          "longitude": "10"
-        },
-        {
-          "range": "136.226.210.0/23",
+          "range": "136.226.212.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -1657,7 +1553,7 @@
           "longitude": "10"
         },
         {
-          "range": "136.226.212.0/23",
+          "range": "170.85.30.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -1701,7 +1597,7 @@
           "longitude": "12"
         },
         {
-          "range": "136.226.200.0/23",
+          "range": "136.226.206.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -1725,6 +1621,14 @@
           "longitude": "12"
         },
         {
+          "range": "136.226.208.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "48",
+          "longitude": "12"
+        },
+        {
           "range": "147.161.176.0/23",
           "vpn": "muc1-vpn.zscloud.net",
           "gre": "147.161.176.193",
@@ -1733,23 +1637,15 @@
           "longitude": "12"
         },
         {
-          "range": "136.226.210.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "48",
-          "longitude": "12"
-        },
-        {
-          "range": "136.226.202.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "48",
-          "longitude": "12"
-        },
-        {
           "range": "147.161.158.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "48",
+          "longitude": "12"
+        },
+        {
+          "range": "136.226.210.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -1765,39 +1661,7 @@
           "longitude": "12"
         },
         {
-          "range": "136.226.204.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "48",
-          "longitude": "12"
-        },
-        {
-          "range": "136.226.206.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "48",
-          "longitude": "12"
-        },
-        {
-          "range": "136.226.208.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "48",
-          "longitude": "12"
-        },
-        {
           "range": "2a03:eec0:2600::/40",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "48",
-          "longitude": "12"
-        },
-        {
-          "range": "170.85.2.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -1813,6 +1677,30 @@
           "longitude": "12"
         },
         {
+          "range": "136.226.200.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "48",
+          "longitude": "12"
+        },
+        {
+          "range": "170.85.2.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "48",
+          "longitude": "12"
+        },
+        {
+          "range": "136.226.202.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "48",
+          "longitude": "12"
+        },
+        {
           "range": "170.85.4.0/23",
           "vpn": "",
           "gre": "",
@@ -1821,7 +1709,7 @@
           "longitude": "12"
         },
         {
-          "range": "136.226.198.0/23",
+          "range": "136.226.204.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -1830,14 +1718,6 @@
         }
       ],
       "city : Oslo III": [
-        {
-          "range": "136.226.198.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "59.9138688",
-          "longitude": "10.7522454"
-        },
         {
           "range": "147.161.146.0/23",
           "vpn": "osl3-vpn.zscloud.net",
@@ -1871,7 +1751,7 @@
           "longitude": "10.7522454"
         },
         {
-          "range": "2a03:eec0:2700::/40",
+          "range": "136.226.206.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -1879,7 +1759,7 @@
           "longitude": "10.7522454"
         },
         {
-          "range": "136.226.206.0/23",
+          "range": "2a03:eec0:2700::/40",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -1913,7 +1793,7 @@
       ],
       "city : Paris II": [
         {
-          "range": "136.226.198.0/23",
+          "range": "136.226.200.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -1921,7 +1801,15 @@
           "longitude": "2"
         },
         {
-          "range": "136.226.200.0/23",
+          "range": "136.226.210.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "49",
+          "longitude": "2"
+        },
+        {
+          "range": "136.226.202.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -1937,6 +1825,14 @@
           "longitude": "2"
         },
         {
+          "range": "136.226.212.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "49",
+          "longitude": "2"
+        },
+        {
           "range": "147.161.184.0/23",
           "vpn": "",
           "gre": "165.225.20.42",
@@ -1945,7 +1841,7 @@
           "longitude": "2"
         },
         {
-          "range": "136.226.202.0/23",
+          "range": "136.226.204.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -1969,25 +1865,9 @@
           "longitude": "2"
         },
         {
-          "range": "136.226.204.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "49",
-          "longitude": "2"
-        },
-        {
           "range": "147.161.184.0/23",
           "vpn": "",
           "gre": "165.225.76.36",
-          "hostname": "",
-          "latitude": "49",
-          "longitude": "2"
-        },
-        {
-          "range": "147.161.156.0/23",
-          "vpn": "",
-          "gre": "",
           "hostname": "",
           "latitude": "49",
           "longitude": "2"
@@ -2001,7 +1881,7 @@
           "longitude": "2"
         },
         {
-          "range": "147.161.158.0/23",
+          "range": "147.161.156.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -2017,23 +1897,7 @@
           "longitude": "2"
         },
         {
-          "range": "136.226.210.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "49",
-          "longitude": "2"
-        },
-        {
-          "range": "136.226.212.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "49",
-          "longitude": "2"
-        },
-        {
-          "range": "2a03:eec0:2800::/40",
+          "range": "147.161.158.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -2049,6 +1913,14 @@
           "longitude": "2"
         },
         {
+          "range": "2a03:eec0:2800::/40",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "49",
+          "longitude": "2"
+        },
+        {
           "range": "170.85.0.0/23",
           "vpn": "",
           "gre": "",
@@ -2059,31 +1931,7 @@
       ],
       "city : Rouen I": [
         {
-          "range": "136.226.202.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "49",
-          "longitude": "1"
-        },
-        {
-          "range": "136.226.204.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "49",
-          "longitude": "1"
-        },
-        {
-          "range": "136.226.206.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "49",
-          "longitude": "1"
-        },
-        {
-          "range": "136.226.208.0/23",
+          "range": "136.226.200.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -2099,6 +1947,54 @@
           "longitude": "1"
         },
         {
+          "range": "136.226.202.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "49",
+          "longitude": "1"
+        },
+        {
+          "range": "136.226.204.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "49",
+          "longitude": "1"
+        },
+        {
+          "range": "147.161.156.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "49",
+          "longitude": "1"
+        },
+        {
+          "range": "136.226.206.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "49",
+          "longitude": "1"
+        },
+        {
+          "range": "147.161.158.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "49",
+          "longitude": "1"
+        },
+        {
+          "range": "136.226.208.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "49",
+          "longitude": "1"
+        },
+        {
           "range": "136.226.210.0/23",
           "vpn": "",
           "gre": "",
@@ -2115,39 +2011,7 @@
           "longitude": "1"
         },
         {
-          "range": "147.161.156.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "49",
-          "longitude": "1"
-        },
-        {
-          "range": "147.161.158.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "49",
-          "longitude": "1"
-        },
-        {
-          "range": "136.226.198.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "49",
-          "longitude": "1"
-        },
-        {
           "range": "2a03:eec0:2a00::/40",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "49",
-          "longitude": "1"
-        },
-        {
-          "range": "136.226.200.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -2156,6 +2020,38 @@
         }
       ],
       "city : Stockholm III": [
+        {
+          "range": "136.226.202.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "59",
+          "longitude": "18"
+        },
+        {
+          "range": "2a03:eec0:2900::/40",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "59",
+          "longitude": "18"
+        },
+        {
+          "range": "136.226.204.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "59",
+          "longitude": "18"
+        },
+        {
+          "range": "136.226.206.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "59",
+          "longitude": "18"
+        },
         {
           "range": "136.226.208.0/23",
           "vpn": "",
@@ -2173,14 +2069,6 @@
           "longitude": "18"
         },
         {
-          "range": "136.226.212.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "59",
-          "longitude": "18"
-        },
-        {
           "range": "165.225.192.0/23",
           "vpn": "sto3-vpn.zscloud.net",
           "gre": "165.225.192.35",
@@ -2189,15 +2077,7 @@
           "longitude": "18"
         },
         {
-          "range": "136.226.198.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "59",
-          "longitude": "18"
-        },
-        {
-          "range": "136.226.200.0/23",
+          "range": "136.226.212.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -2213,23 +2093,7 @@
           "longitude": "18"
         },
         {
-          "range": "136.226.202.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "59",
-          "longitude": "18"
-        },
-        {
           "range": "147.161.156.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "59",
-          "longitude": "18"
-        },
-        {
-          "range": "136.226.204.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -2253,15 +2117,7 @@
           "longitude": "18"
         },
         {
-          "range": "2a03:eec0:2900::/40",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "59",
-          "longitude": "18"
-        },
-        {
-          "range": "136.226.206.0/23",
+          "range": "136.226.200.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -2281,7 +2137,31 @@
       ],
       "city : Vienna I": [
         {
+          "range": "136.226.206.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "48.208",
+          "longitude": "16.373"
+        },
+        {
           "range": "147.161.156.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "48.208",
+          "longitude": "16.373"
+        },
+        {
+          "range": "136.226.208.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "48.208",
+          "longitude": "16.373"
+        },
+        {
+          "range": "147.161.158.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -2297,7 +2177,15 @@
           "longitude": "16.373"
         },
         {
-          "range": "147.161.158.0/23",
+          "range": "136.226.210.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "48.208",
+          "longitude": "16.373"
+        },
+        {
+          "range": "136.226.212.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -2306,30 +2194,6 @@
         },
         {
           "range": "136.226.198.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "48.208",
-          "longitude": "16.373"
-        },
-        {
-          "range": "136.226.200.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "48.208",
-          "longitude": "16.373"
-        },
-        {
-          "range": "136.226.202.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "48.208",
-          "longitude": "16.373"
-        },
-        {
-          "range": "136.226.204.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -2345,7 +2209,7 @@
           "longitude": "16.373"
         },
         {
-          "range": "136.226.206.0/23",
+          "range": "136.226.200.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -2353,7 +2217,7 @@
           "longitude": "16.373"
         },
         {
-          "range": "136.226.208.0/23",
+          "range": "136.226.202.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -2361,7 +2225,7 @@
           "longitude": "16.373"
         },
         {
-          "range": "136.226.210.0/23",
+          "range": "136.226.204.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -2375,35 +2239,11 @@
           "hostname": "",
           "latitude": "48.208",
           "longitude": "16.373"
-        },
-        {
-          "range": "136.226.212.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "48.208",
-          "longitude": "16.373"
         }
       ],
       "city : Warsaw II": [
         {
-          "range": "136.226.198.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "52",
-          "longitude": "21"
-        },
-        {
-          "range": "2a03:eec0:2c00::/40",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "52",
-          "longitude": "21"
-        },
-        {
-          "range": "136.226.200.0/23",
+          "range": "170.85.28.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -2419,7 +2259,7 @@
           "longitude": "21"
         },
         {
-          "range": "136.226.202.0/23",
+          "range": "2a03:eec0:2c00::/40",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -2435,9 +2275,33 @@
           "longitude": "21"
         },
         {
+          "range": "136.226.200.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "52",
+          "longitude": "21"
+        },
+        {
+          "range": "136.226.202.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "52",
+          "longitude": "21"
+        },
+        {
           "range": "136.226.204.0/23",
           "vpn": "",
           "gre": "",
+          "hostname": "",
+          "latitude": "52",
+          "longitude": "21"
+        },
+        {
+          "range": "147.161.248.0/23",
+          "vpn": "",
+          "gre": "165.225.206.42",
           "hostname": "",
           "latitude": "52",
           "longitude": "21"
@@ -2451,17 +2315,17 @@
           "longitude": "21"
         },
         {
-          "range": "136.226.208.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
+          "range": "165.225.206.0/23",
+          "vpn": "waw2-vpn.zscloud.net",
+          "gre": "165.225.206.42",
+          "hostname": "waw2.sme.zscloud.net",
           "latitude": "52",
           "longitude": "21"
         },
         {
-          "range": "147.161.248.0/23",
+          "range": "136.226.208.0/23",
           "vpn": "",
-          "gre": "165.225.206.42",
+          "gre": "",
           "hostname": "",
           "latitude": "52",
           "longitude": "21"
@@ -2481,25 +2345,25 @@
           "hostname": "",
           "latitude": "52",
           "longitude": "21"
-        },
-        {
-          "range": "165.225.206.0/23",
-          "vpn": "waw2-vpn.zscloud.net",
-          "gre": "165.225.206.42",
-          "hostname": "waw2.sme.zscloud.net",
-          "latitude": "52",
-          "longitude": "21"
-        },
-        {
-          "range": "170.85.28.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "52",
-          "longitude": "21"
         }
       ],
       "city : Zurich": [
+        {
+          "range": "136.226.200.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "47",
+          "longitude": "8"
+        },
+        {
+          "range": "2a03:eec0:1416::/48",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "47",
+          "longitude": "8"
+        },
         {
           "range": "136.226.202.0/23",
           "vpn": "",
@@ -2510,14 +2374,6 @@
         },
         {
           "range": "136.226.204.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "47",
-          "longitude": "8"
-        },
-        {
-          "range": "2a03:eec0:1416::/48",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -2549,14 +2405,6 @@
           "longitude": "8"
         },
         {
-          "range": "136.226.210.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "47",
-          "longitude": "8"
-        },
-        {
           "range": "147.161.156.0/23",
           "vpn": "",
           "gre": "",
@@ -2573,7 +2421,7 @@
           "longitude": "8"
         },
         {
-          "range": "136.226.212.0/23",
+          "range": "136.226.210.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -2597,7 +2445,7 @@
           "longitude": "8"
         },
         {
-          "range": "136.226.198.0/23",
+          "range": "136.226.212.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -2611,29 +2459,13 @@
           "hostname": "zrh1-2.sme.zscloud.net",
           "latitude": "47",
           "longitude": "8"
-        },
-        {
-          "range": "136.226.200.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "47",
-          "longitude": "8"
         }
       ]
     },
     "continent : Americas": {
       "city : Atlanta II": [
         {
-          "range": "170.85.26.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "34",
-          "longitude": "-84"
-        },
-        {
-          "range": "136.226.106.0/23",
+          "range": "104.129.204.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -2649,10 +2481,10 @@
           "longitude": "-84"
         },
         {
-          "range": "104.129.206.0/23",
-          "vpn": "atl2-vpn.zscloud.net",
-          "gre": "104.129.206.36",
-          "hostname": "atl2.sme.zscloud.net",
+          "range": "170.85.26.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
           "latitude": "34",
           "longitude": "-84"
         },
@@ -2665,10 +2497,10 @@
           "longitude": "-84"
         },
         {
-          "range": "136.226.2.0/23",
-          "vpn": "",
+          "range": "104.129.206.0/23",
+          "vpn": "atl2-vpn.zscloud.net",
           "gre": "104.129.206.36",
-          "hostname": "",
+          "hostname": "atl2.sme.zscloud.net",
           "latitude": "34",
           "longitude": "-84"
         },
@@ -2681,23 +2513,15 @@
           "longitude": "-84"
         },
         {
-          "range": "136.226.82.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "34",
-          "longitude": "-84"
-        },
-        {
-          "range": "104.129.204.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "34",
-          "longitude": "-84"
-        },
-        {
           "range": "136.226.114.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "34",
+          "longitude": "-84"
+        },
+        {
+          "range": "136.226.82.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -2719,6 +2543,14 @@
           "hostname": "",
           "latitude": "34",
           "longitude": "-84"
+        },
+        {
+          "range": "136.226.2.0/23",
+          "vpn": "",
+          "gre": "104.129.206.36",
+          "hostname": "",
+          "latitude": "34",
+          "longitude": "-84"
         }
       ],
       "city : Bogota I": [
@@ -2733,6 +2565,22 @@
       ],
       "city : Boston I": [
         {
+          "range": "136.226.70.0/23",
+          "vpn": "bos1-vpn.zscloud.net",
+          "gre": "136.226.70.193",
+          "hostname": "bos1.sme.zscloud.net",
+          "latitude": "42.3600825",
+          "longitude": "-71.0588801"
+        },
+        {
+          "range": "136.226.116.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "42.3600825",
+          "longitude": "-71.0588801"
+        },
+        {
           "range": "136.226.72.0/23",
           "vpn": "",
           "gre": "136.226.70.193",
@@ -2741,7 +2589,7 @@
           "longitude": "-71.0588801"
         },
         {
-          "range": "136.226.116.0/23",
+          "range": "136.226.108.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -2757,31 +2605,7 @@
           "longitude": "-71.0588801"
         },
         {
-          "range": "136.226.106.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "42.3600825",
-          "longitude": "-71.0588801"
-        },
-        {
-          "range": "136.226.108.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "42.3600825",
-          "longitude": "-71.0588801"
-        },
-        {
           "range": "136.226.110.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "42.3600825",
-          "longitude": "-71.0588801"
-        },
-        {
-          "range": "2605:4300:1c00::/40",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -2797,15 +2621,15 @@
           "longitude": "-71.0588801"
         },
         {
-          "range": "136.226.70.0/23",
-          "vpn": "bos1-vpn.zscloud.net",
-          "gre": "136.226.70.193",
-          "hostname": "bos1.sme.zscloud.net",
+          "range": "136.226.114.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
           "latitude": "42.3600825",
           "longitude": "-71.0588801"
         },
         {
-          "range": "136.226.114.0/23",
+          "range": "2605:4300:1c00::/40",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -2825,111 +2649,7 @@
       ],
       "city : Chicago": [
         {
-          "range": "128.177.125.0/24",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "41",
-          "longitude": "-87"
-        },
-        {
-          "range": "165.225.60.0/22",
-          "vpn": "",
-          "gre": "165.225.56.20",
-          "hostname": "",
-          "latitude": "41",
-          "longitude": "-87"
-        },
-        {
-          "range": "137.83.154.0/24",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "41",
-          "longitude": "-87"
-        },
-        {
-          "range": "136.226.110.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "41",
-          "longitude": "-87"
-        },
-        {
-          "range": "165.225.2.0/24",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "41",
-          "longitude": "-87"
-        },
-        {
-          "range": "165.225.0.0/23",
-          "vpn": "chi1-vpn.zscloud.net",
-          "gre": "165.225.0.36",
-          "hostname": "chi1.sme.zscloud.net",
-          "latitude": "41",
-          "longitude": "-87"
-        },
-        {
-          "range": "136.226.112.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "41",
-          "longitude": "-87"
-        },
-        {
           "range": "2605:4300:1316::/48",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "41",
-          "longitude": "-87"
-        },
-        {
-          "range": "165.225.56.0/22",
-          "vpn": "chi1-2-vpn.zscloud.net",
-          "gre": "165.225.56.20",
-          "hostname": "chi1-2.sme.zscloud.net",
-          "latitude": "41",
-          "longitude": "-87"
-        },
-        {
-          "range": "136.226.114.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "41",
-          "longitude": "-87"
-        },
-        {
-          "range": "136.226.84.0/23",
-          "vpn": "",
-          "gre": "165.225.56.20",
-          "hostname": "",
-          "latitude": "41",
-          "longitude": "-87"
-        },
-        {
-          "range": "136.226.116.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "41",
-          "longitude": "-87"
-        },
-        {
-          "range": "136.226.106.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "41",
-          "longitude": "-87"
-        },
-        {
-          "range": "136.226.108.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -2945,7 +2665,103 @@
           "longitude": "-87"
         },
         {
+          "range": "136.226.110.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "41",
+          "longitude": "-87"
+        },
+        {
+          "range": "136.226.112.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "41",
+          "longitude": "-87"
+        },
+        {
+          "range": "136.226.114.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "41",
+          "longitude": "-87"
+        },
+        {
           "range": "104.129.196.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "41",
+          "longitude": "-87"
+        },
+        {
+          "range": "136.226.116.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "41",
+          "longitude": "-87"
+        },
+        {
+          "range": "165.225.0.0/23",
+          "vpn": "chi1-vpn.zscloud.net",
+          "gre": "165.225.0.36",
+          "hostname": "chi1.sme.zscloud.net",
+          "latitude": "41",
+          "longitude": "-87"
+        },
+        {
+          "range": "128.177.125.0/24",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "41",
+          "longitude": "-87"
+        },
+        {
+          "range": "136.226.108.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "41",
+          "longitude": "-87"
+        },
+        {
+          "range": "165.225.56.0/22",
+          "vpn": "chi1-2-vpn.zscloud.net",
+          "gre": "165.225.56.20",
+          "hostname": "chi1-2.sme.zscloud.net",
+          "latitude": "41",
+          "longitude": "-87"
+        },
+        {
+          "range": "165.225.60.0/22",
+          "vpn": "",
+          "gre": "165.225.56.20",
+          "hostname": "",
+          "latitude": "41",
+          "longitude": "-87"
+        },
+        {
+          "range": "136.226.84.0/23",
+          "vpn": "",
+          "gre": "165.225.56.20",
+          "hostname": "",
+          "latitude": "41",
+          "longitude": "-87"
+        },
+        {
+          "range": "137.83.154.0/24",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "41",
+          "longitude": "-87"
+        },
+        {
+          "range": "165.225.2.0/24",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -2954,14 +2770,6 @@
         }
       ],
       "city : Chicago II": [
-        {
-          "range": "170.85.6.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "41.8781136",
-          "longitude": "-87.6297982"
-        },
         {
           "range": "170.85.8.0/23",
           "vpn": "",
@@ -2972,6 +2780,14 @@
         },
         {
           "range": "170.85.10.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "41.8781136",
+          "longitude": "-87.6297982"
+        },
+        {
+          "range": "2605:4300:2a00::/40",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -2995,7 +2811,7 @@
           "longitude": "-87.6297982"
         },
         {
-          "range": "2605:4300:2a00::/40",
+          "range": "170.85.6.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -3005,49 +2821,9 @@
       ],
       "city : Dallas I": [
         {
-          "range": "136.226.106.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "33",
-          "longitude": "-97"
-        },
-        {
-          "range": "2605:4300:1e00::/40",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "33",
-          "longitude": "-97"
-        },
-        {
-          "range": "136.226.108.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "33",
-          "longitude": "-97"
-        },
-        {
-          "range": "136.226.100.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "33",
-          "longitude": "-97"
-        },
-        {
           "range": "136.226.110.0/23",
           "vpn": "",
           "gre": "",
-          "hostname": "",
-          "latitude": "33",
-          "longitude": "-97"
-        },
-        {
-          "range": "165.225.32.0/23",
-          "vpn": "",
-          "gre": "165.225.34.36",
           "hostname": "",
           "latitude": "33",
           "longitude": "-97"
@@ -3069,6 +2845,14 @@
           "longitude": "-97"
         },
         {
+          "range": "2605:4300:1e00::/40",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "33",
+          "longitude": "-97"
+        },
+        {
           "range": "136.226.116.0/23",
           "vpn": "",
           "gre": "",
@@ -3085,6 +2869,14 @@
           "longitude": "-97"
         },
         {
+          "range": "136.226.102.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "33",
+          "longitude": "-97"
+        },
+        {
           "range": "165.225.34.0/23",
           "vpn": "dfw1-vpn.zscloud.net",
           "gre": "165.225.34.36",
@@ -3093,7 +2885,23 @@
           "longitude": "-97"
         },
         {
+          "range": "136.226.100.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "33",
+          "longitude": "-97"
+        },
+        {
           "range": "165.225.36.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "33",
+          "longitude": "-97"
+        },
+        {
+          "range": "136.226.104.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -3109,15 +2917,15 @@
           "longitude": "-97"
         },
         {
-          "range": "136.226.102.0/23",
+          "range": "165.225.32.0/23",
           "vpn": "",
-          "gre": "",
+          "gre": "165.225.34.36",
           "hostname": "",
           "latitude": "33",
           "longitude": "-97"
         },
         {
-          "range": "136.226.104.0/23",
+          "range": "136.226.108.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -3127,15 +2935,7 @@
       ],
       "city : Denver III": [
         {
-          "range": "136.226.114.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "42",
-          "longitude": "-106"
-        },
-        {
-          "range": "136.226.116.0/23",
+          "range": "136.226.126.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -3151,42 +2951,10 @@
           "longitude": "-106"
         },
         {
-          "range": "136.226.106.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "42",
-          "longitude": "-106"
-        },
-        {
-          "range": "136.226.86.0/23",
-          "vpn": "",
-          "gre": "165.225.10.42",
-          "hostname": "",
-          "latitude": "42",
-          "longitude": "-106"
-        },
-        {
-          "range": "136.226.126.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "42",
-          "longitude": "-106"
-        },
-        {
           "range": "136.226.108.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
-          "latitude": "42",
-          "longitude": "-106"
-        },
-        {
-          "range": "165.225.10.0/23",
-          "vpn": "den3-vpn.zscloud.net",
-          "gre": "165.225.10.42",
-          "hostname": "den3.sme.zscloud.net",
           "latitude": "42",
           "longitude": "-106"
         },
@@ -3213,11 +2981,51 @@
           "hostname": "",
           "latitude": "42",
           "longitude": "-106"
+        },
+        {
+          "range": "136.226.114.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "42",
+          "longitude": "-106"
+        },
+        {
+          "range": "136.226.116.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "42",
+          "longitude": "-106"
+        },
+        {
+          "range": "136.226.86.0/23",
+          "vpn": "",
+          "gre": "165.225.10.42",
+          "hostname": "",
+          "latitude": "42",
+          "longitude": "-106"
+        },
+        {
+          "range": "165.225.10.0/23",
+          "vpn": "den3-vpn.zscloud.net",
+          "gre": "165.225.10.42",
+          "hostname": "den3.sme.zscloud.net",
+          "latitude": "42",
+          "longitude": "-106"
         }
       ],
       "city : Los Angeles": [
         {
-          "range": "136.226.64.0/23",
+          "range": "104.129.198.0/23",
+          "vpn": "qla1-vpn.zscloud.net",
+          "gre": "104.129.198.36",
+          "hostname": "qla1.sme.zscloud.net",
+          "latitude": "34",
+          "longitude": "-119"
+        },
+        {
+          "range": "136.226.112.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -3225,7 +3033,23 @@
           "longitude": "-119"
         },
         {
-          "range": "136.226.106.0/23",
+          "range": "136.226.114.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "34",
+          "longitude": "-119"
+        },
+        {
+          "range": "136.226.116.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "34",
+          "longitude": "-119"
+        },
+        {
+          "range": "136.226.64.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -3249,38 +3073,6 @@
           "longitude": "-119"
         },
         {
-          "range": "136.226.110.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "34",
-          "longitude": "-119"
-        },
-        {
-          "range": "136.226.112.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "34",
-          "longitude": "-119"
-        },
-        {
-          "range": "136.226.114.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "34",
-          "longitude": "-119"
-        },
-        {
-          "range": "136.226.116.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "34",
-          "longitude": "-119"
-        },
-        {
           "range": "136.226.66.0/23",
           "vpn": "",
           "gre": "104.129.198.36",
@@ -3289,23 +3081,15 @@
           "longitude": "-119"
         },
         {
-          "range": "104.129.198.0/23",
-          "vpn": "qla1-vpn.zscloud.net",
-          "gre": "104.129.198.36",
-          "hostname": "qla1.sme.zscloud.net",
+          "range": "136.226.110.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
           "latitude": "34",
           "longitude": "-119"
         }
       ],
       "city : Mexico City I": [
-        {
-          "range": "2605:4300:1f00::/40",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "19.4326077",
-          "longitude": "-99.133208"
-        },
         {
           "range": "136.226.0.0/23",
           "vpn": "mex1-vpn.zscloud.net",
@@ -3313,46 +3097,22 @@
           "hostname": "mex1.sme.zscloud.net",
           "latitude": "19.4326077",
           "longitude": "-99.133208"
+        },
+        {
+          "range": "2605:4300:1f00::/40",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "19.4326077",
+          "longitude": "-99.133208"
         }
       ],
       "city : Miami III": [
         {
-          "range": "136.226.112.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "25",
-          "longitude": "-80"
-        },
-        {
-          "range": "136.226.114.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "25",
-          "longitude": "-80"
-        },
-        {
-          "range": "136.226.58.0/23",
-          "vpn": "",
+          "range": "165.225.222.0/23",
+          "vpn": "mia3-vpn.zscloud.net",
           "gre": "165.225.222.42",
-          "hostname": "",
-          "latitude": "25",
-          "longitude": "-80"
-        },
-        {
-          "range": "136.226.116.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "25",
-          "longitude": "-80"
-        },
-        {
-          "range": "2605:4300:2200::/40",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
+          "hostname": "mia3.sme.zscloud.net",
           "latitude": "25",
           "longitude": "-80"
         },
@@ -3373,7 +3133,7 @@
           "longitude": "-80"
         },
         {
-          "range": "136.226.106.0/23",
+          "range": "136.226.108.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -3381,9 +3141,9 @@
           "longitude": "-80"
         },
         {
-          "range": "136.226.108.0/23",
+          "range": "136.226.58.0/23",
           "vpn": "",
-          "gre": "",
+          "gre": "165.225.222.42",
           "hostname": "",
           "latitude": "25",
           "longitude": "-80"
@@ -3397,10 +3157,34 @@
           "longitude": "-80"
         },
         {
-          "range": "165.225.222.0/23",
-          "vpn": "mia3-vpn.zscloud.net",
-          "gre": "165.225.222.42",
-          "hostname": "mia3.sme.zscloud.net",
+          "range": "136.226.112.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "25",
+          "longitude": "-80"
+        },
+        {
+          "range": "2605:4300:2200::/40",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "25",
+          "longitude": "-80"
+        },
+        {
+          "range": "136.226.114.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "25",
+          "longitude": "-80"
+        },
+        {
+          "range": "136.226.116.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
           "latitude": "25",
           "longitude": "-80"
         }
@@ -3425,7 +3209,15 @@
       ],
       "city : New York III": [
         {
-          "range": "136.226.134.0/23",
+          "range": "136.226.114.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "42",
+          "longitude": "-74"
+        },
+        {
+          "range": "136.226.116.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -3465,7 +3257,15 @@
           "longitude": "-74"
         },
         {
-          "range": "136.226.106.0/23",
+          "range": "136.226.134.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "42",
+          "longitude": "-74"
+        },
+        {
+          "range": "2605:4300:2400::/40",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -3489,9 +3289,9 @@
           "longitude": "-74"
         },
         {
-          "range": "2605:4300:2400::/40",
+          "range": "136.226.80.0/23",
           "vpn": "",
-          "gre": "",
+          "gre": "165.225.39.26",
           "hostname": "",
           "latitude": "42",
           "longitude": "-74"
@@ -3500,30 +3300,6 @@
           "range": "136.226.112.0/23",
           "vpn": "",
           "gre": "",
-          "hostname": "",
-          "latitude": "42",
-          "longitude": "-74"
-        },
-        {
-          "range": "136.226.114.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "42",
-          "longitude": "-74"
-        },
-        {
-          "range": "136.226.116.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "42",
-          "longitude": "-74"
-        },
-        {
-          "range": "136.226.80.0/23",
-          "vpn": "",
-          "gre": "165.225.39.26",
           "hostname": "",
           "latitude": "42",
           "longitude": "-74"
@@ -3599,103 +3375,7 @@
       ],
       "city : San Francisco IV": [
         {
-          "range": "136.226.110.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "38",
-          "longitude": "-123"
-        },
-        {
-          "range": "2605:4300:1211::/48",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "38",
-          "longitude": "-123"
-        },
-        {
-          "range": "165.225.242.0/23",
-          "vpn": "sjc4-2-vpn.zscloud.net",
-          "gre": "165.225.242.45",
-          "hostname": "sjc4-2.sme.zscloud.net",
-          "latitude": "38",
-          "longitude": "-123"
-        },
-        {
-          "range": "2605:4300:1212::/48",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "38",
-          "longitude": "-123"
-        },
-        {
-          "range": "136.226.112.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "38",
-          "longitude": "-123"
-        },
-        {
-          "range": "165.225.246.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "38",
-          "longitude": "-123"
-        },
-        {
-          "range": "2605:4300:1214::/48",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "38",
-          "longitude": "-123"
-        },
-        {
-          "range": "136.226.114.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "38",
-          "longitude": "-123"
-        },
-        {
-          "range": "2605:4300:1213::/48",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "38",
-          "longitude": "-123"
-        },
-        {
-          "range": "136.226.116.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "38",
-          "longitude": "-123"
-        },
-        {
-          "range": "104.129.202.0/23",
-          "vpn": "sjc4-vpn.zscloud.net",
-          "gre": "104.129.202.15",
-          "hostname": "sjc4.sme.zscloud.net",
-          "latitude": "38",
-          "longitude": "-123"
-        },
-        {
           "range": "2605:4300:1200::/40",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "38",
-          "longitude": "-123"
-        },
-        {
-          "range": "136.226.106.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -3711,10 +3391,98 @@
           "longitude": "-123"
         },
         {
+          "range": "2605:4300:1211::/48",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "38",
+          "longitude": "-123"
+        },
+        {
           "range": "136.226.108.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
+          "latitude": "38",
+          "longitude": "-123"
+        },
+        {
+          "range": "2605:4300:1212::/48",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "38",
+          "longitude": "-123"
+        },
+        {
+          "range": "165.225.246.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "38",
+          "longitude": "-123"
+        },
+        {
+          "range": "136.226.110.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "38",
+          "longitude": "-123"
+        },
+        {
+          "range": "2605:4300:1214::/48",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "38",
+          "longitude": "-123"
+        },
+        {
+          "range": "136.226.112.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "38",
+          "longitude": "-123"
+        },
+        {
+          "range": "2605:4300:1213::/48",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "38",
+          "longitude": "-123"
+        },
+        {
+          "range": "136.226.114.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "38",
+          "longitude": "-123"
+        },
+        {
+          "range": "104.129.202.0/23",
+          "vpn": "sjc4-vpn.zscloud.net",
+          "gre": "104.129.202.15",
+          "hostname": "sjc4.sme.zscloud.net",
+          "latitude": "38",
+          "longitude": "-123"
+        },
+        {
+          "range": "136.226.116.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "38",
+          "longitude": "-123"
+        },
+        {
+          "range": "165.225.242.0/23",
+          "vpn": "sjc4-2-vpn.zscloud.net",
+          "gre": "165.225.242.45",
+          "hostname": "sjc4-2.sme.zscloud.net",
           "latitude": "38",
           "longitude": "-123"
         }
@@ -3751,6 +3519,22 @@
       ],
       "city : Sao Paulo IV": [
         {
+          "range": "2605:4300:e300::/40",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "-23",
+          "longitude": "-47"
+        },
+        {
+          "range": "136.226.62.0/23",
+          "vpn": "",
+          "gre": "147.161.128.45",
+          "hostname": "",
+          "latitude": "-23",
+          "longitude": "-47"
+        },
+        {
           "range": "136.226.140.0/23",
           "vpn": "",
           "gre": "",
@@ -3773,85 +3557,13 @@
           "hostname": "sao4.sme.zscloud.net",
           "latitude": "-23",
           "longitude": "-47"
-        },
-        {
-          "range": "136.226.62.0/23",
-          "vpn": "",
-          "gre": "147.161.128.45",
-          "hostname": "",
-          "latitude": "-23",
-          "longitude": "-47"
-        },
-        {
-          "range": "2605:4300:e300::/40",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "-23",
-          "longitude": "-47"
         }
       ],
       "city : Seattle": [
         {
-          "range": "2605:4300:2600::/40",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "48",
-          "longitude": "-122"
-        },
-        {
-          "range": "136.226.108.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "48",
-          "longitude": "-122"
-        },
-        {
-          "range": "136.226.110.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "48",
-          "longitude": "-122"
-        },
-        {
-          "range": "136.226.112.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "48",
-          "longitude": "-122"
-        },
-        {
-          "range": "136.226.54.0/23",
-          "vpn": "",
-          "gre": "165.225.50.17",
-          "hostname": "",
-          "latitude": "48",
-          "longitude": "-122"
-        },
-        {
           "range": "136.226.114.0/23",
           "vpn": "",
           "gre": "",
-          "hostname": "",
-          "latitude": "48",
-          "longitude": "-122"
-        },
-        {
-          "range": "136.226.106.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "48",
-          "longitude": "-122"
-        },
-        {
-          "range": "136.226.56.0/23",
-          "vpn": "",
-          "gre": "165.225.50.17",
           "hostname": "",
           "latitude": "48",
           "longitude": "-122"
@@ -3873,7 +3585,55 @@
           "longitude": "-122"
         },
         {
+          "range": "2605:4300:2600::/40",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "48",
+          "longitude": "-122"
+        },
+        {
           "range": "165.225.14.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "48",
+          "longitude": "-122"
+        },
+        {
+          "range": "136.226.54.0/23",
+          "vpn": "",
+          "gre": "165.225.50.17",
+          "hostname": "",
+          "latitude": "48",
+          "longitude": "-122"
+        },
+        {
+          "range": "136.226.56.0/23",
+          "vpn": "",
+          "gre": "165.225.50.17",
+          "hostname": "",
+          "latitude": "48",
+          "longitude": "-122"
+        },
+        {
+          "range": "136.226.108.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "48",
+          "longitude": "-122"
+        },
+        {
+          "range": "136.226.110.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "48",
+          "longitude": "-122"
+        },
+        {
+          "range": "136.226.112.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -3883,17 +3643,9 @@
       ],
       "city : Toronto III": [
         {
-          "range": "136.226.132.0/23",
+          "range": "136.226.76.0/23",
           "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "44",
-          "longitude": "-79"
-        },
-        {
-          "range": "2605:4300:2800::/40",
-          "vpn": "",
-          "gre": "",
+          "gre": "165.225.208.42",
           "hostname": "",
           "latitude": "44",
           "longitude": "-79"
@@ -3907,6 +3659,14 @@
           "longitude": "-79"
         },
         {
+          "range": "2605:4300:2800::/40",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "44",
+          "longitude": "-79"
+        },
+        {
           "range": "136.226.130.0/23",
           "vpn": "",
           "gre": "",
@@ -3915,9 +3675,9 @@
           "longitude": "-79"
         },
         {
-          "range": "136.226.76.0/23",
+          "range": "136.226.132.0/23",
           "vpn": "",
-          "gre": "165.225.208.42",
+          "gre": "",
           "hostname": "",
           "latitude": "44",
           "longitude": "-79"
@@ -3925,23 +3685,31 @@
       ],
       "city : Vancouver I": [
         {
-          "range": "2605:4300:2900::/40",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "49",
-          "longitude": "-123"
-        },
-        {
           "range": "165.225.210.0/23",
           "vpn": "yvr1-vpn.zscloud.net",
           "gre": "165.225.210.42",
           "hostname": "yvr1.sme.zscloud.net",
           "latitude": "49",
           "longitude": "-123"
+        },
+        {
+          "range": "2605:4300:2900::/40",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "49",
+          "longitude": "-123"
         }
       ],
       "city : Washington DC": [
+        {
+          "range": "2605:4300:1416::/48",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "39",
+          "longitude": "-77"
+        },
         {
           "range": "136.226.52.0/23",
           "vpn": "",
@@ -3959,63 +3727,7 @@
           "longitude": "-77"
         },
         {
-          "range": "136.226.116.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "39",
-          "longitude": "-77"
-        },
-        {
-          "range": "2605:4300:1400::/40",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "39",
-          "longitude": "-77"
-        },
-        {
-          "range": "165.225.48.0/24",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "39",
-          "longitude": "-77"
-        },
-        {
-          "range": "2605:4300:1419::/48",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "39",
-          "longitude": "-77"
-        },
-        {
-          "range": "2605:4300:1411::/48",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "39",
-          "longitude": "-77"
-        },
-        {
-          "range": "2605:4300:1412::/48",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "39",
-          "longitude": "-77"
-        },
-        {
           "range": "136.226.106.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "39",
-          "longitude": "-77"
-        },
-        {
-          "range": "2605:4300:1413::/48",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -4031,26 +3743,10 @@
           "longitude": "-77"
         },
         {
-          "range": "2605:4300:1414::/48",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "39",
-          "longitude": "-77"
-        },
-        {
           "range": "104.129.194.0/23",
           "vpn": "was1-vpn.zscloud.net",
           "gre": "104.129.194.36",
           "hostname": "was1.sme.zscloud.net",
-          "latitude": "39",
-          "longitude": "-77"
-        },
-        {
-          "range": "136.226.110.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
           "latitude": "39",
           "longitude": "-77"
         },
@@ -4063,15 +3759,7 @@
           "longitude": "-77"
         },
         {
-          "range": "2605:4300:1415::/48",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "39",
-          "longitude": "-77"
-        },
-        {
-          "range": "136.226.68.0/23",
+          "range": "136.226.110.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -4087,7 +3775,7 @@
           "longitude": "-77"
         },
         {
-          "range": "136.226.112.0/23",
+          "range": "165.225.48.0/24",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -4103,7 +3791,15 @@
           "longitude": "-77"
         },
         {
-          "range": "2605:4300:1416::/48",
+          "range": "2605:4300:1400::/40",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "39",
+          "longitude": "-77"
+        },
+        {
+          "range": "136.226.112.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -4112,6 +3808,70 @@
         },
         {
           "range": "136.226.114.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "39",
+          "longitude": "-77"
+        },
+        {
+          "range": "2605:4300:1411::/48",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "39",
+          "longitude": "-77"
+        },
+        {
+          "range": "136.226.116.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "39",
+          "longitude": "-77"
+        },
+        {
+          "range": "2605:4300:1412::/48",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "39",
+          "longitude": "-77"
+        },
+        {
+          "range": "2605:4300:1413::/48",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "39",
+          "longitude": "-77"
+        },
+        {
+          "range": "2605:4300:1414::/48",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "39",
+          "longitude": "-77"
+        },
+        {
+          "range": "2605:4300:1419::/48",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "39",
+          "longitude": "-77"
+        },
+        {
+          "range": "2605:4300:1415::/48",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "39",
+          "longitude": "-77"
+        },
+        {
+          "range": "136.226.68.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -4179,6 +3939,14 @@
       ],
       "city : Canberra I": [
         {
+          "range": "2400:7aa0:1400::/40",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "-35.2809368",
+          "longitude": "149.1300092"
+        },
+        {
           "range": "147.161.218.0/23",
           "vpn": "cbr1-vpn.zscloud.net",
           "gre": "147.161.218.45",
@@ -4188,14 +3956,6 @@
         },
         {
           "range": "147.161.220.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "-35.2809368",
-          "longitude": "149.1300092"
-        },
-        {
-          "range": "2400:7aa0:1400::/40",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -4215,9 +3975,25 @@
       ],
       "city : Chennai II": [
         {
+          "range": "136.226.252.0/23",
+          "vpn": "",
+          "gre": "165.225.122.42",
+          "hostname": "",
+          "latitude": "13",
+          "longitude": "80"
+        },
+        {
           "range": "136.226.244.0/23",
           "vpn": "",
           "gre": "165.225.122.42",
+          "hostname": "",
+          "latitude": "13",
+          "longitude": "80"
+        },
+        {
+          "range": "2400:7aa0:1700::/40",
+          "vpn": "",
+          "gre": "",
           "hostname": "",
           "latitude": "13",
           "longitude": "80"
@@ -4245,41 +4021,9 @@
           "hostname": "maa2.sme.zscloud.net",
           "latitude": "13",
           "longitude": "80"
-        },
-        {
-          "range": "136.226.252.0/23",
-          "vpn": "",
-          "gre": "165.225.122.42",
-          "hostname": "",
-          "latitude": "13",
-          "longitude": "80"
-        },
-        {
-          "range": "2400:7aa0:1700::/40",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "13",
-          "longitude": "80"
         }
       ],
       "city : Hong Kong III": [
-        {
-          "range": "136.226.228.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "23",
-          "longitude": "115"
-        },
-        {
-          "range": "2400:7aa0:1600::/40",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "23",
-          "longitude": "115"
-        },
         {
           "range": "165.225.116.0/23",
           "vpn": "hkg3-vpn.zscloud.net",
@@ -4303,9 +4047,49 @@
           "hostname": "",
           "latitude": "23",
           "longitude": "115"
+        },
+        {
+          "range": "2400:7aa0:1600::/40",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "23",
+          "longitude": "115"
+        },
+        {
+          "range": "136.226.228.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "23",
+          "longitude": "115"
         }
       ],
       "city : Hyderabad I": [
+        {
+          "range": "167.103.26.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "17.385044",
+          "longitude": "78.486671"
+        },
+        {
+          "range": "2400:7aa0:1f00::/40",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "17.385044",
+          "longitude": "78.486671"
+        },
+        {
+          "range": "167.103.18.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "17.385044",
+          "longitude": "78.486671"
+        },
         {
           "range": "167.103.20.0/23",
           "vpn": "",
@@ -4324,30 +4108,6 @@
         },
         {
           "range": "167.103.24.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "17.385044",
-          "longitude": "78.486671"
-        },
-        {
-          "range": "167.103.26.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "17.385044",
-          "longitude": "78.486671"
-        },
-        {
-          "range": "167.103.18.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "17.385044",
-          "longitude": "78.486671"
-        },
-        {
-          "range": "2400:7aa0:1f00::/40",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -4393,10 +4153,26 @@
       ],
       "city : Mumbai VI": [
         {
+          "range": "136.226.254.0/23",
+          "vpn": "",
+          "gre": "165.225.120.42",
+          "hostname": "",
+          "latitude": "19",
+          "longitude": "72"
+        },
+        {
           "range": "165.225.120.0/23",
           "vpn": "bom6-vpn.zscloud.net",
           "gre": "165.225.120.42",
           "hostname": "bom6.sme.zscloud.net",
+          "latitude": "19",
+          "longitude": "72"
+        },
+        {
+          "range": "2400:7aa0:1300::/40",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
           "latitude": "19",
           "longitude": "72"
         },
@@ -4415,25 +4191,17 @@
           "hostname": "",
           "latitude": "19",
           "longitude": "72"
-        },
-        {
-          "range": "2400:7aa0:1300::/40",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "19",
-          "longitude": "72"
-        },
-        {
-          "range": "136.226.254.0/23",
-          "vpn": "",
-          "gre": "165.225.120.42",
-          "hostname": "",
-          "latitude": "19",
-          "longitude": "72"
         }
       ],
       "city : New Delhi I": [
+        {
+          "range": "2400:7aa0:1500::/40",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "28",
+          "longitude": "77"
+        },
         {
           "range": "165.225.124.0/23",
           "vpn": "del1-vpn.zscloud.net",
@@ -4459,14 +4227,6 @@
           "longitude": "77"
         },
         {
-          "range": "2400:7aa0:1500::/40",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "28",
-          "longitude": "77"
-        },
-        {
           "range": "136.226.250.0/23",
           "vpn": "",
           "gre": "165.225.124.42",
@@ -4478,22 +4238,6 @@
       "city : Osaka I": [
         {
           "range": "167.103.44.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "34",
-          "longitude": "135"
-        },
-        {
-          "range": "2400:7aa0:1900::/40",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "34",
-          "longitude": "135"
-        },
-        {
-          "range": "167.103.46.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -4517,6 +4261,22 @@
           "longitude": "135"
         },
         {
+          "range": "2400:7aa0:1900::/40",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "34",
+          "longitude": "135"
+        },
+        {
+          "range": "167.103.46.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "34",
+          "longitude": "135"
+        },
+        {
           "range": "147.161.196.0/23",
           "vpn": "",
           "gre": "",
@@ -4527,18 +4287,18 @@
       ],
       "city : Seoul I": [
         {
-          "range": "2400:7aa0:1a00::/40",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "38",
-          "longitude": "127"
-        },
-        {
           "range": "165.225.228.0/23",
           "vpn": "sel1-vpn.zscloud.net",
           "gre": "165.225.228.45",
           "hostname": "sel1.sme.zscloud.net",
+          "latitude": "38",
+          "longitude": "127"
+        },
+        {
+          "range": "2400:7aa0:1a00::/40",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
           "latitude": "38",
           "longitude": "127"
         }
@@ -4565,6 +4325,22 @@
       ],
       "city : Singapore IV": [
         {
+          "range": "136.226.236.0/23",
+          "vpn": "",
+          "gre": "165.225.112.26",
+          "hostname": "",
+          "latitude": "2",
+          "longitude": "103"
+        },
+        {
+          "range": "136.226.234.0/23",
+          "vpn": "",
+          "gre": "165.225.112.26",
+          "hostname": "",
+          "latitude": "2",
+          "longitude": "103"
+        },
+        {
           "range": "2400:7aa0:1b00::/40",
           "vpn": "",
           "gre": "",
@@ -4587,41 +4363,9 @@
           "hostname": "",
           "latitude": "2",
           "longitude": "103"
-        },
-        {
-          "range": "136.226.236.0/23",
-          "vpn": "",
-          "gre": "165.225.112.26",
-          "hostname": "",
-          "latitude": "2",
-          "longitude": "103"
-        },
-        {
-          "range": "136.226.234.0/23",
-          "vpn": "",
-          "gre": "165.225.112.26",
-          "hostname": "",
-          "latitude": "2",
-          "longitude": "103"
         }
       ],
       "city : Sydney III": [
-        {
-          "range": "147.161.214.0/23",
-          "vpn": "",
-          "gre": "165.225.114.26",
-          "hostname": "",
-          "latitude": "-33.865143",
-          "longitude": "151.209900"
-        },
-        {
-          "range": "2400:7aa0:1c00::/40",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "-33.865143",
-          "longitude": "151.209900"
-        },
         {
           "range": "165.225.114.0/23",
           "vpn": "syd3-vpn.zscloud.net",
@@ -4637,22 +4381,38 @@
           "hostname": "",
           "latitude": "-33.865143",
           "longitude": "151.209900"
+        },
+        {
+          "range": "147.161.214.0/23",
+          "vpn": "",
+          "gre": "165.225.114.26",
+          "hostname": "",
+          "latitude": "-33.865143",
+          "longitude": "151.209900"
+        },
+        {
+          "range": "2400:7aa0:1c00::/40",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "-33.865143",
+          "longitude": "151.209900"
         }
       ],
       "city : Taipei": [
-        {
-          "range": "165.225.102.0/24",
-          "vpn": "tpe2-vpn.zscloud.net",
-          "gre": "165.225.102.36",
-          "hostname": "tpe2.sme.zscloud.net",
-          "latitude": "25",
-          "longitude": "122"
-        },
         {
           "range": "2400:7aa0:1d00::/40",
           "vpn": "",
           "gre": "",
           "hostname": "",
+          "latitude": "25",
+          "longitude": "122"
+        },
+        {
+          "range": "165.225.102.0/24",
+          "vpn": "tpe2-vpn.zscloud.net",
+          "gre": "165.225.102.36",
+          "hostname": "tpe2.sme.zscloud.net",
           "latitude": "25",
           "longitude": "122"
         },
@@ -4677,22 +4437,6 @@
       ],
       "city : Tokyo IV": [
         {
-          "range": "165.225.110.0/23",
-          "vpn": "tyo4-vpn.zscloud.net",
-          "gre": "165.225.110.26",
-          "hostname": "tyo4.sme.zscloud.net",
-          "latitude": "36",
-          "longitude": "140"
-        },
-        {
-          "range": "165.225.96.0/23",
-          "vpn": "tyo4-2-vpn.zscloud.net",
-          "gre": "165.225.110.26",
-          "hostname": "tyo4-2.sme.zscloud.net",
-          "latitude": "36",
-          "longitude": "140"
-        },
-        {
           "range": "167.103.28.0/23",
           "vpn": "",
           "gre": "",
@@ -4705,6 +4449,22 @@
           "vpn": "",
           "gre": "",
           "hostname": "",
+          "latitude": "36",
+          "longitude": "140"
+        },
+        {
+          "range": "165.225.110.0/23",
+          "vpn": "tyo4-vpn.zscloud.net",
+          "gre": "165.225.110.26",
+          "hostname": "tyo4.sme.zscloud.net",
+          "latitude": "36",
+          "longitude": "140"
+        },
+        {
+          "range": "165.225.96.0/23",
+          "vpn": "tyo4-2-vpn.zscloud.net",
+          "gre": "165.225.110.26",
+          "hostname": "tyo4-2.sme.zscloud.net",
           "latitude": "36",
           "longitude": "140"
         },
@@ -4727,7 +4487,23 @@
       ],
       "city : Tokyo V": [
         {
+          "range": "167.103.8.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "35.6761919",
+          "longitude": "139.6503106"
+        },
+        {
           "range": "167.103.10.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "35.6761919",
+          "longitude": "139.6503106"
+        },
+        {
+          "range": "2400:7aa0:2200::/40",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -4752,22 +4528,6 @@
         },
         {
           "range": "167.103.16.0/23",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "35.6761919",
-          "longitude": "139.6503106"
-        },
-        {
-          "range": "2400:7aa0:2200::/40",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "35.6761919",
-          "longitude": "139.6503106"
-        },
-        {
-          "range": "167.103.8.0/23",
           "vpn": "",
           "gre": "",
           "hostname": "",
