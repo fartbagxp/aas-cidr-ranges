@@ -1,5 +1,5 @@
 {
-  "changeNumber": 273,
+  "changeNumber": 274,
   "cloud": "China",
   "values": [
     {
@@ -7594,7 +7594,7 @@
       "name": "AzureCloud.chinaeast2",
       "id": "AzureCloud.chinaeast2",
       "properties": {
-        "changeNumber": 29,
+        "changeNumber": 30,
         "region": "chinaeast2",
         "regionId": 55,
         "platform": "Azure",
@@ -7646,6 +7646,7 @@
           "2406:e500:2105::/48",
           "2406:e500:4805::/48",
           "2406:e500:4900:4::/62",
+          "2406:e500:4a00::/48",
           "2406:e500:5500::/59"
         ],
         "networkFeatures": [
@@ -7658,7 +7659,7 @@
       "name": "AzureCloud.chinaeast3",
       "id": "AzureCloud.chinaeast3",
       "properties": {
-        "changeNumber": 17,
+        "changeNumber": 18,
         "region": "chinaeast3",
         "regionId": 90,
         "platform": "Azure",
@@ -7690,6 +7691,7 @@
           "2406:e500:2500::/59",
           "2406:e500:2500:20::/63",
           "2406:e500:4900::/62",
+          "2406:e500:4a01::/48",
           "2406:e500:5500:40::/59"
         ],
         "networkFeatures": [
@@ -7783,7 +7785,7 @@
       "name": "AzureCloud.chinanorth2",
       "id": "AzureCloud.chinanorth2",
       "properties": {
-        "changeNumber": 23,
+        "changeNumber": 24,
         "region": "chinanorth2",
         "regionId": 54,
         "platform": "Azure",
@@ -7829,6 +7831,7 @@
           "2406:e500:2005::/48",
           "2406:e500:4801::/48",
           "2406:e500:4900:10::/62",
+          "2406:e500:4a02::/48",
           "2406:e500:5500:20::/59"
         ],
         "networkFeatures": [
@@ -7841,7 +7844,7 @@
       "name": "AzureCloud.chinanorth3",
       "id": "AzureCloud.chinanorth3",
       "properties": {
-        "changeNumber": 34,
+        "changeNumber": 35,
         "region": "chinanorth3",
         "regionId": 89,
         "platform": "Azure",
@@ -7886,6 +7889,7 @@
           "2406:e500:2601::/48",
           "2406:e500:2602::/47",
           "2406:e500:4900:14::/62",
+          "2406:e500:4a03::/48",
           "2406:e500:5500:60::/59"
         ],
         "networkFeatures": [
@@ -7963,7 +7967,7 @@
       "name": "AzureCloud",
       "id": "AzureCloud",
       "properties": {
-        "changeNumber": 77,
+        "changeNumber": 78,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -8230,6 +8234,10 @@
           "2406:e500:4900:c::/62",
           "2406:e500:4900:10::/62",
           "2406:e500:4900:14::/62",
+          "2406:e500:4a00::/48",
+          "2406:e500:4a01::/48",
+          "2406:e500:4a02::/48",
+          "2406:e500:4a03::/48",
           "2406:e500:5500::/59",
           "2406:e500:5500:20::/59",
           "2406:e500:5500:40::/59",
@@ -8244,5 +8252,5 @@
       }
     }
   ],
-  "createDate": "20231002"
+  "createDate": "20231009"
 }

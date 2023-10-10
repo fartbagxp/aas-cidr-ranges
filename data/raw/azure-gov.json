@@ -1,5 +1,5 @@
 {
-  "changeNumber": 274,
+  "changeNumber": 275,
   "cloud": "AzureGovernment",
   "values": [
     {
@@ -8802,7 +8802,7 @@
       "name": "AzureCloud.usdodcentral",
       "id": "AzureCloud.usdodcentral",
       "properties": {
-        "changeNumber": 22,
+        "changeNumber": 23,
         "region": "usdodcentral",
         "regionId": 44,
         "platform": "Azure",
@@ -8844,6 +8844,7 @@
           "2001:489a:2206:8010::/60",
           "2001:489a:2208:4::/64",
           "2001:489a:2208:8010::/60",
+          "2001:489a:2250::/56",
           "2001:489a:3200::/46",
           "2001:489a:3204::/48",
           "2001:489a:3205::/48",
@@ -8859,7 +8860,7 @@
       "name": "AzureCloud.usdodeast",
       "id": "AzureCloud.usdodeast",
       "properties": {
-        "changeNumber": 21,
+        "changeNumber": 22,
         "region": "usdodeast",
         "regionId": 45,
         "platform": "Azure",
@@ -8899,6 +8900,7 @@
           "2001:489a:2206:8000::/60",
           "2001:489a:2208:3::/64",
           "2001:489a:2208:8000::/60",
+          "2001:489a:2251::/56",
           "2001:489a:3300::/46",
           "2001:489a:3304::/48",
           "2001:489a:3305::/48",
@@ -8914,7 +8916,7 @@
       "name": "AzureCloud.usgovarizona",
       "id": "AzureCloud.usgovarizona",
       "properties": {
-        "changeNumber": 41,
+        "changeNumber": 42,
         "region": "usgovarizona",
         "regionId": 39,
         "platform": "Azure",
@@ -8979,6 +8981,7 @@
           "52.245.148.0/23",
           "2001:489a:2206:10::/60",
           "2001:489a:2208::/64",
+          "2001:489a:2240::/56",
           "2001:489a:3500:20::/59",
           "2001:489a:3600::/47",
           "2001:489a:3602::/48",
@@ -9050,7 +9053,7 @@
       "name": "AzureCloud.usgovtexas",
       "id": "AzureCloud.usgovtexas",
       "properties": {
-        "changeNumber": 28,
+        "changeNumber": 29,
         "region": "usgovtexas",
         "regionId": 41,
         "platform": "Azure",
@@ -9106,6 +9109,7 @@
           "52.249.96.0/19",
           "2001:489a:2206::/60",
           "2001:489a:2208:1::/64",
+          "2001:489a:2241::/56",
           "2001:489a:3400::/46",
           "2001:489a:3404::/48",
           "2001:489a:3405::/48",
@@ -9125,7 +9129,7 @@
       "name": "AzureCloud.usgovvirginia",
       "id": "AzureCloud.usgovvirginia",
       "properties": {
-        "changeNumber": 40,
+        "changeNumber": 41,
         "region": "usgovvirginia",
         "regionId": 42,
         "platform": "Azure",
@@ -9204,6 +9208,7 @@
           "52.247.128.0/18",
           "2001:489a:2206:20::/60",
           "2001:489a:2208:2::/64",
+          "2001:489a:2242::/56",
           "2001:489a:3100::/46",
           "2001:489a:3108::/48",
           "2001:489a:3109::/48",
@@ -9221,7 +9226,7 @@
       "name": "AzureCloud",
       "id": "AzureCloud",
       "properties": {
-        "changeNumber": 76,
+        "changeNumber": 77,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -9507,6 +9512,14 @@
           "2001:489a:2208:4::/64",
           "2001:489a:2208:8000::/60",
           "2001:489a:2208:8010::/60",
+          "2001:489a:2240::/56",
+          "2001:489a:2241::/56",
+          "2001:489a:2242::/56",
+          "2001:489a:2243::/56",
+          "2001:489a:2250::/56",
+          "2001:489a:2251::/56",
+          "2001:489a:2252::/56",
+          "2001:489a:2253::/56",
           "2001:489a:3000::/46",
           "2001:489a:3100::/46",
           "2001:489a:3108::/48",
@@ -9554,5 +9567,5 @@
       }
     }
   ],
-  "createDate": "20231002"
+  "createDate": "20231009"
 }
