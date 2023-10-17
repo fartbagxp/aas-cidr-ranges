@@ -1,6 +1,6 @@
 {
-  "creationDate": "2023-09-21T05:27:36.411132",
-  "syncToken": 1695274056,
+  "creationDate": "2023-10-17T10:02:53.509381",
+  "syncToken": 1697536973,
   "items": [
     {
       "network": "3.26.128.128",
@@ -22,7 +22,8 @@
       "direction": [
         "ingress",
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "3.69.198.0",
@@ -44,7 +45,8 @@
       "direction": [
         "ingress",
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "3.101.177.128",
@@ -66,7 +68,8 @@
       "direction": [
         "ingress",
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "3.251.213.64",
@@ -88,7 +91,8 @@
       "direction": [
         "ingress",
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "13.52.5.0",
@@ -110,7 +114,8 @@
       "direction": [
         "ingress",
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "13.52.5.96",
@@ -123,7 +128,6 @@
       "product": [
         "bitbucket",
         "confluence",
-        "github-for-jira",
         "halp",
         "jira",
         "opsgenie",
@@ -132,7 +136,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "13.200.41.128",
@@ -154,7 +159,8 @@
       "direction": [
         "ingress",
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "13.200.41.224",
@@ -175,7 +181,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "13.214.1.0",
@@ -197,7 +204,8 @@
       "direction": [
         "ingress",
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "13.236.8.128",
@@ -219,7 +227,8 @@
       "direction": [
         "ingress",
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "13.236.8.224",
@@ -240,7 +249,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "15.229.145.128",
@@ -262,7 +272,8 @@
       "direction": [
         "ingress",
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "15.229.145.224",
@@ -283,7 +294,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "16.63.53.128",
@@ -305,7 +317,8 @@
       "direction": [
         "ingress",
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "16.63.53.224",
@@ -326,7 +339,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "18.136.214.0",
@@ -348,7 +362,8 @@
       "direction": [
         "ingress",
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "18.136.214.96",
@@ -369,7 +384,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "18.184.99.128",
@@ -391,7 +407,8 @@
       "direction": [
         "egress",
         "ingress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "18.184.99.224",
@@ -412,7 +429,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "18.205.93.0",
@@ -427,7 +445,8 @@
       ],
       "direction": [
         "ingress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "18.234.32.128",
@@ -449,7 +468,8 @@
       "direction": [
         "ingress",
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "18.234.32.224",
@@ -470,7 +490,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "18.246.31.128",
@@ -492,7 +513,8 @@
       "direction": [
         "ingress",
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "18.246.31.224",
@@ -513,7 +535,45 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
+    },
+    {
+      "network": "18.246.188.0",
+      "mask_len": 25,
+      "cidr": "18.246.188.0/25",
+      "mask": "255.255.255.128",
+      "region": [
+        "us-west-2"
+      ],
+      "product": [
+        "confluence",
+        "jira",
+        "opsgenie"
+      ],
+      "direction": [
+        "ingress",
+        "egress"
+      ],
+      "perimeter": "fedramp-moderate"
+    },
+    {
+      "network": "18.246.188.32",
+      "mask_len": 28,
+      "cidr": "18.246.188.32/28",
+      "mask": "255.255.255.240",
+      "region": [
+        "us-west-2"
+      ],
+      "product": [
+        "confluence",
+        "jira",
+        "opsgenie"
+      ],
+      "direction": [
+        "egress"
+      ],
+      "perimeter": "fedramp-moderate"
     },
     {
       "network": "34.218.156.209",
@@ -528,7 +588,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "34.218.168.212",
@@ -543,7 +604,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "35.84.197.128",
@@ -565,7 +627,8 @@
       "direction": [
         "ingress",
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "43.202.69.0",
@@ -587,7 +650,8 @@
       "direction": [
         "ingress",
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "43.202.69.96",
@@ -608,7 +672,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "44.197.146.192",
@@ -630,7 +695,45 @@
       "direction": [
         "egress",
         "ingress"
-      ]
+      ],
+      "perimeter": "commercial"
+    },
+    {
+      "network": "44.220.40.128",
+      "mask_len": 25,
+      "cidr": "44.220.40.128/25",
+      "mask": "255.255.255.128",
+      "region": [
+        "us-east-1"
+      ],
+      "product": [
+        "confluence",
+        "jira",
+        "opsgenie"
+      ],
+      "direction": [
+        "ingress",
+        "egress"
+      ],
+      "perimeter": "fedramp-moderate"
+    },
+    {
+      "network": "44.220.40.160",
+      "mask_len": 28,
+      "cidr": "44.220.40.160/28",
+      "mask": "255.255.255.240",
+      "region": [
+        "us-east-1"
+      ],
+      "product": [
+        "confluence",
+        "jira",
+        "opsgenie"
+      ],
+      "direction": [
+        "egress"
+      ],
+      "perimeter": "fedramp-moderate"
     },
     {
       "network": "52.41.219.63",
@@ -645,7 +748,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "52.215.192.128",
@@ -667,7 +771,8 @@
       "direction": [
         "egress",
         "ingress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "52.215.192.224",
@@ -688,7 +793,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "104.192.136.0",
@@ -710,7 +816,8 @@
       "direction": [
         "ingress",
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "104.192.136.0",
@@ -732,7 +839,8 @@
       "direction": [
         "ingress",
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "104.192.136.240",
@@ -753,7 +861,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "104.192.137.0",
@@ -775,7 +884,8 @@
       "direction": [
         "egress",
         "ingress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "104.192.137.240",
@@ -796,7 +906,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "104.192.138.0",
@@ -818,7 +929,8 @@
       "direction": [
         "egress",
         "ingress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "104.192.138.240",
@@ -840,7 +952,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "104.192.140.0",
@@ -862,7 +975,8 @@
       "direction": [
         "egress",
         "ingress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "104.192.140.240",
@@ -883,7 +997,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "104.192.142.0",
@@ -905,7 +1020,8 @@
       "direction": [
         "egress",
         "ingress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "104.192.142.240",
@@ -926,7 +1042,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "104.192.143.0",
@@ -948,7 +1065,8 @@
       "direction": [
         "egress",
         "ingress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "104.192.143.240",
@@ -969,7 +1087,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "185.166.140.0",
@@ -994,7 +1113,8 @@
       "direction": [
         "ingress",
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "185.166.140.0",
@@ -1016,7 +1136,8 @@
       "direction": [
         "ingress",
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "185.166.140.112",
@@ -1037,7 +1158,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "185.166.141.0",
@@ -1059,7 +1181,8 @@
       "direction": [
         "ingress",
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "185.166.141.112",
@@ -1080,7 +1203,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "185.166.142.0",
@@ -1102,7 +1226,8 @@
       "direction": [
         "egress",
         "ingress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "185.166.142.240",
@@ -1123,7 +1248,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "185.166.143.0",
@@ -1145,7 +1271,8 @@
       "direction": [
         "egress",
         "ingress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "185.166.143.240",
@@ -1166,7 +1293,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "2401:1d80:3000::",
@@ -1202,7 +1330,8 @@
       "direction": [
         "ingress",
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "2401:1d80:3200::",
@@ -1223,7 +1352,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "2401:1d80:3200:2::",
@@ -1244,7 +1374,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "2401:1d80:3200:5::",
@@ -1265,7 +1396,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "2401:1d80:3204:3::",
@@ -1286,7 +1418,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "2401:1d80:3204:4::",
@@ -1307,7 +1440,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "2401:1d80:3204:5::",
@@ -1328,7 +1462,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "2401:1d80:3208:3::",
@@ -1349,7 +1484,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "2401:1d80:3208:4::",
@@ -1370,7 +1506,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "2401:1d80:3208:5::",
@@ -1391,7 +1528,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "2401:1d80:320c::",
@@ -1412,7 +1550,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "2401:1d80:320c:1::",
@@ -1433,7 +1572,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "2401:1d80:320c:2::",
@@ -1454,7 +1594,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "2401:1d80:3210:3::",
@@ -1475,7 +1616,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "2401:1d80:3210:4::",
@@ -1496,7 +1638,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "2401:1d80:3210:5::",
@@ -1517,7 +1660,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "2401:1d80:3214:3::",
@@ -1538,7 +1682,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "2401:1d80:3214:4::",
@@ -1559,7 +1704,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "2401:1d80:3214:5::",
@@ -1580,7 +1726,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "2401:1d80:3218::",
@@ -1601,7 +1748,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "2401:1d80:3218:2::",
@@ -1622,7 +1770,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "2401:1d80:3218:5::",
@@ -1643,7 +1792,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "2401:1d80:321c:3::",
@@ -1664,7 +1814,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "2401:1d80:321c:4::",
@@ -1685,7 +1836,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "2401:1d80:321c:5::",
@@ -1706,7 +1858,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "2401:1d80:3220:2::",
@@ -1719,7 +1872,6 @@
       "product": [
         "bitbucket",
         "confluence",
-        "github-for-jira",
         "halp",
         "jira",
         "opsgenie",
@@ -1728,7 +1880,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "2401:1d80:3220:3::",
@@ -1741,7 +1894,6 @@
       "product": [
         "bitbucket",
         "confluence",
-        "github-for-jira",
         "halp",
         "jira",
         "opsgenie",
@@ -1750,7 +1902,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "2401:1d80:3224:3::",
@@ -1771,7 +1924,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "2401:1d80:3224:4::",
@@ -1792,7 +1946,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "2401:1d80:3224:5::",
@@ -1813,7 +1968,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "2401:1d80:3228::",
@@ -1834,7 +1990,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "2401:1d80:3228:1::",
@@ -1855,7 +2012,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "2401:1d80:3228:4::",
@@ -1876,7 +2034,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "2401:1d80:322c::",
@@ -1897,7 +2056,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "2401:1d80:322c:1::",
@@ -1918,7 +2078,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "2401:1d80:322c:4::",
@@ -1939,7 +2100,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "2401:1d80:3230::",
@@ -1960,7 +2122,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "2401:1d80:3230:2::",
@@ -1981,7 +2144,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "2401:1d80:3230:4::",
@@ -2002,7 +2166,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "2401:1d80:3234:3::",
@@ -2023,7 +2188,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "2401:1d80:3234:4::",
@@ -2044,7 +2210,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "2401:1d80:3234:5::",
@@ -2065,7 +2232,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "2406:da18:809:e00::",
@@ -2087,7 +2255,8 @@
       "direction": [
         "ingress",
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "2406:da18:809:e04::",
@@ -2108,7 +2277,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "2406:da18:809:e05::",
@@ -2129,7 +2299,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "2406:da18:809:e06::",
@@ -2150,7 +2321,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "2406:da1c:1e0:a200::",
@@ -2172,7 +2344,8 @@
       "direction": [
         "ingress",
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "2406:da1c:1e0:a204::",
@@ -2193,7 +2366,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "2406:da1c:1e0:a205::",
@@ -2214,7 +2388,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "2406:da1c:1e0:a206::",
@@ -2235,7 +2410,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "2600:1f14:824:300::",
@@ -2257,7 +2433,8 @@
       "direction": [
         "ingress",
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "2600:1f14:824:304::",
@@ -2278,7 +2455,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "2600:1f14:824:305::",
@@ -2299,7 +2477,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "2600:1f14:824:306::",
@@ -2320,7 +2499,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "2600:1f18:2146:e300::",
@@ -2342,7 +2522,8 @@
       "direction": [
         "ingress",
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "2600:1f18:2146:e304::",
@@ -2363,7 +2544,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "2600:1f18:2146:e305::",
@@ -2384,7 +2566,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "2600:1f18:2146:e306::",
@@ -2405,7 +2588,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "2600:1f1c:cc5:2300::",
@@ -2427,7 +2611,8 @@
       "direction": [
         "ingress",
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "2600:1f1c:cc5:2304::",
@@ -2449,7 +2634,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "2600:1f1c:cc5:2305::",
@@ -2471,7 +2657,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "2a05:d014:f99:dd00::",
@@ -2493,7 +2680,8 @@
       "direction": [
         "ingress",
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "2a05:d014:f99:dd04::",
@@ -2514,7 +2702,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "2a05:d014:f99:dd05::",
@@ -2535,7 +2724,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "2a05:d014:f99:dd06::",
@@ -2556,7 +2746,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "2a05:d018:34d:5800::",
@@ -2578,7 +2769,8 @@
       "direction": [
         "ingress",
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "2a05:d018:34d:5804::",
@@ -2599,7 +2791,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "2a05:d018:34d:5805::",
@@ -2620,7 +2813,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "2a05:d018:34d:5806::",
@@ -2641,7 +2835,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "3.216.235.48",
@@ -2656,7 +2851,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "34.231.96.243",
@@ -2671,7 +2867,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "44.199.3.254",
@@ -2686,7 +2883,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "174.129.205.191",
@@ -2701,7 +2899,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "44.199.127.226",
@@ -2716,7 +2915,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "44.199.45.64",
@@ -2731,7 +2931,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "3.221.151.112",
@@ -2746,7 +2947,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "52.205.184.192",
@@ -2761,7 +2963,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "52.72.137.240",
@@ -2776,7 +2979,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "34.232.119.183",
@@ -2791,7 +2995,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "35.155.178.254",
@@ -2806,7 +3011,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "34.216.18.129",
@@ -2821,7 +3027,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "35.171.175.212",
@@ -2836,7 +3043,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "35.160.177.10",
@@ -2851,7 +3059,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "34.199.54.113",
@@ -2866,7 +3075,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "52.204.96.37",
@@ -2881,7 +3091,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "34.232.25.90",
@@ -2896,7 +3107,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "52.202.195.162",
@@ -2911,7 +3123,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "52.54.90.98",
@@ -2926,7 +3139,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "52.203.14.55",
@@ -2941,7 +3155,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "34.236.25.177",
@@ -2956,7 +3171,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "18.236.52.165",
@@ -2971,7 +3187,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "34.215.254.205",
@@ -2986,7 +3203,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "35.160.6.102",
@@ -3001,7 +3219,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "52.43.192.52",
@@ -3016,7 +3235,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "52.89.100.78",
@@ -3031,7 +3251,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "54.190.195.254",
@@ -3046,7 +3267,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "54.214.155.219",
@@ -3061,7 +3283,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     },
     {
       "network": "54.218.196.28",
@@ -3076,7 +3299,8 @@
       ],
       "direction": [
         "egress"
-      ]
+      ],
+      "perimeter": "commercial"
     }
   ]
 }
