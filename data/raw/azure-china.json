@@ -1,5 +1,5 @@
 {
-  "changeNumber": 275,
+  "changeNumber": 276,
   "cloud": "China",
   "values": [
     {
@@ -1089,7 +1089,7 @@
       "name": "AzureKeyVault",
       "id": "AzureKeyVault",
       "properties": {
-        "changeNumber": 10,
+        "changeNumber": 11,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -1122,12 +1122,23 @@
           "159.27.202.76/30",
           "159.27.241.192/29",
           "163.228.57.128/29",
+          "2404:7940:1:1::88/125",
+          "2404:7940:1:1::5e0/126",
           "2404:7940:1:402::80/125",
+          "2404:7940:101:2::388/125",
+          "2404:7940:101:2::390/126",
           "2404:7940:101:402::880/125",
+          "2404:7940:201:1::88/125",
+          "2404:7940:201:1::5e0/126",
           "2404:7940:201:402::80/125",
+          "2404:7940:301:2::2b0/125",
+          "2404:7940:301:2::2b8/126",
           "2404:7940:301:402::80/125",
           "2406:e500:2402:1::530/125",
-          "2406:e500:2602:1::530/125"
+          "2406:e500:2402:3::b8/126",
+          "2406:e500:2602:1::530/125",
+          "2406:e500:2602:3::b8/125",
+          "2406:e500:2602:3::1c0/126"
         ],
         "networkFeatures": [
           "API",
@@ -4859,7 +4870,7 @@
       "name": "AzureKeyVault.ChinaEast",
       "id": "AzureKeyVault.ChinaEast",
       "properties": {
-        "changeNumber": 5,
+        "changeNumber": 6,
         "region": "chinaeast",
         "regionId": 13,
         "platform": "Azure",
@@ -4870,6 +4881,8 @@
           "52.130.15.132/30",
           "52.130.15.144/29",
           "52.130.112.148/30",
+          "2404:7940:201:1::88/125",
+          "2404:7940:201:1::5e0/126",
           "2404:7940:201:402::80/125"
         ],
         "networkFeatures": [
@@ -4882,7 +4895,7 @@
       "name": "AzureKeyVault.ChinaEast2",
       "id": "AzureKeyVault.ChinaEast2",
       "properties": {
-        "changeNumber": 4,
+        "changeNumber": 5,
         "region": "chinaeast2",
         "regionId": 55,
         "platform": "Azure",
@@ -4893,6 +4906,8 @@
           "52.130.120.164/30",
           "52.131.192.64/29",
           "52.131.192.72/30",
+          "2404:7940:301:2::2b0/125",
+          "2404:7940:301:2::2b8/126",
           "2404:7940:301:402::80/125"
         ],
         "networkFeatures": [
@@ -4905,7 +4920,7 @@
       "name": "AzureKeyVault.ChinaEast3",
       "id": "AzureKeyVault.ChinaEast3",
       "properties": {
-        "changeNumber": 3,
+        "changeNumber": 4,
         "region": "chinaeast3",
         "regionId": 90,
         "platform": "Azure",
@@ -4914,7 +4929,8 @@
           "52.131.149.112/30",
           "52.131.154.76/30",
           "163.228.57.128/29",
-          "2406:e500:2402:1::530/125"
+          "2406:e500:2402:1::530/125",
+          "2406:e500:2402:3::b8/126"
         ],
         "networkFeatures": [
           "API",
@@ -4926,7 +4942,7 @@
       "name": "AzureKeyVault.ChinaNorth",
       "id": "AzureKeyVault.ChinaNorth",
       "properties": {
-        "changeNumber": 4,
+        "changeNumber": 5,
         "region": "chinanorth",
         "regionId": 14,
         "platform": "Azure",
@@ -4937,6 +4953,8 @@
           "52.130.128.132/30",
           "139.217.25.120/32",
           "139.217.25.189/32",
+          "2404:7940:1:1::88/125",
+          "2404:7940:1:1::5e0/126",
           "2404:7940:1:402::80/125"
         ],
         "networkFeatures": [
@@ -4949,7 +4967,7 @@
       "name": "AzureKeyVault.ChinaNorth2",
       "id": "AzureKeyVault.ChinaNorth2",
       "properties": {
-        "changeNumber": 4,
+        "changeNumber": 5,
         "region": "chinanorth2",
         "regionId": 54,
         "platform": "Azure",
@@ -4959,6 +4977,8 @@
           "52.130.21.236/30",
           "52.130.23.120/29",
           "52.130.40.84/30",
+          "2404:7940:101:2::388/125",
+          "2404:7940:101:2::390/126",
           "2404:7940:101:402::880/125"
         ],
         "networkFeatures": [
@@ -4971,7 +4991,7 @@
       "name": "AzureKeyVault.ChinaNorth3",
       "id": "AzureKeyVault.ChinaNorth3",
       "properties": {
-        "changeNumber": 5,
+        "changeNumber": 6,
         "region": "chinanorth3",
         "regionId": 89,
         "platform": "Azure",
@@ -4982,7 +5002,9 @@
           "159.27.194.76/30",
           "159.27.202.76/30",
           "159.27.241.192/29",
-          "2406:e500:2602:1::530/125"
+          "2406:e500:2602:1::530/125",
+          "2406:e500:2602:3::b8/125",
+          "2406:e500:2602:3::1c0/126"
         ],
         "networkFeatures": [
           "API",
@@ -8306,5 +8328,5 @@
       }
     }
   ],
-  "createDate": "20231016"
+  "createDate": "20231023"
 }
