@@ -1,5 +1,5 @@
 {
-  "changeNumber": 279,
+  "changeNumber": 280,
   "cloud": "AzureGovernment",
   "values": [
     {
@@ -3033,12 +3033,13 @@
       "name": "PowerPlatformPlex",
       "id": "PowerPlatformPlex",
       "properties": {
-        "changeNumber": 4,
+        "changeNumber": 5,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
         "systemService": "PowerPlatformPlex",
         "addressPrefixes": [
+          "20.140.104.24/29",
           "20.140.147.220/30",
           "20.140.151.48/30",
           "20.140.151.116/30",
@@ -3050,12 +3051,18 @@
           "20.141.164.96/29",
           "20.141.167.192/29",
           "20.158.11.32/28",
+          "20.159.4.248/29",
+          "20.159.5.32/28",
+          "20.159.5.48/29",
           "52.227.253.160/28",
           "52.235.253.224/29",
           "52.243.163.224/28",
           "52.243.240.112/29",
           "52.243.243.24/29",
+          "52.243.247.208/28",
+          "52.243.247.224/28",
           "52.245.154.200/29",
+          "52.245.156.176/29",
           "52.245.181.48/28"
         ],
         "networkFeatures": [
@@ -7843,13 +7850,14 @@
       "name": "PowerPlatformPlex.USDoDCentral",
       "id": "PowerPlatformPlex.USDoDCentral",
       "properties": {
-        "changeNumber": 1,
+        "changeNumber": 2,
         "region": "usdodcentral",
         "regionId": 44,
         "platform": "Azure",
         "systemService": "PowerPlatformPlex",
         "addressPrefixes": [
-          "52.245.154.200/29"
+          "52.245.154.200/29",
+          "52.245.156.176/29"
         ],
         "networkFeatures": [
           "API",
@@ -7861,12 +7869,13 @@
       "name": "PowerPlatformPlex.USDoDEast",
       "id": "PowerPlatformPlex.USDoDEast",
       "properties": {
-        "changeNumber": 1,
+        "changeNumber": 2,
         "region": "usdodeast",
         "regionId": 45,
         "platform": "Azure",
         "systemService": "PowerPlatformPlex",
         "addressPrefixes": [
+          "20.140.104.24/29",
           "20.141.18.124/30",
           "20.141.19.44/30"
         ],
@@ -7880,7 +7889,7 @@
       "name": "PowerPlatformPlex.USGovTexas",
       "id": "PowerPlatformPlex.USGovTexas",
       "properties": {
-        "changeNumber": 4,
+        "changeNumber": 5,
         "region": "usgovtexas",
         "regionId": 41,
         "platform": "Azure",
@@ -7893,6 +7902,8 @@
           "52.243.163.224/28",
           "52.243.240.112/29",
           "52.243.243.24/29",
+          "52.243.247.208/28",
+          "52.243.247.224/28",
           "52.245.181.48/28"
         ],
         "networkFeatures": [
@@ -7905,7 +7916,7 @@
       "name": "PowerPlatformPlex.USGovVirginia",
       "id": "PowerPlatformPlex.USGovVirginia",
       "properties": {
-        "changeNumber": 4,
+        "changeNumber": 5,
         "region": "usgovvirginia",
         "regionId": 42,
         "platform": "Azure",
@@ -7916,6 +7927,9 @@
           "20.141.164.96/29",
           "20.141.167.192/29",
           "20.158.11.32/28",
+          "20.159.4.248/29",
+          "20.159.5.32/28",
+          "20.159.5.48/29",
           "52.227.253.160/28",
           "52.235.253.224/29"
         ],
@@ -9647,5 +9661,5 @@
       }
     }
   ],
-  "createDate": "20231106"
+  "createDate": "20231113"
 }
