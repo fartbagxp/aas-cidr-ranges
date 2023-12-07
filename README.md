@@ -14,10 +14,10 @@ The goal of this project is to be able to quickly determine what Software-as-a-S
 
 For coding and running locally, the following is required:
 
-- [Python 3.8+](https://www.python.org/downloads/)
+- [Python 3.11+](https://www.python.org/downloads/)
   For deployment:
 
-- [Node 14+](https://nodejs.org/en/)
+- [Node 20+](https://nodejs.org/en/)
 
 ## How to run locally
 
