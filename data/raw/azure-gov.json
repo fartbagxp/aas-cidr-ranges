@@ -1,5 +1,5 @@
 {
-  "changeNumber": 283,
+  "changeNumber": 284,
   "cloud": "AzureGovernment",
   "values": [
     {
@@ -1822,15 +1822,30 @@
       "name": "AzureSentinel",
       "id": "AzureSentinel",
       "properties": {
-        "changeNumber": 1,
+        "changeNumber": 2,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
         "systemService": "AzureSentinel",
         "addressPrefixes": [
+          "20.140.104.52/30",
+          "20.140.104.56/29",
+          "20.140.104.64/28",
           "20.141.12.46/31",
+          "20.141.15.106/31",
+          "20.141.15.108/30",
           "20.141.161.228/31",
           "20.141.164.144/30",
+          "20.158.172.32/28",
+          "20.159.5.56/30",
+          "20.159.5.60/31",
+          "20.159.5.80/28",
+          "20.159.104.4/30",
+          "20.159.104.8/29",
+          "20.159.104.16/28",
+          "52.126.248.148/30",
+          "52.126.248.152/29",
+          "52.126.248.160/28",
           "52.244.75.232/32",
           "52.244.79.71/32",
           "52.244.233.96/30",
@@ -3147,7 +3162,7 @@
       "name": "SCCservice",
       "id": "SCCservice",
       "properties": {
-        "changeNumber": 3,
+        "changeNumber": 4,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -3183,7 +3198,7 @@
           "52.244.205.111/32",
           "52.245.128.40/29",
           "195.134.252.0/24",
-          "2001:489a:2209::/49"
+          "2001:489a:2209::/48"
         ],
         "networkFeatures": [
           "API",
@@ -3421,7 +3436,7 @@
       "name": "WindowsVirtualDesktop",
       "id": "WindowsVirtualDesktop",
       "properties": {
-        "changeNumber": 2,
+        "changeNumber": 3,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -3438,7 +3453,8 @@
           "52.244.204.215/32",
           "52.244.204.243/32",
           "52.247.128.136/32",
-          "52.247.175.34/32"
+          "52.247.175.34/32",
+          "2001:489a:2104::/48"
         ],
         "networkFeatures": [
           "API",
@@ -8421,10 +8437,40 @@
       }
     },
     {
+      "name": "WindowsVirtualDesktop.USDoDCentral",
+      "id": "WindowsVirtualDesktop.USDoDCentral",
+      "properties": {
+        "changeNumber": 1,
+        "region": "usdodcentral",
+        "regionId": 44,
+        "platform": "Azure",
+        "systemService": "WindowsVirtualDesktop",
+        "addressPrefixes": [
+          "2001:489a:2104::/117"
+        ],
+        "networkFeatures": null
+      }
+    },
+    {
+      "name": "WindowsVirtualDesktop.USDoDEast",
+      "id": "WindowsVirtualDesktop.USDoDEast",
+      "properties": {
+        "changeNumber": 1,
+        "region": "usdodeast",
+        "regionId": 45,
+        "platform": "Azure",
+        "systemService": "WindowsVirtualDesktop",
+        "addressPrefixes": [
+          "2001:489a:2104:1::/117"
+        ],
+        "networkFeatures": null
+      }
+    },
+    {
       "name": "WindowsVirtualDesktop.USGovArizona",
       "id": "WindowsVirtualDesktop.USGovArizona",
       "properties": {
-        "changeNumber": 1,
+        "changeNumber": 2,
         "region": "usgovarizona",
         "regionId": 39,
         "platform": "Azure",
@@ -8435,7 +8481,38 @@
           "52.244.202.131/32",
           "52.244.202.228/32",
           "52.244.204.215/32",
-          "52.244.204.243/32"
+          "52.244.204.243/32",
+          "2001:489a:2104:2::/117"
+        ],
+        "networkFeatures": null
+      }
+    },
+    {
+      "name": "WindowsVirtualDesktop.USGovIowa",
+      "id": "WindowsVirtualDesktop.USGovIowa",
+      "properties": {
+        "changeNumber": 1,
+        "region": "usgoviowa",
+        "regionId": 40,
+        "platform": "Azure",
+        "systemService": "WindowsVirtualDesktop",
+        "addressPrefixes": [
+          "2001:489a:2104:3::/117"
+        ],
+        "networkFeatures": null
+      }
+    },
+    {
+      "name": "WindowsVirtualDesktop.USGovTexas",
+      "id": "WindowsVirtualDesktop.USGovTexas",
+      "properties": {
+        "changeNumber": 1,
+        "region": "usgovtexas",
+        "regionId": 41,
+        "platform": "Azure",
+        "systemService": "WindowsVirtualDesktop",
+        "addressPrefixes": [
+          "2001:489a:2104:4::/117"
         ],
         "networkFeatures": null
       }
@@ -8444,7 +8521,7 @@
       "name": "WindowsVirtualDesktop.USGovVirginia",
       "id": "WindowsVirtualDesktop.USGovVirginia",
       "properties": {
-        "changeNumber": 1,
+        "changeNumber": 2,
         "region": "usgovvirginia",
         "regionId": 42,
         "platform": "Azure",
@@ -8455,7 +8532,8 @@
           "52.227.171.125/32",
           "52.227.173.251/32",
           "52.247.128.136/32",
-          "52.247.175.34/32"
+          "52.247.175.34/32",
+          "2001:489a:2104:5::/117"
         ],
         "networkFeatures": null
       }
@@ -8910,7 +8988,7 @@
       "name": "AzureCloud.usdodcentral",
       "id": "AzureCloud.usdodcentral",
       "properties": {
-        "changeNumber": 25,
+        "changeNumber": 26,
         "region": "usdodcentral",
         "regionId": 44,
         "platform": "Azure",
@@ -8951,6 +9029,7 @@
           "104.210.20.0/22",
           "2001:489a:2102:1800::/58",
           "2001:489a:2102:3800::/58",
+          "2001:489a:2104::/64",
           "2001:489a:2206:8010::/60",
           "2001:489a:2208:4::/64",
           "2001:489a:2208:8010::/60",
@@ -8972,7 +9051,7 @@
       "name": "AzureCloud.usdodeast",
       "id": "AzureCloud.usdodeast",
       "properties": {
-        "changeNumber": 24,
+        "changeNumber": 25,
         "region": "usdodeast",
         "regionId": 45,
         "platform": "Azure",
@@ -9011,6 +9090,7 @@
           "104.210.16.0/22",
           "2001:489a:2102:1880::/58",
           "2001:489a:2102:3880::/58",
+          "2001:489a:2104:1::/64",
           "2001:489a:2206:8000::/60",
           "2001:489a:2208:3::/64",
           "2001:489a:2208:8000::/60",
@@ -9032,7 +9112,7 @@
       "name": "AzureCloud.usgovarizona",
       "id": "AzureCloud.usgovarizona",
       "properties": {
-        "changeNumber": 44,
+        "changeNumber": 45,
         "region": "usgovarizona",
         "regionId": 39,
         "platform": "Azure",
@@ -9096,6 +9176,7 @@
           "52.245.6.0/24",
           "52.245.144.0/27",
           "52.245.148.0/23",
+          "2001:489a:2104:2::/64",
           "2001:489a:2206:10::/60",
           "2001:489a:2208::/64",
           "2001:489a:2240::/56",
@@ -9127,7 +9208,7 @@
       "name": "AzureCloud.usgoviowa",
       "id": "AzureCloud.usgoviowa",
       "properties": {
-        "changeNumber": 16,
+        "changeNumber": 17,
         "region": "usgoviowa",
         "regionId": 40,
         "platform": "Azure",
@@ -9160,6 +9241,7 @@
           "52.127.176.0/20",
           "52.127.252.0/22",
           "52.243.0.0/19",
+          "2001:489a:2104:3::/64",
           "2001:489a:2206:30::/60",
           "2001:489a:3000::/46"
         ],
@@ -9173,7 +9255,7 @@
       "name": "AzureCloud.usgovtexas",
       "id": "AzureCloud.usgovtexas",
       "properties": {
-        "changeNumber": 32,
+        "changeNumber": 33,
         "region": "usgovtexas",
         "regionId": 41,
         "platform": "Azure",
@@ -9233,6 +9315,7 @@
           "2001:489a:2102:1400::/58",
           "2001:489a:2102:3000::/58",
           "2001:489a:2102:3400::/58",
+          "2001:489a:2104:4::/64",
           "2001:489a:2206::/60",
           "2001:489a:2208:1::/64",
           "2001:489a:2241::/56",
@@ -9258,7 +9341,7 @@
       "name": "AzureCloud.usgovvirginia",
       "id": "AzureCloud.usgovvirginia",
       "properties": {
-        "changeNumber": 44,
+        "changeNumber": 45,
         "region": "usgovvirginia",
         "regionId": 42,
         "platform": "Azure",
@@ -9343,6 +9426,7 @@
           "2001:489a:2102:1480::/58",
           "2001:489a:2102:3080::/58",
           "2001:489a:2102:3480::/58",
+          "2001:489a:2104:5::/64",
           "2001:489a:2206:20::/60",
           "2001:489a:2208:2::/64",
           "2001:489a:2242::/56",
@@ -9366,7 +9450,7 @@
       "name": "AzureCloud",
       "id": "AzureCloud",
       "properties": {
-        "changeNumber": 81,
+        "changeNumber": 82,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -9658,6 +9742,12 @@
           "2001:489a:2102:3480::/58",
           "2001:489a:2102:3800::/58",
           "2001:489a:2102:3880::/58",
+          "2001:489a:2104::/64",
+          "2001:489a:2104:1::/64",
+          "2001:489a:2104:2::/64",
+          "2001:489a:2104:3::/64",
+          "2001:489a:2104:4::/64",
+          "2001:489a:2104:5::/64",
           "2001:489a:2206::/60",
           "2001:489a:2206:10::/60",
           "2001:489a:2206:20::/60",
@@ -9743,5 +9833,5 @@
       }
     }
   ],
-  "createDate": "20231204"
+  "createDate": "20231211"
 }
