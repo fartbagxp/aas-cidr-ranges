@@ -1,5 +1,5 @@
 {
-  "changeNumber": 287,
+  "changeNumber": 288,
   "cloud": "AzureGovernment",
   "values": [
     {
@@ -1691,7 +1691,7 @@
       "name": "Sql",
       "id": "Sql",
       "properties": {
-        "changeNumber": 8,
+        "changeNumber": 9,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -1728,7 +1728,6 @@
           "52.127.8.0/27",
           "52.127.9.0/27",
           "52.127.12.56/29",
-          "52.127.12.228/30",
           "52.127.13.64/27",
           "52.127.14.64/27",
           "52.127.16.0/27",
@@ -6340,7 +6339,7 @@
       "name": "Sql.USGovArizona",
       "id": "Sql.USGovArizona",
       "properties": {
-        "changeNumber": 6,
+        "changeNumber": 7,
         "region": "usgovarizona",
         "regionId": 39,
         "platform": "Azure",
@@ -6354,7 +6353,6 @@
           "52.127.8.0/27",
           "52.127.9.0/27",
           "52.127.12.56/29",
-          "52.127.12.228/30",
           "52.127.13.64/27",
           "52.127.14.64/27",
           "52.127.16.0/27",
@@ -9388,7 +9386,7 @@
       "name": "AzureCloud.usgovvirginia",
       "id": "AzureCloud.usgovvirginia",
       "properties": {
-        "changeNumber": 45,
+        "changeNumber": 46,
         "region": "usgovvirginia",
         "regionId": 42,
         "platform": "Azure",
@@ -9468,6 +9466,7 @@
           "52.245.5.0/24",
           "52.245.192.0/18",
           "52.247.128.0/18",
+          "62.10.0.0/19",
           "2001:489a:2102:8::/62",
           "2001:489a:2102:1080::/58",
           "2001:489a:2102:1480::/58",
@@ -9497,7 +9496,7 @@
       "name": "AzureCloud",
       "id": "AzureCloud",
       "properties": {
-        "changeNumber": 84,
+        "changeNumber": 85,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -9773,6 +9772,7 @@
           "52.246.146.0/23",
           "52.247.128.0/18",
           "52.249.96.0/19",
+          "62.10.0.0/19",
           "104.210.16.0/22",
           "104.210.20.0/22",
           "104.210.24.0/24",
@@ -9890,5 +9890,5 @@
       }
     }
   ],
-  "createDate": "20240101"
+  "createDate": "20240108"
 }
