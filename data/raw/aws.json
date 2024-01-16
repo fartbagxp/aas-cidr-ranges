@@ -1,6 +1,6 @@
 {
-  "syncToken": "1705317787",
-  "createDate": "2024-01-15-11-23-07",
+  "syncToken": "1705422190",
+  "createDate": "2024-01-16-16-23-10",
   "prefixes": [
     {
       "ip_prefix": "3.2.34.0/26",
@@ -187,6 +187,12 @@
       "region": "eu-central-1",
       "service": "AMAZON",
       "network_border_group": "eu-central-1"
+    },
+    {
+      "ip_prefix": "13.34.110.128/27",
+      "region": "eu-west-2",
+      "service": "AMAZON",
+      "network_border_group": "eu-west-2"
     },
     {
       "ip_prefix": "15.230.39.60/31",
@@ -9087,6 +9093,12 @@
       "network_border_group": "eu-west-3"
     },
     {
+      "ip_prefix": "13.34.110.160/27",
+      "region": "eu-west-2",
+      "service": "AMAZON",
+      "network_border_group": "eu-west-2"
+    },
+    {
       "ip_prefix": "13.248.127.0/24",
       "region": "ap-southeast-1",
       "service": "AMAZON",
@@ -9337,6 +9349,12 @@
       "region": "eu-west-1",
       "service": "AMAZON",
       "network_border_group": "eu-west-1"
+    },
+    {
+      "ip_prefix": "151.148.18.0/24",
+      "region": "sa-east-1",
+      "service": "AMAZON",
+      "network_border_group": "sa-east-1"
     },
     {
       "ip_prefix": "159.248.200.0/21",
@@ -41268,6 +41286,24 @@
       "ip_prefix": "18.196.161.88/29",
       "region": "eu-central-1",
       "service": "ROUTE53_RESOLVER",
+      "network_border_group": "eu-central-1"
+    },
+    {
+      "ip_prefix": "18.199.68.0/22",
+      "region": "eu-central-1",
+      "service": "CLOUDFRONT",
+      "network_border_group": "eu-central-1"
+    },
+    {
+      "ip_prefix": "18.199.72.0/22",
+      "region": "eu-central-1",
+      "service": "CLOUDFRONT",
+      "network_border_group": "eu-central-1"
+    },
+    {
+      "ip_prefix": "18.199.76.0/22",
+      "region": "eu-central-1",
+      "service": "CLOUDFRONT",
       "network_border_group": "eu-central-1"
     },
     {

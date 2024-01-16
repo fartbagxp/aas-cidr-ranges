@@ -1,5 +1,5 @@
 {
-  "changeNumber": 288,
+  "changeNumber": 289,
   "cloud": "AzureGovernment",
   "values": [
     {
@@ -3231,6 +3231,36 @@
         "networkFeatures": [
           "NSG",
           "API",
+          "UDR",
+          "FW"
+        ]
+      }
+    },
+    {
+      "name": "SerialConsole",
+      "id": "SerialConsole",
+      "properties": {
+        "changeNumber": 1,
+        "region": "",
+        "regionId": 0,
+        "platform": "Azure",
+        "systemService": "SerialConsole",
+        "addressPrefixes": [
+          "20.140.53.121/32",
+          "20.140.104.48/32",
+          "20.140.144.58/31",
+          "20.140.147.168/32",
+          "20.141.10.130/31",
+          "20.141.13.121/32",
+          "20.141.15.104/32",
+          "52.127.55.131/32",
+          "52.235.252.252/31",
+          "52.243.247.124/32",
+          "52.245.155.139/32"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
           "UDR",
           "FW"
         ]
@@ -9890,5 +9920,5 @@
       }
     }
   ],
-  "createDate": "20240108"
+  "createDate": "20240115"
 }
