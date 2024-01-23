@@ -1,5 +1,5 @@
 {
-  "changeNumber": 289,
+  "changeNumber": 290,
   "cloud": "AzureGovernment",
   "values": [
     {
@@ -3494,13 +3494,14 @@
       "name": "WindowsVirtualDesktop",
       "id": "WindowsVirtualDesktop",
       "properties": {
-        "changeNumber": 3,
+        "changeNumber": 4,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
         "systemService": "WindowsVirtualDesktop",
         "addressPrefixes": [
           "13.72.49.7/32",
+          "20.159.80.0/24",
           "52.227.22.220/32",
           "52.227.171.125/32",
           "52.227.173.251/32",
@@ -9177,7 +9178,7 @@
       "name": "AzureCloud.usgovarizona",
       "id": "AzureCloud.usgovarizona",
       "properties": {
-        "changeNumber": 47,
+        "changeNumber": 48,
         "region": "usgovarizona",
         "regionId": 39,
         "platform": "Azure",
@@ -9205,6 +9206,7 @@
           "20.158.128.0/24",
           "20.158.130.0/30",
           "20.158.160.0/19",
+          "20.159.80.160/28",
           "40.66.0.192/26",
           "40.66.2.64/27",
           "40.66.3.64/27",
@@ -9416,7 +9418,7 @@
       "name": "AzureCloud.usgovvirginia",
       "id": "AzureCloud.usgovvirginia",
       "properties": {
-        "changeNumber": 46,
+        "changeNumber": 47,
         "region": "usgovvirginia",
         "regionId": 42,
         "platform": "Azure",
@@ -9451,6 +9453,7 @@
           "20.158.0.0/18",
           "20.158.192.0/19",
           "20.159.0.0/18",
+          "20.159.80.176/28",
           "20.159.128.0/18",
           "20.159.192.0/19",
           "23.97.0.0/20",
@@ -9526,7 +9529,7 @@
       "name": "AzureCloud",
       "id": "AzureCloud",
       "properties": {
-        "changeNumber": 85,
+        "changeNumber": 86,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -9622,6 +9625,8 @@
           "20.158.224.0/19",
           "20.159.0.0/18",
           "20.159.64.0/20",
+          "20.159.80.160/28",
+          "20.159.80.176/28",
           "20.159.96.0/19",
           "20.159.128.0/18",
           "20.159.192.0/19",
@@ -9920,5 +9925,5 @@
       }
     }
   ],
-  "createDate": "20240115"
+  "createDate": "20240122"
 }

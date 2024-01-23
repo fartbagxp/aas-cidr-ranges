@@ -1,5 +1,5 @@
 {
-  "changeNumber": 288,
+  "changeNumber": 289,
   "cloud": "China",
   "values": [
     {
@@ -2914,7 +2914,7 @@
       "name": "WindowsVirtualDesktop",
       "id": "WindowsVirtualDesktop",
       "properties": {
-        "changeNumber": 2,
+        "changeNumber": 3,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -2924,6 +2924,7 @@
           "40.72.108.84/32",
           "40.73.5.127/32",
           "40.73.23.165/32",
+          "40.73.220.0/24",
           "52.130.90.36/32",
           "52.130.144.12/32",
           "52.130.144.78/32",
@@ -7527,12 +7528,13 @@
       "name": "WindowsVirtualDesktop.ChinaEast3",
       "id": "WindowsVirtualDesktop.ChinaEast3",
       "properties": {
-        "changeNumber": 1,
+        "changeNumber": 2,
         "region": "chinaeast3",
         "regionId": 90,
         "platform": "Azure",
         "systemService": "WindowsVirtualDesktop",
         "addressPrefixes": [
+          "40.73.220.176/28",
           "2406:e500:5510:5::/117"
         ],
         "networkFeatures": null
@@ -7578,12 +7580,13 @@
       "name": "WindowsVirtualDesktop.ChinaNorth3",
       "id": "WindowsVirtualDesktop.ChinaNorth3",
       "properties": {
-        "changeNumber": 1,
+        "changeNumber": 2,
         "region": "chinanorth3",
         "regionId": 89,
         "platform": "Azure",
         "systemService": "WindowsVirtualDesktop",
         "addressPrefixes": [
+          "40.73.220.160/28",
           "2406:e500:5510:4::/117"
         ],
         "networkFeatures": null
@@ -7907,7 +7910,7 @@
       "name": "AzureCloud.chinaeast3",
       "id": "AzureCloud.chinaeast3",
       "properties": {
-        "changeNumber": 19,
+        "changeNumber": 20,
         "region": "chinaeast3",
         "regionId": 90,
         "platform": "Azure",
@@ -7917,6 +7920,7 @@
           "40.73.145.208/28",
           "40.73.146.32/27",
           "40.73.147.0/27",
+          "40.73.220.176/28",
           "40.73.231.0/24",
           "52.130.103.0/24",
           "52.130.104.0/23",
@@ -8095,7 +8099,7 @@
       "name": "AzureCloud.chinanorth3",
       "id": "AzureCloud.chinanorth3",
       "properties": {
-        "changeNumber": 38,
+        "changeNumber": 39,
         "region": "chinanorth3",
         "regionId": 89,
         "platform": "Azure",
@@ -8109,6 +8113,7 @@
           "40.73.145.128/26",
           "40.73.145.192/28",
           "40.73.145.224/27",
+          "40.73.220.160/28",
           "40.73.228.0/23",
           "40.73.230.0/24",
           "52.130.102.0/24",
@@ -8221,7 +8226,7 @@
       "name": "AzureCloud",
       "id": "AzureCloud",
       "properties": {
-        "changeNumber": 81,
+        "changeNumber": 82,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -8286,6 +8291,8 @@
           "40.73.162.0/23",
           "40.73.168.0/21",
           "40.73.176.0/20",
+          "40.73.220.160/28",
+          "40.73.220.176/28",
           "40.73.224.0/24",
           "40.73.225.0/24",
           "40.73.226.0/24",
@@ -8513,5 +8520,5 @@
       }
     }
   ],
-  "createDate": "20240115"
+  "createDate": "20240122"
 }
