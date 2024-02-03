@@ -1,6 +1,7 @@
-![CIDR update cronjob](https://github.com/fartbagxp/aas-cidr-ranges/workflows/CIDR%20update%20cronjob/badge.svg?branch=master)
-
 # Overview
+
+![Last Run](https://github.com/fartbagxp/aas-cidr-ranges/actions/workflows/main.yml/badge.svg)
+![master](https://img.shields.io/github/last-commit/fartbagxp/aas-cidr-ranges/master)
 
 This is currently a **Work-In-Progress**.
 
