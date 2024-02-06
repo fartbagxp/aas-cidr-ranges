@@ -1,5 +1,5 @@
 {
-  "changeNumber": 291,
+  "changeNumber": 292,
   "cloud": "AzureGovernment",
   "values": [
     {
@@ -199,7 +199,7 @@
       "name": "ApiManagement",
       "id": "ApiManagement",
       "properties": {
-        "changeNumber": 6,
+        "changeNumber": 7,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -210,17 +210,10 @@
           "20.141.13.96/28",
           "20.141.20.112/28",
           "20.141.167.144/28",
-          "52.126.202.168/31",
-          "52.126.203.80/28",
           "52.127.2.224/31",
-          "52.127.3.160/28",
-          "52.127.27.32/28",
           "52.127.34.192/31",
           "52.127.35.128/28",
           "52.127.42.160/31",
-          "52.127.43.128/28",
-          "52.127.58.192/31",
-          "52.127.59.128/28",
           "52.181.32.192/32",
           "52.182.32.132/32",
           "52.227.182.70/32",
@@ -3618,14 +3611,12 @@
       "name": "ApiManagement.USDoDCentral",
       "id": "ApiManagement.USDoDCentral",
       "properties": {
-        "changeNumber": 5,
+        "changeNumber": 6,
         "region": "usdodcentral",
         "regionId": 44,
         "platform": "Azure",
         "systemService": "AzureApiManagement",
         "addressPrefixes": [
-          "52.127.58.192/31",
-          "52.127.59.128/28",
           "52.182.32.132/32",
           "52.245.156.96/28",
           "2001:489a:3203:402::140/124"
@@ -3642,15 +3633,13 @@
       "name": "ApiManagement.USDoDEast",
       "id": "ApiManagement.USDoDEast",
       "properties": {
-        "changeNumber": 5,
+        "changeNumber": 6,
         "region": "usdodeast",
         "regionId": 45,
         "platform": "Azure",
         "systemService": "AzureApiManagement",
         "addressPrefixes": [
           "20.141.20.112/28",
-          "52.126.202.168/31",
-          "52.126.203.80/28",
           "52.181.32.192/32",
           "2001:489a:3303:402::140/124"
         ],
@@ -3666,7 +3655,7 @@
       "name": "ApiManagement.USGovArizona",
       "id": "ApiManagement.USGovArizona",
       "properties": {
-        "changeNumber": 6,
+        "changeNumber": 7,
         "region": "usgovarizona",
         "regionId": 39,
         "platform": "Azure",
@@ -3674,7 +3663,6 @@
         "addressPrefixes": [
           "20.141.13.96/28",
           "52.127.2.224/31",
-          "52.127.3.160/28",
           "52.244.32.39/32",
           "52.244.236.112/28",
           "2001:489a:3604:2::660/124",
@@ -3692,14 +3680,13 @@
       "name": "ApiManagement.USGovIowa",
       "id": "ApiManagement.USGovIowa",
       "properties": {
-        "changeNumber": 2,
+        "changeNumber": 3,
         "region": "usgoviowa",
         "regionId": 40,
         "platform": "Azure",
         "systemService": "AzureApiManagement",
         "addressPrefixes": [
-          "13.73.72.21/32",
-          "52.127.27.32/28"
+          "13.73.72.21/32"
         ],
         "networkFeatures": [
           "API",
@@ -3738,7 +3725,7 @@
       "name": "ApiManagement.USGovVirginia",
       "id": "ApiManagement.USGovVirginia",
       "properties": {
-        "changeNumber": 5,
+        "changeNumber": 6,
         "region": "usgovvirginia",
         "regionId": 42,
         "platform": "Azure",
@@ -3747,7 +3734,6 @@
           "13.72.39.168/32",
           "20.141.167.144/28",
           "52.127.42.160/31",
-          "52.127.43.128/28",
           "52.227.182.70/32",
           "52.227.222.92/32",
           "2001:489a:3103:402::140/124"
@@ -9418,7 +9404,7 @@
       "name": "AzureCloud.usgovvirginia",
       "id": "AzureCloud.usgovvirginia",
       "properties": {
-        "changeNumber": 47,
+        "changeNumber": 48,
         "region": "usgovvirginia",
         "regionId": 42,
         "platform": "Azure",
@@ -9499,7 +9485,7 @@
           "52.245.5.0/24",
           "52.245.192.0/18",
           "52.247.128.0/18",
-          "62.10.0.0/19",
+          "62.10.0.0/18",
           "2001:489a:2102:8::/62",
           "2001:489a:2102:1080::/58",
           "2001:489a:2102:1480::/58",
@@ -9529,7 +9515,7 @@
       "name": "AzureCloud",
       "id": "AzureCloud",
       "properties": {
-        "changeNumber": 86,
+        "changeNumber": 87,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -9807,7 +9793,7 @@
           "52.246.146.0/23",
           "52.247.128.0/18",
           "52.249.96.0/19",
-          "62.10.0.0/19",
+          "62.10.0.0/18",
           "104.210.16.0/22",
           "104.210.20.0/22",
           "104.210.24.0/24",
@@ -9925,5 +9911,5 @@
       }
     }
   ],
-  "createDate": "20240129"
+  "createDate": "20240205"
 }
