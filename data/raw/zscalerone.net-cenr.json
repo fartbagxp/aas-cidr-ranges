@@ -11,12 +11,48 @@
           "longitude": "18"
         }
       ],
+      "city : Capetown IV": [
+        {
+          "range": "136.226.216.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "-33.9248685",
+          "longitude": "18.4240553"
+        },
+        {
+          "range": "2a03:eec0:1700::/40",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "-33.9248685",
+          "longitude": "18.4240553"
+        }
+      ],
       "city : Johannesburg II": [
         {
           "range": "197.98.201.0/24",
           "vpn": "jnb2-vpn.zscalerone.net",
           "gre": "197.98.201.18",
           "hostname": "jnb2.sme.zscalerone.net",
+          "latitude": "-27",
+          "longitude": "28"
+        }
+      ],
+      "city : Johannesburg III": [
+        {
+          "range": "147.161.162.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "-27",
+          "longitude": "28"
+        },
+        {
+          "range": "2a03:eec0:1c00::/40",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
           "latitude": "-27",
           "longitude": "28"
         }
@@ -55,7 +91,7 @@
       ],
       "city : San Francisco IV": [
         {
-          "range": "2605:4300:1213::/48",
+          "range": "2605:4300:1211::/48",
           "vpn": "",
           "gre": "",
           "hostname": "",
@@ -63,7 +99,7 @@
           "longitude": "-123"
         },
         {
-          "range": "2605:4300:1211::/48",
+          "range": "2605:4300:1213::/48",
           "vpn": "",
           "gre": "",
           "hostname": "",
