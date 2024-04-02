@@ -1,5 +1,5 @@
 {
-  "changeNumber": 298,
+  "changeNumber": 299,
   "cloud": "China",
   "values": [
     {
@@ -2569,7 +2569,7 @@
       "name": "PowerPlatformInfra",
       "id": "PowerPlatformInfra",
       "properties": {
-        "changeNumber": 3,
+        "changeNumber": 4,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -2589,7 +2589,8 @@
           "159.27.246.0/26",
           "163.228.59.64/26",
           "163.228.59.128/27",
-          "163.228.66.162/32"
+          "163.228.66.162/32",
+          "163.228.227.118/32"
         ],
         "networkFeatures": [
           "API",
@@ -7138,14 +7139,15 @@
       "name": "PowerPlatformInfra.ChinaNorth3",
       "id": "PowerPlatformInfra.ChinaNorth3",
       "properties": {
-        "changeNumber": 1,
+        "changeNumber": 2,
         "region": "chinanorth3",
         "regionId": 89,
         "platform": "Azure",
         "systemService": "PowerPlatformInfra",
         "addressPrefixes": [
           "159.27.243.224/27",
-          "159.27.246.0/26"
+          "159.27.246.0/26",
+          "163.228.227.118/32"
         ],
         "networkFeatures": [
           "API",
@@ -8113,7 +8115,7 @@
       "name": "AzureCloud.chinanorth3",
       "id": "AzureCloud.chinanorth3",
       "properties": {
-        "changeNumber": 40,
+        "changeNumber": 41,
         "region": "chinanorth3",
         "regionId": 89,
         "platform": "Azure",
@@ -8140,6 +8142,7 @@
           "143.64.0.0/17",
           "143.64.128.0/18",
           "143.64.208.0/20",
+          "143.64.224.0/20",
           "159.27.0.0/17",
           "159.27.132.0/25",
           "159.27.132.128/26",
@@ -8242,7 +8245,7 @@
       "name": "AzureCloud",
       "id": "AzureCloud",
       "properties": {
-        "changeNumber": 84,
+        "changeNumber": 85,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -8443,6 +8446,7 @@
           "143.64.128.0/18",
           "143.64.192.0/21",
           "143.64.208.0/20",
+          "143.64.224.0/20",
           "159.27.0.0/17",
           "159.27.128.0/26",
           "159.27.128.64/28",
@@ -8539,5 +8543,5 @@
       }
     }
   ],
-  "createDate": "20240325"
+  "createDate": "20240401"
 }
