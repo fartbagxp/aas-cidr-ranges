@@ -4521,9 +4521,24 @@
       "*.githubcopilot.com"
     ],
     "packages": [
+      "mavenregistryv2prod.blob.core.windows.net",
+      "npmregistryv2prod.blob.core.windows.net",
+      "nugetregistryv2prod.blob.core.windows.net",
+      "rubygemsregistryv2prod.blob.core.windows.net",
+      "npm.pkg.github.com",
+      "npm-proxy.pkg.github.com",
+      "npm-beta-proxy.pkg.github.com",
+      "npm-beta.pkg.github.com",
+      "nuget.pkg.github.com",
+      "rubygems.pkg.github.com",
+      "maven.pkg.github.com",
+      "docker.pkg.github.com",
+      "docker-proxy.pkg.github.com",
+      "containers.pkg.github.com",
       "*.github.com",
       "*.pkg.github.com",
       "*.ghcr.io",
+      "*.githubassets.com",
       "*.githubusercontent.com"
     ],
     "actions": [
