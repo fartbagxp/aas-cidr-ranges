@@ -1,5 +1,5 @@
 {
-  "changeNumber": 300,
+  "changeNumber": 301,
   "cloud": "China",
   "values": [
     {
@@ -2950,7 +2950,9 @@
         ],
         "networkFeatures": [
           "API",
-          "NSG"
+          "NSG",
+          "FW",
+          "UDR"
         ]
       }
     },
@@ -8543,5 +8545,5 @@
       }
     }
   ],
-  "createDate": "20240408"
+  "createDate": "20240415"
 }
