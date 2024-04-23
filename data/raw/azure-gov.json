@@ -1,5 +1,5 @@
 {
-  "changeNumber": 302,
+  "changeNumber": 303,
   "cloud": "AzureGovernment",
   "values": [
     {
@@ -818,7 +818,7 @@
       "name": "AzureContainerRegistry",
       "id": "AzureContainerRegistry",
       "properties": {
-        "changeNumber": 10,
+        "changeNumber": 11,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -836,6 +836,9 @@
           "20.140.200.64/26",
           "20.140.200.128/26",
           "20.158.88.128/25",
+          "20.158.172.128/26",
+          "20.159.6.0/26",
+          "20.159.104.128/26",
           "52.126.200.192/26",
           "52.126.202.64/29",
           "52.126.205.64/27",
@@ -2162,7 +2165,7 @@
       "name": "VideoIndexer",
       "id": "VideoIndexer",
       "properties": {
-        "changeNumber": 1,
+        "changeNumber": 2,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -2174,11 +2177,9 @@
           "52.235.253.232/31",
           "52.235.253.234/32",
           "52.244.55.227/32",
-          "52.244.212.146/32",
           "52.244.212.151/32",
           "52.244.233.80/30",
           "52.245.211.14/32",
-          "52.245.211.54/32",
           "2001:489a:3604:3::80/124"
         ],
         "networkFeatures": [
@@ -2474,7 +2475,7 @@
       "name": "EOPExternalPublishedIPs",
       "id": "EOPExternalPublishedIPs",
       "properties": {
-        "changeNumber": 1,
+        "changeNumber": 2,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -2484,8 +2485,10 @@
           "23.103.199.0/24",
           "23.103.204.0/22",
           "23.103.208.0/22",
-          "2001:489a:2202::/60",
-          "2001:489a:2202:2000::/63"
+          "2001:489a:2202::/48",
+          "2001:489a:2207::/61",
+          "2001:489a:2400:10::/60",
+          "2001:489a:2400:20::/60"
         ],
         "networkFeatures": [
           "API",
@@ -4823,7 +4826,7 @@
       "name": "AzureContainerRegistry.USGovArizona",
       "id": "AzureContainerRegistry.USGovArizona",
       "properties": {
-        "changeNumber": 9,
+        "changeNumber": 10,
         "region": "usgovarizona",
         "regionId": 39,
         "platform": "Azure",
@@ -4831,6 +4834,7 @@
         "addressPrefixes": [
           "20.140.52.128/26",
           "20.158.88.128/25",
+          "20.158.172.128/26",
           "52.127.0.192/26",
           "52.127.2.88/29",
           "52.127.5.96/27",
@@ -4861,7 +4865,7 @@
       "name": "AzureContainerRegistry.USGovTexas",
       "id": "AzureContainerRegistry.USGovTexas",
       "properties": {
-        "changeNumber": 7,
+        "changeNumber": 8,
         "region": "usgovtexas",
         "regionId": 41,
         "platform": "Azure",
@@ -4870,6 +4874,7 @@
           "20.140.60.128/26",
           "20.140.137.0/27",
           "20.140.137.64/26",
+          "20.159.104.128/26",
           "52.127.34.88/29",
           "2001:489a:3403:1::140/125",
           "2001:489a:3403:3::40/122",
@@ -4890,7 +4895,7 @@
       "name": "AzureContainerRegistry.USGovVirginia",
       "id": "AzureContainerRegistry.USGovVirginia",
       "properties": {
-        "changeNumber": 9,
+        "changeNumber": 10,
         "region": "usgovvirginia",
         "regionId": 42,
         "platform": "Azure",
@@ -4903,6 +4908,7 @@
           "20.140.134.0/26",
           "20.140.200.64/26",
           "20.140.200.128/26",
+          "20.159.6.0/26",
           "52.127.42.88/29",
           "52.127.45.128/27",
           "52.127.54.128/26",
@@ -9943,5 +9949,5 @@
       }
     }
   ],
-  "createDate": "20240415"
+  "createDate": "20240422"
 }
