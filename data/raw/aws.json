@@ -1,6 +1,6 @@
 {
-  "syncToken": "1717011189",
-  "createDate": "2024-05-29-19-33-09",
+  "syncToken": "1717180990",
+  "createDate": "2024-05-31-18-43-10",
   "prefixes": [
     {
       "ip_prefix": "3.5.140.0/22",
@@ -33573,6 +33573,12 @@
       "network_border_group": "ap-northeast-1"
     },
     {
+      "ip_prefix": "35.96.0.0/24",
+      "region": "us-west-2",
+      "service": "AMAZON",
+      "network_border_group": "us-west-2"
+    },
+    {
       "ip_prefix": "46.137.0.0/17",
       "region": "eu-west-1",
       "service": "AMAZON",
@@ -45199,6 +45205,12 @@
       "region": "ap-northeast-1",
       "service": "EC2",
       "network_border_group": "ap-northeast-1"
+    },
+    {
+      "ip_prefix": "35.96.0.0/24",
+      "region": "us-west-2",
+      "service": "EC2",
+      "network_border_group": "us-west-2"
     },
     {
       "ip_prefix": "46.137.0.0/17",
@@ -57677,6 +57689,12 @@
       "network_border_group": "ap-east-1"
     },
     {
+      "ipv6_prefix": "2406:daf4:c000::/40",
+      "region": "ap-southeast-2",
+      "service": "AMAZON",
+      "network_border_group": "ap-southeast-2"
+    },
+    {
       "ipv6_prefix": "2620:107:4000:4800::/62",
       "region": "ca-central-1",
       "service": "AMAZON",
@@ -57849,6 +57867,12 @@
       "region": "ap-southeast-3",
       "service": "AMAZON",
       "network_border_group": "ap-southeast-3"
+    },
+    {
+      "ipv6_prefix": "2406:dab9:c000::/40",
+      "region": "ap-southeast-2",
+      "service": "AMAZON",
+      "network_border_group": "ap-southeast-2"
     },
     {
       "ipv6_prefix": "2600:f0f2:7000::/44",
@@ -65615,6 +65639,12 @@
       "network_border_group": "ap-east-1"
     },
     {
+      "ipv6_prefix": "2406:daf4:c000::/40",
+      "region": "ap-southeast-2",
+      "service": "EC2",
+      "network_border_group": "ap-southeast-2"
+    },
+    {
       "ipv6_prefix": "2600:1f12:4000::/36",
       "region": "us-east-1",
       "service": "EC2",
@@ -65733,6 +65763,12 @@
       "region": "il-central-1",
       "service": "EC2",
       "network_border_group": "il-central-1"
+    },
+    {
+      "ipv6_prefix": "2406:dab9:c000::/40",
+      "region": "ap-southeast-2",
+      "service": "EC2",
+      "network_border_group": "ap-southeast-2"
     },
     {
       "ipv6_prefix": "2600:9000:520a::/48",
