@@ -1,5 +1,5 @@
 {
-  "changeNumber": 310,
+  "changeNumber": 311,
   "cloud": "AzureGovernment",
   "values": [
     {
@@ -1287,7 +1287,7 @@
       "name": "AzureKeyVault",
       "id": "AzureKeyVault",
       "properties": {
-        "changeNumber": 9,
+        "changeNumber": 10,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -1306,20 +1306,14 @@
           "20.140.200.200/30",
           "20.141.8.104/29",
           "20.141.8.112/30",
-          "23.97.13.41/32",
-          "23.97.13.179/32",
           "23.97.30.16/32",
           "23.97.31.219/32",
           "52.127.12.236/30",
           "52.127.23.68/30",
           "52.181.160.79/32",
-          "52.181.160.83/32",
-          "52.182.88.66/32",
-          "52.182.88.70/32",
           "52.235.251.24/29",
           "52.235.251.96/30",
-          "52.238.116.14/31",
-          "52.244.48.22/31",
+          "52.244.48.22/32",
           "2001:489a:3103:1::3b8/125",
           "2001:489a:3103:2::798/125",
           "2001:489a:3103:2::7a0/126",
@@ -3316,7 +3310,7 @@
       "name": "SerialConsole",
       "id": "SerialConsole",
       "properties": {
-        "changeNumber": 1,
+        "changeNumber": 2,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -3324,6 +3318,7 @@
         "addressPrefixes": [
           "20.140.53.121/32",
           "20.140.104.48/32",
+          "20.140.105.3/32",
           "20.140.144.58/31",
           "20.140.147.168/32",
           "20.141.10.130/31",
@@ -3332,7 +3327,8 @@
           "52.127.55.131/32",
           "52.235.252.252/31",
           "52.243.247.124/32",
-          "52.245.155.139/32"
+          "52.245.155.139/32",
+          "52.245.156.185/32"
         ],
         "networkFeatures": [
           "API",
@@ -5675,7 +5671,7 @@
       "name": "AzureKeyVault.USDoDCentral",
       "id": "AzureKeyVault.USDoDCentral",
       "properties": {
-        "changeNumber": 4,
+        "changeNumber": 5,
         "region": "usdodcentral",
         "regionId": 44,
         "platform": "Azure",
@@ -5683,8 +5679,6 @@
         "addressPrefixes": [
           "20.140.77.116/30",
           "20.140.77.224/29",
-          "52.182.88.66/32",
-          "52.182.88.70/32",
           "2001:489a:3203::100/125",
           "2001:489a:3203::108/126",
           "2001:489a:3203:1::318/125",
@@ -5702,7 +5696,7 @@
       "name": "AzureKeyVault.USDoDEast",
       "id": "AzureKeyVault.USDoDEast",
       "properties": {
-        "changeNumber": 4,
+        "changeNumber": 5,
         "region": "usdodeast",
         "regionId": 45,
         "platform": "Azure",
@@ -5711,7 +5705,6 @@
           "20.140.69.112/29",
           "20.140.69.120/30",
           "52.181.160.79/32",
-          "52.181.160.83/32",
           "2001:489a:3303:1::3b8/125",
           "2001:489a:3303:2::e0/125",
           "2001:489a:3303:2::e8/126",
@@ -5731,7 +5724,7 @@
       "name": "AzureKeyVault.USGovArizona",
       "id": "AzureKeyVault.USGovArizona",
       "properties": {
-        "changeNumber": 6,
+        "changeNumber": 7,
         "region": "usgovarizona",
         "regionId": 39,
         "platform": "Azure",
@@ -5741,7 +5734,7 @@
           "20.141.8.112/30",
           "52.127.12.236/30",
           "52.127.23.68/30",
-          "52.244.48.22/31",
+          "52.244.48.22/32",
           "2001:489a:3604::108/125",
           "2001:489a:3604::110/126",
           "2001:489a:3604:1::3b8/125",
@@ -5784,7 +5777,7 @@
       "name": "AzureKeyVault.USGovTexas",
       "id": "AzureKeyVault.USGovTexas",
       "properties": {
-        "changeNumber": 4,
+        "changeNumber": 5,
         "region": "usgovtexas",
         "regionId": 41,
         "platform": "Azure",
@@ -5792,7 +5785,6 @@
         "addressPrefixes": [
           "20.140.144.140/30",
           "20.140.145.168/29",
-          "52.238.116.14/31",
           "2001:489a:3403::100/125",
           "2001:489a:3403::108/126",
           "2001:489a:3403:1::318/125",
@@ -5810,7 +5802,7 @@
       "name": "AzureKeyVault.USGovVirginia",
       "id": "AzureKeyVault.USGovVirginia",
       "properties": {
-        "changeNumber": 6,
+        "changeNumber": 7,
         "region": "usgovvirginia",
         "regionId": 42,
         "platform": "Azure",
@@ -5819,8 +5811,6 @@
           "20.140.93.224/30",
           "20.140.131.128/30",
           "20.140.200.200/30",
-          "23.97.13.41/32",
-          "23.97.13.179/32",
           "52.235.251.24/29",
           "52.235.251.96/30",
           "2001:489a:3103:1::3b8/125",
@@ -10116,5 +10106,5 @@
       }
     }
   ],
-  "createDate": "20240610"
+  "createDate": "20240617"
 }
