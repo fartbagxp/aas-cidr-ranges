@@ -1,5 +1,5 @@
 {
-  "changeNumber": 311,
+  "changeNumber": 312,
   "cloud": "AzureGovernment",
   "values": [
     {
@@ -1287,7 +1287,7 @@
       "name": "AzureKeyVault",
       "id": "AzureKeyVault",
       "properties": {
-        "changeNumber": 10,
+        "changeNumber": 11,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -1306,14 +1306,10 @@
           "20.140.200.200/30",
           "20.141.8.104/29",
           "20.141.8.112/30",
-          "23.97.30.16/32",
-          "23.97.31.219/32",
           "52.127.12.236/30",
           "52.127.23.68/30",
-          "52.181.160.79/32",
           "52.235.251.24/29",
           "52.235.251.96/30",
-          "52.244.48.22/32",
           "2001:489a:3103:1::3b8/125",
           "2001:489a:3103:2::798/125",
           "2001:489a:3103:2::7a0/126",
@@ -2085,7 +2081,7 @@
       "name": "AzureStack",
       "id": "AzureStack",
       "properties": {
-        "changeNumber": 2,
+        "changeNumber": 3,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -2096,6 +2092,7 @@
           "20.140.144.224/28",
           "20.141.8.32/28",
           "52.235.250.144/28",
+          "62.10.81.224/28",
           "2001:489a:3103:2::700/121",
           "2001:489a:3203:2::280/121",
           "2001:489a:3303:2::680/121",
@@ -5696,7 +5693,7 @@
       "name": "AzureKeyVault.USDoDEast",
       "id": "AzureKeyVault.USDoDEast",
       "properties": {
-        "changeNumber": 5,
+        "changeNumber": 6,
         "region": "usdodeast",
         "regionId": 45,
         "platform": "Azure",
@@ -5704,7 +5701,6 @@
         "addressPrefixes": [
           "20.140.69.112/29",
           "20.140.69.120/30",
-          "52.181.160.79/32",
           "2001:489a:3303:1::3b8/125",
           "2001:489a:3303:2::e0/125",
           "2001:489a:3303:2::e8/126",
@@ -5724,7 +5720,7 @@
       "name": "AzureKeyVault.USGovArizona",
       "id": "AzureKeyVault.USGovArizona",
       "properties": {
-        "changeNumber": 7,
+        "changeNumber": 8,
         "region": "usgovarizona",
         "regionId": 39,
         "platform": "Azure",
@@ -5734,7 +5730,6 @@
           "20.141.8.112/30",
           "52.127.12.236/30",
           "52.127.23.68/30",
-          "52.244.48.22/32",
           "2001:489a:3604::108/125",
           "2001:489a:3604::110/126",
           "2001:489a:3604:1::3b8/125",
@@ -5754,16 +5749,14 @@
       "name": "AzureKeyVault.USGovIowa",
       "id": "AzureKeyVault.USGovIowa",
       "properties": {
-        "changeNumber": 2,
+        "changeNumber": 3,
         "region": "usgoviowa",
         "regionId": 40,
         "platform": "Azure",
         "systemService": "AzureKeyVault",
         "addressPrefixes": [
           "20.140.154.160/29",
-          "20.140.154.168/30",
-          "23.97.30.16/32",
-          "23.97.31.219/32"
+          "20.140.154.168/30"
         ],
         "networkFeatures": [
           "API",
@@ -8974,7 +8967,7 @@
       "name": "AzureFrontDoor.Backend",
       "id": "AzureFrontDoor.Backend",
       "properties": {
-        "changeNumber": 6,
+        "changeNumber": 7,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -9002,6 +8995,7 @@
           "20.141.18.96/29",
           "20.141.19.40/31",
           "20.141.161.179/32",
+          "20.159.106.36/30",
           "52.127.49.68/30",
           "52.181.33.43/32",
           "52.181.33.45/32",
@@ -9044,6 +9038,7 @@
           "52.244.34.132/32",
           "52.244.34.134/32",
           "52.244.34.136/32",
+          "52.244.237.48/28",
           "52.245.153.176/29",
           "2001:489a:3103::5c0/123",
           "2001:489a:3103::7e0/123",
@@ -10106,5 +10101,5 @@
       }
     }
   ],
-  "createDate": "20240617"
+  "createDate": "20240624"
 }
