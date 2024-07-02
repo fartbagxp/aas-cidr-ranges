@@ -1,5 +1,5 @@
 {
-  "changeNumber": 312,
+  "changeNumber": 313,
   "cloud": "AzureGovernment",
   "values": [
     {
@@ -2504,7 +2504,7 @@
       "name": "EOPExternalPublishedIPs",
       "id": "EOPExternalPublishedIPs",
       "properties": {
-        "changeNumber": 2,
+        "changeNumber": 3,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -2514,6 +2514,7 @@
           "23.103.199.0/24",
           "23.103.204.0/22",
           "23.103.208.0/22",
+          "62.10.128.0/19",
           "2001:489a:2202::/48",
           "2001:489a:2207::/61",
           "2001:489a:2400:10::/60",
@@ -10101,5 +10102,5 @@
       }
     }
   ],
-  "createDate": "20240624"
+  "createDate": "20240701"
 }
