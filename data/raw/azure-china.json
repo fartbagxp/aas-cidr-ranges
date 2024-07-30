@@ -1,5 +1,5 @@
 {
-  "changeNumber": 315,
+  "changeNumber": 316,
   "cloud": "China",
   "values": [
     {
@@ -1409,7 +1409,7 @@
       "name": "AzurePortal",
       "id": "AzurePortal",
       "properties": {
-        "changeNumber": 3,
+        "changeNumber": 4,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -1423,6 +1423,7 @@
           "40.73.69.179/32",
           "40.73.113.119/32",
           "40.73.116.25/32",
+          "40.162.0.96/27",
           "52.130.1.88/29",
           "52.130.2.228/30",
           "52.130.3.0/28",
@@ -1441,6 +1442,10 @@
           "52.131.23.64/27",
           "52.131.151.64/27",
           "139.217.8.252/32",
+          "139.219.249.128/27",
+          "143.64.194.192/27",
+          "163.228.103.32/27",
+          "163.228.219.96/27",
           "2404:7940:1::780/121",
           "2404:7940:101::780/121",
           "2404:7940:201::780/121",
@@ -5531,7 +5536,7 @@
       "name": "AzurePortal.ChinaEast",
       "id": "AzurePortal.ChinaEast",
       "properties": {
-        "changeNumber": 2,
+        "changeNumber": 3,
         "region": "chinaeast",
         "regionId": 13,
         "platform": "Azure",
@@ -5542,6 +5547,7 @@
           "52.130.8.152/30",
           "52.130.13.160/29",
           "52.130.13.176/28",
+          "139.219.249.128/27",
           "2404:7940:201::780/121"
         ],
         "networkFeatures": null
@@ -5551,7 +5557,7 @@
       "name": "AzurePortal.ChinaEast2",
       "id": "AzurePortal.ChinaEast2",
       "properties": {
-        "changeNumber": 2,
+        "changeNumber": 3,
         "region": "chinaeast2",
         "regionId": 55,
         "platform": "Azure",
@@ -5566,6 +5572,7 @@
           "52.130.3.16/30",
           "52.130.7.128/29",
           "52.130.88.108/32",
+          "163.228.219.96/27",
           "2404:7940:301::780/121"
         ],
         "networkFeatures": null
@@ -5575,13 +5582,14 @@
       "name": "AzurePortal.ChinaEast3",
       "id": "AzurePortal.ChinaEast3",
       "properties": {
-        "changeNumber": 1,
+        "changeNumber": 2,
         "region": "chinaeast3",
         "regionId": 90,
         "platform": "Azure",
         "systemService": "AzurePortal",
         "addressPrefixes": [
           "52.131.151.64/27",
+          "163.228.103.32/27",
           "2406:e500:2402:1::600/121"
         ],
         "networkFeatures": null
@@ -5612,7 +5620,7 @@
       "name": "AzurePortal.ChinaNorth2",
       "id": "AzurePortal.ChinaNorth2",
       "properties": {
-        "changeNumber": 2,
+        "changeNumber": 3,
         "region": "chinanorth2",
         "regionId": 54,
         "platform": "Azure",
@@ -5622,6 +5630,7 @@
           "52.130.16.152/29",
           "52.130.21.224/29",
           "52.130.21.240/28",
+          "143.64.194.192/27",
           "2404:7940:101::780/121"
         ],
         "networkFeatures": null
@@ -5631,12 +5640,13 @@
       "name": "AzurePortal.ChinaNorth3",
       "id": "AzurePortal.ChinaNorth3",
       "properties": {
-        "changeNumber": 1,
+        "changeNumber": 2,
         "region": "chinanorth3",
         "regionId": 89,
         "platform": "Azure",
         "systemService": "AzurePortal",
         "addressPrefixes": [
+          "40.162.0.96/27",
           "52.131.23.64/27",
           "2406:e500:2602:1::600/121"
         ],
@@ -8748,5 +8758,5 @@
       }
     }
   ],
-  "createDate": "20240722"
+  "createDate": "20240729"
 }
