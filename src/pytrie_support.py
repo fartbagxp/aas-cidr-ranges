@@ -6,7 +6,7 @@ Essentially, this is a collection of parsers on parsing the various files and
 inputting it into the IP trie.
 '''
 import ipaddress 
-import collections
+from _collections_abc import Mapping 
 
 
 class PytrieSupport():
@@ -123,7 +123,16 @@ class PytrieSupport():
     source = 'Datadog'
     website = 'https://ip-ranges.datadoghq.com/'
     for integration, iptables in result.items():
-      if isinstance(iptables, collections.Mapping):
+      try:
+        if 'prefixes_ipv4' in iptables:
+          for ipv4 in iptables.get('prefixes_ipv4', []):
+            pytrie[ipv4] = {
+                'source': source,
+                'website': website,
+                'version': version,
+                'modified': modified,
+                'integration': integration
+            }
         if 'prefixes_ipv4_by_location' in iptables:
           for location, ipv4s in iptables.get('prefixes_ipv4_by_location', []).items():
             for ipv4 in ipv4s:
@@ -135,15 +144,6 @@ class PytrieSupport():
                   'location': location,
                   'integration': integration
               }
-        if 'prefixes_ipv4_by_location' not in iptables:
-          for ipv4 in iptables.get('prefixes_ipv4', []):
-            pytrie[ipv4] = {
-                'source': source,
-                'website': website,
-                'version': version,
-                'modified': modified,
-                'integration': integration
-            }
         if 'prefixes_ipv6_by_location' in iptables:
           for location, ipv6s in iptables.get('prefixes_ipv4_by_location', []).items():
             for ipv6 in ipv6s:
@@ -155,7 +155,7 @@ class PytrieSupport():
                   'location': location,
                   'integration': integration
               }
-        if 'prefixes_ipv6_by_location' not in iptables:
+        if 'prefixes_ipv6' in iptables:
           for ipv6 in iptables.get('prefixes_ipv6', []):
             pytrie[ipv6] = {
                 'source': source,
@@ -164,6 +164,9 @@ class PytrieSupport():
                 'modified': modified,
                 'integration': integration
             }
+      except TypeError:
+        # print("Exception caught: unable to parse a number as iptables in Datadog")
+        pass
 
   def add_digitalocean_cidr(self, pytrie, result):
     lines = result.split('\n')
@@ -257,20 +260,18 @@ class PytrieSupport():
       if r and r.startswith('#') is False:
         items = r.split(',')
         prefix = items[0]
-        country = items[1]
-        subdivision = items[2]
+        alpha2code = items[1]
+        region = items[2]
         city = items[3]
         zipcode = items[4]
-        allocation_size = items[5]
-
         pytrie[r] = {
           'source': 'Linode',
           'website': 'https://geoip.linode.com/',
-          'country': country,
-          'subdivision': subdivision,
+          'alpha2code': alpha2code,
+          'prefix': prefix,
+          'region': region,
           'city': city,
-          'zipcode': zipcode,
-          'allocation_size': allocation_size
+          'zipcode': zipcode
         }
 
   def add_maxcdn_cidr(self, pytrie, result):

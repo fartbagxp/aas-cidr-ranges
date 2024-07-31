@@ -248,7 +248,7 @@ def belong(event, context):
   except ValueError:
     pass
 
-  if isValidParameter == False:
+  if isValidParameter is False:
     body['error'] = "Request must have field 'ip' with value of an IP address or valid CIDR notation"
     return {
         'statusCode': 400,
@@ -265,7 +265,7 @@ def belong(event, context):
 
   pytries = generate_reader()
   result = get_ip_info(pytries, ip)
-  if result != None:
+  if result is not None:
     body['error'] = ''
     body['data'] = result
     return {
@@ -273,7 +273,7 @@ def belong(event, context):
         'body': json.dumps(body)
     }
 
-  if result == None and isValidIP is True:
+  if result is None and isValidIP is True:
     body['error'] = ''
     body['data'] = whois(ip)
     return {
