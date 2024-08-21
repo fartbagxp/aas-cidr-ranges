@@ -5217,6 +5217,15 @@
       "runnerproxsdc1.actions.githubusercontent.com",
       "runnerproxweu1.actions.githubusercontent.com",
       "tokenghub.actions.githubusercontent.com"
-    ]
+    ],
+    "artifact_attestations": {
+      "trust_domain": "",
+      "services": [
+        "*.actions.githubusercontent.com",
+        "tuf-repo.github.com",
+        "fulcio.githubapp.com",
+        "timestamp.githubapp.com"
+      ]
+    }
   }
 }
