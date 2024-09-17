@@ -1,5 +1,5 @@
 {
-  "changeNumber": 322,
+  "changeNumber": 323,
   "cloud": "China",
   "values": [
     {
@@ -2141,7 +2141,7 @@
       "name": "DataFactory",
       "id": "DataFactory",
       "properties": {
-        "changeNumber": 10,
+        "changeNumber": 11,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -2187,6 +2187,7 @@
           "2406:e500:2402:1::400/121",
           "2406:e500:2402:400::70/124",
           "2406:e500:2602:1::400/121",
+          "2406:e500:2602:3::288/125",
           "2406:e500:2602:400::70/124",
           "2406:e500:2602:800::70/124",
           "2406:e500:2602:c00::70/124"
@@ -2775,16 +2776,20 @@
       "name": "SCCservice",
       "id": "SCCservice",
       "properties": {
-        "changeNumber": 1,
+        "changeNumber": 2,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
         "systemService": "SCCservice",
         "addressPrefixes": [
+          "40.162.161.176/28",
           "52.130.40.16/29",
           "52.130.112.24/29",
           "52.130.120.8/29",
-          "52.130.128.8/29"
+          "52.130.128.8/29",
+          "143.64.197.128/28",
+          "2404:7940:101:2::640/123",
+          "2404:7940:301:2::5c0/123"
         ],
         "networkFeatures": [
           "NSG"
@@ -6660,7 +6665,7 @@
       "name": "DataFactory.ChinaNorth3",
       "id": "DataFactory.ChinaNorth3",
       "properties": {
-        "changeNumber": 5,
+        "changeNumber": 6,
         "region": "chinanorth3",
         "regionId": 89,
         "platform": "Azure",
@@ -6674,6 +6679,7 @@
           "159.27.246.64/26",
           "159.27.246.128/25",
           "2406:e500:2602:1::400/121",
+          "2406:e500:2602:3::288/125",
           "2406:e500:2602:400::70/124",
           "2406:e500:2602:800::70/124",
           "2406:e500:2602:c00::70/124"
@@ -7575,13 +7581,15 @@
       "name": "SCCservice.ChinaEast2",
       "id": "SCCservice.ChinaEast2",
       "properties": {
-        "changeNumber": 1,
+        "changeNumber": 2,
         "region": "chinaeast2",
         "regionId": 55,
         "platform": "Azure",
         "systemService": "SCCservice",
         "addressPrefixes": [
-          "52.130.120.8/29"
+          "40.162.161.176/28",
+          "52.130.120.8/29",
+          "2404:7940:301:2::5c0/123"
         ],
         "networkFeatures": null
       }
@@ -7605,13 +7613,15 @@
       "name": "SCCservice.ChinaNorth2",
       "id": "SCCservice.ChinaNorth2",
       "properties": {
-        "changeNumber": 1,
+        "changeNumber": 2,
         "region": "chinanorth2",
         "regionId": 54,
         "platform": "Azure",
         "systemService": "SCCservice",
         "addressPrefixes": [
-          "52.130.40.16/29"
+          "52.130.40.16/29",
+          "143.64.197.128/28",
+          "2404:7940:101:2::640/123"
         ],
         "networkFeatures": null
       }
@@ -7941,7 +7951,7 @@
       "name": "DataFactoryManagement",
       "id": "DataFactoryManagement",
       "properties": {
-        "changeNumber": 9,
+        "changeNumber": 10,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -7967,6 +7977,7 @@
           "2404:7940:201:402::4e0/124",
           "2404:7940:301:402::4e0/124",
           "2406:e500:2402:400::70/124",
+          "2406:e500:2602:3::288/125",
           "2406:e500:2602:400::70/124",
           "2406:e500:2602:800::70/124",
           "2406:e500:2602:c00::70/124"
@@ -8098,7 +8109,7 @@
       "name": "AzureCloud.chinaeast2",
       "id": "AzureCloud.chinaeast2",
       "properties": {
-        "changeNumber": 33,
+        "changeNumber": 34,
         "region": "chinaeast2",
         "regionId": 55,
         "platform": "Azure",
@@ -8122,6 +8133,7 @@
           "40.73.241.0/24",
           "40.73.244.0/22",
           "40.126.64.0/20",
+          "40.162.160.0/19",
           "42.159.184.0/22",
           "42.159.210.0/23",
           "42.159.212.0/22",
@@ -8169,7 +8181,7 @@
       "name": "AzureCloud.chinaeast3",
       "id": "AzureCloud.chinaeast3",
       "properties": {
-        "changeNumber": 24,
+        "changeNumber": 25,
         "region": "chinaeast3",
         "regionId": 90,
         "platform": "Azure",
@@ -8182,6 +8194,7 @@
           "40.73.220.176/28",
           "40.73.231.0/24",
           "40.162.32.0/19",
+          "40.162.96.0/19",
           "52.130.103.0/24",
           "52.130.104.0/23",
           "52.130.140.0/24",
@@ -8306,7 +8319,7 @@
       "name": "AzureCloud.chinanorth2",
       "id": "AzureCloud.chinanorth2",
       "properties": {
-        "changeNumber": 28,
+        "changeNumber": 29,
         "region": "chinanorth2",
         "regionId": 54,
         "platform": "Azure",
@@ -8331,6 +8344,7 @@
           "40.73.224.0/24",
           "40.73.238.0/23",
           "40.73.243.0/24",
+          "40.162.128.0/19",
           "52.130.16.0/20",
           "52.130.32.0/22",
           "52.130.40.0/21",
@@ -8342,7 +8356,7 @@
           "52.131.64.0/18",
           "139.217.56.0/21",
           "139.217.64.0/18",
-          "143.64.192.0/21",
+          "143.64.192.0/20",
           "159.27.144.0/20",
           "163.228.160.0/19",
           "2404:7940:100::/47",
@@ -8372,7 +8386,7 @@
       "name": "AzureCloud.chinanorth3",
       "id": "AzureCloud.chinanorth3",
       "properties": {
-        "changeNumber": 46,
+        "changeNumber": 47,
         "region": "chinanorth3",
         "regionId": 89,
         "platform": "Azure",
@@ -8390,6 +8404,7 @@
           "40.73.228.0/23",
           "40.73.230.0/24",
           "40.162.0.0/19",
+          "40.162.64.0/19",
           "52.130.102.0/24",
           "52.130.106.0/23",
           "52.130.108.0/23",
@@ -8506,7 +8521,7 @@
       "name": "AzureCloud",
       "id": "AzureCloud",
       "properties": {
-        "changeNumber": 92,
+        "changeNumber": 93,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -8597,6 +8612,10 @@
           "40.126.96.0/19",
           "40.162.0.0/19",
           "40.162.32.0/19",
+          "40.162.64.0/19",
+          "40.162.96.0/19",
+          "40.162.128.0/19",
+          "40.162.160.0/19",
           "42.159.0.0/25",
           "42.159.0.128/27",
           "42.159.0.160/29",
@@ -8709,7 +8728,7 @@
           "139.219.192.0/18",
           "143.64.0.0/17",
           "143.64.128.0/18",
-          "143.64.192.0/21",
+          "143.64.192.0/20",
           "143.64.208.0/20",
           "143.64.224.0/20",
           "159.27.0.0/17",
@@ -8826,5 +8845,5 @@
       }
     }
   ],
-  "createDate": "20240909"
+  "createDate": "20240916"
 }
