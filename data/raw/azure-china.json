@@ -1,5 +1,5 @@
 {
-  "changeNumber": 324,
+  "changeNumber": 325,
   "cloud": "China",
   "values": [
     {
@@ -2566,6 +2566,26 @@
         "networkFeatures": [
           "API",
           "NSG"
+        ]
+      }
+    },
+    {
+      "name": "MicrosoftPurviewPolicyDistribution",
+      "id": "MicrosoftPurviewPolicyDistribution",
+      "properties": {
+        "changeNumber": 1,
+        "region": "",
+        "regionId": 0,
+        "platform": "Azure",
+        "systemService": "MicrosoftPurviewPolicyDistribution",
+        "addressPrefixes": [
+          "40.162.70.188/30"
+        ],
+        "networkFeatures": [
+          "NSG",
+          "API",
+          "FW",
+          "UDR"
         ]
       }
     },
@@ -8849,5 +8869,5 @@
       }
     }
   ],
-  "createDate": "20240923"
+  "createDate": "20240930"
 }
