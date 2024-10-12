@@ -2909,7 +2909,7 @@
           "longitude": "-71.0588801"
         },
         {
-          "range": "136.226.72.0/23",
+          "range": "2605:4300:1c00::/40",
           "vpn": "",
           "gre": "136.226.70.20",
           "hostname": "",
@@ -2917,7 +2917,7 @@
           "longitude": "-71.0588801"
         },
         {
-          "range": "2605:4300:1c00::/40",
+          "range": "136.226.72.0/23",
           "vpn": "",
           "gre": "136.226.70.20",
           "hostname": "",
@@ -3649,18 +3649,18 @@
       ],
       "city : Rio de Janeiro I": [
         {
-          "range": "170.85.16.0/23",
-          "vpn": "rio1-vpn.zscaler.net",
-          "gre": "170.85.16.20",
-          "hostname": "rio1.sme.zscaler.net",
-          "latitude": "-22.9068467",
-          "longitude": "-43.1728965"
-        },
-        {
           "range": "2605:4300:e200::/40",
           "vpn": "",
           "gre": "170.85.16.20",
           "hostname": "",
+          "latitude": "-22.9068467",
+          "longitude": "-43.1728965"
+        },
+        {
+          "range": "170.85.16.0/23",
+          "vpn": "rio1-vpn.zscaler.net",
+          "gre": "170.85.16.20",
+          "hostname": "rio1.sme.zscaler.net",
           "latitude": "-22.9068467",
           "longitude": "-43.1728965"
         },
@@ -3979,17 +3979,17 @@
           "longitude": "-77"
         },
         {
-          "range": "2605:4300:1400::/40",
+          "range": "136.226.106.0/23",
           "vpn": "",
-          "gre": "104.129.194.32",
+          "gre": "165.225.8.12",
           "hostname": "",
           "latitude": "39",
           "longitude": "-77"
         },
         {
-          "range": "136.226.106.0/23",
+          "range": "2605:4300:1400::/40",
           "vpn": "",
-          "gre": "165.225.8.12",
+          "gre": "104.129.194.32",
           "hostname": "",
           "latitude": "39",
           "longitude": "-77"
@@ -4507,18 +4507,18 @@
           "longitude": "72"
         },
         {
-          "range": "165.225.120.0/23",
-          "vpn": "bom6-vpn.zscaler.net",
-          "gre": "165.225.120.12",
-          "hostname": "bom6.sme.zscaler.net",
-          "latitude": "19",
-          "longitude": "72"
-        },
-        {
           "range": "136.226.232.0/23",
           "vpn": "",
           "gre": "165.225.120.12",
           "hostname": "",
+          "latitude": "19",
+          "longitude": "72"
+        },
+        {
+          "range": "165.225.120.0/23",
+          "vpn": "bom6-vpn.zscaler.net",
+          "gre": "165.225.120.12",
+          "hostname": "bom6.sme.zscaler.net",
           "latitude": "19",
           "longitude": "72"
         },
@@ -4541,18 +4541,18 @@
       ],
       "city : New Delhi I": [
         {
-          "range": "165.225.124.0/23",
-          "vpn": "del1-vpn.zscaler.net",
-          "gre": "165.225.124.12",
-          "hostname": "del1.sme.zscaler.net",
-          "latitude": "28",
-          "longitude": "77"
-        },
-        {
           "range": "136.226.230.0/23",
           "vpn": "",
           "gre": "165.225.124.12",
           "hostname": "",
+          "latitude": "28",
+          "longitude": "77"
+        },
+        {
+          "range": "165.225.124.0/23",
+          "vpn": "del1-vpn.zscaler.net",
+          "gre": "165.225.124.12",
+          "hostname": "del1.sme.zscaler.net",
           "latitude": "28",
           "longitude": "77"
         },
