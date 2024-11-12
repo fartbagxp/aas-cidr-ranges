@@ -1,5 +1,5 @@
 {
-  "changeNumber": 331,
+  "changeNumber": 332,
   "cloud": "AzureGovernment",
   "values": [
     {
@@ -2973,7 +2973,7 @@
       "name": "MicrosoftCloudAppSecurity",
       "id": "MicrosoftCloudAppSecurity",
       "properties": {
-        "changeNumber": 5,
+        "changeNumber": 6,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -2992,6 +2992,8 @@
           "20.140.106.12/31",
           "20.140.106.16/28",
           "20.140.106.32/27",
+          "20.140.111.144/29",
+          "20.140.111.152/31",
           "20.140.131.96/28",
           "20.141.230.137/32",
           "20.141.235.182/32",
@@ -3002,11 +3004,13 @@
           "20.141.237.71/32",
           "20.141.238.58/32",
           "20.141.238.71/32",
+          "20.158.152.128/31",
           "20.159.106.34/32",
           "20.159.106.192/26",
           "20.159.108.128/25",
           "20.159.109.0/25",
           "52.126.203.208/28",
+          "52.126.255.56/29",
           "52.127.45.0/28",
           "52.227.23.181/32",
           "52.227.138.155/32",
@@ -3040,7 +3044,13 @@
           "52.245.254.245/32",
           "62.10.81.119/32",
           "62.10.81.128/26",
-          "62.10.85.0/24"
+          "62.10.85.0/24",
+          "62.10.166.162/31",
+          "62.10.166.176/29",
+          "62.11.49.216/29",
+          "62.11.49.224/31",
+          "62.11.78.146/31",
+          "62.11.82.64/29"
         ],
         "networkFeatures": [
           "API",
@@ -8043,10 +8053,26 @@
       }
     },
     {
+      "name": "MicrosoftCloudAppSecurity.USDoDCentral",
+      "id": "MicrosoftCloudAppSecurity.USDoDCentral",
+      "properties": {
+        "changeNumber": 1,
+        "region": "usdodcentral",
+        "regionId": 44,
+        "platform": "Azure",
+        "systemService": "MicrosoftCloudAppSecurity",
+        "addressPrefixes": [
+          "20.158.152.128/31",
+          "52.126.255.56/29"
+        ],
+        "networkFeatures": null
+      }
+    },
+    {
       "name": "MicrosoftCloudAppSecurity.USDoDEast",
       "id": "MicrosoftCloudAppSecurity.USDoDEast",
       "properties": {
-        "changeNumber": 3,
+        "changeNumber": 4,
         "region": "usdodeast",
         "regionId": 45,
         "platform": "Azure",
@@ -8057,7 +8083,25 @@
           "20.140.106.12/31",
           "20.140.106.16/28",
           "20.140.106.32/27",
+          "20.140.111.144/29",
+          "20.140.111.152/31",
           "52.126.203.208/28"
+        ],
+        "networkFeatures": null
+      }
+    },
+    {
+      "name": "MicrosoftCloudAppSecurity.USGovArizona",
+      "id": "MicrosoftCloudAppSecurity.USGovArizona",
+      "properties": {
+        "changeNumber": 1,
+        "region": "usgovarizona",
+        "regionId": 39,
+        "platform": "Azure",
+        "systemService": "MicrosoftCloudAppSecurity",
+        "addressPrefixes": [
+          "62.10.166.162/31",
+          "62.10.166.176/29"
         ],
         "networkFeatures": null
       }
@@ -8066,7 +8110,7 @@
       "name": "MicrosoftCloudAppSecurity.USGovTexas",
       "id": "MicrosoftCloudAppSecurity.USGovTexas",
       "properties": {
-        "changeNumber": 2,
+        "changeNumber": 3,
         "region": "usgovtexas",
         "regionId": 41,
         "platform": "Azure",
@@ -8075,7 +8119,9 @@
           "20.159.106.34/32",
           "20.159.106.192/26",
           "20.159.108.128/25",
-          "20.159.109.0/25"
+          "20.159.109.0/25",
+          "62.11.78.146/31",
+          "62.11.82.64/29"
         ],
         "networkFeatures": null
       }
@@ -8084,7 +8130,7 @@
       "name": "MicrosoftCloudAppSecurity.USGovVirginia",
       "id": "MicrosoftCloudAppSecurity.USGovVirginia",
       "properties": {
-        "changeNumber": 3,
+        "changeNumber": 4,
         "region": "usgovvirginia",
         "regionId": 42,
         "platform": "Azure",
@@ -8104,7 +8150,9 @@
           "52.227.143.223/32",
           "62.10.81.119/32",
           "62.10.81.128/26",
-          "62.10.85.0/24"
+          "62.10.85.0/24",
+          "62.11.49.216/29",
+          "62.11.49.224/31"
         ],
         "networkFeatures": null
       }
@@ -10514,5 +10562,5 @@
       }
     }
   ],
-  "createDate": "20241104"
+  "createDate": "20241111"
 }
