@@ -1,5 +1,5 @@
 {
-  "changeNumber": 343,
+  "changeNumber": 344,
   "cloud": "China",
   "values": [
     {
@@ -7316,6 +7316,159 @@
       }
     },
     {
+      "name": "PowerBI.ChinaEast",
+      "id": "PowerBI.ChinaEast",
+      "properties": {
+        "changeNumber": 1,
+        "region": "chinaeast",
+        "regionId": 13,
+        "platform": "Azure",
+        "systemService": "PowerBI",
+        "addressPrefixes": [
+          "52.130.8.68/30",
+          "52.130.8.120/29",
+          "52.130.8.128/31",
+          "52.130.12.224/29",
+          "52.130.15.224/30",
+          "2404:7940:201::6a0/123",
+          "2404:7940:201::6c0/122"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG"
+        ]
+      }
+    },
+    {
+      "name": "PowerBI.ChinaEast2",
+      "id": "PowerBI.ChinaEast2",
+      "properties": {
+        "changeNumber": 1,
+        "region": "chinaeast2",
+        "regionId": 55,
+        "platform": "Azure",
+        "systemService": "PowerBI",
+        "addressPrefixes": [
+          "52.130.0.70/31",
+          "52.130.1.72/29",
+          "52.130.1.80/30",
+          "52.130.5.48/30",
+          "52.130.5.56/29",
+          "52.131.192.148/30",
+          "163.228.216.160/28",
+          "2404:7940:301::6a0/123",
+          "2404:7940:301::6c0/122"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG"
+        ]
+      }
+    },
+    {
+      "name": "PowerBI.ChinaEast3",
+      "id": "PowerBI.ChinaEast3",
+      "properties": {
+        "changeNumber": 1,
+        "region": "chinaeast3",
+        "regionId": 90,
+        "platform": "Azure",
+        "systemService": "PowerBI",
+        "addressPrefixes": [
+          "40.162.57.76/30",
+          "40.162.57.112/29",
+          "40.162.57.120/30",
+          "52.131.144.22/31",
+          "52.131.148.124/30",
+          "52.131.149.48/29",
+          "163.228.59.48/29",
+          "163.228.62.56/29",
+          "2406:e500:2402:1::4c0/122",
+          "2406:e500:2402:1::500/123"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG"
+        ]
+      }
+    },
+    {
+      "name": "PowerBI.ChinaNorth",
+      "id": "PowerBI.ChinaNorth",
+      "properties": {
+        "changeNumber": 1,
+        "region": "chinanorth",
+        "regionId": 14,
+        "platform": "Azure",
+        "systemService": "PowerBI",
+        "addressPrefixes": [
+          "40.72.72.68/30",
+          "40.72.72.120/29",
+          "40.72.72.128/31",
+          "40.72.75.168/30",
+          "2404:7940:1::6a0/123",
+          "2404:7940:1::6c0/122"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG"
+        ]
+      }
+    },
+    {
+      "name": "PowerBI.ChinaNorth2",
+      "id": "PowerBI.ChinaNorth2",
+      "properties": {
+        "changeNumber": 1,
+        "region": "chinanorth2",
+        "regionId": 54,
+        "platform": "Azure",
+        "systemService": "PowerBI",
+        "addressPrefixes": [
+          "52.130.16.68/30",
+          "52.130.16.120/29",
+          "52.130.16.128/31",
+          "52.130.20.248/29",
+          "143.64.204.20/30",
+          "143.64.204.44/30",
+          "143.64.204.48/29",
+          "2404:7940:101::6a0/123",
+          "2404:7940:101::6c0/122"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG"
+        ]
+      }
+    },
+    {
+      "name": "PowerBI.ChinaNorth3",
+      "id": "PowerBI.ChinaNorth3",
+      "properties": {
+        "changeNumber": 1,
+        "region": "chinanorth3",
+        "regionId": 89,
+        "platform": "Azure",
+        "systemService": "PowerBI",
+        "addressPrefixes": [
+          "40.162.71.96/30",
+          "40.162.71.112/29",
+          "40.162.71.120/30",
+          "52.131.16.22/31",
+          "52.131.20.124/30",
+          "52.131.21.48/29",
+          "159.27.243.200/29",
+          "159.27.248.176/29",
+          "2406:e500:2602:1::4c0/122",
+          "2406:e500:2602:1::500/123"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG"
+        ]
+      }
+    },
+    {
       "name": "PowerPlatformInfra.ChinaEast2",
       "id": "PowerPlatformInfra.ChinaEast2",
       "properties": {
@@ -8909,5 +9062,5 @@
       }
     }
   ],
-  "createDate": "20250203"
+  "createDate": "20250210"
 }
