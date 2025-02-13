@@ -1,6 +1,6 @@
 {
-  "creationDate": "2024-12-26T20:38:54.359176",
-  "syncToken": 1735245534,
+  "creationDate": "2025-02-13T05:29:17.740075",
+  "syncToken": 1739424557,
   "items": [
     {
       "network": "23.249.208.0",
@@ -119,6 +119,22 @@
       "mask_len": 31,
       "cidr": "76.223.144.220/31",
       "mask": "255.255.255.254",
+      "region": [
+        "global"
+      ],
+      "product": [
+        "email"
+      ],
+      "direction": [
+        "egress"
+      ],
+      "perimeter": "commercial"
+    },
+    {
+      "network": "76.223.147.128",
+      "mask_len": 25,
+      "cidr": "76.223.147.128/25",
+      "mask": "255.255.255.128",
       "region": [
         "global"
       ],
