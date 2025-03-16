@@ -18,8 +18,6 @@ For coding and running locally, the following is required:
 - [Python 3.11+](https://www.python.org/downloads/)
   For deployment:
 
-- [Node 20+](https://nodejs.org/en/)
-
 ## How to run locally
 
 1. Download the code:
@@ -46,24 +44,3 @@ sed -i 's/[~=]=/>=/' requirements.txt
 pip install --upgrade --force-reinstall -r requirements.txt
 pip freeze > requirements.txt
 ```
-
-## Deployment
-
-1. Install deployment dependencies:  
-   `npm install`
-1. Package the serverless build:  
-   `npm run package`
-1. Run the deployment:  
-   `npm run deploy`
-1. The endpoint URL will be published as part of the deployment logs.
-1. Test it out!  
-   `curl https://<lambda endpoint>.execute-api.<aws-datacenter>.amazonaws.com/dev/belong?ip=213.199.183.0`
-
-   Results:  
-   `{"error": "", "data": {"region": "", "platform": "Azure", "systemService": "", "cloud": "Public"}}`
-
-## Helpful links for reading
-
-- [Examples of Serverless deployment](https://github.com/serverless/examples)
-
-- [Rate Limits / API Keys to Serverless](https://www.serverless.com/framework/docs/providers/aws/events/apigateway/)
