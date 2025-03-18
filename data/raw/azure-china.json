@@ -1,5 +1,5 @@
 {
-  "changeNumber": 346,
+  "changeNumber": 347,
   "cloud": "China",
   "values": [
     {
@@ -3059,25 +3059,13 @@
       "name": "WindowsVirtualDesktop",
       "id": "WindowsVirtualDesktop",
       "properties": {
-        "changeNumber": 4,
+        "changeNumber": 5,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
         "systemService": "WVDRelays",
         "addressPrefixes": [
-          "40.72.107.122/32",
-          "40.72.108.84/32",
-          "40.73.5.127/32",
-          "40.73.23.165/32",
           "40.73.220.0/24",
-          "52.130.90.36/32",
-          "52.130.144.12/32",
-          "52.130.144.78/32",
-          "52.130.144.91/32",
-          "52.130.145.3/32",
-          "52.131.224.124/32",
-          "52.131.224.159/32",
-          "52.131.224.179/32",
           "139.217.38.0/23",
           "2406:e500:5502::/48",
           "2406:e500:5510::/48"
@@ -7947,18 +7935,12 @@
       "name": "WindowsVirtualDesktop.ChinaEast2",
       "id": "WindowsVirtualDesktop.ChinaEast2",
       "properties": {
-        "changeNumber": 2,
+        "changeNumber": 3,
         "region": "chinaeast2",
         "regionId": 55,
         "platform": "Azure",
         "systemService": "WindowsVirtualDesktop",
         "addressPrefixes": [
-          "40.72.107.122/32",
-          "40.72.108.84/32",
-          "52.130.90.36/32",
-          "52.131.224.124/32",
-          "52.131.224.159/32",
-          "52.131.224.179/32",
           "2406:e500:5510:3::/117"
         ],
         "networkFeatures": null
@@ -7999,18 +7981,12 @@
       "name": "WindowsVirtualDesktop.ChinaNorth2",
       "id": "WindowsVirtualDesktop.ChinaNorth2",
       "properties": {
-        "changeNumber": 2,
+        "changeNumber": 3,
         "region": "chinanorth2",
         "regionId": 54,
         "platform": "Azure",
         "systemService": "WindowsVirtualDesktop",
         "addressPrefixes": [
-          "40.73.5.127/32",
-          "40.73.23.165/32",
-          "52.130.144.12/32",
-          "52.130.144.78/32",
-          "52.130.144.91/32",
-          "52.130.145.3/32",
           "2406:e500:5510:2::/117"
         ],
         "networkFeatures": null
@@ -9087,5 +9063,5 @@
       }
     }
   ],
-  "createDate": "20250310"
+  "createDate": "20250317"
 }
