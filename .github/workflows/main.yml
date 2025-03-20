@@ -8,11 +8,14 @@ on:
     - cron: '50 20 * * *'
 
 jobs:
-  deploy:
+  update-cidr:
     runs-on: ubuntu-latest
-
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -28,17 +31,14 @@ jobs:
         run: |
           bash src/dl/download_google.sh > data/raw/gcp.txt
 
-      - name: Commit CIDR changes
-        uses: EndBug/add-and-commit@v9.1.4
-        with:
-          author_name: Github Action Bot
-          author_email: noreply@github.com
-          message: 'Nightly update of raw CIDR ranges'
-          add: 'data/*'
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: Push changes
-        uses: ad-m/github-push-action@v0.8.0
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ github.ref }}
+      - name: Commit and push changes
+        if: github.ref == 'refs/heads/master'
+        run: |
+          git status
+          git config --local user.email "noreply@github.com"
+          git config --local user.name "github-actions[bot]"
+          git add data/raw/
+          if ! git diff-index --quiet HEAD; then
+            git commit -m "Nightly update of raw CIDR ranges"
+            git push -u origin master
+          fi
