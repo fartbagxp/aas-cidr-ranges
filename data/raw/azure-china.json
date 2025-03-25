@@ -1,5 +1,5 @@
 {
-  "changeNumber": 347,
+  "changeNumber": 348,
   "cloud": "China",
   "values": [
     {
@@ -8363,7 +8363,7 @@
       "name": "AzureCloud.chinaeast3",
       "id": "AzureCloud.chinaeast3",
       "properties": {
-        "changeNumber": 28,
+        "changeNumber": 29,
         "region": "chinaeast3",
         "regionId": 90,
         "platform": "Azure",
@@ -8403,6 +8403,7 @@
           "2406:e500:2500:28::/62",
           "2406:e500:2500:2c::/63",
           "2406:e500:2500:2e::/64",
+          "2406:e500:2500:30::/62",
           "2406:e500:4900::/62",
           "2406:e500:4a01::/48",
           "2406:e500:4a81::/48",
@@ -8575,7 +8576,7 @@
       "name": "AzureCloud.chinanorth3",
       "id": "AzureCloud.chinanorth3",
       "properties": {
-        "changeNumber": 50,
+        "changeNumber": 51,
         "region": "chinanorth3",
         "regionId": 89,
         "platform": "Azure",
@@ -8628,6 +8629,7 @@
           "2406:e500:2501:60::/61",
           "2406:e500:2501:68::/63",
           "2406:e500:2501:6a::/64",
+          "2406:e500:2501:6c::/62",
           "2406:e500:2600::/48",
           "2406:e500:2601::/48",
           "2406:e500:2602::/47",
@@ -8720,7 +8722,7 @@
       "name": "AzureCloud",
       "id": "AzureCloud",
       "properties": {
-        "changeNumber": 97,
+        "changeNumber": 98,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -8999,11 +9001,13 @@
           "2406:e500:2500:28::/62",
           "2406:e500:2500:2c::/63",
           "2406:e500:2500:2e::/64",
+          "2406:e500:2500:30::/62",
           "2406:e500:2501::/58",
           "2406:e500:2501:40::/59",
           "2406:e500:2501:60::/61",
           "2406:e500:2501:68::/63",
           "2406:e500:2501:6a::/64",
+          "2406:e500:2501:6c::/62",
           "2406:e500:2600::/48",
           "2406:e500:2601::/48",
           "2406:e500:2602::/47",
@@ -9063,5 +9067,5 @@
       }
     }
   ],
-  "createDate": "20250317"
+  "createDate": "20250324"
 }
