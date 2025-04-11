@@ -3,7 +3,7 @@
     "continent : Americas": {
       "city : Chicago": [
         {
-          "range": "136.226.10.0/23",
+          "range": "2605:4300:1613::/48",
           "vpn": "",
           "gre": "136.226.12.22",
           "hostname": "",
@@ -11,10 +11,18 @@
           "longitude": "-87"
         },
         {
-          "range": "165.225.3.0/24",
-          "vpn": "chi1-vpn.zscalergov.net",
-          "gre": "165.225.3.8",
-          "hostname": "chi1.sme.zscalergov.net",
+          "range": "2605:4300:1614::/48",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "41",
+          "longitude": "-87"
+        },
+        {
+          "range": "136.226.10.0/23",
+          "vpn": "",
+          "gre": "136.226.12.22",
+          "hostname": "",
           "latitude": "41",
           "longitude": "-87"
         },
@@ -33,33 +41,9 @@
           "hostname": "",
           "latitude": "41",
           "longitude": "-87"
-        },
-        {
-          "range": "2605:4300:1613::/48",
-          "vpn": "",
-          "gre": "136.226.12.22",
-          "hostname": "",
-          "latitude": "41",
-          "longitude": "-87"
-        },
-        {
-          "range": "2605:4300:1614::/48",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "41",
-          "longitude": "-87"
         }
       ],
       "city : San Francisco IV": [
-        {
-          "range": "165.225.46.0/24",
-          "vpn": "sjc4-vpn.zscalergov.net",
-          "gre": "165.225.46.8",
-          "hostname": "sjc4.sme.zscalergov.net",
-          "latitude": "38",
-          "longitude": "-123"
-        },
         {
           "range": "136.226.4.0/23",
           "vpn": "",
@@ -110,14 +94,6 @@
         }
       ],
       "city : Washington DC": [
-        {
-          "range": "165.225.48.0/24",
-          "vpn": "was1-vpn.zscalergov.net",
-          "gre": "165.225.48.25",
-          "hostname": "was1.sme.zscalergov.net",
-          "latitude": "39",
-          "longitude": "-77"
-        },
         {
           "range": "2605:4300:1712::/48",
           "vpn": "",

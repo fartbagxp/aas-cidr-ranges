@@ -21,18 +21,18 @@
           "longitude": "5"
         },
         {
-          "range": "2a03:eec0:1200::/40",
-          "vpn": "",
-          "gre": "165.225.240.22",
-          "hostname": "",
-          "latitude": "52",
-          "longitude": "5"
-        },
-        {
           "range": "185.46.212.0/23",
           "vpn": "amsterdam2-vpn.zscalertwo.net",
           "gre": "185.46.212.34",
           "hostname": "ams2.sme.zscalertwo.net",
+          "latitude": "52",
+          "longitude": "5"
+        },
+        {
+          "range": "2a03:eec0:1200::/40",
+          "vpn": "",
+          "gre": "165.225.240.22",
+          "hostname": "",
           "latitude": "52",
           "longitude": "5"
         },
@@ -1863,17 +1863,17 @@
           "longitude": "2"
         },
         {
-          "range": "136.226.204.0/23",
+          "range": "147.161.184.0/23",
           "vpn": "",
-          "gre": "",
+          "gre": "165.225.76.34",
           "hostname": "",
           "latitude": "49",
           "longitude": "2"
         },
         {
-          "range": "147.161.184.0/23",
+          "range": "136.226.204.0/23",
           "vpn": "",
-          "gre": "165.225.76.34",
+          "gre": "",
           "hostname": "",
           "latitude": "49",
           "longitude": "2"
@@ -2785,6 +2785,14 @@
           "longitude": "-71.0588801"
         },
         {
+          "range": "2605:4300:1c00::/40",
+          "vpn": "",
+          "gre": "136.226.70.65",
+          "hostname": "",
+          "latitude": "42.3600825",
+          "longitude": "-71.0588801"
+        },
+        {
           "range": "136.226.74.0/23",
           "vpn": "",
           "gre": "136.226.70.65",
@@ -2794,14 +2802,6 @@
         },
         {
           "range": "170.85.144.0/23",
-          "vpn": "",
-          "gre": "136.226.70.65",
-          "hostname": "",
-          "latitude": "42.3600825",
-          "longitude": "-71.0588801"
-        },
-        {
-          "range": "2605:4300:1c00::/40",
           "vpn": "",
           "gre": "136.226.70.65",
           "hostname": "",
