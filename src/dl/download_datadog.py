@@ -1,15 +1,11 @@
-
-
 '''
-The range of Datadog HQ 
+The range of Datadog HQ
 https://docs.aws.amazon.com/general/latest/gr/aws-ip-ranges.html
 
 This is a parser for the set of IPs / IP ranges in CIDR notation.
 '''
 
-from pprint import pprint
 import requests
-
 
 class DatadogCidrDownloader():
 

@@ -57,7 +57,7 @@ def get_ip_info(pytries, ip):
       result = pyt.get(parent_ip)
       if result:
         results.append(result)
-  except:
+  except KeyError:
     pass
 
   ip_info = {
@@ -233,7 +233,7 @@ def belong(event, context):
   ip = event['queryStringParameters']['ip']
   isValidParameter = False
   isValidIP = False
-  isValidCIDR = False
+
   try:
     ipaddress.ip_address(ip)
     isValidParameter = True
@@ -244,23 +244,22 @@ def belong(event, context):
   try:
     ipaddress.ip_network(ip)
     isValidParameter = True
-    isValidCIDR = True
   except ValueError:
     pass
 
   if isValidParameter is False:
     body['error'] = "Request must have field 'ip' with value of an IP address or valid CIDR notation"
     return {
-        'statusCode': 400,
-        'body': json.dumps(body)
+      'statusCode': 400,
+      'body': json.dumps(body)
     }
 
   if isValidIP is True and ipaddress.ip_address(ip).is_private:
     body['error'] = ''
     body['data'] = 'Private IP'
     return {
-        'statusCode': 200,
-        'body': json.dumps(body)
+      'statusCode': 200,
+      'body': json.dumps(body)
     }
 
   pytries = generate_reader()
@@ -269,16 +268,16 @@ def belong(event, context):
     body['error'] = ''
     body['data'] = result
     return {
-        'statusCode': 200,
-        'body': json.dumps(body)
+      'statusCode': 200,
+      'body': json.dumps(body)
     }
 
   if result is None and isValidIP is True:
     body['error'] = ''
     body['data'] = whois(ip)
     return {
-        'statusCode': 200,
-        'body': json.dumps(body)
+      'statusCode': 200,
+      'body': json.dumps(body)
     }
 
   body['error'] = 'No available information'

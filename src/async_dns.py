@@ -1,11 +1,10 @@
-import dns
 from dns import resolver
 from dns.exception import DNSException
+
 import itertools
 import collections
 import multiprocessing.pool
 
-#
 def worker(arg):
   """
   query dns for (hostname, qname) and return (qname, [rdata,...])

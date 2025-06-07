@@ -1,10 +1,3 @@
-import json
-import pytricia
-
-from src.reader import FileReader
-from src.dl.download_zoom import ZoomCidrDownloader
-
-from src.pytrie_support import PytrieSupport
 from src.whois import whois
 
 from handler import belong

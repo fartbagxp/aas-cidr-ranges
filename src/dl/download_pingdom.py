@@ -1,6 +1,6 @@
 '''
 The range of Pingdom probes from various locations.
-The documentation can be found here: 
+The documentation can be found here:
 https://documentation.solarwinds.com/en/success_center/pingdom/content/topics/pingdom-probe-servers-ip-addresses.htm?cshid=pd-rd_203682601-pingdom-probe-servers-ip-addresses
 
 This is a parser for the set of IPs / IP ranges in CIDR notation.

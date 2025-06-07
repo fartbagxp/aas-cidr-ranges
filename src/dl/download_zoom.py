@@ -1,7 +1,4 @@
-
-import json
 import requests
-# from bs4 import BeautifulSoup
 
 '''
 List of ranges can be pulled from this Zoom website:
