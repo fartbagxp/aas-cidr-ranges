@@ -1,16 +1,16 @@
 '''
-IANA is the Internet Assigned Numbers Authority, an organization which governs 
-IP address allocation. We use IANA as the official source of truth for private 
+IANA is the Internet Assigned Numbers Authority, an organization which governs
+IP address allocation. We use IANA as the official source of truth for private
 IP address range allocation.
 
-Private IP ranges typically include only IP addresses (ex. 10.0.0.1, 127.0.0.1) 
+Private IP ranges typically include only IP addresses (ex. 10.0.0.1, 127.0.0.1)
 that are only active within a local area network (LAN).
 
 The source for private IP address blocks can be found here:
 IPv4: https://www.iana.org/assignments/iana-ipv4-special-registry/iana-ipv4-special-registry.xhtml
 IPv6: https://www.iana.org/assignments/iana-ipv6-special-registry/iana-ipv6-special-registry.xhtml
 
-There's a link to download a comma separated file .csv for each of the 
+There's a link to download a comma separated file .csv for each of the
 respective IP address blocks.
 '''
 

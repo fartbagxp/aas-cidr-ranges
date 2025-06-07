@@ -58,7 +58,7 @@ class GrafanaCidrDownloader():
   def get_dns_names(self):
     # This list came from https://grafana.com/docs/grafana-cloud/reference/allow-list/
     dns_list = [
-      'sm-amsterdam.grafana.net', 
+      'sm-amsterdam.grafana.net',
       'sm-atlanta.grafana.net'
       'sm-bangalore.grafana.net',
       'sm-capetown.grafana.net',

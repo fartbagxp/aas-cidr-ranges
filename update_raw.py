@@ -12,9 +12,9 @@ from src.dl.download_google import GcpCidrDownloader
 from src.dl.download_grafana import GrafanaCidrDownloader
 from src.dl.download_iana import IanaCidrDownloader
 from src.dl.download_linode import LinodeCidrDownloader
-from src.dl.download_maxcdn import MaxCDNCidrDownloader
 from src.dl.download_okta import OktaCidrDownloader
 from src.dl.download_oracle import OracleCidrDownloader
+from src.dl.download_seqera import SeqeraCidrDownloader
 from src.dl.download_stripe import StripeCidrDownloader
 from src.dl.download_pingdom import PingdomCidrDownloader
 from src.dl.download_zscaler import ZScalerCidrDownloader
@@ -43,19 +43,19 @@ def update():
 
   azure_downloader = AzureCidrDownloader()
   result = azure_downloader.get_public_range()
-  if result != None:
+  if result is not None:
     writer.write('data/raw/azure-public.json', json.dumps(result, indent=2))
 
   result = azure_downloader.get_china_range()
-  if result != None:
+  if result is not None:
     writer.write('data/raw/azure-china.json', json.dumps(result, indent=2))
 
   result = azure_downloader.get_germany_range()
-  if result != None:
+  if result is not None:
     writer.write('data/raw/azure-germany.json', json.dumps(result, indent=2))
 
   result = azure_downloader.get_gov_range()
-  if result != None:
+  if result is not None:
     writer.write('data/raw/azure-gov.json', json.dumps(result, indent=2))
 
   cloudflare_downloader = CloudflareCidrDownloader()
@@ -109,10 +109,6 @@ def update():
   result = linode_downloader.get_range()
   writer.write('data/raw/linode.txt', result)
 
-  maxcdn_downloader = MaxCDNCidrDownloader()
-  result = maxcdn_downloader.get_range()
-  writer.write('data/raw/maxcdn.txt', result)
-
   okta_downloader = OktaCidrDownloader()
   result = okta_downloader.get_range()
   writer.write('data/raw/okta.json', json.dumps(result, indent=2))
@@ -158,6 +154,10 @@ def update():
   for config in zscaler_config:
     result = zscaler_downloader.get_range(config)
     writer.write(f"data/raw/{config['name']}", json.dumps(result, indent=2))
+
+  seqera_downloader = SeqeraCidrDownloader()
+  result = seqera_downloader.get_range()
+  writer.write('data/raw/seqera.json', json.dumps(result, indent=2))
 
 def main():
   update()

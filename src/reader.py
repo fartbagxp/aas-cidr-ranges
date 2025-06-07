@@ -9,7 +9,7 @@ class FileReader():
 
   def read(self, path=None):
     if path is None:
-      print(f'No path provided.')
+      print('No path provided.')
       return None
 
     try:

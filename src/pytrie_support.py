@@ -5,30 +5,28 @@ different schema of files provided.
 Essentially, this is a collection of parsers on parsing the various files and
 inputting it into the IP trie.
 '''
-import ipaddress 
-from _collections_abc import Mapping 
-
+import ipaddress
 
 class PytrieSupport():
 
   def validate_ip_address(self, address):
     try:
       try:
-        ip = ipaddress.ip_address(address)
+        ipaddress.ip_address(address)
         # if isinstance(ip, ipaddress.IPv4Address):
         #   print("{} is an IPv4 address".format(address))
         # elif isinstance(ip, ipaddress.IPv6Address):
         #   print("{} is an IPv6 address".format(address))
         return True
       except ValueError:
-        ip = ipaddress.ip_network(address)
+        ipaddress.ip_network(address)
         # if isinstance(ip, ipaddress.IPv4Network):
         #   print("{} is an IPv4 network".format(address))
         # elif isinstance(ip, ipaddress.IPv6Network):
         #   print("{} is an IPv6 network".format(address))
         return True
     except ValueError:
-      # print("IP address {} is not valid".format(address)) 
+      # print("IP address {} is not valid".format(address))
       return False
 
   def add_atlassian_cidr(self, pytrie, result):
@@ -174,7 +172,7 @@ class PytrieSupport():
       r = r.strip()
       if r:
         items = r.split(',')
-        cidr = items[0]
+        # cidr = items[0]
         country = items[1]
         subdivision = items[2]
         city = items[3]
@@ -236,7 +234,7 @@ class PytrieSupport():
       r = r.strip()
       if r and r.startswith('#') is False:
         items = r.split(',')
-        prefix = items[0]
+        # prefix = items[0]
         country = items[1]
         subdivision = items[2]
         city = items[3]
@@ -310,7 +308,7 @@ class PytrieSupport():
             'website': 'https://docs.oracle.com/en-us/iaas/tools/public_ip_ranges.json',
             'updated_timestamp': timestamp
         }
-      
+
   def add_stripe_cidr(self, pytrie, result):
     results = result.split('\n')
     for r in results:
