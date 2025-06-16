@@ -1,6 +1,6 @@
 {
-  "creationDate": "2025-04-02T01:25:30.753508",
-  "syncToken": 1743557130,
+  "creationDate": "2025-06-16T00:37:35.278023",
+  "syncToken": 1750034255,
   "items": [
     {
       "network": "23.249.208.0",
@@ -427,6 +427,22 @@
       ],
       "product": [
         "bitbucket"
+      ],
+      "direction": [
+        "egress"
+      ],
+      "perimeter": "commercial"
+    },
+    {
+      "network": "18.246.31.208",
+      "mask_len": 28,
+      "cidr": "18.246.31.208/28",
+      "mask": "255.255.255.240",
+      "region": [
+        "us-west-2"
+      ],
+      "product": [
+        "rovo-crawler"
       ],
       "direction": [
         "egress"
@@ -1543,6 +1559,7 @@
         "bitbucket",
         "confluence",
         "forge",
+        "github-for-jira",
         "halp",
         "jira",
         "opsgenie",
@@ -2522,7 +2539,6 @@
       ],
       "product": [
         "confluence",
-        "forge",
         "halp",
         "jira",
         "opsgenie",
@@ -2545,7 +2561,6 @@
       ],
       "product": [
         "confluence",
-        "forge",
         "halp",
         "jira",
         "opsgenie",
@@ -2568,7 +2583,6 @@
       ],
       "product": [
         "confluence",
-        "forge",
         "halp",
         "jira",
         "opsgenie",
@@ -4711,6 +4725,54 @@
       ],
       "product": [
         "forge"
+      ],
+      "direction": [
+        "egress"
+      ],
+      "perimeter": "commercial"
+    },
+    {
+      "network": "34.233.65.54",
+      "mask_len": 32,
+      "cidr": "34.233.65.54/32",
+      "mask": "255.255.255.255",
+      "region": [
+        "us-east-1"
+      ],
+      "product": [
+        "bitbucket"
+      ],
+      "direction": [
+        "egress"
+      ],
+      "perimeter": "commercial"
+    },
+    {
+      "network": "34.196.8.197",
+      "mask_len": 32,
+      "cidr": "34.196.8.197/32",
+      "mask": "255.255.255.255",
+      "region": [
+        "us-east-1"
+      ],
+      "product": [
+        "bitbucket"
+      ],
+      "direction": [
+        "egress"
+      ],
+      "perimeter": "commercial"
+    },
+    {
+      "network": "44.194.7.14",
+      "mask_len": 32,
+      "cidr": "44.194.7.14/32",
+      "mask": "255.255.255.255",
+      "region": [
+        "us-east-1"
+      ],
+      "product": [
+        "bitbucket"
       ],
       "direction": [
         "egress"
