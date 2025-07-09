@@ -1,6 +1,6 @@
 {
-  "syncToken": "1752001411",
-  "createDate": "2025-07-08-19-03-31",
+  "syncToken": "1752080610",
+  "createDate": "2025-07-09-17-03-30",
   "prefixes": [
     {
       "ip_prefix": "3.4.12.4/32",
@@ -14250,7 +14250,7 @@
       "ip_prefix": "161.178.128.0/18",
       "region": "us-east-1",
       "service": "AMAZON",
-      "network_border_group": "us-east-1"
+      "network_border_group": "us-east-1-nyc-2"
     },
     {
       "ip_prefix": "15.152.0.0/16",
@@ -38676,7 +38676,7 @@
       "ip_prefix": "161.178.128.0/18",
       "region": "us-east-1",
       "service": "EC2",
-      "network_border_group": "us-east-1"
+      "network_border_group": "us-east-1-nyc-2"
     },
     {
       "ip_prefix": "15.152.0.0/16",
@@ -51747,6 +51747,12 @@
       "network_border_group": "ap-southeast-5"
     },
     {
+      "ip_prefix": "43.209.155.96/29",
+      "region": "ap-southeast-7",
+      "service": "EC2_INSTANCE_CONNECT",
+      "network_border_group": "ap-southeast-7"
+    },
+    {
       "ip_prefix": "35.183.92.176/29",
       "region": "ca-central-1",
       "service": "EC2_INSTANCE_CONNECT",
@@ -51823,6 +51829,12 @@
       "region": "me-south-1",
       "service": "EC2_INSTANCE_CONNECT",
       "network_border_group": "me-south-1"
+    },
+    {
+      "ip_prefix": "78.12.207.8/29",
+      "region": "mx-central-1",
+      "service": "EC2_INSTANCE_CONNECT",
+      "network_border_group": "mx-central-1"
     },
     {
       "ip_prefix": "18.228.70.32/29",
@@ -79289,7 +79301,37 @@
       "network_border_group": "GLOBAL"
     },
     {
+      "ipv6_prefix": "2600:9000:1400::/39",
+      "region": "GLOBAL",
+      "service": "CLOUDFRONT_ORIGIN_FACING",
+      "network_border_group": "GLOBAL"
+    },
+    {
+      "ipv6_prefix": "2600:9000:1800::/39",
+      "region": "GLOBAL",
+      "service": "CLOUDFRONT_ORIGIN_FACING",
+      "network_border_group": "GLOBAL"
+    },
+    {
       "ipv6_prefix": "2600:9000:5200::/40",
+      "region": "GLOBAL",
+      "service": "CLOUDFRONT_ORIGIN_FACING",
+      "network_border_group": "GLOBAL"
+    },
+    {
+      "ipv6_prefix": "2600:9000:1a00::/39",
+      "region": "GLOBAL",
+      "service": "CLOUDFRONT_ORIGIN_FACING",
+      "network_border_group": "GLOBAL"
+    },
+    {
+      "ipv6_prefix": "2600:9000:1000::/39",
+      "region": "GLOBAL",
+      "service": "CLOUDFRONT_ORIGIN_FACING",
+      "network_border_group": "GLOBAL"
+    },
+    {
+      "ipv6_prefix": "2600:9000:1600::/39",
       "region": "GLOBAL",
       "service": "CLOUDFRONT_ORIGIN_FACING",
       "network_border_group": "GLOBAL"
@@ -79391,6 +79433,12 @@
       "network_border_group": "ap-southeast-5"
     },
     {
+      "ipv6_prefix": "2406:da14:85c5:5b00::/56",
+      "region": "ap-southeast-7",
+      "service": "EC2_INSTANCE_CONNECT",
+      "network_border_group": "ap-southeast-7"
+    },
+    {
       "ipv6_prefix": "2600:1f11:ae3:700::/56",
       "region": "ca-central-1",
       "service": "EC2_INSTANCE_CONNECT",
@@ -79467,6 +79515,12 @@
       "region": "me-south-1",
       "service": "EC2_INSTANCE_CONNECT",
       "network_border_group": "me-south-1"
+    },
+    {
+      "ipv6_prefix": "2600:1f17:4ee0:b800::/56",
+      "region": "mx-central-1",
+      "service": "EC2_INSTANCE_CONNECT",
+      "network_border_group": "mx-central-1"
     },
     {
       "ipv6_prefix": "2600:1f1e:d1d:e700::/56",
