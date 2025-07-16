@@ -1,5 +1,5 @@
 {
-  "changeNumber": 361,
+  "changeNumber": 362,
   "cloud": "AzureGovernment",
   "values": [
     {
@@ -3305,7 +3305,7 @@
       "name": "PowerBI",
       "id": "PowerBI",
       "properties": {
-        "changeNumber": 4,
+        "changeNumber": 5,
         "region": "",
         "regionId": 0,
         "platform": "Azure",
@@ -3331,6 +3331,7 @@
           "20.159.234.240/28",
           "51.54.53.96/28",
           "51.54.115.176/29",
+          "51.54.118.160/27",
           "52.127.48.70/31",
           "52.127.49.128/29",
           "52.127.49.192/26",
@@ -8613,13 +8614,14 @@
       "name": "PowerBI.USGovVirginia",
       "id": "PowerBI.USGovVirginia",
       "properties": {
-        "changeNumber": 2,
+        "changeNumber": 3,
         "region": "usgovvirginia",
         "regionId": 42,
         "platform": "Azure",
         "systemService": "PowerBI",
         "addressPrefixes": [
           "51.54.115.176/29",
+          "51.54.118.160/27",
           "52.127.48.70/31",
           "52.127.49.128/29",
           "52.127.49.192/26",
@@ -11059,5 +11061,5 @@
       }
     }
   ],
-  "createDate": "20250707"
+  "createDate": "20250714"
 }
