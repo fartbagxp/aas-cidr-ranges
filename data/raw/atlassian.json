@@ -1,6 +1,6 @@
 {
-  "creationDate": "2025-06-16T00:37:35.278023",
-  "syncToken": 1750034255,
+  "creationDate": "2025-07-25T04:18:16.904453",
+  "syncToken": 1753417096,
   "items": [
     {
       "network": "23.249.208.0",
@@ -2427,6 +2427,22 @@
         "opsgenie",
         "statuspage",
         "trello"
+      ],
+      "direction": [
+        "egress"
+      ],
+      "perimeter": "commercial"
+    },
+    {
+      "network": "216.221.175.128",
+      "mask_len": 25,
+      "cidr": "216.221.175.128/25",
+      "mask": "255.255.255.128",
+      "region": [
+        "global"
+      ],
+      "product": [
+        "email"
       ],
       "direction": [
         "egress"
