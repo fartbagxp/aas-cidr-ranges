@@ -3,22 +3,6 @@
     "continent : Americas": {
       "city : Chicago": [
         {
-          "range": "2605:4300:1613::/48",
-          "vpn": "",
-          "gre": "136.226.12.22",
-          "hostname": "",
-          "latitude": "41.878114",
-          "longitude": "-87.629798"
-        },
-        {
-          "range": "2605:4300:1614::/48",
-          "vpn": "",
-          "gre": "",
-          "hostname": "",
-          "latitude": "41.878114",
-          "longitude": "-87.629798"
-        },
-        {
           "range": "136.226.10.0/23",
           "vpn": "",
           "gre": "136.226.12.22",
@@ -38,6 +22,22 @@
           "range": "136.226.14.0/23",
           "vpn": "",
           "gre": "136.226.12.22",
+          "hostname": "",
+          "latitude": "41.878114",
+          "longitude": "-87.629798"
+        },
+        {
+          "range": "2605:4300:1613::/48",
+          "vpn": "",
+          "gre": "136.226.12.22",
+          "hostname": "",
+          "latitude": "41.878114",
+          "longitude": "-87.629798"
+        },
+        {
+          "range": "2605:4300:1614::/48",
+          "vpn": "",
+          "gre": "",
           "hostname": "",
           "latitude": "41.878114",
           "longitude": "-87.629798"
@@ -129,6 +129,14 @@
       ],
       "city : Washington DC": [
         {
+          "range": "136.226.20.0/23",
+          "vpn": "",
+          "gre": "136.226.18.22",
+          "hostname": "",
+          "latitude": "38.907192",
+          "longitude": "-77.036871"
+        },
+        {
           "range": "2605:4300:1712::/48",
           "vpn": "",
           "gre": "136.226.18.22",
@@ -157,14 +165,6 @@
           "vpn": "was1-2-vpn.zscalergov.net",
           "gre": "136.226.18.22",
           "hostname": "was1-2.sme.zscalergov.net",
-          "latitude": "38.907192",
-          "longitude": "-77.036871"
-        },
-        {
-          "range": "136.226.20.0/23",
-          "vpn": "",
-          "gre": "136.226.18.22",
-          "hostname": "",
           "latitude": "38.907192",
           "longitude": "-77.036871"
         }
@@ -203,6 +203,42 @@
           "hostname": "",
           "latitude": "1.352083",
           "longitude": "103.819836"
+        }
+      ]
+    },
+    "continent : EMEA": {
+      "city : Zurich I": [
+        {
+          "range": "165.225.52.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "47.3768866",
+          "longitude": "8.541694"
+        },
+        {
+          "range": "165.225.64.0/23",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "47.3768866",
+          "longitude": "8.541694"
+        },
+        {
+          "range": "2a03:eec0:3510::/48",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "47.3768866",
+          "longitude": "8.541694"
+        },
+        {
+          "range": "2a03:eec0:3511::/48",
+          "vpn": "",
+          "gre": "",
+          "hostname": "",
+          "latitude": "47.3768866",
+          "longitude": "8.541694"
         }
       ]
     }
