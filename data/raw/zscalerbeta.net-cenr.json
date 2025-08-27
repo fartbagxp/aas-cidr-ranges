@@ -6,6 +6,7 @@
           "range": "165.225.72.0/22",
           "vpn": "fra4-vpn.zscalerbeta.net",
           "gre": "165.225.72.38",
+          "ext": "",
           "hostname": "fra4.sme.zscalerbeta.net",
           "latitude": "50.110922",
           "longitude": "8.682127"
@@ -14,6 +15,7 @@
           "range": "2a03:eec0:1300::/40",
           "vpn": "",
           "gre": "165.225.72.38",
+          "ext": "",
           "hostname": "",
           "latitude": "50.110922",
           "longitude": "8.682127"
@@ -24,6 +26,7 @@
           "range": "147.161.246.0/23",
           "vpn": "zrh1-vpn.zscalerbeta.net",
           "gre": "147.161.246.34",
+          "ext": "",
           "hostname": "zrh1.sme.zscalerbeta.net",
           "latitude": "47.376887",
           "longitude": "8.541694"
@@ -32,6 +35,7 @@
           "range": "2a03:eec0:1400::/40",
           "vpn": "",
           "gre": "147.161.246.34",
+          "ext": "",
           "hostname": "",
           "latitude": "47.376887",
           "longitude": "8.541694"
@@ -41,17 +45,10 @@
     "continent : Americas": {
       "city : San Francisco IV": [
         {
-          "range": "104.129.202.0/23",
-          "vpn": "sjc4-vpn.zscalerbeta.net",
-          "gre": "104.129.203.248",
-          "hostname": "sjc4.sme.zscalerbeta.net",
-          "latitude": "37.774929",
-          "longitude": "-122.419415"
-        },
-        {
           "range": "2605:4300:1200::/40",
           "vpn": "",
           "gre": "104.129.203.248",
+          "ext": "",
           "hostname": "",
           "latitude": "37.774929",
           "longitude": "-122.419415"
@@ -60,6 +57,7 @@
           "range": "170.85.154.0/23",
           "vpn": "",
           "gre": "104.129.203.248",
+          "ext": "",
           "hostname": "",
           "latitude": "37.774929",
           "longitude": "-122.419415"
@@ -68,7 +66,17 @@
           "range": "170.85.182.0/23",
           "vpn": "",
           "gre": "104.129.203.248",
+          "ext": "",
           "hostname": "",
+          "latitude": "37.774929",
+          "longitude": "-122.419415"
+        },
+        {
+          "range": "104.129.202.0/23",
+          "vpn": "sjc4-vpn.zscalerbeta.net",
+          "gre": "104.129.203.248",
+          "ext": "",
+          "hostname": "sjc4.sme.zscalerbeta.net",
           "latitude": "37.774929",
           "longitude": "-122.419415"
         }
@@ -78,6 +86,7 @@
           "range": "104.129.194.0/23",
           "vpn": "was1-vpn.zscalerbeta.net",
           "gre": "104.129.194.38",
+          "ext": "",
           "hostname": "was1.sme.zscalerbeta.net",
           "latitude": "38.907192",
           "longitude": "-77.036871"
@@ -86,6 +95,7 @@
           "range": "2605:4300:1400::/40",
           "vpn": "",
           "gre": "104.129.194.38",
+          "ext": "",
           "hostname": "",
           "latitude": "38.907192",
           "longitude": "-77.036871"
@@ -93,9 +103,19 @@
       ],
       "city : Washington DC IV": [
         {
+          "range": "170.85.90.0/23",
+          "vpn": "",
+          "gre": "",
+          "ext": "",
+          "hostname": "",
+          "latitude": "38.907192",
+          "longitude": "-77.036871"
+        },
+        {
           "range": "170.85.92.0/23",
           "vpn": "",
           "gre": "",
+          "ext": "",
           "hostname": "",
           "latitude": "38.907192",
           "longitude": "-77.036871"
@@ -104,6 +124,7 @@
           "range": "170.85.94.0/23",
           "vpn": "",
           "gre": "",
+          "ext": "",
           "hostname": "",
           "latitude": "38.907192",
           "longitude": "-77.036871"
@@ -112,6 +133,7 @@
           "range": "2605:4300:2d00::/40",
           "vpn": "",
           "gre": "",
+          "ext": "",
           "hostname": "",
           "latitude": "38.907192",
           "longitude": "-77.036871"
@@ -120,6 +142,7 @@
           "range": "170.85.86.0/23",
           "vpn": "",
           "gre": "",
+          "ext": "",
           "hostname": "",
           "latitude": "38.907192",
           "longitude": "-77.036871"
@@ -128,14 +151,7 @@
           "range": "170.85.88.0/23",
           "vpn": "",
           "gre": "",
-          "hostname": "",
-          "latitude": "38.907192",
-          "longitude": "-77.036871"
-        },
-        {
-          "range": "170.85.90.0/23",
-          "vpn": "",
-          "gre": "",
+          "ext": "",
           "hostname": "",
           "latitude": "38.907192",
           "longitude": "-77.036871"
@@ -148,6 +164,7 @@
           "range": "165.225.112.0/23",
           "vpn": "sin4-vpn.zscalerbeta.net",
           "gre": "165.225.113.220",
+          "ext": "",
           "hostname": "sin4.sme.zscalerbeta.net",
           "latitude": "1.352083",
           "longitude": "103.819836"
@@ -156,6 +173,7 @@
           "range": "2400:7aa0:1b00::/40",
           "vpn": "",
           "gre": "165.225.113.220",
+          "ext": "",
           "hostname": "",
           "latitude": "1.352083",
           "longitude": "103.819836"
