@@ -49,5 +49,5 @@ uv lock
 To upgrade dependencies, run:
 
 ```bash
-uv lock --upgrade
+uv sync --upgrade
 ```
