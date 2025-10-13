@@ -1,6 +1,6 @@
 {
-  "creationDate": "2025-08-29T02:01:20.886544",
-  "syncToken": 1756432880,
+  "creationDate": "2025-10-12T22:39:19.412218",
+  "syncToken": 1760308759,
   "items": [
     {
       "network": "52.82.172.0",
@@ -235,6 +235,198 @@
       ],
       "product": [
         "bitbucket"
+      ],
+      "direction": [
+        "egress"
+      ],
+      "perimeter": "commercial"
+    },
+    {
+      "network": "185.166.140.128",
+      "mask_len": 28,
+      "cidr": "185.166.140.128/28",
+      "mask": "255.255.255.240",
+      "region": [
+        "ap-northeast-1"
+      ],
+      "product": [
+        "rovo-crawler"
+      ],
+      "direction": [
+        "egress"
+      ],
+      "perimeter": "commercial"
+    },
+    {
+      "network": "43.202.69.112",
+      "mask_len": 28,
+      "cidr": "43.202.69.112/28",
+      "mask": "255.255.255.240",
+      "region": [
+        "ap-northeast-2"
+      ],
+      "product": [
+        "rovo-crawler"
+      ],
+      "direction": [
+        "egress"
+      ],
+      "perimeter": "commercial"
+    },
+    {
+      "network": "13.200.41.240",
+      "mask_len": 28,
+      "cidr": "13.200.41.240/28",
+      "mask": "255.255.255.240",
+      "region": [
+        "ap-south-1"
+      ],
+      "product": [
+        "rovo-crawler"
+      ],
+      "direction": [
+        "egress"
+      ],
+      "perimeter": "commercial"
+    },
+    {
+      "network": "104.192.137.224",
+      "mask_len": 28,
+      "cidr": "104.192.137.224/28",
+      "mask": "255.255.255.240",
+      "region": [
+        "ap-southeast-1"
+      ],
+      "product": [
+        "rovo-crawler"
+      ],
+      "direction": [
+        "egress"
+      ],
+      "perimeter": "commercial"
+    },
+    {
+      "network": "104.192.143.224",
+      "mask_len": 28,
+      "cidr": "104.192.143.224/28",
+      "mask": "255.255.255.240",
+      "region": [
+        "ap-southeast-2"
+      ],
+      "product": [
+        "rovo-crawler"
+      ],
+      "direction": [
+        "egress"
+      ],
+      "perimeter": "commercial"
+    },
+    {
+      "network": "104.192.136.224",
+      "mask_len": 28,
+      "cidr": "104.192.136.224/28",
+      "mask": "255.255.255.240",
+      "region": [
+        "ca-central-1"
+      ],
+      "product": [
+        "rovo-crawler"
+      ],
+      "direction": [
+        "egress"
+      ],
+      "perimeter": "commercial"
+    },
+    {
+      "network": "185.166.143.224",
+      "mask_len": 28,
+      "cidr": "185.166.143.224/28",
+      "mask": "255.255.255.240",
+      "region": [
+        "eu-central-1"
+      ],
+      "product": [
+        "rovo-crawler"
+      ],
+      "direction": [
+        "egress"
+      ],
+      "perimeter": "commercial"
+    },
+    {
+      "network": "16.63.53.240",
+      "mask_len": 28,
+      "cidr": "16.63.53.240/28",
+      "mask": "255.255.255.240",
+      "region": [
+        "eu-central-2"
+      ],
+      "product": [
+        "rovo-crawler"
+      ],
+      "direction": [
+        "egress"
+      ],
+      "perimeter": "commercial"
+    },
+    {
+      "network": "185.166.142.224",
+      "mask_len": 28,
+      "cidr": "185.166.142.224/28",
+      "mask": "255.255.255.240",
+      "region": [
+        "eu-west-1"
+      ],
+      "product": [
+        "rovo-crawler"
+      ],
+      "direction": [
+        "egress"
+      ],
+      "perimeter": "commercial"
+    },
+    {
+      "network": "185.166.141.128",
+      "mask_len": 28,
+      "cidr": "185.166.141.128/28",
+      "mask": "255.255.255.240",
+      "region": [
+        "eu-west-2"
+      ],
+      "product": [
+        "rovo-crawler"
+      ],
+      "direction": [
+        "egress"
+      ],
+      "perimeter": "commercial"
+    },
+    {
+      "network": "104.192.142.224",
+      "mask_len": 28,
+      "cidr": "104.192.142.224/28",
+      "mask": "255.255.255.240",
+      "region": [
+        "us-east-1"
+      ],
+      "product": [
+        "rovo-crawler"
+      ],
+      "direction": [
+        "egress"
+      ],
+      "perimeter": "commercial"
+    },
+    {
+      "network": "104.192.138.224",
+      "mask_len": 28,
+      "cidr": "104.192.138.224/28",
+      "mask": "255.255.255.240",
+      "region": [
+        "us-west-1"
+      ],
+      "product": [
+        "rovo-crawler"
       ],
       "direction": [
         "egress"
