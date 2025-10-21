@@ -3,20 +3,20 @@
     "continent : Americas": {
       "city : Chicago": [
         {
-          "range": "2605:4300:1912::/48",
-          "vpn": "",
-          "gre": "136.226.32.22",
-          "ext": "",
-          "hostname": "",
-          "latitude": "41.878114",
-          "longitude": "-87.629798"
-        },
-        {
           "range": "136.226.32.0/23",
           "vpn": "chi1-vpn.zscalerten.net",
           "gre": "136.226.32.22",
           "ext": "",
           "hostname": "chi1.sme.zscalerten.net",
+          "latitude": "41.878114",
+          "longitude": "-87.629798"
+        },
+        {
+          "range": "2605:4300:1912::/48",
+          "vpn": "",
+          "gre": "136.226.32.22",
+          "ext": "",
+          "hostname": "",
           "latitude": "41.878114",
           "longitude": "-87.629798"
         },
