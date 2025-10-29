@@ -1,7 +1,7 @@
 [project]
 name = "aas-cidr-ranges"
-version = "0.1.0"
-description = "Add your description here"
+version = "1.0.0"
+description = "As a service - with a list of CIDR ranges from various services"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
@@ -12,5 +12,5 @@ dependencies = [
 
 [dependency-groups]
 dev = [
-    "pre-commit>=4.2.0",
+    "pre-commit>=4.3.0",
 ]
