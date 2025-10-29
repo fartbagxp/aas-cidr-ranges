@@ -4,7 +4,7 @@ requires-python = ">=3.11"
 
 [[package]]
 name = "aas-cidr-ranges"
-version = "0.1.0"
+version = "1.0.0"
 source = { virtual = "." }
 dependencies = [
     { name = "ipwhois" },
@@ -25,7 +25,7 @@ requires-dist = [
 ]
 
 [package.metadata.requires-dev]
-dev = [{ name = "pre-commit", specifier = ">=4.2.0" }]
+dev = [{ name = "pre-commit", specifier = ">=4.3.0" }]
 
 [[package]]
 name = "certifi"
