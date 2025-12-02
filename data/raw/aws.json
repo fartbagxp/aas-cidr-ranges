@@ -1,6 +1,6 @@
 {
-  "syncToken": "1764604120",
-  "createDate": "2025-12-01-15-48-40",
+  "syncToken": "1764689922",
+  "createDate": "2025-12-02-15-38-42",
   "prefixes": [
     {
       "ip_prefix": "3.4.12.4/32",
@@ -9027,6 +9027,12 @@
       "network_border_group": "ca-west-1"
     },
     {
+      "ip_prefix": "15.193.32.0/24",
+      "region": "us-west-2",
+      "service": "AMAZON",
+      "network_border_group": "us-west-2"
+    },
+    {
       "ip_prefix": "15.220.152.0/21",
       "region": "eu-central-1",
       "service": "AMAZON",
@@ -13579,12 +13585,6 @@
       "region": "eu-north-1",
       "service": "AMAZON",
       "network_border_group": "eu-north-1"
-    },
-    {
-      "ip_prefix": "23.228.232.0/22",
-      "region": "us-east-1",
-      "service": "AMAZON",
-      "network_border_group": "us-east-1"
     },
     {
       "ip_prefix": "40.174.0.0/15",
@@ -39225,6 +39225,12 @@
       "network_border_group": "me-central-1"
     },
     {
+      "ip_prefix": "15.193.32.0/24",
+      "region": "us-west-2",
+      "service": "EC2",
+      "network_border_group": "us-west-2"
+    },
+    {
       "ip_prefix": "15.220.152.0/21",
       "region": "eu-central-1",
       "service": "EC2",
@@ -40849,12 +40855,6 @@
       "region": "us-west-2",
       "service": "EC2",
       "network_border_group": "us-west-2-las-1"
-    },
-    {
-      "ip_prefix": "23.228.232.0/22",
-      "region": "us-east-1",
-      "service": "EC2",
-      "network_border_group": "us-east-1"
     },
     {
       "ip_prefix": "192.31.213.0/24",
@@ -48997,6 +48997,24 @@
       "region": "ap-southeast-4",
       "service": "CODEBUILD",
       "network_border_group": "ap-southeast-4"
+    },
+    {
+      "ip_prefix": "56.68.33.32/28",
+      "region": "ap-southeast-5",
+      "service": "CODEBUILD",
+      "network_border_group": "ap-southeast-5"
+    },
+    {
+      "ip_prefix": "3.103.24.192/28",
+      "region": "ap-southeast-6",
+      "service": "CODEBUILD",
+      "network_border_group": "ap-southeast-6"
+    },
+    {
+      "ip_prefix": "43.209.155.112/28",
+      "region": "ap-southeast-7",
+      "service": "CODEBUILD",
+      "network_border_group": "ap-southeast-7"
     },
     {
       "ip_prefix": "3.98.171.224/29",
