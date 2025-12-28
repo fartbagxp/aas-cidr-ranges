@@ -13,7 +13,7 @@ The goal of this project is to be able to quickly determine what Software-as-a-S
 
 For coding and running locally, the following is required:
 
-- [Python 3.11+](https://www.python.org/downloads/)
+- [Python 3.13+](https://www.python.org/downloads/)
   For deployment:
 
 ## How to run locally
@@ -27,22 +27,11 @@ For coding and running locally, the following is required:
 1. Setup dependencies:
 
    ```bash
-   python -m venv .venv
-   source .venv/bin/activate
-   pip install -r requirements.txt
+   uv sync
    ```
 
 1. Run the code to test it out:
-   - python test.py
 
-### Upgrading old dependencies
-
-I'm of the opinion that third party packages should be locked down to version and updated _manually_ for production builds, which is why the requirements.txt file is locked down to version.
-
-Python does not offer a default way of updating this file natively, so one way to work around it is to run the following to trick the `requirements.txt` file into upper versions and reinstalling the setup, and freezing a locked down dependency upon completion.
-
-```bash
-sed -i 's/[~=]=/>=/' requirements.txt
-pip install --upgrade --force-reinstall -r requirements.txt
-pip freeze > requirements.txt
-```
+   ```bash
+   uv run python test.py
+   ```
