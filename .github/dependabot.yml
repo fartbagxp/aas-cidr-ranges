@@ -6,6 +6,10 @@ updates:
       interval: daily
     cooldown:
       default-days: 14
+    groups:
+      python-dependencies:
+        patterns:
+          - '*'
   - package-ecosystem: github-actions
     directory: /
     groups:
