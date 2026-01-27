@@ -1,27 +1,7 @@
 {
   "zscalerone.net": {
     "continent : EMEA": {
-      "city : Capetown": [
-        {
-          "range": "196.23.154.64/27",
-          "vpn": "",
-          "gre": "196.23.154.78",
-          "ext": "",
-          "hostname": "capetown2.sme.zscalerone.net",
-          "latitude": "-33.922087",
-          "longitude": "18.423142"
-        }
-      ],
       "city : Capetown IV": [
-        {
-          "range": "159.254.78.0/23",
-          "vpn": "",
-          "gre": "136.226.216.11",
-          "ext": "",
-          "hostname": "",
-          "latitude": "-33.922087",
-          "longitude": "18.423142"
-        },
         {
           "range": "136.226.216.0/23",
           "vpn": "cpt4-vpn.zscalerone.net",
@@ -39,20 +19,27 @@
           "hostname": "",
           "latitude": "-33.922087",
           "longitude": "18.423142"
-        }
-      ],
-      "city : Johannesburg II": [
+        },
         {
-          "range": "197.98.201.0/24",
-          "vpn": "jnb2-vpn.zscalerone.net",
-          "gre": "197.98.201.18",
+          "range": "159.254.78.0/23",
+          "vpn": "",
+          "gre": "136.226.216.11",
           "ext": "",
-          "hostname": "jnb2.sme.zscalerone.net",
-          "latitude": "-26.205647",
-          "longitude": "28.033718"
+          "hostname": "",
+          "latitude": "-33.922087",
+          "longitude": "18.423142"
         }
       ],
       "city : Johannesburg III": [
+        {
+          "range": "147.161.162.0/23",
+          "vpn": "jnb3-vpn.zscalerone.net",
+          "gre": "147.161.162.11",
+          "ext": "",
+          "hostname": "jnb3.sme.zscalerone.net",
+          "latitude": "-26.205647",
+          "longitude": "28.033718"
+        },
         {
           "range": "2a03:eec0:1c00::/40",
           "vpn": "",
@@ -70,26 +57,6 @@
           "hostname": "",
           "latitude": "-26.205647",
           "longitude": "28.033718"
-        },
-        {
-          "range": "147.161.162.0/23",
-          "vpn": "jnb3-vpn.zscalerone.net",
-          "gre": "147.161.162.11",
-          "ext": "",
-          "hostname": "jnb3.sme.zscalerone.net",
-          "latitude": "-26.205647",
-          "longitude": "28.033718"
-        }
-      ],
-      "city : Lagos": [
-        {
-          "range": "197.156.241.224/27",
-          "vpn": "lagos1-vpn.zscalerone.net",
-          "gre": "197.156.241.234",
-          "ext": "",
-          "hostname": "lagos1.sme.zscalerone.net",
-          "latitude": "6.524379",
-          "longitude": "3.379206"
         }
       ],
       "city : London III": [
