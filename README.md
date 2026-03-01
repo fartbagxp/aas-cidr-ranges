@@ -3,20 +3,18 @@
 ![Last Run](https://github.com/fartbagxp/aas-cidr-ranges/actions/workflows/main.yml/badge.svg)
 ![master](https://img.shields.io/github/last-commit/fartbagxp/aas-cidr-ranges/master)
 
-The goal of this project is to be able to quickly determine what Software-as-a-Service (SaaS) owns a particular IP address or range of IP addresses.
+Given an IP address or [CIDR range](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing), this project tells you which SaaS or PaaS provider owns it.
 
-**Input**: Provided an IP address: `213.199.183.0` or an IP range in [CIDR notation](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing): 213.199.183.0/24, try to provide whether this IP address or range belongs to a SaaS provider.
+For example, `213.199.183.0` or `213.199.183.0/24` returns:
 
-**Result** : `{"error": "", "data": {"region": "", "platform": "Azure", "systemService": "", "cloud": "Public"}}`
+`{"error": "", "data": {"region": "", "platform": "Azure", "systemService": "", "cloud": "Public"}}`
 
 ## Requirements
 
-For coding and running locally, the following is required:
-
 - [Python 3.13+](https://www.python.org/downloads/)
-  For deployment:
+- [uv](https://docs.astral.sh/uv/getting-started/installation/)
 
-## How to run locally
+## Run locally
 
 1. Download the code:
 
@@ -33,5 +31,10 @@ For coding and running locally, the following is required:
 1. Run the code to test it out:
 
    ```bash
-   uv run python test.py
+   uv run --group dev pytest tests/
    ```
+
+## Related projects
+
+- [lord-afred's ipranges](https://github.com/lord-alfred/ipranges) - broader IP range coverage
+- [kmsec-uk's bulk IP lookup](https://github.com/kmsec-uk/bulk-ip-lookup) - uses [Team Cymru's IP ASN mapping](https://www.team-cymru.com/ip-asn-mapping)

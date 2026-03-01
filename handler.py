@@ -29,7 +29,7 @@ def sanitize_parameter(event):
         'body': json.dumps(body)
     }
 
-  if event['queryStringParameters'] is None or 'ip' not in event['queryStringParameters']:
+  elif event['queryStringParameters'] is None or 'ip' not in event['queryStringParameters']:
     isValid = False
     body['error'] = "Request must have field 'ip' with value of an IP address or valid CIDR notation"
     result = {

@@ -172,13 +172,15 @@ class PytrieSupport():
       r = r.strip()
       if r:
         items = r.split(',')
-        # cidr = items[0]
+        if len(items) < 5:
+          continue
+        cidr = items[0]
         country = items[1]
         subdivision = items[2]
         city = items[3]
         zipcode = items[4]
 
-        pytrie[r] = {
+        pytrie[cidr] = {
           'source': 'DigitalOcean',
           'website': 'https://digitalocean.com/geo/google.csv',
           'country': country,

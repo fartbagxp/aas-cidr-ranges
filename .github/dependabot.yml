@@ -3,7 +3,7 @@ updates:
   - package-ecosystem: uv
     directory: /
     schedule:
-      interval: daily
+      interval: monthly
     cooldown:
       default-days: 14
     groups:
@@ -17,6 +17,6 @@ updates:
         patterns:
           - '*'
     schedule:
-      interval: daily
+      interval: monthly
     cooldown:
       default-days: 14
