@@ -3,14 +3,18 @@ repos:
     rev: v6.0.0
     hooks:
       - id: check-yaml
-        exclude: ^data/raw/
+        exclude: ^data/raw/,^docs/
       - id: end-of-file-fixer
-        exclude: ^data/raw/
+        exclude: ^data/raw/,^docs/
       - id: trailing-whitespace
-        exclude: ^data/raw/
+        exclude: ^data/raw/,^docs/
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.14.13
+    rev: v0.15.4
     hooks:
       - id: ruff
-        exclude: ^data/raw/
-        exclude: ^docs/
+        exclude: ^data/raw/,^docs/
+  - repo: https://github.com/gitleaks/gitleaks
+    rev: v8.30.0
+    hooks:
+      - id: gitleaks
+        exclude: ^data/raw/,^docs/
