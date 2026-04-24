@@ -1,6 +1,6 @@
 {
-  "creationDate": "2026-04-07T02:01:27.152558",
-  "syncToken": 1775527287,
+  "creationDate": "2026-04-23T22:27:38.526318",
+  "syncToken": 1776983258,
   "items": [
     {
       "network": "52.82.172.0",
@@ -409,6 +409,22 @@
       "mask": "255.255.255.240",
       "region": [
         "us-east-1"
+      ],
+      "product": [
+        "rovo-crawler"
+      ],
+      "direction": [
+        "egress"
+      ],
+      "perimeter": "commercial"
+    },
+    {
+      "network": "104.192.138.224",
+      "mask_len": 28,
+      "cidr": "104.192.138.224/28",
+      "mask": "255.255.255.240",
+      "region": [
+        "us-west-1"
       ],
       "product": [
         "rovo-crawler"
@@ -1709,6 +1725,75 @@
       ],
       "direction": [
         "egress"
+      ],
+      "perimeter": "commercial"
+    },
+    {
+      "network": "104.192.138.0",
+      "mask_len": 24,
+      "cidr": "104.192.138.0/24",
+      "mask": "255.255.255.0",
+      "region": [
+        "global"
+      ],
+      "product": [
+        "bitbucket",
+        "confluence",
+        "forge",
+        "halp",
+        "jira",
+        "loom",
+        "statuspage",
+        "trello"
+      ],
+      "direction": [
+        "ingress"
+      ],
+      "perimeter": "commercial"
+    },
+    {
+      "network": "104.192.139.0",
+      "mask_len": 24,
+      "cidr": "104.192.139.0/24",
+      "mask": "255.255.255.0",
+      "region": [
+        "global"
+      ],
+      "product": [
+        "bitbucket",
+        "confluence",
+        "forge",
+        "halp",
+        "jira",
+        "loom",
+        "statuspage",
+        "trello"
+      ],
+      "direction": [
+        "ingress"
+      ],
+      "perimeter": "commercial"
+    },
+    {
+      "network": "104.192.141.0",
+      "mask_len": 24,
+      "cidr": "104.192.141.0/24",
+      "mask": "255.255.255.0",
+      "region": [
+        "global"
+      ],
+      "product": [
+        "bitbucket",
+        "confluence",
+        "forge",
+        "halp",
+        "jira",
+        "loom",
+        "statuspage",
+        "trello"
+      ],
+      "direction": [
+        "ingress"
       ],
       "perimeter": "commercial"
     },
