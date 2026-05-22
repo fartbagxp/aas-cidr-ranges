@@ -19,6 +19,15 @@
           "hostname": "",
           "latitude": "50.110922",
           "longitude": "8.682127"
+        },
+        {
+          "range": "2a03:eec0:1300::/40",
+          "vpn": "",
+          "gre": "2a03:eec0:1311::1b",
+          "ext": "",
+          "hostname": "fra4.sme.zscalerbeta.net",
+          "latitude": "50.110922",
+          "longitude": "8.682127"
         }
       ],
       "city : Zurich": [
@@ -90,6 +99,15 @@
           "longitude": "-122.419415"
         },
         {
+          "range": "2605:4300:1200::/40",
+          "vpn": "sjc4-vpn.zscalerbeta.net",
+          "gre": "2605:4300:1212::23e",
+          "ext": "",
+          "hostname": "sjc4.sme.zscalerbeta.net",
+          "latitude": "37.774929",
+          "longitude": "-122.419415"
+        },
+        {
           "range": "104.129.202.0/23",
           "vpn": "sjc4-vpn.zscalerbeta.net",
           "gre": "104.129.203.248",
@@ -101,15 +119,6 @@
       ],
       "city : Washington DC": [
         {
-          "range": "104.129.194.0/23",
-          "vpn": "was1-vpn.zscalerbeta.net",
-          "gre": "104.129.194.38",
-          "ext": "",
-          "hostname": "was1.sme.zscalerbeta.net",
-          "latitude": "38.907192",
-          "longitude": "-77.036871"
-        },
-        {
           "range": "2605:4300:1400::/40",
           "vpn": "",
           "gre": "104.129.194.38",
@@ -117,9 +126,36 @@
           "hostname": "",
           "latitude": "38.907192",
           "longitude": "-77.036871"
+        },
+        {
+          "range": "2605:4300:2d00::/40",
+          "vpn": "was1-vpn.zscalerbeta.net",
+          "gre": "2605:4300:1411::1c",
+          "ext": "",
+          "hostname": "was4.sme.zscalerbeta.net",
+          "latitude": "38.907192",
+          "longitude": "-77.036871"
+        },
+        {
+          "range": "104.129.194.0/23",
+          "vpn": "was1-vpn.zscalerbeta.net",
+          "gre": "104.129.194.38",
+          "ext": "",
+          "hostname": "was1.sme.zscalerbeta.net",
+          "latitude": "38.907192",
+          "longitude": "-77.036871"
         }
       ],
       "city : Washington DC IV": [
+        {
+          "range": "170.85.88.0/23",
+          "vpn": "",
+          "gre": "170.85.92.39",
+          "ext": "",
+          "hostname": "",
+          "latitude": "38.907192",
+          "longitude": "-77.036871"
+        },
         {
           "range": "170.85.90.0/23",
           "vpn": "",
@@ -158,15 +194,6 @@
         },
         {
           "range": "170.85.86.0/23",
-          "vpn": "",
-          "gre": "170.85.92.39",
-          "ext": "",
-          "hostname": "",
-          "latitude": "38.907192",
-          "longitude": "-77.036871"
-        },
-        {
-          "range": "170.85.88.0/23",
           "vpn": "",
           "gre": "170.85.92.39",
           "ext": "",
