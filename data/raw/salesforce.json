@@ -1,0 +1,321 @@
+{
+  "syncToken": "1779391148",
+  "createDate": "2026-05-21-19-19-08",
+  "prefixes": [
+    {
+      "region": "af-south-1",
+      "provider": "aws",
+      "ip_prefix": [
+        "145.224.193.0/24"
+      ]
+    },
+    {
+      "region": "ap-northeast-1",
+      "provider": "aws",
+      "ip_prefix": [
+        "141.163.208.0/23"
+      ]
+    },
+    {
+      "region": "ap-northeast-2",
+      "provider": "aws",
+      "ip_prefix": [
+        "141.163.200.0/23"
+      ]
+    },
+    {
+      "region": "ap-northeast-3",
+      "provider": "aws",
+      "ip_prefix": [
+        "141.163.214.0/24"
+      ]
+    },
+    {
+      "region": "ap-south-1",
+      "provider": "aws",
+      "ip_prefix": [
+        "141.163.204.0/23"
+      ]
+    },
+    {
+      "region": "ap-south-2",
+      "provider": "aws",
+      "ip_prefix": [
+        "141.163.216.0/24"
+      ]
+    },
+    {
+      "region": "ap-southeast-1",
+      "provider": "aws",
+      "ip_prefix": [
+        "141.163.196.0/23"
+      ]
+    },
+    {
+      "region": "ap-southeast-2",
+      "provider": "aws",
+      "ip_prefix": [
+        "141.163.192.0/23"
+      ]
+    },
+    {
+      "region": "ap-southeast-3",
+      "provider": "aws",
+      "ip_prefix": [
+        "141.163.212.0/24"
+      ]
+    },
+    {
+      "region": "ca-central-1",
+      "provider": "aws",
+      "ip_prefix": [
+        "155.226.152.0/23"
+      ]
+    },
+    {
+      "region": "eu-central-1",
+      "provider": "aws",
+      "ip_prefix": [
+        "145.224.208.0/23"
+      ]
+    },
+    {
+      "region": "eu-central-2",
+      "provider": "aws",
+      "ip_prefix": [
+        "145.224.198.0/24"
+      ]
+    },
+    {
+      "region": "eu-north-1",
+      "provider": "aws",
+      "ip_prefix": [
+        "145.224.204.0/23"
+      ]
+    },
+    {
+      "region": "eu-south-1",
+      "provider": "aws",
+      "ip_prefix": [
+        "145.224.196.0/24",
+        "145.224.202.0/23"
+      ]
+    },
+    {
+      "region": "eu-west-2",
+      "provider": "aws",
+      "ip_prefix": [
+        "145.224.200.0/23"
+      ]
+    },
+    {
+      "region": "eu-west-3",
+      "provider": "aws",
+      "ip_prefix": [
+        "145.224.212.0/24",
+        "145.224.206.0/23"
+      ]
+    },
+    {
+      "region": "il-central-1",
+      "provider": "aws",
+      "ip_prefix": [
+        "145.224.192.0/24"
+      ]
+    },
+    {
+      "region": "me-central-1",
+      "provider": "aws",
+      "ip_prefix": [
+        "145.224.194.0/24"
+      ]
+    },
+    {
+      "region": "sa-east-1",
+      "provider": "aws",
+      "ip_prefix": [
+        "155.226.188.0/23"
+      ]
+    },
+    {
+      "region": "us-east-1",
+      "provider": "aws",
+      "ip_prefix": [
+        "155.226.144.0/22"
+      ]
+    },
+    {
+      "region": "us-east-2",
+      "provider": "aws",
+      "ip_prefix": [
+        "155.226.156.0/23",
+        "155.226.186.0/23"
+      ]
+    },
+    {
+      "region": "us-west-2",
+      "provider": "aws",
+      "ip_prefix": [
+        "155.226.128.0/21"
+      ]
+    },
+    {
+      "region": "us-central1",
+      "provider": "gcp",
+      "ip_prefix": [
+        "129.77.12.0/24"
+      ]
+    },
+    {
+      "region": "us-east4",
+      "provider": "gcp",
+      "ip_prefix": [
+        "129.77.13.0/24"
+      ]
+    }
+  ],
+  "ipv6_prefixes": [
+    {
+      "region": "ap-northeast-1",
+      "provider": "aws",
+      "ipv6_prefix": [
+        "2a03:5d67:fe60::/45"
+      ]
+    },
+    {
+      "region": "ap-northeast-2",
+      "provider": "aws",
+      "ipv6_prefix": [
+        "2a03:5d67:fe88::/45"
+      ]
+    },
+    {
+      "region": "ap-northeast-3",
+      "provider": "aws",
+      "ipv6_prefix": [
+        "2a03:5d67:fec0::/45"
+      ]
+    },
+    {
+      "region": "ap-south-1",
+      "provider": "aws",
+      "ipv6_prefix": [
+        "2a03:5d67:fe40::/45"
+      ]
+    },
+    {
+      "region": "ap-south-2",
+      "provider": "aws",
+      "ipv6_prefix": [
+        "2a03:5d67:fec8::/45"
+      ]
+    },
+    {
+      "region": "ap-southeast-1",
+      "provider": "aws",
+      "ipv6_prefix": [
+        "2a03:5d67:fe68::/45"
+      ]
+    },
+    {
+      "region": "ap-southeast-2",
+      "provider": "aws",
+      "ipv6_prefix": [
+        "2a03:5d67:fe50::/45"
+      ]
+    },
+    {
+      "region": "ap-southeast-3",
+      "provider": "aws",
+      "ipv6_prefix": [
+        "2a03:5d67:fea0::/45"
+      ]
+    },
+    {
+      "region": "ca-central-1",
+      "provider": "aws",
+      "ipv6_prefix": [
+        "2a03:5d67:fe58::/45"
+      ]
+    },
+    {
+      "region": "eu-central-1",
+      "provider": "aws",
+      "ipv6_prefix": [
+        "2a03:5d67:fe48::/45"
+      ]
+    },
+    {
+      "region": "eu-central-2",
+      "provider": "aws",
+      "ipv6_prefix": [
+        "2a03:5d67:fe90::/45"
+      ]
+    },
+    {
+      "region": "eu-north-1",
+      "provider": "aws",
+      "ipv6_prefix": [
+        "2a03:5d67:fe98::/45"
+      ]
+    },
+    {
+      "region": "eu-south-1",
+      "provider": "aws",
+      "ipv6_prefix": [
+        "2a03:5d67:fea8::/45"
+      ]
+    },
+    {
+      "region": "eu-west-2",
+      "provider": "aws",
+      "ipv6_prefix": [
+        "2a03:5d67:fe80::/45"
+      ]
+    },
+    {
+      "region": "eu-west-3",
+      "provider": "aws",
+      "ipv6_prefix": [
+        "2a03:5d67:fe78::/45"
+      ]
+    },
+    {
+      "region": "il-central-1",
+      "provider": "aws",
+      "ipv6_prefix": [
+        "2a03:5d67:feb0::/45"
+      ]
+    },
+    {
+      "region": "sa-east-1",
+      "provider": "aws",
+      "ipv6_prefix": [
+        "2a03:5d67:fe70::/45"
+      ]
+    },
+    {
+      "region": "us-east-1",
+      "provider": "aws",
+      "ipv6_prefix": [
+        "2a03:5d67:fe20::/43"
+      ]
+    },
+    {
+      "region": "us-east-2",
+      "provider": "aws",
+      "ipv6_prefix": [
+        "2a03:5d67:feb8::/45",
+        "2a03:5d67:fed0::/45"
+      ]
+    },
+    {
+      "region": "us-west-2",
+      "provider": "aws",
+      "ipv6_prefix": [
+        "2a03:5d67:ffd0::/45",
+        "2a03:5d67:fe00::/43"
+      ]
+    }
+  ]
+}
