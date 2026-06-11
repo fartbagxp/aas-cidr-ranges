@@ -1,5 +1,6 @@
 import json
 
+from src.dl.download_asn import AsnCidrDownloader
 from src.dl.download_aws import AWSCidrDownloader
 from src.dl.download_atlassian import AtlassianCidrDownloader
 from src.dl.download_azure import AzureCidrDownloader
@@ -12,8 +13,10 @@ from src.dl.download_google import GcpCidrDownloader
 from src.dl.download_grafana import GrafanaCidrDownloader
 from src.dl.download_iana import IanaCidrDownloader
 from src.dl.download_linode import LinodeCidrDownloader
+from src.dl.download_microsoft365 import Microsoft365CidrDownloader
 from src.dl.download_okta import OktaCidrDownloader
 from src.dl.download_oracle import OracleCidrDownloader
+from src.dl.download_salesforce import SalesforceCidrDownloader
 from src.dl.download_seqera import SeqeraCidrDownloader
 from src.dl.download_stripe import StripeCidrDownloader
 from src.dl.download_pingdom import PingdomCidrDownloader
@@ -109,6 +112,13 @@ def update():
   result = linode_downloader.get_range()
   writer.write('data/raw/linode.txt', result)
 
+  m365_downloader = Microsoft365CidrDownloader()
+  m365_config = m365_downloader.get_config()
+  for config in m365_config:
+    result = m365_downloader.get_range(config)
+    if result is not None:
+      writer.write(f"data/raw/{config['name']}", json.dumps(result, indent=2))
+
   okta_downloader = OktaCidrDownloader()
   result = okta_downloader.get_range()
   writer.write('data/raw/okta.json', json.dumps(result, indent=2))
@@ -116,6 +126,11 @@ def update():
   oracle_downloader = OracleCidrDownloader()
   result = oracle_downloader.get_range()
   writer.write('data/raw/oracle.json', json.dumps(result, indent=2))
+
+  salesforce_downloader = SalesforceCidrDownloader()
+  result = salesforce_downloader.get_range()
+  if result is not None:
+    writer.write('data/raw/salesforce.json', json.dumps(result, indent=2))
 
   pingdom_downloader = PingdomCidrDownloader()
   result = pingdom_downloader.get_range_v4()
@@ -158,6 +173,13 @@ def update():
   seqera_downloader = SeqeraCidrDownloader()
   result = seqera_downloader.get_range()
   writer.write('data/raw/seqera.json', json.dumps(result, indent=2))
+
+  asn_downloader = AsnCidrDownloader()
+  asn_config = asn_downloader.get_config()
+  for config in asn_config:
+    result = asn_downloader.get_range(config)
+    if result is not None:
+      writer.write(f"data/raw/{config['name']}", json.dumps(result, indent=2))
 
 def main():
   update()
