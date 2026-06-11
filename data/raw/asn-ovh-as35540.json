@@ -9,32 +9,23 @@
   "version": "1.2",
   "data_call_name": "announced-prefixes",
   "data_call_status": "supported",
-  "cached": true,
-  "query_id": "20260611071717-64448ac8-eb70-462e-b5a4-7e3491d3b688",
-  "process_time": 9,
-  "server_id": "app163",
-  "build_version": "v0.10.5-2026.06.09",
-  "pipeline": "1296782",
+  "cached": false,
+  "query_id": "20260611203446-129d990e-9626-439d-b791-f12105fe4a54",
+  "process_time": 81,
+  "server_id": "app187",
+  "build_version": "v0.10.6-1-2026.06.11",
+  "pipeline": "1299062",
   "status": "ok",
   "status_code": 200,
-  "time": "2026-06-11T07:17:17.301354",
+  "time": "2026-06-11T20:34:46.114071",
   "data": {
     "prefixes": [
       {
         "prefix": "109.190.0.0/16",
         "timelines": [
           {
-            "starttime": "2026-05-28T00:00:00",
-            "endtime": "2026-06-11T00:00:00"
-          }
-        ]
-      },
-      {
-        "prefix": "2001:41d0:fc00::/38",
-        "timelines": [
-          {
-            "starttime": "2026-05-28T00:00:00",
-            "endtime": "2026-06-11T00:00:00"
+            "starttime": "2026-05-28T16:00:00",
+            "endtime": "2026-06-11T16:00:00"
           }
         ]
       },
@@ -42,16 +33,25 @@
         "prefix": "151.127.0.0/16",
         "timelines": [
           {
-            "starttime": "2026-05-28T00:00:00",
-            "endtime": "2026-06-11T00:00:00"
+            "starttime": "2026-05-28T16:00:00",
+            "endtime": "2026-06-11T16:00:00"
+          }
+        ]
+      },
+      {
+        "prefix": "2001:41d0:fc00::/38",
+        "timelines": [
+          {
+            "starttime": "2026-05-28T16:00:00",
+            "endtime": "2026-06-11T16:00:00"
           }
         ]
       }
     ],
-    "query_starttime": "2026-05-28T00:00:00",
-    "query_endtime": "2026-06-11T00:00:00",
+    "query_starttime": "2026-05-28T16:00:00",
+    "query_endtime": "2026-06-11T16:00:00",
     "resource": "35540",
-    "latest_time": "2026-06-11T00:00:00",
+    "latest_time": "2026-06-11T16:00:00",
     "earliest_time": "2000-08-01T00:00:00"
   },
   "for": "OVHcloud (US)",
