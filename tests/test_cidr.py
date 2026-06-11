@@ -126,7 +126,11 @@ class TestGrafana:
         assert any(e.get("source") == "Grafana" for e in envs)
 
     def test_ipv4_2(self, pytries):
-        envs = lookup(pytries, "34.117.7.29")
+        # Grafana publishes individual load-balancer IPs that rotate often,
+        # so pick the test IP from the raw data instead of hardcoding one.
+        with open("data/raw/grafana-hosted-metrics.txt") as f:
+            ip = next(line.strip() for line in f if line.strip())
+        envs = lookup(pytries, ip)
         assert any(e.get("source") == "Grafana" for e in envs)
 
 
