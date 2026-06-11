@@ -4,22 +4,36 @@ from src.dl.download_asn import AsnCidrDownloader
 from src.dl.download_aws import AWSCidrDownloader
 from src.dl.download_atlassian import AtlassianCidrDownloader
 from src.dl.download_azure import AzureCidrDownloader
+from src.dl.download_bunny import BunnyCidrDownloader
+from src.dl.download_docusign import DocuSignCidrDownloader
+from src.dl.download_gitlab import GitLabCidrDownloader
+from src.dl.download_cachefly import CacheFlyCidrDownloader
 from src.dl.download_cloudflare import CloudflareCidrDownloader
 from src.dl.download_datadog import DatadogCidrDownloader
 from src.dl.download_digitalocean import DigitalOceanCidrDownloader
 from src.dl.download_fastly import FastlyCidrDownloader
+from src.dl.download_gcore import GcoreCidrDownloader
 from src.dl.download_github import GithubCidrDownloader
 from src.dl.download_google import GcpCidrDownloader
 from src.dl.download_grafana import GrafanaCidrDownloader
 from src.dl.download_iana import IanaCidrDownloader
+from src.dl.download_icloud_relay import ICloudRelayCidrDownloader
+from src.dl.download_imperva import ImpervaCidrDownloader
 from src.dl.download_linode import LinodeCidrDownloader
 from src.dl.download_microsoft365 import Microsoft365CidrDownloader
+from src.dl.download_mongodb import MongoDBAtlasCidrDownloader
+from src.dl.download_newrelic import NewRelicCidrDownloader
 from src.dl.download_okta import OktaCidrDownloader
 from src.dl.download_oracle import OracleCidrDownloader
+from src.dl.download_pagerduty import PagerDutyCidrDownloader
+from src.dl.download_twilio import TwilioCidrDownloader
+from src.dl.download_webex import WebexCidrDownloader
 from src.dl.download_salesforce import SalesforceCidrDownloader
 from src.dl.download_seqera import SeqeraCidrDownloader
+from src.dl.download_starlink import StarlinkCidrDownloader
 from src.dl.download_stripe import StripeCidrDownloader
 from src.dl.download_pingdom import PingdomCidrDownloader
+from src.dl.download_vultr import VultrCidrDownloader
 from src.dl.download_zscaler import ZScalerCidrDownloader
 from src.dl.download_zoom import ZoomCidrDownloader
 
@@ -173,6 +187,79 @@ def update():
   seqera_downloader = SeqeraCidrDownloader()
   result = seqera_downloader.get_range()
   writer.write('data/raw/seqera.json', json.dumps(result, indent=2))
+
+  docusign_downloader = DocuSignCidrDownloader()
+  result = docusign_downloader.get_range()
+  if result is not None:
+    writer.write('data/raw/docusign.json', json.dumps(result, indent=2))
+
+  webex_downloader = WebexCidrDownloader()
+  result = webex_downloader.get_range()
+  if result is not None:
+    writer.write('data/raw/webex.json', json.dumps(result, indent=2))
+
+  twilio_downloader = TwilioCidrDownloader()
+  result = twilio_downloader.get_range()
+  if result is not None:
+    writer.write('data/raw/twilio-sip.json', json.dumps(result, indent=2))
+
+  gitlab_downloader = GitLabCidrDownloader()
+  result = gitlab_downloader.get_range()
+  if result is not None:
+    writer.write('data/raw/gitlab.json', json.dumps(result, indent=2))
+
+  imperva_downloader = ImpervaCidrDownloader()
+  result = imperva_downloader.get_range()
+  if result is not None:
+    writer.write('data/raw/imperva.json', json.dumps(result, indent=2))
+
+  mongodb_downloader = MongoDBAtlasCidrDownloader()
+  result = mongodb_downloader.get_range()
+  if result is not None:
+    writer.write('data/raw/mongodb-atlas.json', json.dumps(result, indent=2))
+
+  newrelic_downloader = NewRelicCidrDownloader()
+  result = newrelic_downloader.get_range()
+  if result is not None:
+    writer.write('data/raw/newrelic-synthetics.json', json.dumps(result, indent=2))
+
+  pagerduty_downloader = PagerDutyCidrDownloader()
+  result = pagerduty_downloader.get_range()
+  if result is not None:
+    writer.write('data/raw/pagerduty.json', json.dumps(result, indent=2))
+
+  bunny_downloader = BunnyCidrDownloader()
+  result = bunny_downloader.get_range_v4()
+  if result is not None:
+    writer.write('data/raw/bunny-ipv4.json', json.dumps(result, indent=2))
+  result = bunny_downloader.get_range_v6()
+  if result is not None:
+    writer.write('data/raw/bunny-ipv6.json', json.dumps(result, indent=2))
+
+  gcore_downloader = GcoreCidrDownloader()
+  result = gcore_downloader.get_range()
+  if result is not None:
+    writer.write('data/raw/gcore.json', json.dumps(result, indent=2))
+
+  cachefly_downloader = CacheFlyCidrDownloader()
+  result = cachefly_downloader.get_range()
+  if result is not None:
+    writer.write('data/raw/cachefly.txt', result)
+
+  vultr_downloader = VultrCidrDownloader()
+  result = vultr_downloader.get_range()
+  if result is not None:
+    writer.write('data/raw/vultr.json', json.dumps(result, indent=2))
+
+  icloud_relay_downloader = ICloudRelayCidrDownloader()
+  result = icloud_relay_downloader.get_range()
+  if result is not None:
+    writer.write('data/raw/icloud-private-relay.csv', result)
+
+  starlink_downloader = StarlinkCidrDownloader()
+  result = starlink_downloader.get_range()
+  if result is not None:
+    writer.write('data/raw/starlink.csv', result)
 
   asn_downloader = AsnCidrDownloader()
   asn_config = asn_downloader.get_config()
