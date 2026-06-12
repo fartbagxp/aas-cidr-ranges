@@ -1,6 +1,7 @@
 import json
 
 from src.dl.download_asn import AsnCidrDownloader
+from src.dl.download_public_dns import PublicDnsCidrDownloader
 from src.dl.download_aws import AWSCidrDownloader
 from src.dl.download_atlassian import AtlassianCidrDownloader
 from src.dl.download_azure import AzureCidrDownloader
@@ -267,6 +268,10 @@ def update():
     result = asn_downloader.get_range(config)
     if result is not None:
       writer.write(f"data/raw/{config['name']}", json.dumps(result, indent=2))
+
+  public_dns_downloader = PublicDnsCidrDownloader()
+  result = public_dns_downloader.get_range()
+  writer.write('data/raw/public-dns.json', json.dumps(result, indent=2))
 
 def main():
   update()

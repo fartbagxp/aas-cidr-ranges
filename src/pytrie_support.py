@@ -337,3 +337,14 @@ class PytrieSupport():
             'source': source,
             'website': website
         }
+
+  def add_public_dns(self, pytrie, result):
+    for provider in result['providers']:
+      for resolver in provider['resolvers']:
+        for ip in resolver['ips']:
+          pytrie[ip] = {
+              'source': provider['provider'],
+              'service': 'Public DNS Resolver',
+              'variant': resolver['variant'],
+              'website': provider['website'],
+          }

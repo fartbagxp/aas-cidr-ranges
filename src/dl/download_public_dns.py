@@ -1,0 +1,348 @@
+'''
+Well-known public DNS resolver IP addresses.
+
+These IPs are essentially static — providers announce changes infrequently
+and through official documentation pages. Update this file when a provider
+publishes new resolver addresses.
+
+Sources:
+  Cloudflare:               https://developers.cloudflare.com/1.1.1.1/ip-addresses/
+  Google Public DNS:        https://developers.google.com/speed/public-dns/docs/using
+  Quad9:                    https://www.quad9.net/service/service-addresses-and-features/
+  OpenDNS / Cisco Umbrella: https://www.opendns.com/setupguide/
+  AdGuard DNS:              https://adguard-dns.io/en/public-dns.html
+  CleanBrowsing:            https://cleanbrowsing.org/filters/
+  Neustar:                  https://www.publicdns.xyz/public/neustar.html
+  Verisign:                 https://www.publicdns.xyz/public/verisign.html
+  Level 3 / Lumen:          https://www.publicdns.xyz/public/level3.html
+  Comodo Secure DNS:        https://www.publicdns.xyz/public/comodo-secure.html
+  Yandex.DNS:               https://dns.yandex.com/
+  AliDNS:                   https://www.publicdns.xyz/public/alidns.html
+  Baidu Public DNS:         https://www.publicdns.xyz/public/baidu.html
+  DNSPod:                   https://www.publicdns.xyz/public/dnspod.html
+  114DNS:                   https://www.publicdns.xyz/public/114dns.html
+  Hurricane Electric:       https://www.publicdns.xyz/public/he.html
+  UncensoredDNS:            https://www.publicdns.xyz/public/uncensoreddns.html
+  DNS.WATCH:                https://www.publicdns.xyz/public/dns-watch.html
+
+Not included:
+  Norton ConnectSafe — shut down November 2018
+  Dyn — free DNS discontinued after Oracle acquisition
+  Freenom World — company defunct
+  OpenNIC — distributed volunteer network with no fixed authoritative IPs
+'''
+
+
+class PublicDnsCidrDownloader():
+
+  def get_range(self):
+    return {
+      'providers': [
+        {
+          'provider': 'Cloudflare',
+          'website': 'https://developers.cloudflare.com/1.1.1.1/ip-addresses/',
+          'resolvers': [
+            {
+              'variant': 'standard',
+              'ips': [
+                '1.1.1.1', '1.0.0.1',
+                '2606:4700:4700::1111', '2606:4700:4700::1001',
+              ],
+            },
+            {
+              'variant': 'malware blocking',
+              'ips': [
+                '1.1.1.2', '1.0.0.2',
+                '2606:4700:4700::1112', '2606:4700:4700::1002',
+              ],
+            },
+            {
+              'variant': 'malware and adult content blocking',
+              'ips': [
+                '1.1.1.3', '1.0.0.3',
+                '2606:4700:4700::1113', '2606:4700:4700::1003',
+              ],
+            },
+          ],
+        },
+        {
+          'provider': 'Google Public DNS',
+          'website': 'https://developers.google.com/speed/public-dns/docs/using',
+          'resolvers': [
+            {
+              'variant': 'standard',
+              'ips': [
+                '8.8.8.8', '8.8.4.4',
+                '2001:4860:4860::8888', '2001:4860:4860::8844',
+              ],
+            },
+          ],
+        },
+        {
+          'provider': 'Quad9',
+          'website': 'https://www.quad9.net/service/service-addresses-and-features/',
+          'resolvers': [
+            {
+              'variant': 'secured with DNSSEC',
+              'ips': [
+                '9.9.9.9', '149.112.112.112',
+                '2620:fe::fe', '2620:fe::9',
+              ],
+            },
+            {
+              'variant': 'secured with DNSSEC and ECS',
+              'ips': [
+                '9.9.9.11', '149.112.112.11',
+                '2620:fe::11', '2620:fe::fe:11',
+              ],
+            },
+            {
+              'variant': 'unsecured',
+              'ips': [
+                '9.9.9.10', '149.112.112.10',
+                '2620:fe::10', '2620:fe::fe:10',
+              ],
+            },
+          ],
+        },
+        {
+          'provider': 'OpenDNS / Cisco Umbrella',
+          'website': 'https://www.opendns.com/setupguide/',
+          'resolvers': [
+            {
+              'variant': 'standard',
+              'ips': [
+                '208.67.222.222', '208.67.220.220',
+                '2620:119:35::35', '2620:119:53::53',
+              ],
+            },
+            {
+              'variant': 'FamilyShield',
+              'ips': [
+                '208.67.222.123', '208.67.220.123',
+              ],
+            },
+          ],
+        },
+        {
+          'provider': 'AdGuard DNS',
+          'website': 'https://adguard-dns.io/en/public-dns.html',
+          'resolvers': [
+            {
+              'variant': 'default',
+              'ips': [
+                '94.140.14.14', '94.140.15.15',
+                '2a10:50c0::ad1:ff', '2a10:50c0::ad2:ff',
+              ],
+            },
+            {
+              'variant': 'non-filtering',
+              'ips': [
+                '94.140.14.140', '94.140.14.141',
+                '2a10:50c0::1:ff', '2a10:50c0::2:ff',
+              ],
+            },
+            {
+              'variant': 'family protection',
+              'ips': [
+                '94.140.14.15', '94.140.15.16',
+                '2a10:50c0::bad1:ff', '2a10:50c0::bad2:ff',
+              ],
+            },
+          ],
+        },
+        {
+          'provider': 'CleanBrowsing',
+          'website': 'https://cleanbrowsing.org/filters/',
+          'resolvers': [
+            {
+              'variant': 'family filter',
+              'ips': [
+                '185.228.168.168', '185.228.169.168',
+                '2a0d:2a00:1::', '2a0d:2a00:2::',
+              ],
+            },
+            {
+              'variant': 'adult filter',
+              'ips': [
+                '185.228.168.10', '185.228.169.11',
+                '2a0d:2a00:1::1', '2a0d:2a00:2::1',
+              ],
+            },
+            {
+              'variant': 'security filter',
+              'ips': [
+                '185.228.168.9', '185.228.169.9',
+                '2a0d:2a00:1::2', '2a0d:2a00:2::2',
+              ],
+            },
+          ],
+        },
+        {
+          'provider': 'Neustar',
+          'website': 'https://www.publicdns.xyz/public/neustar.html',
+          'resolvers': [
+            {
+              'variant': 'standard',
+              'ips': [
+                '156.154.70.1', '156.154.71.1',
+                '2610:a1:1018::1', '2610:a1:1019::1',
+              ],
+            },
+          ],
+        },
+        {
+          'provider': 'Verisign',
+          'website': 'https://www.verisign.com/en_US/security-services/public-dns/index.xhtml',
+          'resolvers': [
+            {
+              'variant': 'standard',
+              'ips': [
+                '64.6.64.6', '64.6.65.6',
+                '2620:74:1b::1:1', '2620:74:1c::2:2',
+              ],
+            },
+          ],
+        },
+        {
+          'provider': 'Level 3 / Lumen',
+          'website': 'https://www.publicdns.xyz/public/level3.html',
+          'resolvers': [
+            {
+              'variant': 'standard',
+              'ips': [
+                '209.244.0.3', '209.244.0.4',
+              ],
+            },
+          ],
+        },
+        {
+          'provider': 'Comodo Secure DNS',
+          'website': 'https://www.comodo.com/secure-dns/',
+          'resolvers': [
+            {
+              'variant': 'standard',
+              'ips': [
+                '8.26.56.26', '8.20.247.20',
+              ],
+            },
+          ],
+        },
+        {
+          'provider': 'Yandex.DNS',
+          'website': 'https://dns.yandex.com/',
+          'resolvers': [
+            {
+              'variant': 'basic',
+              'ips': [
+                '77.88.8.8', '77.88.8.1',
+                '2a02:6b8::feed:0ff', '2a02:6b8:0:1::feed:0ff',
+              ],
+            },
+            {
+              'variant': 'safe',
+              'ips': [
+                '77.88.8.88', '77.88.8.2',
+                '2a02:6b8::feed:bad', '2a02:6b8:0:1::feed:bad',
+              ],
+            },
+            {
+              'variant': 'family',
+              'ips': [
+                '77.88.8.3', '77.88.8.7',
+                '2a02:6b8::feed:a11', '2a02:6b8:0:1::feed:a11',
+              ],
+            },
+          ],
+        },
+        {
+          'provider': 'AliDNS',
+          'website': 'https://www.alidns.com/',
+          'resolvers': [
+            {
+              'variant': 'standard',
+              'ips': [
+                '223.5.5.5', '223.6.6.6',
+              ],
+            },
+          ],
+        },
+        {
+          'provider': 'Baidu Public DNS',
+          'website': 'https://dudns.baidu.com/',
+          'resolvers': [
+            {
+              'variant': 'standard',
+              'ips': [
+                '180.76.76.76',
+                '2400:da00::6666',
+              ],
+            },
+          ],
+        },
+        {
+          'provider': 'DNSPod',
+          'website': 'https://www.dnspod.cn/products/publicdns',
+          'resolvers': [
+            {
+              'variant': 'standard',
+              'ips': [
+                '119.29.29.29', '119.28.28.28',
+                '182.254.116.116', '182.254.118.118',
+              ],
+            },
+          ],
+        },
+        {
+          'provider': '114DNS',
+          'website': 'https://www.114dns.com/',
+          'resolvers': [
+            {
+              'variant': 'standard',
+              'ips': [
+                '114.114.114.114', '114.114.115.115',
+              ],
+            },
+          ],
+        },
+        {
+          'provider': 'Hurricane Electric',
+          'website': 'https://he.net/',
+          'resolvers': [
+            {
+              'variant': 'standard',
+              'ips': [
+                '74.82.42.42',
+                '2001:470:20::2',
+              ],
+            },
+          ],
+        },
+        {
+          'provider': 'UncensoredDNS',
+          'website': 'https://blog.uncensoreddns.org/',
+          'resolvers': [
+            {
+              'variant': 'standard',
+              'ips': [
+                '91.239.100.100', '89.233.43.71',
+                '2001:67c:28a4::', '2a01:3a0:53:53::',
+              ],
+            },
+          ],
+        },
+        {
+          'provider': 'DNS.WATCH',
+          'website': 'https://dns.watch/',
+          'resolvers': [
+            {
+              'variant': 'standard',
+              'ips': [
+                '84.200.69.80', '84.200.70.40',
+                '2001:1608:10:25::1c04:b12f', '2001:1608:10:25::9249:d69b',
+              ],
+            },
+          ],
+        },
+      ]
+    }

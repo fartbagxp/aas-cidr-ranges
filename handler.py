@@ -5,6 +5,7 @@ import pytricia
 from src.reader import FileReader
 from src.dl.download_zoom import ZoomCidrDownloader
 from src.pytrie_support import PytrieSupport
+from src.dl.download_public_dns import PublicDnsCidrDownloader
 
 from src.whois import whois
 
@@ -215,6 +216,11 @@ def generate_reader():
   pytries.append(pyt)
   data = reader.read('data/raw/stripe-webhook-ip-range.txt')
   support.add_stripe_cidr(pyt, data)
+  pytries.append(pyt)
+
+  pyt = pytricia.PyTricia(128)
+  public_dns_downloader = PublicDnsCidrDownloader()
+  support.add_public_dns(pyt, public_dns_downloader.get_range())
   pytries.append(pyt)
 
   return pytries
