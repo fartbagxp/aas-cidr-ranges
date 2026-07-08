@@ -10,31 +10,31 @@
   "data_call_name": "announced-prefixes",
   "data_call_status": "supported",
   "cached": false,
-  "query_id": "20260707211613-ff556c8e-b739-4c45-a617-a0cfe59cf023",
-  "process_time": 87,
-  "server_id": "app164",
-  "build_version": "v0.10.10-2026.07.06",
-  "pipeline": "1331401",
+  "query_id": "20260708211517-d7ba66fb-ff55-4d0e-99a4-9efa11c6ea52",
+  "process_time": 89,
+  "server_id": "app170",
+  "build_version": "v0.10.12-2026.07.08",
+  "pipeline": "1334056",
   "status": "ok",
   "status_code": 200,
-  "time": "2026-07-07T21:16:13.181956",
+  "time": "2026-07-08T21:15:17.358536",
   "data": {
     "prefixes": [
-      {
-        "prefix": "2001:41d0:fc00::/38",
-        "timelines": [
-          {
-            "starttime": "2026-06-23T16:00:00",
-            "endtime": "2026-07-07T16:00:00"
-          }
-        ]
-      },
       {
         "prefix": "109.190.0.0/16",
         "timelines": [
           {
-            "starttime": "2026-06-23T16:00:00",
-            "endtime": "2026-07-07T16:00:00"
+            "starttime": "2026-06-24T16:00:00",
+            "endtime": "2026-07-08T16:00:00"
+          }
+        ]
+      },
+      {
+        "prefix": "2001:41d0:fc00::/38",
+        "timelines": [
+          {
+            "starttime": "2026-06-24T16:00:00",
+            "endtime": "2026-07-08T16:00:00"
           }
         ]
       },
@@ -42,16 +42,16 @@
         "prefix": "151.127.0.0/16",
         "timelines": [
           {
-            "starttime": "2026-06-23T16:00:00",
-            "endtime": "2026-07-07T16:00:00"
+            "starttime": "2026-06-24T16:00:00",
+            "endtime": "2026-07-08T16:00:00"
           }
         ]
       }
     ],
-    "query_starttime": "2026-06-23T16:00:00",
-    "query_endtime": "2026-07-07T16:00:00",
+    "query_starttime": "2026-06-24T16:00:00",
+    "query_endtime": "2026-07-08T16:00:00",
     "resource": "35540",
-    "latest_time": "2026-07-07T16:00:00",
+    "latest_time": "2026-07-08T16:00:00",
     "earliest_time": "2000-08-01T00:00:00"
   },
   "for": "OVHcloud (US)",
