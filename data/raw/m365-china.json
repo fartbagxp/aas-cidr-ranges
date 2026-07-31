@@ -294,7 +294,6 @@
       "serviceArea": "Skype",
       "serviceAreaDisplayName": "Microsoft Teams",
       "urls": [
-        "*.partner.lync.cn",
         "*.teams.microsoftonline.cn",
         "teams.microsoftonline.cn"
       ],
@@ -419,6 +418,19 @@
       "tcpPorts": "25",
       "expressRoute": false,
       "category": "Allow",
+      "required": true,
+      "notes": ""
+    },
+    {
+      "id": 28,
+      "serviceArea": "Common",
+      "serviceAreaDisplayName": "Microsoft 365 Common and Office Online",
+      "urls": [
+        "collector.azure.cn"
+      ],
+      "tcpPorts": "443",
+      "expressRoute": false,
+      "category": "Default",
       "required": true,
       "notes": ""
     }
