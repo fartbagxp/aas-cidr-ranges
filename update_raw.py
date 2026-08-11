@@ -5,8 +5,10 @@ from src.dl.download_public_dns import PublicDnsCidrDownloader
 from src.dl.download_aws import AWSCidrDownloader
 from src.dl.download_atlassian import AtlassianCidrDownloader
 from src.dl.download_azure import AzureCidrDownloader
+from src.dl.download_bing import BingCidrDownloader
 from src.dl.download_bunny import BunnyCidrDownloader
 from src.dl.download_docusign import DocuSignCidrDownloader
+from src.dl.download_duckduckgo import DuckDuckGoCidrDownloader
 from src.dl.download_gitlab import GitLabCidrDownloader
 from src.dl.download_cachefly import CacheFlyCidrDownloader
 from src.dl.download_cloudflare import CloudflareCidrDownloader
@@ -25,14 +27,18 @@ from src.dl.download_microsoft365 import Microsoft365CidrDownloader
 from src.dl.download_mongodb import MongoDBAtlasCidrDownloader
 from src.dl.download_newrelic import NewRelicCidrDownloader
 from src.dl.download_okta import OktaCidrDownloader
+from src.dl.download_openai import OpenAICidrDownloader
 from src.dl.download_oracle import OracleCidrDownloader
 from src.dl.download_pagerduty import PagerDutyCidrDownloader
+from src.dl.download_perplexity import PerplexityCidrDownloader
 from src.dl.download_twilio import TwilioCidrDownloader
 from src.dl.download_webex import WebexCidrDownloader
 from src.dl.download_salesforce import SalesforceCidrDownloader
 from src.dl.download_seqera import SeqeraCidrDownloader
 from src.dl.download_starlink import StarlinkCidrDownloader
+from src.dl.download_statuscake import StatusCakeCidrDownloader
 from src.dl.download_stripe import StripeCidrDownloader
+from src.dl.download_telegram import TelegramCidrDownloader
 from src.dl.download_pingdom import PingdomCidrDownloader
 from src.dl.download_vultr import VultrCidrDownloader
 from src.dl.download_zscaler import ZScalerCidrDownloader
@@ -272,6 +278,42 @@ def update():
   public_dns_downloader = PublicDnsCidrDownloader()
   result = public_dns_downloader.get_range()
   writer.write('data/raw/public-dns.json', json.dumps(result, indent=2))
+
+  openai_downloader = OpenAICidrDownloader()
+  openai_config = openai_downloader.get_config()
+  for config in openai_config:
+    result = openai_downloader.get_range(config)
+    if result is not None:
+      writer.write(f"data/raw/{config['name']}", json.dumps(result, indent=2))
+
+  bing_downloader = BingCidrDownloader()
+  result = bing_downloader.get_range()
+  if result is not None:
+    writer.write('data/raw/bing-bingbot.json', json.dumps(result, indent=2))
+
+  telegram_downloader = TelegramCidrDownloader()
+  result = telegram_downloader.get_range()
+  if result is not None:
+    writer.write('data/raw/telegram.json', json.dumps(result, indent=2))
+
+  duckduckgo_downloader = DuckDuckGoCidrDownloader()
+  duckduckgo_config = duckduckgo_downloader.get_config()
+  for config in duckduckgo_config:
+    result = duckduckgo_downloader.get_range(config)
+    if result is not None:
+      writer.write(f"data/raw/{config['name']}", json.dumps(result, indent=2))
+
+  perplexity_downloader = PerplexityCidrDownloader()
+  perplexity_config = perplexity_downloader.get_config()
+  for config in perplexity_config:
+    result = perplexity_downloader.get_range(config)
+    if result is not None:
+      writer.write(f"data/raw/{config['name']}", json.dumps(result, indent=2))
+
+  statuscake_downloader = StatusCakeCidrDownloader()
+  result = statuscake_downloader.get_range()
+  if result is not None:
+    writer.write('data/raw/statuscake.txt', result)
 
 def main():
   update()
