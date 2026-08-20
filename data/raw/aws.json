@@ -1,6 +1,6 @@
 {
-  "syncToken": "1787163425",
-  "createDate": "2026-08-19-18-17-05",
+  "syncToken": "1787249825",
+  "createDate": "2026-08-20-18-17-05",
   "prefixes": [
     {
       "ip_prefix": "3.4.12.4/32",
@@ -60909,6 +60909,18 @@
       "network_border_group": "sa-east-1"
     },
     {
+      "ip_prefix": "100.29.192.216/30",
+      "region": "us-east-1",
+      "service": "EBS",
+      "network_border_group": "us-east-1"
+    },
+    {
+      "ip_prefix": "100.29.192.220/30",
+      "region": "us-east-1",
+      "service": "EBS",
+      "network_border_group": "us-east-1"
+    },
+    {
       "ip_prefix": "32.192.104.4/30",
       "region": "us-east-1",
       "service": "EBS",
@@ -61023,6 +61035,12 @@
       "network_border_group": "cn-north-1"
     },
     {
+      "ip_prefix": "43.196.172.0/22",
+      "region": "cn-north-1",
+      "service": "EFS",
+      "network_border_group": "cn-north-1"
+    },
+    {
       "ip_prefix": "43.192.222.0/25",
       "region": "cn-northwest-1",
       "service": "EFS",
@@ -61035,7 +61053,19 @@
       "network_border_group": "us-gov-east-1"
     },
     {
+      "ip_prefix": "16.66.4.0/22",
+      "region": "us-gov-east-1",
+      "service": "EFS",
+      "network_border_group": "us-gov-east-1"
+    },
+    {
       "ip_prefix": "40.38.87.128/25",
+      "region": "us-gov-west-1",
+      "service": "EFS",
+      "network_border_group": "us-gov-west-1"
+    },
+    {
+      "ip_prefix": "40.39.44.0/22",
       "region": "us-gov-west-1",
       "service": "EFS",
       "network_border_group": "us-gov-west-1"
@@ -100025,6 +100055,12 @@
       "network_border_group": "GLOBAL"
     },
     {
+      "ipv6_prefix": "2400:7fc0:833b:f400::/56",
+      "region": "cn-north-1",
+      "service": "EFS",
+      "network_border_group": "cn-north-1"
+    },
+    {
       "ipv6_prefix": "2400:7fc0:86dd:2300::/56",
       "region": "cn-north-1",
       "service": "EFS",
@@ -100043,7 +100079,19 @@
       "network_border_group": "us-gov-east-1"
     },
     {
+      "ipv6_prefix": "2600:1f15:563:5d00::/56",
+      "region": "us-gov-east-1",
+      "service": "EFS",
+      "network_border_group": "us-gov-east-1"
+    },
+    {
       "ipv6_prefix": "2600:1f12:824:e00::/56",
+      "region": "us-gov-west-1",
+      "service": "EFS",
+      "network_border_group": "us-gov-west-1"
+    },
+    {
+      "ipv6_prefix": "2600:1f12:ece:5300::/56",
       "region": "us-gov-west-1",
       "service": "EFS",
       "network_border_group": "us-gov-west-1"
