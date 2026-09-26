@@ -1,6 +1,6 @@
 {
-  "syncToken": "1790354226",
-  "createDate": "2026-09-25-16-37-06",
+  "syncToken": "1790443026",
+  "createDate": "2026-09-26-17-17-06",
   "prefixes": [
     {
       "ip_prefix": "3.4.12.4/32",
@@ -74057,6 +74057,12 @@
       "network_border_group": "eu-central-1"
     },
     {
+      "ipv6_prefix": "2001:3fc4:1000::/40",
+      "region": "eusc-de-east-1",
+      "service": "AMAZON",
+      "network_border_group": "eusc-de-east-1"
+    },
+    {
       "ipv6_prefix": "2406:da60:8800::/40",
       "region": "ap-southeast-1",
       "service": "AMAZON",
@@ -84747,6 +84753,12 @@
       "region": "me-west-1",
       "service": "S3",
       "network_border_group": "me-west-1"
+    },
+    {
+      "ipv6_prefix": "2001:3fc4:1000::/40",
+      "region": "eusc-de-east-1",
+      "service": "S3",
+      "network_border_group": "eusc-de-east-1"
     },
     {
       "ipv6_prefix": "2406:da60:8800::/40",
@@ -96549,6 +96561,12 @@
       "region": "eu-central-1",
       "service": "EC2",
       "network_border_group": "eu-central-1"
+    },
+    {
+      "ipv6_prefix": "2001:3fc4:1000::/40",
+      "region": "eusc-de-east-1",
+      "service": "EC2",
+      "network_border_group": "eusc-de-east-1"
     },
     {
       "ipv6_prefix": "2406:da60:8800::/40",
