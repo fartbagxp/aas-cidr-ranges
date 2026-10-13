@@ -1,6 +1,6 @@
 {
-  "creationDate": "2026-10-09T00:06:06.601554",
-  "syncToken": 1791504366,
+  "creationDate": "2026-10-12T05:24:05.986286",
+  "syncToken": 1791782645,
   "items": [
     {
       "network": "52.82.172.0",
@@ -236,6 +236,22 @@
       ],
       "product": [
         "bitbucket"
+      ],
+      "direction": [
+        "egress"
+      ],
+      "perimeter": "commercial"
+    },
+    {
+      "network": "131.162.90.20",
+      "mask_len": 30,
+      "cidr": "131.162.90.20/30",
+      "mask": "255.255.255.252",
+      "region": [
+        "gcp-us-central1"
+      ],
+      "product": [
+        "rovo-crawler"
       ],
       "direction": [
         "egress"
@@ -2484,6 +2500,64 @@
       ],
       "direction": [
         "egress"
+      ],
+      "perimeter": "commercial"
+    },
+    {
+      "network": "131.162.88.0",
+      "mask_len": 21,
+      "cidr": "131.162.88.0/21",
+      "mask": "255.255.248.0",
+      "region": [
+        "global"
+      ],
+      "product": [
+        "confluence",
+        "forge",
+        "jira",
+        "loom"
+      ],
+      "direction": [
+        "egress",
+        "ingress"
+      ],
+      "perimeter": "commercial"
+    },
+    {
+      "network": "131.162.90.0",
+      "mask_len": 23,
+      "cidr": "131.162.90.0/23",
+      "mask": "255.255.254.0",
+      "region": [
+        "global"
+      ],
+      "product": [
+        "confluence",
+        "forge",
+        "jira",
+        "loom"
+      ],
+      "direction": [
+        "egress"
+      ],
+      "perimeter": "commercial"
+    },
+    {
+      "network": "131.162.88.0",
+      "mask_len": 23,
+      "cidr": "131.162.88.0/23",
+      "mask": "255.255.254.0",
+      "region": [
+        "global"
+      ],
+      "product": [
+        "confluence",
+        "forge",
+        "jira",
+        "loom"
+      ],
+      "direction": [
+        "ingress"
       ],
       "perimeter": "commercial"
     },
