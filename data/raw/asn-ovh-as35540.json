@@ -10,31 +10,22 @@
   "data_call_name": "announced-prefixes",
   "data_call_status": "supported",
   "cached": false,
-  "query_id": "20261024224543-363d1b23-76fa-4cc0-9935-0c176e71e3f8",
-  "process_time": 94,
-  "server_id": "app177",
+  "query_id": "20261025175139-b0736591-de49-4ca0-8cfc-707a8093df53",
+  "process_time": 75,
+  "server_id": "app179",
   "build_version": "v0.12.2-2026.10.23",
   "pipeline": "1478200",
   "status": "ok",
   "status_code": 200,
-  "time": "2026-10-24T22:45:43.957537",
+  "time": "2026-10-25T17:51:39.088428",
   "data": {
     "prefixes": [
       {
         "prefix": "151.127.0.0/16",
         "timelines": [
           {
-            "starttime": "2026-10-10T16:00:00",
-            "endtime": "2026-10-24T16:00:00"
-          }
-        ]
-      },
-      {
-        "prefix": "109.190.0.0/16",
-        "timelines": [
-          {
-            "starttime": "2026-10-10T16:00:00",
-            "endtime": "2026-10-24T16:00:00"
+            "starttime": "2026-10-11T08:00:00",
+            "endtime": "2026-10-25T08:00:00"
           }
         ]
       },
@@ -42,16 +33,25 @@
         "prefix": "2001:41d0:fc00::/38",
         "timelines": [
           {
-            "starttime": "2026-10-10T16:00:00",
-            "endtime": "2026-10-24T16:00:00"
+            "starttime": "2026-10-11T08:00:00",
+            "endtime": "2026-10-25T08:00:00"
+          }
+        ]
+      },
+      {
+        "prefix": "109.190.0.0/16",
+        "timelines": [
+          {
+            "starttime": "2026-10-11T08:00:00",
+            "endtime": "2026-10-25T08:00:00"
           }
         ]
       }
     ],
-    "query_starttime": "2026-10-10T16:00:00",
-    "query_endtime": "2026-10-24T16:00:00",
+    "query_starttime": "2026-10-11T08:00:00",
+    "query_endtime": "2026-10-25T08:00:00",
     "resource": "35540",
-    "latest_time": "2026-10-24T16:00:00",
+    "latest_time": "2026-10-25T08:00:00",
     "earliest_time": "2000-08-01T00:00:00"
   },
   "for": "OVHcloud (US)",
