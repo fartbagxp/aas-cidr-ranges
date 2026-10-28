@@ -1,6 +1,6 @@
 {
-  "creationDate": "2026-10-19T04:47:37.974336",
-  "syncToken": 1792385257,
+  "creationDate": "2026-10-27T02:30:28.885679",
+  "syncToken": 1793068228,
   "items": [
     {
       "network": "52.82.172.0",
@@ -3435,6 +3435,54 @@
       "mask": "255.255.255.255",
       "region": [
         "us-east-1"
+      ],
+      "product": [
+        "bitbucket"
+      ],
+      "direction": [
+        "egress"
+      ],
+      "perimeter": "commercial"
+    },
+    {
+      "network": "18.185.129.8",
+      "mask_len": 32,
+      "cidr": "18.185.129.8/32",
+      "mask": "255.255.255.255",
+      "region": [
+        "eu-central-1"
+      ],
+      "product": [
+        "bitbucket"
+      ],
+      "direction": [
+        "egress"
+      ],
+      "perimeter": "commercial"
+    },
+    {
+      "network": "52.59.89.40",
+      "mask_len": 32,
+      "cidr": "52.59.89.40/32",
+      "mask": "255.255.255.255",
+      "region": [
+        "eu-central-1"
+      ],
+      "product": [
+        "bitbucket"
+      ],
+      "direction": [
+        "egress"
+      ],
+      "perimeter": "commercial"
+    },
+    {
+      "network": "52.29.151.190",
+      "mask_len": 32,
+      "cidr": "52.29.151.190/32",
+      "mask": "255.255.255.255",
+      "region": [
+        "eu-central-1"
       ],
       "product": [
         "bitbucket"
