@@ -14,18 +14,18 @@
         {
           "range": "2a03:eec0:1300::/40",
           "vpn": "",
-          "gre": "165.225.72.38",
+          "gre": "2a03:eec0:1311::1b",
           "ext": "",
-          "hostname": "",
+          "hostname": "fra4.sme.zscalerbeta.net",
           "latitude": "50.110922",
           "longitude": "8.682127"
         },
         {
           "range": "2a03:eec0:1300::/40",
           "vpn": "",
-          "gre": "2a03:eec0:1311::1b",
+          "gre": "165.225.72.38",
           "ext": "",
-          "hostname": "fra4.sme.zscalerbeta.net",
+          "hostname": "",
           "latitude": "50.110922",
           "longitude": "8.682127"
         }
@@ -54,7 +54,25 @@
     "continent : Americas": {
       "city : San Francisco IV": [
         {
-          "range": "170.85.154.0/23",
+          "range": "104.129.202.0/23",
+          "vpn": "sjc4-vpn.zscalerbeta.net",
+          "gre": "104.129.203.248",
+          "ext": "",
+          "hostname": "sjc4.sme.zscalerbeta.net",
+          "latitude": "37.774929",
+          "longitude": "-122.419415"
+        },
+        {
+          "range": "2605:4300:1200::/40",
+          "vpn": "sjc4-vpn.zscalerbeta.net",
+          "gre": "2605:4300:1212::23e",
+          "ext": "",
+          "hostname": "sjc4.sme.zscalerbeta.net",
+          "latitude": "37.774929",
+          "longitude": "-122.419415"
+        },
+        {
+          "range": "159.254.30.0/23",
           "vpn": "",
           "gre": "104.129.203.248",
           "ext": "",
@@ -81,29 +99,11 @@
           "longitude": "-122.419415"
         },
         {
-          "range": "159.254.30.0/23",
+          "range": "170.85.154.0/23",
           "vpn": "",
           "gre": "104.129.203.248",
           "ext": "",
           "hostname": "",
-          "latitude": "37.774929",
-          "longitude": "-122.419415"
-        },
-        {
-          "range": "2605:4300:1200::/40",
-          "vpn": "sjc4-vpn.zscalerbeta.net",
-          "gre": "2605:4300:1212::23e",
-          "ext": "",
-          "hostname": "sjc4.sme.zscalerbeta.net",
-          "latitude": "37.774929",
-          "longitude": "-122.419415"
-        },
-        {
-          "range": "104.129.202.0/23",
-          "vpn": "sjc4-vpn.zscalerbeta.net",
-          "gre": "104.129.203.248",
-          "ext": "",
-          "hostname": "sjc4.sme.zscalerbeta.net",
           "latitude": "37.774929",
           "longitude": "-122.419415"
         },
@@ -177,20 +177,20 @@
     "continent : APAC": {
       "city : Singapore IV": [
         {
-          "range": "165.225.112.0/23",
-          "vpn": "sin4-vpn.zscalerbeta.net",
-          "gre": "165.225.113.220",
-          "ext": "",
-          "hostname": "sin4.sme.zscalerbeta.net",
-          "latitude": "1.352083",
-          "longitude": "103.819836"
-        },
-        {
           "range": "2400:7aa0:1b00::/40",
           "vpn": "",
           "gre": "165.225.113.220",
           "ext": "",
           "hostname": "",
+          "latitude": "1.352083",
+          "longitude": "103.819836"
+        },
+        {
+          "range": "165.225.112.0/23",
+          "vpn": "sin4-vpn.zscalerbeta.net",
+          "gre": "165.225.113.220",
+          "ext": "",
+          "hostname": "sin4.sme.zscalerbeta.net",
           "latitude": "1.352083",
           "longitude": "103.819836"
         }
