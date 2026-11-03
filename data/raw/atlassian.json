@@ -1,6 +1,6 @@
 {
-  "creationDate": "2026-10-27T02:30:28.885679",
-  "syncToken": 1793068228,
+  "creationDate": "2026-11-02T06:08:25.025504",
+  "syncToken": 1793599705,
   "items": [
     {
       "network": "52.82.172.0",
@@ -233,6 +233,38 @@
       "mask": "255.255.255.255",
       "region": [
         "us-west-2"
+      ],
+      "product": [
+        "bitbucket"
+      ],
+      "direction": [
+        "egress"
+      ],
+      "perimeter": "commercial"
+    },
+    {
+      "network": "3.208.100.243",
+      "mask_len": 32,
+      "cidr": "3.208.100.243/32",
+      "mask": "255.255.255.255",
+      "region": [
+        "us-east-1"
+      ],
+      "product": [
+        "bitbucket"
+      ],
+      "direction": [
+        "egress"
+      ],
+      "perimeter": "commercial"
+    },
+    {
+      "network": "44.216.119.79",
+      "mask_len": 32,
+      "cidr": "44.216.119.79/32",
+      "mask": "255.255.255.255",
+      "region": [
+        "us-east-1"
       ],
       "product": [
         "bitbucket"
